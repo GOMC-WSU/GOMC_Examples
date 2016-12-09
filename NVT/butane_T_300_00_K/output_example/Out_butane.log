@@ -1,0 +1,142 @@
+GOMC Serial Version 1.9
+Started at: Fri Dec  9 11:18:30 2016
+On hostname: potoff39.eng.wayne.edu
+
+Total number of CPUs: 4
+Total number of CPUs available: 4
+Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+
+System name: Linux
+Release: 2.6.32-642.4.2.el6.x86_64
+Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
+Kernel Architecture: x86_64
+Total Ram: 7856.3MB
+Used Ram: 5530.1MB
+Working in the current directory /home3/soroush/Desktop/validation/GOMC_Serial-development_1.90/GOMC_Examples-master/NVT/butane_T_300_00_K
+
+------------------------------------------------------
+This code was compiled to support the canonical (NVT) ensemble.
+------------------------------------------------------
+
+REMINDER: EXOTIC force field has been selected!
+Temperature of system has been set to 300.0 K 
+Warning: Unknown input HistogramFreq!
+Warning: Electrostatic energy would not be calculated!
+Reading from Exotic Parameter File file: ./../../common/Par_Mie_Alkane_Exotic.inp
+
+Finished reading Exotic Parameter File file: ./../../common/Par_Mie_Alkane_Exotic.inp
+
+Reading from system PDB coordinate file file: ./STEP3_START_C4P_sys_BOX_0.pdb
+
+Finished reading system PDB coordinate file file: ./STEP3_START_C4P_sys_BOX_0.pdb
+
+Random number seed: 2886487412
+
+Molecules in PSF:
+
+Molecule Kind: C4P
+Idx	name	type	charge	mass
+0	C1	CH3	0.0	15.0
+1	C2	CH2	0.0	14.0
+2	C3	CH2	0.0	14.0
+3	C4	CH3	0.0	15.0
+
+Bonds:
+[0 1] [1 2] [2 3] 
+
+Angles:
+[0 1 2] [1 2 3] 
+
+Dihedrals:
+[0 1 2 3] 
+
+REMINDER! 1-3 and 1-4 Interaction is OFF
+
+
+########################## INITIAL SIMULATION ENERGY ##########################
+ETITLE_BOX_0    TOTAL           INTRA(B)        INTRA(N)        INTER(LJ)       LRC             TOTAL_ELECT     REAL            RECIP           SELF            CORR            
+
+ENERGY_BOX_0    4254277.5858    18.0492         0.0000          4256206.4317    -1946.8951      0.0000          0.0000          0.0000          0.0000          -0.0000         
+
+###############################################################################
+
+############################# STARTING SIMULATION #############################
+MTITLE_BOX_0    DISTRY          DISACCEPT       DISACCEPT%      DISMAX          ROTATE          ROTACCEPT       ROTACCEPT%      ROTMAX          INTRASWAP       INTACCEPT       INTACCEPT%      STEP            
+
+ETITLE_BOX_0    TOTAL           INTRA(B)        INTRA(N)        INTER(LJ)       LRC             TOTAL_ELECT     REAL            RECIP           SELF            CORR            
+STITLE_BOX_0    PRESSURE        TOTALMOL        TOT_DENSITY     
+
+Printed combined psf to file butane_300_00_K.psf
+MOVE_BOX_0      59930           49268           82.2092         122.7900        10040           9539            95.0100         3.1416          30030           20356           67.7855         100000          
+
+ENERGY_BOX_0    581052.2366     622438.1405     0.0000          -39439.0088     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5580          1000            6.5167          
+
+Steps/sec. : 42988.4151
+MOVE_BOX_0      119626          98384           82.2430         122.7900        20128           19114           94.9622         3.1416          60246           40767           67.6676         200000          
+
+ENERGY_BOX_0    579216.2304     623650.3388     0.0000          -42487.2132     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5716          1000            6.5167          
+
+Steps/sec. : 44588.3983
+MOVE_BOX_0      179863          147689          82.1119         122.7900        30062           28568           95.0303         3.1416          90075           60818           67.5193         300000          
+
+ENERGY_BOX_0    559428.3794     602653.4127     0.0000          -41278.1382     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5941          1000            6.5167          
+
+Steps/sec. : 45015.9262
+MOVE_BOX_0      239954          197003          82.1003         122.7900        40010           37982           94.9313         3.1416          120036          81100           67.5631         400000          
+
+ENERGY_BOX_0    556474.5563     598514.6629     0.0000          -40093.2114     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5269          1000            6.5167          
+
+Steps/sec. : 44753.3394
+MOVE_BOX_0      300146          246311          82.0637         122.7900        50033           47507           94.9513         3.1416          149821          101324          67.6300         500000          
+
+ENERGY_BOX_0    582977.9246     635131.7800     0.0000          -50206.9603     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5783          1000            6.5167          
+
+Steps/sec. : 44663.5362
+MOVE_BOX_0      360084          295546          82.0770         122.7900        60014           56942           94.8812         3.1416          179902          121759          67.6807         600000          
+
+ENERGY_BOX_0    548429.2005     600412.3579     0.0000          -50036.2623     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.6265          1000            6.5167          
+
+Steps/sec. : 44273.0790
+MOVE_BOX_0      420250          344909          82.0723         122.7900        70095           66509           94.8841         3.1416          209655          141998          67.7294         700000          
+
+ENERGY_BOX_0    582626.5715     630358.0111     0.0000          -45784.5445     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.6353          1000            6.5167          
+
+Steps/sec. : 44633.3319
+MOVE_BOX_0      480012          394048          82.0913         122.7900        80146           76069           94.9130         3.1416          239842          162457          67.7350         800000          
+
+ENERGY_BOX_0    584951.8266     631036.1578     0.0000          -44137.4360     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5960          1000            6.5167          
+
+Steps/sec. : 44263.8279
+MOVE_BOX_0      540107          443218          82.0611         122.7900        90040           85441           94.8923         3.1416          269853          182834          67.7532         900000          
+
+ENERGY_BOX_0    569452.9411     614697.6633     0.0000          -43297.8271     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.6363          1000            6.5167          
+
+Steps/sec. : 43752.9143
+MOVE_BOX_0      600161          492124          81.9987         122.7900        99945           94850           94.9022         3.1416          299894          203242          67.7713         1000000         
+
+ENERGY_BOX_0    547540.5941     602055.8005     0.0000          -52568.3113     -1946.8951      0.0000          0.0000          0.0000          0.0000          0.0000          
+
+STAT_BOX_0      2.5486          1000            6.5167          
+
+Simulation Time (total): 22.7299sec.
+GOMC Serial Version 1.9
+Completed at: Fri Dec  9 11:18:52 2016
+On hostname: potoff39.eng.wayne.edu
