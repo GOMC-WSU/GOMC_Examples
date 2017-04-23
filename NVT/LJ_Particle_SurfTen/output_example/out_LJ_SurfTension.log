@@ -1,0 +1,155 @@
+GOMC Serial Version 1.9
+Started at: Sat Apr 22 18:04:58 2017
+On hostname: potoff39.eng.wayne.edu
+
+Total number of CPUs: 4
+Total number of CPUs available: 4
+Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+
+System name: Linux
+Release: 2.6.32-642.4.2.el6.x86_64
+Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
+Kernel Architecture: x86_64
+Total Ram: 7856.3MB
+Used Ram: 5823.6MB
+Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NVT/LJ_Particle_SurfTen
+
+------------------------------------------------------
+This code was compiled to support the canonical (NVT) ensemble.
+------------------------------------------------------
+
+REMINDER: EXOTIC force field has been selected!
+Temperature of system has been set to 1.00000 K 
+None cached Fourier terms will be used.
+Note: Pressure will be calculated every 1000 steps.
+Warning: Unknown input VolFreq!
+Warning: Electrostatic energy would not be calculated!
+Warning: Long Range Correction has been disabled for standard VDW potential type!
+Reading from Exotic Parameter File file: ././Par.inp
+Finished reading Exotic Parameter File file: ././Par.inp
+Reading from system PDB coordinate file file: ././STEP3_START_LJ_liq_BOX_0.pdb
+Finished reading system PDB coordinate file file: ././STEP3_START_LJ_liq_BOX_0.pdb
+Random number seed: 2879127984
+
+Molecules in PSF:
+Molecule Kind: LJP
+Idx	name	type	charge	mass
+0	LJ	LJ	0.0000	1.0080
+Bonds:
+Angles:
+Dihedrals:
+
+REMINDER! 1-3 and 1-4 Interaction is OFF
+Minimum coordinates in box 0: x =    0.018, y =    0.025, z =    0.071
+Maximum coordinates in box 0: x =   12.497, y =   12.496, z =   37.495
+
+###############################################################################
+########################## INITIAL SIMULATION ENERGY ##########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0      -4455.8347          0.0000          0.0000      -4455.8347          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+###############################################################################
+############################# STARTING SIMULATION #############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        PRESSURE    SURF_TENSION
+
+Printed combined psf to file LJ_SURFTENSION_merged.psf
+MOVE_0:   100000          100000           49177         49.1770          0.1701               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   100000      -4469.6358          0.0000          0.0000      -4469.6358          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   100000         16.1095          1.8159
+
+PRES_0:   100000        -15.1070        -23.7878         -9.7624
+
+Steps/sec. : 50194.3003
+MOVE_0:   200000          200000           99243         49.6215          0.1832               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   200000      -4481.3027          0.0000          0.0000      -4481.3027          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   200000         12.4903         -0.6193
+
+PRES_0:   200000        -15.7602        -21.7142        -22.0404
+
+Steps/sec. : 50966.7363
+MOVE_0:   300000          300000          149257         49.7523          0.1769               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   300000      -4511.8992          0.0000          0.0000      -4511.8992          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   300000         18.7215         -0.2094
+
+PRES_0:   300000        -12.4231        -14.0465        -14.3516
+
+Steps/sec. : 51018.5081
+MOVE_0:   400000          400000          199292         49.8230          0.1735               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   400000      -4482.1534          0.0000          0.0000      -4482.1534          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   400000         20.7979          1.1609
+
+PRES_0:   400000        -10.5200        -16.6688         -7.4031
+
+Steps/sec. : 51133.0065
+MOVE_0:   500000          500000          249323         49.8646          0.1738               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   500000      -4495.2671          0.0000          0.0000      -4495.2671          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   500000         11.1664          1.6667
+
+PRES_0:   500000        -27.9022        -20.3483        -15.2360
+
+Steps/sec. : 51234.0226
+MOVE_0:   600000          600000          299380         49.8967          0.1821               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   600000      -4535.0039          0.0000          0.0000      -4535.0039          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   600000          7.9240          0.6729
+
+PRES_0:   600000        -23.1234        -28.0781        -22.0120
+
+Steps/sec. : 51010.7769
+MOVE_0:   700000          700000          349383         49.9119          0.1674               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   700000      -4518.3245          0.0000          0.0000      -4518.3245          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   700000         11.0186          1.2900
+
+PRES_0:   700000        -26.0906        -21.1159        -16.7232
+
+Steps/sec. : 51040.3307
+MOVE_0:   800000          800000          399446         49.9308          0.1735               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   800000      -4508.5527          0.0000          0.0000      -4508.5527          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   800000         12.6140          1.8291
+
+PRES_0:   800000        -30.0025        -15.9300        -13.2113
+
+Steps/sec. : 50779.9804
+MOVE_0:   900000          900000          449484         49.9427          0.1738               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:   900000      -4472.3785          0.0000          0.0000      -4472.3785          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:   900000         18.0695         -0.0348
+
+PRES_0:   900000        -13.3231        -15.0714        -14.3826
+
+Steps/sec. : 40950.0264
+MOVE_0:  1000000         1000000          499568         49.9568          0.1907               0               0          0.0000          0.7854               0               0          0.0000
+
+ENER_0:  1000000      -4518.6072          0.0000          0.0000      -4518.6072          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STAT_0:  1000000         10.6218          3.4238
+
+PRES_0:  1000000        -26.7719        -28.8152         -9.5332
+
+Simulation Time (total): 20.4357sec.
+GOMC Serial Version 1.9
+Completed at: Sat Apr 22 18:05:19 2017
+On hostname: potoff39.eng.wayne.edu
