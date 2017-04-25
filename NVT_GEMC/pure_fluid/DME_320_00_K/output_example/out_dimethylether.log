@@ -1,4 +1,4 @@
-GOMC Serial Version 1.9
+GOMC Serial Version 2.0
 Started at: Sat Apr 22 20:09:31 2017
 On hostname: potoff13.eng.wayne.edu
 
@@ -242,6 +242,6 @@ STAT_1:  1000000     121475.4689       -147.7149             977        615.2647
 PRES_1:  1000000       -151.4498       -352.7435       -332.1094
 
 Simulation Time (total): 2774.2681sec.
-GOMC Serial Version 1.9
+GOMC Serial Version 2.0
 Completed at: Sat Apr 22 20:55:46 2017
 On hostname: potoff13.eng.wayne.edu
