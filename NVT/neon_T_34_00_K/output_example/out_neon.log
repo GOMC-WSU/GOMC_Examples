@@ -1,359 +1,153 @@
-GOMC Serial Version 0.97
-Started at: Sat Aug 22 17:19:29 2015
-On hostname: potoff40.eng.wayne.edu
+GOMC Serial Version 2.0
+Started at: Sat Apr 22 18:05:15 2017
+On hostname: potoff39.eng.wayne.edu
+
+Total number of CPUs: 4
+Total number of CPUs available: 4
+Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+
+System name: Linux
+Release: 2.6.32-642.4.2.el6.x86_64
+Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
+Kernel Architecture: x86_64
+Total Ram: 7856.3MB
+Used Ram: 5825.8MB
+Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NVT/neon_T_34_00_K
 
 ------------------------------------------------------
 This code was compiled to support the canonical (NVT) ensemble.
 ------------------------------------------------------
 
-Warning: Output fluctuation has been set off, energy ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, pressure ouput for fluctuation will be ignored!
-Reading from Exotic Parameter File file: ./Par_Vrabec01_Noble_Gases_Exotic.inp
-
-Finished reading Exotic Parameter File file: ./Par_Vrabec01_Noble_Gases_Exotic.inp
-
+REMINDER: EXOTIC force field has been selected!
+Temperature of system has been set to 34.00000 K 
+Note: Pressure will be calculated every 1000 steps.
+By default intra box swap frequency has been set to zero
+Warning: Electrostatic energy would not be calculated!
+Reading from Exotic Parameter File file: ./../../common/Par_Vrabec01_Noble_Gases_Exotic.inp
+Finished reading Exotic Parameter File file: ./../../common/Par_Vrabec01_Noble_Gases_Exotic.inp
 Reading from system PDB coordinate file file: ./STEP3_START_NE_sys_BOX_0.pdb
-
 Finished reading system PDB coordinate file file: ./STEP3_START_NE_sys_BOX_0.pdb
+Random number seed: 96449
 
-REMARINDER! 1-4 Interaction and more is OFF
+Molecules in PSF:
+Molecule Kind: NE
+Idx	name	type	charge	mass
+0	NE	NE	0.0000	20.1800
+Bonds:
+Angles:
+Dihedrals:
 
-Min. Box Size: 8000.1
-STARTING SIMULATION!!
+REMINDER! 1-3 and 1-4 Interaction is OFF
+Minimum coordinates in box 0: x =    1.013, y =    1.093, z =    1.111
+Maximum coordinates in box 0: x =   87.968, y =   87.978, z =   87.983
 
+###############################################################################
+########################## INITIAL SIMULATION ENERGY ##########################
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-Volume: 733798 A^3
-Tot # mol: 1000
+ENER_0:        0      10558.5265          0.0000          0.0000      10745.5170       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
+###############################################################################
+############################# STARTING SIMULATION #############################
 
-Energy (in K): total: 10558.5
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-Energy (in K): total: 10558.5
+STITLE:     STEP        PRESSURE        TOTALMOL     TOT_DENSITY
 
-Printed combined psf to file neon_34_00_K.psf
-STEP 99999 of 1000000 (9.9999% done)
+Printed combined psf to file neon_34_00_K_merged.psf
+MOVE_0:   100000          100000           67306         67.3060         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
+ENER_0:   100000      -9021.2253          0.0000          0.0000      -8834.2347       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+STAT_0:   100000          5.9695            1000         45.6661
 
-Volume: 733798 A^3
-Tot # mol: 1000
+PRES_0:   100000         -0.8565         -0.0903         -0.1251
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
+Steps/sec. : 94170.1158
+MOVE_0:   200000          200000          135334         67.6670         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Energy (in K): total: -9240.04
+ENER_0:   200000      -9512.8478          0.0000          0.0000      -9325.8572       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Displace (Box 0) -- tries: 100000; # Accept: 67863; % Accept : 67.863; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
+STAT_0:   200000          5.1571            1000         45.6661
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+PRES_0:   200000         -1.4702         -1.1557         -0.8833
 
-Energy (in K): total: -9240.04
+Steps/sec. : 168352.4372
+MOVE_0:   300000          300000          203607         67.8690         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Steps/sec. : 243902
-STEP 199999 of 1000000 (19.9999% done)
+ENER_0:   300000      -8515.5931          0.0000          0.0000      -8328.6025       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
+STAT_0:   300000          5.5458            1000         45.6661
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+PRES_0:   300000         -0.4349         -0.9267         -0.9814
 
-Volume: 733798 A^3
-Tot # mol: 1000
+Steps/sec. : 138413.1296
+MOVE_0:   400000          400000          271668         67.9170         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
+ENER_0:   400000      -9951.2918          0.0000          0.0000      -9764.3012       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Energy (in K): total: -9681.94
+STAT_0:   400000          4.8997            1000         45.6661
 
-Displace (Box 0) -- tries: 200000; # Accept: 135817; % Accept : 67.9085; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
+PRES_0:   400000         -1.3527         -1.3122         -1.6164
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+Steps/sec. : 136315.5479
+MOVE_0:   500000          500000          339315         67.8630         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Energy (in K): total: -9681.94
+ENER_0:   500000      -8925.8507          0.0000          0.0000      -8738.8601       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Steps/sec. : 250000
-STEP 299999 of 1000000 (29.9999% done)
+STAT_0:   500000          5.5907            1000         45.6661
 
+PRES_0:   500000         -0.8762         -0.7298         -0.6023
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+Steps/sec. : 146449.7756
+MOVE_0:   600000          600000          407059         67.8432         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Volume: 733798 A^3
-Tot # mol: 1000
+ENER_0:   600000      -9923.2375          0.0000          0.0000      -9736.2469       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
+STAT_0:   600000          5.0457            1000         45.6661
 
-Energy (in K): total: -9182.55
+PRES_0:   600000         -1.2558         -1.3156         -1.2720
 
-Displace (Box 0) -- tries: 300000; # Accept: 203293; % Accept : 67.7643; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
+Steps/sec. : 164183.3741
+MOVE_0:   700000          700000          475264         67.8949         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+ENER_0:   700000     -10128.1340          0.0000          0.0000      -9941.1434       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Energy (in K): total: -9182.55
+STAT_0:   700000          5.2997            1000         45.6661
 
-Steps/sec. : 250000
-STEP 399999 of 1000000 (39.9999% done)
+PRES_0:   700000         -0.6866         -1.2445         -1.1501
 
+Steps/sec. : 198979.6509
+MOVE_0:   800000          800000          542891         67.8614         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ENER_0:   800000      -8911.5319          0.0000          0.0000      -8724.5414       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Volume: 733798 A^3
-Tot # mol: 1000
+STAT_0:   800000          5.5162            1000         45.6661
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
+PRES_0:   800000         -0.6724         -0.7804         -0.9789
 
-Energy (in K): total: -10072.6
+Steps/sec. : 198904.4451
+MOVE_0:   900000          900000          610926         67.8807         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
-Displace (Box 0) -- tries: 400000; # Accept: 271220; % Accept : 67.805; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
+ENER_0:   900000      -9698.5368          0.0000          0.0000      -9511.5463       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+STAT_0:   900000          5.3621            1000         45.6661
 
-Energy (in K): total: -10072.6
+PRES_0:   900000         -0.9666         -1.0931         -0.8344
 
-Steps/sec. : 250000
-STEP 499999 of 1000000 (49.9999% done)
+Steps/sec. : 200374.2532
+MOVE_0:  1000000         1000000          678501         67.8501         45.0985               0               0          0.0000          0.7854               0               0          0.0000
 
+ENER_0:  1000000     -10018.1736          0.0000          0.0000      -9831.1830       -186.9906          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+STAT_0:  1000000          5.3795            1000         45.6661
 
-Volume: 733798 A^3
-Tot # mol: 1000
+PRES_0:  1000000         -0.7888         -0.8548         -1.1983
 
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -9756.53
-
-Displace (Box 0) -- tries: 500000; # Accept: 338555; % Accept : 67.711; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -9756.53
-
-Steps/sec. : 250000
-STEP 599999 of 1000000 (59.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 733798 A^3
-Tot # mol: 1000
-
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -10384
-
-Displace (Box 0) -- tries: 600000; # Accept: 406598; % Accept : 67.7663; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -10384
-
-Steps/sec. : 256410
-STEP 699999 of 1000000 (69.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 733798 A^3
-Tot # mol: 1000
-
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -9919.71
-
-Displace (Box 0) -- tries: 700000; # Accept: 474270; % Accept : 67.7529; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -9919.71
-
-Steps/sec. : 250000
-STEP 799999 of 1000000 (79.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 733798 A^3
-Tot # mol: 1000
-
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -9272.86
-
-Displace (Box 0) -- tries: 800000; # Accept: 542462; % Accept : 67.8077; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -9272.86
-
-Steps/sec. : 250000
-STEP 899999 of 1000000 (89.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 733798 A^3
-Tot # mol: 1000
-
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -8708.24
-
-Displace (Box 0) -- tries: 900000; # Accept: 610356; % Accept : 67.8173; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -8708.24
-
-Steps/sec. : 250000
-STEP 999999 of 1000000 (99.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 733798 A^3
-Tot # mol: 1000
-
-Molecule Type NE
--------------------
-Number: 1000 ;
-Density: 0.0456661 g/ml
-
-Energy (in K): total: -10212.5
-
-Displace (Box 0) -- tries: 1000000; # Accept: 678556; % Accept : 67.8556; Max Amt.: 45.0985
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -10212.5
-
-Simulation Time (total): 4.01sec.
+Simulation Time (total): 6.4662sec.
+GOMC Serial Version 2.0
+Completed at: Sat Apr 22 18:05:21 2017
+On hostname: potoff39.eng.wayne.edu

@@ -1,641 +1,246 @@
-GOMC Serial Version 0.97
-Started at: Sun Aug 23 21:08:16 2015
-On hostname: potoff44.eng.wayne.edu
+GOMC Serial Version 2.0
+Started at: Sat Apr 22 20:05:15 2017
+On hostname: potoff39.eng.wayne.edu
+
+Total number of CPUs: 4
+Total number of CPUs available: 4
+Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+
+System name: Linux
+Release: 2.6.32-642.4.2.el6.x86_64
+Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
+Kernel Architecture: x86_64
+Total Ram: 7856.3MB
+Used Ram: 5365.9MB
+Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NVT_GEMC/pure_fluid/neopentane_T_360_00_K
 
 ------------------------------------------------------
 This code was compiled to support the Gibbs ensemble.
 ------------------------------------------------------
 
-Warning: Output fluctuation has been set off, energy ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, pressure ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, molecule number ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, accept angles ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, density ouput for fluctuation will be ignored!
-Reading from CHARMM-Style Parameter File file: ./Par_TraPPE_Alkanes_CHARMM.inp
-
-Finished reading CHARMM-Style Parameter File file: ./Par_TraPPE_Alkanes_CHARMM.inp
-
+REMINDER: CHARMM force field has been selected!
+NVT_GEMC simulation has been selected 
+Temperature of system has been set to 360.00000 K 
+Note: Pressure will be calculated every 1000 steps.
+By default intra box swap frequency has been set to zero
+Warning: Electrostatic energy would not be calculated!
+Reading from CHARMM-Style Parameter File file: ./../../../common/Par_TraPPE_Alkanes_CHARMM.inp
+Finished reading CHARMM-Style Parameter File file: ./../../../common/Par_TraPPE_Alkanes_CHARMM.inp
 Reading from Box 1 PDB coordinate file file: ./STEP3_START_NEO_sys_BOX_0.pdb
-
 Finished reading Box 1 PDB coordinate file file: ./STEP3_START_NEO_sys_BOX_0.pdb
-
 Reading from Box 2 PDB coordinate file file: ./STEP3_START_NEO_sys_BOX_1.pdb
-
 Finished reading Box 2 PDB coordinate file file: ./STEP3_START_NEO_sys_BOX_1.pdb
+Random number seed: 3950228627
 
 Molecules in PSF:
-
 Molecule Kind: NEO
 Idx	name	type	charge	mass
-0	C1	CT	0	12.011
-1	C2	CH3	0	15.035
-2	C3	CH3	0	15.035
-3	C4	CH3	0	15.035
-4	C5	CH3	0	15.035
-
+0	C1	CT	0.0000	12.0110
+1	C2	CH3	0.0000	15.0350
+2	C3	CH3	0.0000	15.0350
+3	C4	CH3	0.0000	15.0350
+4	C5	CH3	0.0000	15.0350
 Bonds:
 [0 1] [0 2] [0 3] [0 4] 
-
 Angles:
 [1 0 4] [1 0 3] [1 0 2] [2 0 4] [2 0 3] [3 0 4] 
-
 Dihedrals:
 
-REMAINDER! 1-4 Interaction is OFF
+REMINDER! 1-3 and 1-4 Interaction is OFF
+Minimum coordinates in box 0: x =    0.554, y =    0.143, z =    0.435
+Maximum coordinates in box 0: x =   76.605, y =   77.000, z =   76.928
+Minimum coordinates in box 1: x =    0.547, y =    0.142, z =    0.503
+Maximum coordinates in box 1: x =   80.532, y =   80.999, z =   80.710
 
-Min. Box Size: 8000.1
-STARTING SIMULATION!!
+###############################################################################
+########################## INITIAL SIMULATION ENERGY ##########################
 
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ENER_0:        0    7805176.6496         19.9989          0.0000    7827760.2525     -22603.6018          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Volume: 494914 A^3
-Tot # mol: 500
+ENER_1:        0    8469440.4719         19.8694          0.0000    8489270.8970     -19850.2946          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Molecule Type NEO
--------------------
-Number: 500 ;
-Density: 0.121041 g/ml
+###############################################################################
+############################# STARTING SIMULATION #############################
 
-Energy (in K): total: 7.80518e+06
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
 
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+STITLE:     STEP          VOLUME        PRESSURE        TOTALMOL     TOT_DENSITY
 
-Volume: 563560 A^3
-Tot # mol: 500
+Printed combined psf to file neopentane_360_00_K_merged.psf
+MOVE_0:   100000           34544           17001         49.2155          2.2617            5024            4008         79.7771          3.1416               0               0          0.0000            9942            2347         23.6069             961             536         55.7752      15956.0874
 
-Molecule Type NEO
--------------------
-Number: 500 ;
-Density: 0.106297 g/ml
+ENER_0:   100000     159404.3382     320370.6606          0.0000    -148552.4074     -12413.9150          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: 8.46944e+06
+STAT_0:   100000     548261.2304         25.1266             390         85.2253
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+PRES_0:   100000         -9.5046         -3.0406          0.5777
 
-Energy (in K): total: 1.62746e+07
+MOVE_1:   100000           34579           16926         48.9488          1.3510            5007            3902         77.9309          3.1416               0               0          0.0000            9943            2237         22.4982             961             536         55.7752      15956.0874
 
-Printed combined psf to file neopentane_360_00_K.psf
-STEP 99999 of 1000000 (9.9999% done)
+ENER_1:   100000      88303.8973     488176.8402          0.0000    -367238.5351     -32634.4077          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_1:   100000     510212.4166         -1.2431             610        143.2420
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+PRES_1:   100000        -39.8454        -57.0161        -32.2571
 
-Volume: 420823 A^3
-Tot # mol: 615
+Steps/sec. : 2991.3464
+MOVE_0:   200000           68882           34222         49.6821          2.5848           10085            8210         81.4080          3.1416               0               0          0.0000           19865            4635         23.3325            1942            1050         54.0680      15151.2168
 
-Molecule Type NEO
--------------------
-Number: 615 ;
-Density: 0.175092 g/ml
+ENER_0:   200000     171343.2528     310276.3821          0.0000    -129660.8295      -9272.2998          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: 53123.7
+STAT_0:   200000     581083.5420          8.4734             347         71.5455
 
-Displace (Box 0) -- tries: 34447; # Accept: 16828; % Accept : 48.8519; Max Amt.: 1.21875
-Rotate (Box 0) -- tries: 5080; # Accept: 3163; % Accept : 62.2638; Max Amt.: 3.14159
-Molecule Transfer (Box 0 -> Box 1) -- tries: 10018; # Accept: 2269; % Accept : 22.6492
-Volume Transfer (Box 0 -> Box 1) -- tries: 1004; # Accept: 547; % Accept : 54.4821; Max Amt.: 2701.96
+PRES_0:   200000        -18.7880        -16.6991        -14.9422
 
+MOVE_1:   200000           69165           34262         49.5366          1.3136           10071            7649         75.9507          3.1416               0               0          0.0000           19990            4482         22.4212            1942            1050         54.0680      15151.2168
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+ENER_1:   200000     109247.5188     569364.3033          0.0000    -420148.0830     -39968.7014          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 637651 A^3
-Tot # mol: 385
+STAT_1:   200000     477390.1050         24.4515             653        163.8820
 
-Molecule Type NEO
--------------------
-Number: 385 ;
-Density: 0.0723385 g/ml
+PRES_1:   200000        -14.2208        -38.6589         -8.5046
 
-Energy (in K): total: 180416
+Steps/sec. : 2365.6599
+MOVE_0:   300000          103404           51732         50.0290          8.6030           15050           12551         83.3953          3.1416               0               0          0.0000           29883            6981         23.3611            2952            1588         53.7940       5633.4684
 
-Displace (Box 1) -- tries: 34431; # Accept: 16947; % Accept : 49.2202; Max Amt.: 2.7281
-Rotate (Box 1) -- tries: 5041; # Accept: 3651; % Accept : 72.4261; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 9979; # Accept: 2384; % Accept : 23.8902
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+ENER_0:   300000     153460.3097     202096.3198          0.0000     -44686.8207      -3949.1893          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+STAT_0:   300000     620427.2285         10.3453             234         45.1873
 
-Energy (in K): total: 233540
+PRES_0:   300000         -4.3698         -7.7474         -7.8224
 
-Steps/sec. : 6157.64
-STEP 199999 of 1000000 (19.9999% done)
+MOVE_1:   300000          103689           51503         49.6706          0.9655           15019           11105         73.9397          3.1416               0               0          0.0000           30003            6715         22.3811            2952            1588         53.7940       5633.4684
 
+ENER_1:   300000      21390.1220     706748.3288          0.0000    -625419.8966     -59938.3101          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+STAT_1:   300000     438046.4185         -4.1316             766        209.5078
 
-Volume: 356329 A^3
-Tot # mol: 739
+PRES_1:   300000        -54.3498        -35.7263        -69.9322
 
-Molecule Type NEO
--------------------
-Number: 739 ;
-Density: 0.248476 g/ml
+Steps/sec. : 2091.9053
+MOVE_0:   400000          137693           69265         50.3039         43.9516           20148           17180         85.2690          3.1416               0               0          0.0000           39910            9209         23.0744            3955            2125         53.7295       5637.1303
 
-Energy (in K): total: -71984.5
+ENER_0:   400000     156378.4919     198764.4955          0.0000     -39168.3661      -3217.6375          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Displace (Box 0) -- tries: 69070; # Accept: 34163; % Accept : 49.4614; Max Amt.: 1.00615
-Rotate (Box 0) -- tries: 10054; # Accept: 5780; % Accept : 57.4896; Max Amt.: 2.08798
-Molecule Transfer (Box 0 -> Box 1) -- tries: 20056; # Accept: 4390; % Accept : 21.8887
-Volume Transfer (Box 0 -> Box 1) -- tries: 1996; # Accept: 1084; % Accept : 54.3086; Max Amt.: 5834.37
+STAT_0:   400000     679226.3453         15.1924             221         38.9825
 
+PRES_0:   400000         -2.4742         -1.9266          5.3786
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+MOVE_1:   400000          138201           68766         49.7580          0.8320           20031           14463         72.2031          3.1416               0               0          0.0000           40062            8930         22.2904            3955            2125         53.7295       5637.1303
 
-Volume: 702144 A^3
-Tot # mol: 261
+ENER_1:   400000     -79949.7328     708218.5485          0.0000    -716567.2125     -71601.0687          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Molecule Type NEO
--------------------
-Number: 261 ;
-Density: 0.0445354 g/ml
+STAT_1:   400000     379247.3017         49.7763             779        246.0971
 
-Energy (in K): total: 174065
+PRES_1:   400000         16.1622         -6.7414        -10.2771
 
-Displace (Box 1) -- tries: 68749; # Accept: 34309; % Accept : 49.9047; Max Amt.: 6.94797
-Rotate (Box 1) -- tries: 9984; # Accept: 7656; % Accept : 76.6827; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 20091; # Accept: 4629; % Accept : 23.0402
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+Steps/sec. : 1894.6106
+MOVE_0:   500000          172212           88475         51.3756         44.4833           25144           21770         86.5813          3.1416               0               0          0.0000           50043           11195         22.3708            4972            2667         53.6404       3561.0134
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+ENER_0:   500000     138810.3511     166039.8680          0.0000     -25349.5782      -1879.9387          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: 102081
+STAT_0:   500000     704174.4936          8.3786             172         29.2644
 
-Steps/sec. : 5296.61
-STEP 299999 of 1000000 (29.9999% done)
+PRES_0:   500000         -3.2755         -2.9786         -2.8241
 
+MOVE_1:   500000          172663           86020         49.8196          0.7886           24919           17461         70.0710          3.1416               0               0          0.0000           50047           10867         21.7136            4972            2667         53.6404       3561.0134
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ENER_1:   500000    -183647.4778     782436.2415          0.0000    -879495.7314     -86587.9879          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 320106 A^3
-Tot # mol: 855
+STAT_1:   500000     354299.1534         30.2923             828        279.9959
 
-Molecule Type NEO
--------------------
-Number: 855 ;
-Density: 0.32001 g/ml
+PRES_1:   500000        -15.3055          2.1186        -42.3453
 
-Energy (in K): total: -271872
+Steps/sec. : 1886.3599
+MOVE_0:   600000          206717          109515         52.9782         44.8559           30237           26555         87.8229          3.1416               0               0          0.0000           59937           12898         21.5193            5940            3173         53.4175       5587.3461
 
-Displace (Box 0) -- tries: 103344; # Accept: 51279; % Accept : 49.6197; Max Amt.: 0.691994
-Rotate (Box 0) -- tries: 15130; # Accept: 8341; % Accept : 55.1289; Max Amt.: 1.5152
-Molecule Transfer (Box 0 -> Box 1) -- tries: 29985; # Accept: 6234; % Accept : 20.7904
-Volume Transfer (Box 0 -> Box 1) -- tries: 3027; # Accept: 1649; % Accept : 54.4764; Max Amt.: 2371.89
+ENER_0:   600000     105503.0707     126828.7875          0.0000     -19836.7628      -1488.9540          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_0:   600000     722019.9733          7.1580             155         25.7202
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+PRES_0:   600000         -3.5861         -2.6759         -2.5692
 
-Volume: 738368 A^3
-Tot # mol: 145
+MOVE_1:   600000          207137          103302         49.8713          0.7476           29948           20455         68.3017          3.1416               0               0          0.0000           60084           12553         20.8924            5940            3173         53.4175       5587.3461
 
-Molecule Type NEO
--------------------
-Number: 145 ;
-Density: 0.0235281 g/ml
+ENER_1:   600000    -249353.9515     790971.3460          0.0000    -945362.1212     -94963.1763          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: 100612
+STAT_1:   600000     336453.6737         25.5071             845        300.9005
 
-Displace (Box 1) -- tries: 103323; # Accept: 54957; % Accept : 53.1895; Max Amt.: 45.1919
-Rotate (Box 1) -- tries: 15038; # Accept: 12295; % Accept : 81.7595; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 30153; # Accept: 6589; % Accept : 21.8519
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+PRES_1:   600000        -65.3645          1.1285         -0.3705
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+Steps/sec. : 1725.5589
+MOVE_0:   700000          241098          130767         54.2381         44.8088           35292           31323         88.7538          3.1416               0               0          0.0000           69798           14653         20.9934            6944            3723         53.6146       5020.9157
 
-Energy (in K): total: -171260
+ENER_0:   700000     126364.6760     149835.8165          0.0000     -21716.4234      -1754.7171          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Steps/sec. : 3607.5
-STEP 399999 of 1000000 (39.9999% done)
+STAT_0:   700000     719744.8243          7.1104             168         27.9655
 
+PRES_0:   700000         -2.6699         -4.0273         -4.7605
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+MOVE_1:   700000          241811          120687         49.9096          0.7854           34984           23321         66.6619          3.1416               0               0          0.0000           70073           14321         20.4373            6944            3723         53.6146       5020.9157
 
-Volume: 306915 A^3
-Tot # mol: 845
+ENER_1:   700000    -241257.2991     750937.1917          0.0000    -900749.1487     -91445.3421          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Molecule Type NEO
--------------------
-Number: 845 ;
-Density: 0.329861 g/ml
+STAT_1:   700000     338728.8227        -12.6207             832        294.2813
 
-Energy (in K): total: -261860
+PRES_1:   700000        -91.3053        -25.3898        -64.2108
 
-Displace (Box 0) -- tries: 137832; # Accept: 68579; % Accept : 49.7555; Max Amt.: 0.725009
-Rotate (Box 0) -- tries: 20007; # Accept: 10826; % Accept : 54.1111; Max Amt.: 3.14159
-Molecule Transfer (Box 0 -> Box 1) -- tries: 40015; # Accept: 8092; % Accept : 20.2224
-Volume Transfer (Box 0 -> Box 1) -- tries: 4005; # Accept: 2172; % Accept : 54.2322; Max Amt.: 4987.12
+Steps/sec. : 1634.1184
+MOVE_0:   800000          275613          151641         55.0195         45.5930           40324           36019         89.3240          3.1416               0               0          0.0000           79842           16466         20.6232            7986            4282         53.6188       2536.8494
 
+ENER_0:   800000     127345.8322     145360.8897          0.0000     -16739.7393      -1275.3182          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+STAT_0:   800000     758198.9599          7.2688             147         23.2287
 
-Volume: 751559 A^3
-Tot # mol: 155
+PRES_0:   800000         -2.8266         -2.8402         -0.0457
 
-Molecule Type NEO
--------------------
-Number: 155 ;
-Density: 0.0247093 g/ml
+MOVE_1:   800000          276175          137889         49.9281          0.6962           39926           26140         65.4711          3.0610               0               0          0.0000           80134           16113         20.1076            7986            4282         53.6188       2536.8494
 
-Energy (in K): total: 122153
+ENER_1:   800000    -368066.6854     751437.8593          0.0000   -1011075.3011    -108429.2436          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Displace (Box 1) -- tries: 137938; # Accept: 77597; % Accept : 56.255; Max Amt.: 45.4595
-Rotate (Box 1) -- tries: 19985; # Accept: 16923; % Accept : 84.6785; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 40218; # Accept: 8437; % Accept : 20.9782
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+STAT_1:   800000     300274.6871         21.8267             853        340.3469
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+PRES_1:   800000        -35.8212          0.5512        -24.2757
 
-Energy (in K): total: -139708
+Steps/sec. : 1603.5331
+MOVE_0:   900000          310220          174596         56.2813         45.9614           45248           40722         89.9973          3.1416               0               0          0.0000           90029           18136         20.1446            8990            4815         53.5595       2808.2596
 
-Steps/sec. : 3431.71
-STEP 499999 of 1000000 (49.9999% done)
+ENER_0:   900000      91865.9999     103833.7132          0.0000     -11124.2436       -843.4697          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_0:   900000     776726.8846          5.7645             121         18.6642
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+PRES_0:   900000         -1.8760         -1.9033         -1.2580
 
-Volume: 278431 A^3
-Tot # mol: 871
+MOVE_1:   900000          310536          155102         49.9465          0.6879           44841           28886         64.4187          2.8010               0               0          0.0000           90136           17757         19.7002            8990            4815         53.5595       2808.2596
 
-Molecule Type NEO
--------------------
-Number: 871 ;
-Density: 0.374793 g/ml
+ENER_1:   900000    -417117.6240     799062.3207          0.0000   -1093468.2639    -122711.6808          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: -428909
+STAT_1:   900000     281746.7624         -2.9614             879        373.7846
 
-Displace (Box 0) -- tries: 172494; # Accept: 85957; % Accept : 49.8319; Max Amt.: 0.736546
-Rotate (Box 0) -- tries: 25096; # Accept: 13383; % Accept : 53.3272; Max Amt.: 1.39121
-Molecule Transfer (Box 0 -> Box 1) -- tries: 50070; # Accept: 9860; % Accept : 19.6924
-Volume Transfer (Box 0 -> Box 1) -- tries: 4979; # Accept: 2673; % Accept : 53.6855; Max Amt.: 4654.17
+PRES_1:   900000        -22.9293        -18.7672        -72.2831
 
+Steps/sec. : 1579.4168
+MOVE_0:  1000000          345068          198893         57.6388         46.1903           50160           45419         90.5482          3.1416               0               0          0.0000          100139           19675         19.6477            9970            5344         53.6008       3144.1932
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+ENER_0:  1000000      99282.8179     113241.0172          0.0000     -13013.6925       -944.5069          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 780042 A^3
-Tot # mol: 129
+STAT_0:  1000000     788390.5181          6.1699             129         19.6038
 
-Molecule Type NEO
--------------------
-Number: 129 ;
-Density: 0.0198136 g/ml
+PRES_0:  1000000         -2.0675         -2.6246         -0.2058
 
-Energy (in K): total: 107258
+MOVE_1:  1000000          344772          172250         49.9606          0.6527           49791           31576         63.4171          2.8744               0               0          0.0000          100100           19304         19.2847            9970            5344         53.6008       3144.1932
 
-Displace (Box 1) -- tries: 172275; # Accept: 99978; % Accept : 58.034; Max Amt.: 46.0267
-Rotate (Box 1) -- tries: 24972; # Accept: 21600; % Accept : 86.4969; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 50114; # Accept: 10231; % Accept : 20.4155
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+ENER_1:  1000000    -472039.0865     771706.7516          0.0000   -1118054.3285    -125691.5097          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+STAT_1:  1000000     270083.1289          9.3120             871        386.3778
 
-Energy (in K): total: -321651
+PRES_1:  1000000        -33.2779          3.0977        -37.9790
 
-Steps/sec. : 3407.16
-STEP 599999 of 1000000 (59.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 257562 A^3
-Tot # mol: 869
-
-Molecule Type NEO
--------------------
-Number: 869 ;
-Density: 0.404231 g/ml
-
-Energy (in K): total: -506260
-
-Displace (Box 0) -- tries: 206982; # Accept: 103230; % Accept : 49.8739; Max Amt.: 0.704184
-Rotate (Box 0) -- tries: 30108; # Accept: 15917; % Accept : 52.8663; Max Amt.: 0.877249
-Molecule Transfer (Box 0 -> Box 1) -- tries: 60224; # Accept: 11506; % Accept : 19.1053
-Volume Transfer (Box 0 -> Box 1) -- tries: 5988; # Accept: 3206; % Accept : 53.5404; Max Amt.: 2026.22
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 800912 A^3
-Tot # mol: 131
-
-Molecule Type NEO
--------------------
-Number: 131 ;
-Density: 0.0195965 g/ml
-
-Energy (in K): total: 106194
-
-Displace (Box 1) -- tries: 206525; # Accept: 123634; % Accept : 59.8639; Max Amt.: 46.4335
-Rotate (Box 1) -- tries: 30009; # Accept: 26391; % Accept : 87.9436; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 60164; # Accept: 11875; % Accept : 19.7377
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -400067
-
-Steps/sec. : 3200
-STEP 699999 of 1000000 (69.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 242053 A^3
-Tot # mol: 862
-
-Molecule Type NEO
--------------------
-Number: 862 ;
-Density: 0.426667 g/ml
-
-Energy (in K): total: -541050
-
-Displace (Box 0) -- tries: 241574; # Accept: 120543; % Accept : 49.899; Max Amt.: 0.628712
-Rotate (Box 0) -- tries: 35024; # Accept: 18411; % Accept : 52.5668; Max Amt.: 1.217
-Molecule Transfer (Box 0 -> Box 1) -- tries: 70195; # Accept: 12795; % Accept : 18.2278
-Volume Transfer (Box 0 -> Box 1) -- tries: 6969; # Accept: 3736; % Accept : 53.6088; Max Amt.: 5177.77
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 816421 A^3
-Tot # mol: 138
-
-Molecule Type NEO
--------------------
-Number: 138 ;
-Density: 0.0202515 g/ml
-
-Energy (in K): total: 105509
-
-Displace (Box 1) -- tries: 241096; # Accept: 147167; % Accept : 61.0408; Max Amt.: 46.7313
-Rotate (Box 1) -- tries: 35022; # Accept: 31157; % Accept : 88.9641; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 70120; # Accept: 13157; % Accept : 18.7635
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -435541
-
-Steps/sec. : 3176.62
-STEP 799999 of 1000000 (79.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 228931 A^3
-Tot # mol: 865
-
-Molecule Type NEO
--------------------
-Number: 865 ;
-Density: 0.452693 g/ml
-
-Energy (in K): total: -606485
-
-Displace (Box 0) -- tries: 276194; # Accept: 137874; % Accept : 49.9193; Max Amt.: 0.558219
-Rotate (Box 0) -- tries: 40061; # Accept: 20982; % Accept : 52.3751; Max Amt.: 1.30699
-Molecule Transfer (Box 0 -> Box 1) -- tries: 80119; # Accept: 13815; % Accept : 17.2431
-Volume Transfer (Box 0 -> Box 1) -- tries: 7988; # Accept: 4289; % Accept : 53.693; Max Amt.: 2468.91
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 829543 A^3
-Tot # mol: 135
-
-Molecule Type NEO
--------------------
-Number: 135 ;
-Density: 0.0194978 g/ml
-
-Energy (in K): total: 108337
-
-Displace (Box 1) -- tries: 275614; # Accept: 171091; % Accept : 62.0763; Max Amt.: 46.9804
-Rotate (Box 1) -- tries: 39961; # Accept: 35847; % Accept : 89.705; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 80063; # Accept: 14180; % Accept : 17.7111
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -498148
-
-Steps/sec. : 3004.81
-STEP 899999 of 1000000 (89.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 215233 A^3
-Tot # mol: 851
-
-Molecule Type NEO
--------------------
-Number: 851 ;
-Density: 0.47371 g/ml
-
-Energy (in K): total: -659432
-
-Displace (Box 0) -- tries: 310420; # Accept: 155044; % Accept : 49.9465; Max Amt.: 0.610189
-Rotate (Box 0) -- tries: 45027; # Accept: 23504; % Accept : 52.1998; Max Amt.: 1.20038
-Molecule Transfer (Box 0 -> Box 1) -- tries: 90193; # Accept: 14739; % Accept : 16.3416
-Volume Transfer (Box 0 -> Box 1) -- tries: 9002; # Accept: 4835; % Accept : 53.7103; Max Amt.: 2258.06
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 843241 A^3
-Tot # mol: 149
-
-Molecule Type NEO
--------------------
-Number: 149 ;
-Density: 0.0211703 g/ml
-
-Energy (in K): total: 116448
-
-Displace (Box 1) -- tries: 310224; # Accept: 194446; % Accept : 62.6792; Max Amt.: 47.2375
-Rotate (Box 1) -- tries: 45025; # Accept: 40665; % Accept : 90.3165; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 90109; # Accept: 15090; % Accept : 16.7464
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -542984
-
-Steps/sec. : 2918
-STEP 999999 of 1000000 (99.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 210932 A^3
-Tot # mol: 813
-
-Molecule Type NEO
--------------------
-Number: 813 ;
-Density: 0.461784 g/ml
-
-Energy (in K): total: -581939
-
-Displace (Box 0) -- tries: 345048; # Accept: 172406; % Accept : 49.9658; Max Amt.: 0.58988
-Rotate (Box 0) -- tries: 49914; # Accept: 25987; % Accept : 52.0635; Max Amt.: 0.758377
-Molecule Transfer (Box 0 -> Box 1) -- tries: 100183; # Accept: 15583; % Accept : 15.5545
-Volume Transfer (Box 0 -> Box 1) -- tries: 10014; # Accept: 5378; % Accept : 53.7048; Max Amt.: 2314.98
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 847541 A^3
-Tot # mol: 187
-
-Molecule Type NEO
--------------------
-Number: 187 ;
-Density: 0.0264346 g/ml
-
-Energy (in K): total: 140700
-
-Displace (Box 1) -- tries: 344812; # Accept: 217145; % Accept : 62.9749; Max Amt.: 47.3177
-Rotate (Box 1) -- tries: 49939; # Accept: 45285; % Accept : 90.6806; Max Amt.: 3.14159
-Molecule Transfer (Box 1 -> Box 0) -- tries: 100090; # Accept: 15896; % Accept : 15.8817
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -441240
-
-Simulation Time (total): 290.44sec.
+Simulation Time (total): 539.1747sec.
+GOMC Serial Version 2.0
+Completed at: Sat Apr 22 20:14:14 2017
+On hostname: potoff39.eng.wayne.edu

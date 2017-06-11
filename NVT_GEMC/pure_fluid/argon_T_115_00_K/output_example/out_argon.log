@@ -1,635 +1,241 @@
-GOMC Serial Version 0.97
-Started at: Sun Aug 23 21:11:11 2015
-On hostname: potoff44.eng.wayne.edu
+GOMC Serial Version 2.0
+Started at: Sat Apr 22 20:05:05 2017
+On hostname: potoff39.eng.wayne.edu
+
+Total number of CPUs: 4
+Total number of CPUs available: 4
+Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+
+System name: Linux
+Release: 2.6.32-642.4.2.el6.x86_64
+Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
+Kernel Architecture: x86_64
+Total Ram: 7856.3MB
+Used Ram: 5359.2MB
+Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NVT_GEMC/pure_fluid/argon_T_115_00_K
 
 ------------------------------------------------------
 This code was compiled to support the Gibbs ensemble.
 ------------------------------------------------------
 
-Warning: Output fluctuation has been set off, energy ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, pressure ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, molecule number ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, accept angles ouput for fluctuation will be ignored!
-Warning: Output fluctuation has been set off, density ouput for fluctuation will be ignored!
-Reading from Exotic Parameter File file: ./Par_Vrabec01_Noble_Gases_Exotic.inp
-
-Finished reading Exotic Parameter File file: ./Par_Vrabec01_Noble_Gases_Exotic.inp
-
+REMINDER: EXOTIC force field has been selected!
+NVT_GEMC simulation has been selected 
+Temperature of system has been set to 115.00000 K 
+Note: Pressure will be calculated every 1000 steps.
+Warning: Unknown input FluctuationFreq!
+By default intra box swap frequency has been set to zero
+Warning: Electrostatic energy would not be calculated!
+Reading from Exotic Parameter File file: ./../../../common/Par_Vrabec01_Noble_Gases_Exotic.inp
+Finished reading Exotic Parameter File file: ./../../../common/Par_Vrabec01_Noble_Gases_Exotic.inp
 Reading from Box 1 PDB coordinate file file: ./STEP3_START_AR_sys_BOX_0.pdb
-
 Finished reading Box 1 PDB coordinate file file: ./STEP3_START_AR_sys_BOX_0.pdb
-
 Reading from Box 2 PDB coordinate file file: ./STEP3_START_AR_sys_BOX_1.pdb
-
 Finished reading Box 2 PDB coordinate file file: ./STEP3_START_AR_sys_BOX_1.pdb
+Random number seed: 183427268
 
 Molecules in PSF:
-
 Molecule Kind: AR
 Idx	name	type	charge	mass
-0	AR	AR	0	39.948
-
+0	AR	AR	0.0000	39.9480
 Bonds:
-
 Angles:
-
 Dihedrals:
 
-REMAINDER! 1-4 Interaction is OFF
+REMINDER! 1-3 and 1-4 Interaction is OFF
+Minimum coordinates in box 0: x =    0.000, y =    0.000, z =    0.000
+Maximum coordinates in box 0: x =   37.000, y =   37.000, z =   37.000
+Minimum coordinates in box 1: x =    0.013, y =    0.090, z =    0.035
+Maximum coordinates in box 1: x =   83.969, y =   83.978, z =   83.984
 
-Min. Box Size: 8000.1
-STARTING SIMULATION!!
+###############################################################################
+########################## INITIAL SIMULATION ENERGY ##########################
 
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ENER_0:        0   14312409.0872          0.0000          0.0000   14338253.2067     -25844.1194          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Volume: 57960.6 A^3
-Tot # mol: 1000
+ENER_1:        0     894319.3949          0.0000          0.0000     896649.9654      -2330.5705          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-Molecule Type AR
--------------------
-Number: 1000 ;
-Density: 1.14449 g/ml
+###############################################################################
+############################# STARTING SIMULATION #############################
 
-Energy (in K): total: 1.43124e+07
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
 
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+STITLE:     STEP          VOLUME        PRESSURE        TOTALMOL     TOT_DENSITY
 
-Volume: 642736 A^3
-Tot # mol: 1000
+Printed combined psf to file argon_115_00_K_merged.psf
+MOVE_0:   100000           39348           19219         48.8437          0.4385               0               0          0.0000          0.7854               0               0          0.0000           10102            1308         12.9479             992             522         52.6210       1593.6887
 
-Molecule Type AR
--------------------
-Number: 1000 ;
-Density: 0.103208 g/ml
+ENER_0:   100000    -715761.6155          0.0000          0.0000    -681942.4635     -33819.1520          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: 894319
+STAT_0:   100000      72682.5540         -6.1828            1281       1169.1309
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+PRES_0:   100000       -183.5985       -155.1999       -133.9992
 
-Energy (in K): total: 1.52067e+07
+MOVE_1:   100000           39541           22063         55.7978         42.8180               0               0          0.0000          0.7854               0               0          0.0000           10017            1589         15.8630             992             522         52.6210       1593.6887
 
-Printed combined psf to file argon_115_00_K.psf
-STEP 99999 of 1000000 (9.9999% done)
+ENER_1:   100000     -31888.2187          0.0000          0.0000     -30655.1613      -1233.0574          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_1:   100000     628013.6960         12.7574             719         75.9458
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+PRES_1:   100000         -5.5190         -3.9900         -5.1264
 
-Volume: 69734.4 A^3
-Tot # mol: 1226
+Steps/sec. : 5810.6718
+MOVE_0:   200000           78952           39045         49.4541          0.4105               0               0          0.0000          0.7854               0               0          0.0000           20125            1681          8.3528            2014            1068         53.0288        954.2395
 
-Molecule Type AR
--------------------
-Number: 1226 ;
-Density: 1.16624 g/ml
+ENER_0:   200000    -794732.3625          0.0000          0.0000    -757336.5977     -37395.7648          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: -686885
+STAT_0:   200000      71710.7791         74.3324            1338       1237.7014
 
-Displace (Box 0) -- tries: 39818; # Accept: 19481; % Accept : 48.9251; Max Amt.: 0.387121
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 10155; # Accept: 1218; % Accept : 11.9941
-Volume Transfer (Box 0 -> Box 1) -- tries: 985; # Accept: 505; % Accept : 51.269; Max Amt.: 412.883
+PRES_0:   200000        -43.4121       -162.9120        -27.6493
 
+MOVE_1:   200000           79104           45379         57.3663         42.8401               0               0          0.0000          0.7854               0               0          0.0000           19805            2019         10.1944            2014            1068         53.0288        954.2395
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+ENER_1:   200000     -28419.1475          0.0000          0.0000     -27375.4612      -1043.6863          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 630962 A^3
-Tot # mol: 774
+STAT_1:   200000     628985.4709         13.0901             662         69.8171
 
-Molecule Type AR
--------------------
-Number: 774 ;
-Density: 0.0813733 g/ml
+PRES_1:   200000         -2.5278         -2.4434         -4.5172
 
-Energy (in K): total: -41084.2
+Steps/sec. : 4213.4832
+MOVE_0:   300000          118465           58830         49.6602          0.3834               0               0          0.0000          0.7854               0               0          0.0000           30058            1960          6.5207            3005            1601         53.2779        975.5239
 
-Displace (Box 1) -- tries: 39073; # Accept: 21344; % Accept : 54.626; Max Amt.: 42.8849
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 9969; # Accept: 1444; % Accept : 14.4849
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+ENER_0:   300000    -813571.7703          0.0000          0.0000    -775527.9622     -38043.8081          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+STAT_0:   300000      73147.9845          6.6703            1363       1236.0547
 
-Energy (in K): total: -727970
+PRES_0:   300000       -130.0541        -93.5963       -213.2749
 
-Steps/sec. : 11299.4
-STEP 199999 of 1000000 (19.9999% done)
+MOVE_1:   300000          118672           69089         58.2185         42.8074               0               0          0.0000          0.7854               0               0          0.0000           29800            2323          7.7953            3005            1601         53.2779        975.5239
 
+ENER_1:   300000     -27022.6785          0.0000          0.0000     -26054.1189       -968.5596          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+STAT_1:   300000     627548.2655         12.9989             637         67.3343
 
-Volume: 69652.8 A^3
-Tot # mol: 1268
+PRES_1:   300000         -2.6071         -3.9940         -1.4741
 
-Molecule Type AR
--------------------
-Number: 1268 ;
-Density: 1.20761 g/ml
+Steps/sec. : 3623.7946
+MOVE_0:   400000          158178           78730         49.7730          0.3771               0               0          0.0000          0.7854               0               0          0.0000           40042            2253          5.6266            3957            2105         53.1969       1109.6148
 
-Energy (in K): total: -739029
+ENER_0:   400000    -818575.6660          0.0000          0.0000    -780023.9720     -38551.6941          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Displace (Box 0) -- tries: 79199; # Accept: 39221; % Accept : 49.5221; Max Amt.: 0.405787
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 19998; # Accept: 1583; % Accept : 7.91579
-Volume Transfer (Box 0 -> Box 1) -- tries: 1940; # Accept: 1019; % Accept : 52.5258; Max Amt.: 946.75
+STAT_0:   400000      74425.7719         45.7169            1384       1233.5505
 
+PRES_0:   400000        -57.5448        -53.7170       -208.4685
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+MOVE_1:   400000          157972           92923         58.8224         42.7783               0               0          0.0000          0.7854               0               0          0.0000           39851            2637          6.6171            3957            2105         53.1969       1109.6148
 
-Volume: 631043 A^3
-Tot # mol: 732
+ENER_1:   400000     -26135.3428          0.0000          0.0000     -25227.7435       -907.5992          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Molecule Type AR
--------------------
-Number: 732 ;
-Density: 0.0769478 g/ml
+STAT_1:   400000     626270.4781         12.6158             616         65.2474
 
-Energy (in K): total: -35264.6
+PRES_1:   400000         -2.6473         -2.7361         -2.4205
 
-Displace (Box 1) -- tries: 78839; # Accept: 44094; % Accept : 55.9292; Max Amt.: 42.8867
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 20024; # Accept: 1851; % Accept : 9.24391
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+Steps/sec. : 3840.2655
+MOVE_0:   500000          197743           98575         49.8501          0.4235               0               0          0.0000          0.7854               0               0          0.0000           50019            2536          5.0701            4982            2648         53.1513        790.2198
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+ENER_0:   500000    -823833.0061          0.0000          0.0000    -785341.5118     -38491.4943          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: -774294
+STAT_0:   500000      75840.4148        -40.4857            1396       1221.0372
 
-Steps/sec. : 10471.2
-STEP 299999 of 1000000 (29.9999% done)
+PRES_0:   500000       -219.9967        -48.7696       -309.2438
 
+MOVE_1:   500000          197604          117311         59.3667         42.7461               0               0          0.0000          0.7854               0               0          0.0000           49652            2932          5.9051            4982            2648         53.1513        790.2198
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+ENER_1:   500000     -27436.8182          0.0000          0.0000     -26562.2600       -874.5581          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 70430.9 A^3
-Tot # mol: 1296
+STAT_1:   500000     624855.8352         12.2900             604         64.1211
 
-Molecule Type AR
--------------------
-Number: 1296 ;
-Density: 1.22063 g/ml
+PRES_1:   500000         -2.9399         -2.2586         -2.8153
 
-Energy (in K): total: -761418
+Steps/sec. : 3163.3036
+MOVE_0:   600000          237151          118296         49.8821          0.3824               0               0          0.0000          0.7854               0               0          0.0000           60036            2849          4.7455            5909            3152         53.3424       1246.8190
 
-Displace (Box 0) -- tries: 118499; # Accept: 58891; % Accept : 49.6975; Max Amt.: 0.371641
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 30056; # Accept: 1874; % Accept : 6.23503
-Volume Transfer (Box 0 -> Box 1) -- tries: 2894; # Accept: 1539; % Accept : 53.179; Max Amt.: 462.764
+ENER_0:   600000    -826748.6744          0.0000          0.0000    -787885.2810     -38863.3934          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_0:   600000      76520.1657         48.3055            1409       1221.4601
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+PRES_0:   600000        -75.5587       -103.5790       -132.5113
 
-Volume: 630265 A^3
-Tot # mol: 704
+MOVE_1:   600000          237221          142028         59.8716         42.7306               0               0          0.0000          0.7854               0               0          0.0000           59683            3258          5.4588            5909            3152         53.3424       1246.8190
 
-Molecule Type AR
--------------------
-Number: 704 ;
-Density: 0.0740958 g/ml
+ENER_1:   600000     -23955.1027          0.0000          0.0000     -23116.8741       -838.2286          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: -33803.6
+STAT_1:   600000     624176.0843         12.4947             591         62.8094
 
-Displace (Box 1) -- tries: 118476; # Accept: 67437; % Accept : 56.9204; Max Amt.: 42.8691
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 30075; # Accept: 2170; % Accept : 7.2153
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+PRES_1:   600000         -1.7490         -1.9416         -2.8142
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+Steps/sec. : 3539.4364
+MOVE_0:   700000          276560          138032         49.9103          0.3720               0               0          0.0000          0.7854               0               0          0.0000           70094            3233          4.6124            6938            3711         53.4880        775.2174
 
-Energy (in K): total: -795221
+ENER_0:   700000    -831066.6221          0.0000          0.0000    -792099.4243     -38967.1978          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Steps/sec. : 10090.8
-STEP 399999 of 1000000 (39.9999% done)
+STAT_0:   700000      77076.4964         33.8620            1416       1218.6682
 
+PRES_0:   700000        -87.4551       -166.8776       -100.5623
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+MOVE_1:   700000          276627          166653         60.2447         42.7179               0               0          0.0000          0.7854               0               0          0.0000           69781            3649          5.2292            6938            3711         53.4880        775.2174
 
-Volume: 71397.2 A^3
-Tot # mol: 1311
+ENER_1:   700000     -23729.1206          0.0000          0.0000     -22909.9008       -819.2198          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Molecule Type AR
--------------------
-Number: 1311 ;
-Density: 1.21805 g/ml
+STAT_1:   700000     623619.7536         12.4847             584         62.1208
 
-Energy (in K): total: -769693
+PRES_1:   700000         -2.6213         -2.0220         -1.4211
 
-Displace (Box 0) -- tries: 158338; # Accept: 78881; % Accept : 49.8181; Max Amt.: 0.431062
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 39898; # Accept: 2184; % Accept : 5.47396
-Volume Transfer (Box 0 -> Box 1) -- tries: 3883; # Accept: 2089; % Accept : 53.7986; Max Amt.: 1534.75
+Steps/sec. : 3354.9898
+MOVE_0:   800000          316352          157955         49.9301          0.3661               0               0          0.0000          0.7854               0               0          0.0000           80163            3597          4.4871            7918            4248         53.6499        830.4899
 
+ENER_0:   800000    -828811.3965          0.0000          0.0000    -789949.3731     -38862.0234          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+STAT_0:   800000      77831.8551         29.1851            1421       1211.1025
 
-Volume: 629299 A^3
-Tot # mol: 689
+PRES_0:   800000       -100.8337       -122.9654       -144.8750
 
-Molecule Type AR
--------------------
-Number: 689 ;
-Density: 0.0726284 g/ml
+MOVE_1:   800000          315695          191221         60.5714         42.7007               0               0          0.0000          0.7854               0               0          0.0000           79872            4018          5.0305            7918            4248         53.6499        830.4899
 
-Energy (in K): total: -32231.1
+ENER_1:   800000     -23836.0681          0.0000          0.0000     -23029.8394       -806.2287          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Displace (Box 1) -- tries: 157843; # Accept: 90180; % Accept : 57.1327; Max Amt.: 42.8472
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 40038; # Accept: 2495; % Accept : 6.23158
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+STAT_1:   800000     622864.3949         12.6389             579         61.6637
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+PRES_1:   800000         -1.3161         -2.1053         -1.8681
 
-Energy (in K): total: -801924
+Steps/sec. : 3358.5290
+MOVE_0:   900000          355869          177768         49.9532          0.4195               0               0          0.0000          0.7854               0               0          0.0000           90190            4034          4.4728            8921            4784         53.6263        527.2724
 
-Steps/sec. : 9861.93
-STEP 499999 of 1000000 (49.9999% done)
+ENER_0:   900000    -815648.2166          0.0000          0.0000    -777332.9173     -38315.2992          0.0000          0.0000          0.0000          0.0000          0.0000
 
+STAT_0:   900000      79164.8171        -18.9039            1423       1192.3860
 
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
+PRES_0:   900000       -205.1668       -140.7303       -166.2836
 
-Volume: 71491.3 A^3
-Tot # mol: 1327
+MOVE_1:   900000          355062          216321         60.9249         42.6702               0               0          0.0000          0.7854               0               0          0.0000           89958            4457          4.9545            8921            4784         53.6263        527.2724
 
-Molecule Type AR
--------------------
-Number: 1327 ;
-Density: 1.23129 g/ml
+ENER_1:   900000     -22574.5238          0.0000          0.0000     -21772.1381       -802.3857          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Energy (in K): total: -789761
+STAT_1:   900000     621531.4329         13.2507             577         61.5824
 
-Displace (Box 0) -- tries: 198069; # Accept: 98785; % Accept : 49.874; Max Amt.: 0.394978
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 49781; # Accept: 2486; % Accept : 4.99387
-Volume Transfer (Box 0 -> Box 1) -- tries: 4868; # Accept: 2614; % Accept : 53.6976; Max Amt.: 716.656
+PRES_1:   900000         -1.7368         -0.8914         -0.7704
 
+Steps/sec. : 3282.7554
+MOVE_0:  1000000          395254          197482         49.9633          0.3763               0               0          0.0000          0.7854               0               0          0.0000          100162            4373          4.3659            9919            5331         53.7453        925.6791
 
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
+ENER_0:  1000000    -850817.8885          0.0000          0.0000    -811089.1235     -39728.7649          0.0000          0.0000          0.0000          0.0000          0.0000
 
-Volume: 629205 A^3
-Tot # mol: 673
+STAT_0:  1000000      79820.7046        -14.9434            1455       1209.1819
 
-Molecule Type AR
--------------------
-Number: 673 ;
-Density: 0.0709524 g/ml
+PRES_0:  1000000       -126.9469       -175.2944       -198.7494
 
-Energy (in K): total: -34552.9
+MOVE_1:  1000000          394716          241401         61.1581         42.6552               0               0          0.0000          0.7854               0               0          0.0000           99949            4828          4.8305            9919            5331         53.7453        925.6791
 
-Displace (Box 1) -- tries: 197143; # Accept: 113673; % Accept : 57.6602; Max Amt.: 42.8451
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 50139; # Accept: 2813; % Accept : 5.6104
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
+ENER_1:  1000000     -21125.0346          0.0000          0.0000     -20408.4242       -716.6104          0.0000          0.0000          0.0000          0.0000          0.0000
 
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
+STAT_1:  1000000     620875.5454         12.0744             545         58.2286
 
-Energy (in K): total: -824314
+PRES_1:  1000000         -0.7757         -0.8436         -3.0133
 
-Steps/sec. : 9737.1
-STEP 599999 of 1000000 (59.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 71792.9 A^3
-Tot # mol: 1328
-
-Molecule Type AR
--------------------
-Number: 1328 ;
-Density: 1.22705 g/ml
-
-Energy (in K): total: -790278
-
-Displace (Box 0) -- tries: 237313; # Accept: 118426; % Accept : 49.9029; Max Amt.: 0.336431
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 59751; # Accept: 2800; % Accept : 4.68611
-Volume Transfer (Box 0 -> Box 1) -- tries: 5888; # Accept: 3165; % Accept : 53.7534; Max Amt.: 420.722
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 628903 A^3
-Tot # mol: 672
-
-Molecule Type AR
--------------------
-Number: 672 ;
-Density: 0.070881 g/ml
-
-Energy (in K): total: -29757.5
-
-Displace (Box 1) -- tries: 236836; # Accept: 136957; % Accept : 57.8278; Max Amt.: 42.8382
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 60212; # Accept: 3128; % Accept : 5.19498
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -820036
-
-Steps/sec. : 9398.5
-STEP 699999 of 1000000 (69.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 71755.1 A^3
-Tot # mol: 1341
-
-Molecule Type AR
--------------------
-Number: 1341 ;
-Density: 1.23971 g/ml
-
-Energy (in K): total: -796276
-
-Displace (Box 0) -- tries: 277020; # Accept: 138350; % Accept : 49.9422; Max Amt.: 0.393415
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 69810; # Accept: 3096; % Accept : 4.43489
-Volume Transfer (Box 0 -> Box 1) -- tries: 6873; # Accept: 3702; % Accept : 53.8629; Max Amt.: 998.047
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 628941 A^3
-Tot # mol: 659
-
-Molecule Type AR
--------------------
-Number: 659 ;
-Density: 0.0695056 g/ml
-
-Energy (in K): total: -30938
-
-Displace (Box 1) -- tries: 276204; # Accept: 160209; % Accept : 58.0039; Max Amt.: 42.8391
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 70093; # Accept: 3437; % Accept : 4.90349
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -827214
-
-Steps/sec. : 9532.89
-STEP 799999 of 1000000 (79.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 73705.4 A^3
-Tot # mol: 1359
-
-Molecule Type AR
--------------------
-Number: 1359 ;
-Density: 1.22311 g/ml
-
-Energy (in K): total: -799370
-
-Displace (Box 0) -- tries: 316075; # Accept: 157939; % Accept : 49.9688; Max Amt.: 0.430817
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 79827; # Accept: 3399; % Accept : 4.25796
-Volume Transfer (Box 0 -> Box 1) -- tries: 7885; # Accept: 4241; % Accept : 53.7857; Max Amt.: 843.685
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 626991 A^3
-Tot # mol: 641
-
-Molecule Type AR
--------------------
-Number: 641 ;
-Density: 0.0678174 g/ml
-
-Energy (in K): total: -29950.8
-
-Displace (Box 1) -- tries: 316024; # Accept: 184245; % Accept : 58.301; Max Amt.: 42.7947
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 80189; # Accept: 3758; % Accept : 4.68643
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -829321
-
-Steps/sec. : 9208.1
-STEP 899999 of 1000000 (89.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 72051.6 A^3
-Tot # mol: 1343
-
-Molecule Type AR
--------------------
-Number: 1343 ;
-Density: 1.23645 g/ml
-
-Energy (in K): total: -804299
-
-Displace (Box 0) -- tries: 355494; # Accept: 177687; % Accept : 49.9831; Max Amt.: 0.393863
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 89803; # Accept: 3685; % Accept : 4.10343
-Volume Transfer (Box 0 -> Box 1) -- tries: 8875; # Accept: 4789; % Accept : 53.9606; Max Amt.: 1232.89
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 628645 A^3
-Tot # mol: 657
-
-Molecule Type AR
--------------------
-Number: 657 ;
-Density: 0.0693273 g/ml
-
-Energy (in K): total: -30813
-
-Displace (Box 1) -- tries: 355603; # Accept: 207889; % Accept : 58.461; Max Amt.: 42.8323
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 90225; # Accept: 4028; % Accept : 4.46439
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -835112
-
-Steps/sec. : 9337.07
-STEP 999999 of 1000000 (99.9999% done)
-
-
-------------------------
---    ==========      --
---  === BOX 0  ===    --
---    ==========      --
-------------------------
-
-Volume: 73052.1 A^3
-Tot # mol: 1349
-
-Molecule Type AR
--------------------
-Number: 1349 ;
-Density: 1.22496 g/ml
-
-Energy (in K): total: -794432
-
-Displace (Box 0) -- tries: 394515; # Accept: 197229; % Accept : 49.9928; Max Amt.: 0.390914
-Rotate (Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 0 -> Box 1) -- tries: 99883; # Accept: 3968; % Accept : 3.97265
-Volume Transfer (Box 0 -> Box 1) -- tries: 9849; # Accept: 5302; % Accept : 53.8329; Max Amt.: 475.407
-
-
-------------------------
---    ==========      --
---  === BOX 1  ===    --
---    ==========      --
-------------------------
-
-Volume: 627644 A^3
-Tot # mol: 651
-
-Molecule Type AR
--------------------
-Number: 651 ;
-Density: 0.0688037 g/ml
-
-Energy (in K): total: -29667.2
-
-Displace (Box 1) -- tries: 395426; # Accept: 232203; % Accept : 58.7222; Max Amt.: 42.8096
-Rotate (Box 1) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 0.785398
-Molecule Transfer (Box 1 -> Box 0) -- tries: 100327; # Accept: 4317; % Accept : 4.30293
-Volume Transfer (Box 1 -> Box 0) -- tries: 0; # Accept: 0; % Accept : -nan; Max Amt.: 500
-
-------------------------
---    ==========      --
---  === SYSTEM ===    --
---    ==========      --
-------------------------
-
-Energy (in K): total: -824100
-
-Simulation Time (total): 102.01sec.
+Simulation Time (total): 272.9364sec.
+GOMC Serial Version 2.0
+Completed at: Sat Apr 22 20:09:38 2017
+On hostname: potoff39.eng.wayne.edu
