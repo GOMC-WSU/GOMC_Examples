@@ -1,40 +1,72 @@
-GOMC Serial Version 2.0
-Started at: Mon Apr 24 19:23:47 2017
-On hostname: potoff14.eng.wayne.edu
+Info: GOMC Version 2.1
+Info: Start Time: Tue Sep  5 15:06:39 2017
+Info: Host Name: potoff39.eng.wayne.edu
+CPU information:
+Info: Total number of CPUs: 4
+Info: Total number of CPUs available: 4
+Info: Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+Info: System name: Linux
+Info: Release: 3.10.0-514.16.1.el7.x86_64
+Info: Version: #1 SMP Wed Apr 12 07:10:20 CDT 2017
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 7806.1MB
+Info: Used Ram: 7348.6MB
+Info: Working in the current directory: /home4/soroush/Desktop/validation/GOMC_Examples/NPT/DME_constArea_340_00_K
+GPU information:
+Info: Device Number: 0
+Info: Device name: Tesla K40c
+Info: Memory Clock Rate (KHz): 3004000
+Info: Memory Bus Width (bits): 384
+Info: Peak Memory Bandwidth (GB/s): 288.384000
+Info: Device Number: 1
+Info: Device name: GeForce GTX 660 Ti
+Info: Memory Clock Rate (KHz): 3004000
+Info: Memory Bus Width (bits): 192
+Info: Peak Memory Bandwidth (GB/s): 144.192000
+Info: Using Device Number: 0
+Info: GOMC COMPILED TO RUN ISOBARIC-ISOTHERMAL ENSEMBLE.
+Info: Number of threads                  1 
 
-Total number of CPUs: 32
-Total number of CPUs available: 32
-Model name: Intel(R) Xeon(R) CPU E5-2640 v3 @ 2.60GHz
+Reading Input File:                      in.conf
+Info: Restart simulation                 Active 
+Info: Random seed                        Active 
+Info: PARAMETER file: EXOTIC format!
+Info: Input Pressure                     17.0620 bar
+Info: Input Temperature                  340.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A.
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Ewald Summation                    Active 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Cache Ewald Fourier                Active 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      100000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.4000 
+Info: Rotation move frequency            0.2800 
+Info: Molecule swap move frequency       0.0000 
+Info: Intra-Swap move frequency          0.3000 
+Info: Volume move frequency              0.0200 
+Info: Simulation dimension of box        0: 45.0000 55.0000 45.0000 
+Info: Volume change using constant X-Y area.
+Info: Pressure calculation               Inactive 
+Info: Output name                        dimethylether_NPT 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Note: Pressure Calculation Inactived. Pressure average output will be ignored.
+Note: Pressure Calculation Inactived. Pressure output will be ignored.
+Finished Reading Input File:             in.conf
 
-System name: Linux
-Release: 3.10.0-327.4.5.el7.x86_64
-Version: #1 SMP Mon Jan 25 13:30:47 CST 2016
-Kernel Architecture: x86_64
-Total Ram: 31904.2MB
-Used Ram: 28404.5MB
-Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NPT/DME_constArea_340_00_K
-
-------------------------------------------------------
-This code was compiled to support the isobaric-isothermal ensemble.
-------------------------------------------------------
-
-Number of threads has been set to: 4
-REMINDER: EXOTIC force field has been selected!
-Pressure of system has been set to 17.06200 bar 
-Temperature of system has been set to 340.00000 K 
-Cut off  is set to 10.00000 A.
-Cut off Low is set to 1.00000 A.
-Ewald Summation method will be used to calculate electrostatic interactions.
-Fourier terms will be cached to increase the code performance.
-Note: Volume will change with constant X-Y area!
-Warning: Pressure calculation is turned off.
-Warning: Pressure calculation has been turn off, pressure output for block average will be ignored!
-Warning: Pressure calculation has been turn off, pressure fluctuation output will be ignored!
-Reading from Exotic Parameter File file: ././../../common/Par_DME_Exotic.inp
-Finished reading Exotic Parameter File file: ././../../common/Par_DME_Exotic.inp
-Reading from system PDB coordinate file file: ./STEP3_START_DME_NEO_sys_BOX_0.pdb
-Finished reading system PDB coordinate file file: ./STEP3_START_DME_NEO_sys_BOX_0.pdb
-Random number seed: 41883276
+Reading from EXOTIC Parameter File:     ./../../common/Par_DME_Exotic.inp
+Finished reading EXOTIC Parameter File:     ./../../common/Par_DME_Exotic.inp
+Reading from system PDB coordinate file:     STEP3_START_DME_NEO_sys_BOX_0.pdb
+Finished reading system PDB coordinate file:     STEP3_START_DME_NEO_sys_BOX_0.pdb
+Random number seed: 3932806897
 
 Molecules in PSF:
 Molecule Kind: DME
@@ -42,104 +74,125 @@ Idx	name	type	charge	mass
 0	C1	CT3	0.2650	15.0347
 1	O1	OT	-0.5300	15.9994
 2	C2	CT3	0.2650	15.0347
+
 Bonds:
 [0 1] [1 2] 
+
 Angles:
 [0 1 2] 
+
 Dihedrals:
 
-REMINDER! 1-3 and 1-4 Interaction is OFF
-Minimum coordinates in box 0: x =    0.003, y =    0.041, z =    0.001
-Maximum coordinates in box 0: x =   44.999, y =   54.981, z =   26.882
-Box 0, RecipVectors:  11482, kmax: 21, alpha: 0.3393076
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+CT3  OT                         FIX               1.4100 
 
-###############################################################################
-########################## INITIAL SIMULATION ENERGY ##########################
+
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+CT3  OT  CT3           31250.000000             112.0000 
+
+
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+
+Minimum coordinates in box 1: x =    0.003, y =    0.041, z =    0.001
+Maximum coordinates in box 1: x =   44.999, y =   54.981, z =   26.882
+Wrapping molecules inside the simulation box 1:
+box: 0, RecipVectors: 11482, kmax: 21
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
 
 ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
 ENER_0:        0     -70338.5291     722387.2474          0.0000    -541655.1366     -28207.8920    -222862.7478    -103874.5960     281241.2070   -6735151.7288    6334922.3700
 
-###############################################################################
-############################# STARTING SIMULATION #############################
-
-MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
-
-ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
-
 STITLE:     STEP          VOLUME        TOTALMOL     TOT_DENSITY
 
-Printed combined psf to file dimethylether_NPT_merged.psf
-MOVE_0:   100000           40082           20279         50.5938          0.5372           27994           14104         50.3822          1.3519           29914            3683         12.3120            2010            1060         52.7363       1405.0286
+STAT_0:        0     111375.0000             500        343.4301
 
-ENER_0:   100000    -159133.0504     587442.8118          0.0000    -422593.6984     -30732.2886    -293249.8753    -107940.6572     173165.2326   -6735151.7288    6376677.2782
+################################################################################
+############################# STARTING SIMULATION ##############################
 
-STAT_0:   100000     102226.4896             500        374.1645
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      Printed combined psf to file dimethylether_NPT_merged.psf
+MOVE_0:   100000           39952           20016         50.1001          0.6097           27968           14084         50.3576          1.1312           30012            3572         11.9019            2068            1075         51.9826        787.8213
 
-Steps/sec. : 225.8422
-MOVE_0:   200000           80154           40368         50.3631          0.5614           55901           28095         50.2585          1.2902           59962            7892         13.1617            3983            2080         52.2219       1377.3334
+ENER_0:   100000    -128909.4687     678003.3377          0.0000    -454128.8700     -31687.9013    -321096.0350    -112643.4090     172182.0518   -6735151.7288    6354517.0511
 
-ENER_0:   200000    -207824.1218     580719.6768          0.0000    -456880.8172     -32242.8668    -299420.1146    -106673.3831     165957.0254   -6735151.7288    6376447.9719
+STAT_0:   100000      99143.6430             500        385.7991
 
-STAT_0:   200000      97437.1789             500        392.5558
+Steps/sec. : 30.2422
+MOVE_0:   200000           80117           40115         50.0705          0.5238           55988           28137         50.2554          1.1610           59830            7272         12.1544            4065            2111         51.9311        560.9564
 
-Steps/sec. : 245.1036
-MOVE_0:   300000          120520           60594         50.2771          0.5490           83815           42084         50.2106          1.2931           89710           11456         12.7700            5955            3123         52.4433       1373.0682
+ENER_0:   200000    -170100.9513     679400.5211          0.0000    -476932.6581     -34551.2569    -338017.5574    -122780.9248     165535.2140   -6735151.7288    6354379.8822
 
-ENER_0:   300000    -221942.6481     584432.9173          0.0000    -467093.2508     -35462.0288    -303820.2858    -109358.0420     161522.1102   -6735151.7288    6379167.3748
+STAT_0:   200000      90927.3426             500        420.6603
 
-STAT_0:   300000      88592.0542             500        431.7489
+Steps/sec. : 35.6706
+MOVE_0:   300000          120068           60134         50.0833          0.5310           84043           42217         50.2326          1.3326           89782           10044         11.1871            6107            3175         51.9895        858.6132
 
-Steps/sec. : 257.7105
-MOVE_0:   400000          160347           80549         50.2342          0.5361          111698           56048         50.1782          1.1857          120050           14570         12.1366            7905            4147         52.4605        804.7400
+ENER_0:   300000    -207523.1232     683971.9458          0.0000    -510925.5717     -39475.3422    -341094.1550    -125587.8069     165098.3769   -6735151.7288    6354547.0038
 
-ENER_0:   400000    -282136.7935     579106.3707          0.0000    -501456.9699     -38595.8978    -321190.2965    -120944.6576     157059.5437   -6735151.7288    6377846.5463
+STAT_0:   300000      79585.2245             500        480.6109
 
-STAT_0:   400000      81398.6500             500        469.9037
+Steps/sec. : 39.7608
+   1.0584           90190           10739         11.9071            6085            3205         52.6705        959.5982
 
-Steps/sec. : 282.3465
-MOVE_0:   500000          200441          100636         50.2073          0.5593          139501           69959         50.1495          1.0064          150127           17198         11.4556            9931            5200         52.3613        801.9738
+ENER_0:   300000    -177298.1764     673599.2298          0.0000    -484249.5512     -34088.4662    -332559.3888    -122761.6048     161620.7644   -6735151.7288    6363733.1803
 
-ENER_0:   500000    -319030.7670     578790.7786          0.0000    -528649.4639     -41448.7174    -327723.3643    -119881.8051     150537.3531   -6735151.7288    6376772.8165
+STAT_0:   300000      92161.7874             500        415.0259
 
-STAT_0:   500000      75796.1687             500        504.6367
+Steps/sec. : 1276.5797
+MOVE_0:   400000          159801           80027         50.0792          0.5453          112201           56300         50.1778          1.0997          119839           13718         11.4470            8159            4288         52.5555        898.9461
 
-Steps/sec. : 295.4943
-MOVE_0:   600000          240596          120745         50.1858          0.5124          167455           83973         50.1466          1.0491          179979           18917         10.5107           11970            6265         52.3392       1630.2811
+ENER_0:   400000    -187595.6588     681994.2864          0.0000    -514246.1410     -37630.0699    -317713.7344    -115644.8797     169018.7571   -6735151.7288    6364064.1171
 
-ENER_0:   600000    -370391.4784     578705.9310          0.0000    -567939.3016     -43574.1646    -337583.9432    -128195.0375     147433.6339   -6735151.7288    6378329.1892
+STAT_0:   400000      83487.8593             500        458.1448
 
-STAT_0:   600000      72099.0065             500        530.5139
+Steps/sec. : 1248.0532
+MOVE_0:   500000          199886          100092         50.0745          0.5283          140156           70310         50.1655          1.0499          149772           16011         10.6902           10186            5323         52.2580        648.1279
 
-Steps/sec. : 303.3118
-MOVE_0:   700000          280746          140864         50.1749          0.4949          195205           97871         50.1375          1.0090          210088           20486          9.7512           13961            7296         52.2599        881.6687
+ENER_0:   500000    -216653.3144     681976.1992          0.0000    -513374.9372     -40335.2313    -344919.3450    -128830.0096     156597.3698   -6735151.7288    6362465.0237
 
-ENER_0:   700000    -382069.7962     587597.3124          0.0000    -575516.7140     -45384.8939    -348765.5008    -136688.0436     146418.1502   -6735151.7288    6376656.1215
+STAT_0:   500000      77888.5821             500        491.0800
 
-STAT_0:   700000      69222.4595             500        552.5595
+Steps/sec. : 869.6223
+MOVE_0:   600000          239801          120079         50.0744          0.5355          168145           84337         50.1573          1.0544          179892           18058         10.0382           12162            6366         52.3434        840.1599
 
-Steps/sec. : 320.8799
-MOVE_0:   800000          320830          160944         50.1649          0.5031          223241          111927         50.1373          0.9986          239957           21758          9.0675           15972            8352         52.2915        495.0636
+ENER_0:   600000    -241593.6919     676153.3424          0.0000    -535488.6606     -41358.0472    -340900.3264    -125087.8092     157301.5888   -6735151.7288    6362037.6229
 
-ENER_0:   800000    -374960.5540     585831.4232          0.0000    -575139.9839     -45370.4614    -340281.5318    -128943.9355     146699.1714   -6735151.7288    6377114.9611
+STAT_0:   600000      75962.3384             500        503.5328
 
-STAT_0:   800000      69244.4794             500        552.3838
+Steps/sec. : 743.8801
+MOVE_0:   700000          279798          140112         50.0761          0.4645          196121           98345         50.1451          0.9869          209911           19817          9.4407           14170            7422         52.3783        741.6955
 
-Steps/sec. : 329.9766
-MOVE_0:   900000          360658          180904         50.1594          0.4809          251293          125977         50.1315          0.8561          270029           22953          8.5002           18020            9450         52.4417        959.8262
+ENER_0:   700000    -271365.9051     678772.8804          0.0000    -550777.0579     -43558.2118    -355803.5157    -131747.0374     148541.3090   -6735151.7288    6362553.9416
 
-ENER_0:   900000    -416840.7740     571044.7456          0.0000    -602235.5108     -46454.7174    -339195.2914    -129022.3699     144565.3304   -6735151.7288    6380413.4770
+STAT_0:   700000      72125.4120             500        530.3197
 
-STAT_0:   900000      67628.3088             500        565.5845
+Steps/sec. : 740.7270
+MOVE_0:   800000          319849          160194         50.0843          0.5084          224156          112400         50.1436          1.0945          239828           21419          8.9310           16167            8445         52.2360        938.0236
 
-Steps/sec. : 319.6380
-MOVE_0:  1000000          400634          200942         50.1560          0.4627          279312          140040         50.1375          0.9588          300056           23990          7.9952           19998           10508         52.5453        614.2782
+ENER_0:   800000    -269003.6388     681964.3056          0.0000    -549149.5619     -42678.3316    -359140.0509    -136378.7478     151128.1567   -6735151.7288    6361262.2690
 
-ENER_0:  1000000    -396398.1707     574761.7610          0.0000    -581658.5938     -46144.4872    -343356.8506    -135751.0177     146654.8479   -6735151.7288    6380891.0479
+STAT_0:   800000      73612.3897             500        519.6072
 
-STAT_0:  1000000      68082.9752             500        561.8075
+Steps/sec. : 740.2087
+MOVE_0:   900000          359683          180154         50.0869          0.4992          252159          126430         50.1390          1.0437          269981           22877          8.4736           18177            9494         52.2308        558.7916
 
-Simulation Time (total): 3491.1271sec.
-GOMC Serial Version 2.0
-Completed at: Mon Apr 24 20:21:59 2017
-On hostname: potoff14.eng.wayne.edu
+ENER_0:   900000    -275598.1131     680809.5597          0.0000    -556893.9162     -44798.7986    -354714.9580    -133996.6492     152526.4757   -6735151.7288    6361906.9443
+
+STAT_0:   900000      70128.0854             500        545.4238
+
+Steps/sec. : 738.9031
+MOVE_0:  1000000          399600          200152         50.0881          0.4804          280265          140511         50.1351          0.9181          300026           24230          8.0760           20109           10489         52.1607        365.5659
+
+ENER_0:  1000000    -322984.6835     673877.3593          0.0000    -589862.5302     -45816.0157    -361183.4969    -138092.3187     148416.3729   -6735151.7288    6363644.1778
+
+STAT_0:  1000000      68571.0864             500        557.8084
+
+Simulation Time (total): 1090.7523 sec.
+Info: GOMC Version 2.1
+Info: Completed at: Tue Sep  5 15:24:50 2017
+Info: On hostname: potoff39.eng.wayne.edu

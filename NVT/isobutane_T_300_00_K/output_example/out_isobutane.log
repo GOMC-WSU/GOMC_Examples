@@ -1,32 +1,52 @@
-GOMC Serial Version 2.0
-Started at: Sat Apr 22 18:04:20 2017
-On hostname: potoff39.eng.wayne.edu
+Info: GOMC Version 2.1
+Info: Start Time: Tue Sep  5 14:30:15 2017
+Info: Host Name: potoff39.eng.wayne.edu
+CPU information:
+Info: Total number of CPUs: 4
+Info: Total number of CPUs available: 4
+Info: Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+Info: System name: Linux
+Info: Release: 3.10.0-514.16.1.el7.x86_64
+Info: Version: #1 SMP Wed Apr 12 07:10:20 CDT 2017
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 7806.1MB
+Info: Used Ram: 7186.8MB
+Info: Working in the current directory: /home4/soroush/Desktop/validation/GOMC_Examples/NVT/isobutane_T_300_00_K
+Info: GOMC COMPILED TO RUN CANONICAL (NVT) ENSEMBLE.
+Info: Number of threads                  1 
 
-Total number of CPUs: 4
-Total number of CPUs available: 4
-Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
-
-System name: Linux
-Release: 2.6.32-642.4.2.el6.x86_64
-Version: #1 SMP Tue Aug 23 19:58:13 UTC 2016
-Kernel Architecture: x86_64
-Total Ram: 7856.3MB
-Used Ram: 5795.8MB
-Working in the current directory /home3/soroush/Desktop/validation/GOMC_Examples/NVT/isobutane_T_300_00_K
-
-------------------------------------------------------
-This code was compiled to support the canonical (NVT) ensemble.
-------------------------------------------------------
-
-REMINDER: CHARMM force field has been selected!
-Temperature of system has been set to 300.00000 K 
-Note: Pressure will be calculated every 1000 steps.
+Reading Input File:                      in.conf
+Info: Restart simulation                 Active 
+Info: Constant seed                      Active 
+Info: PARAMETER file: CHARMM format!
+Info: Input Temperature                  300.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Pressure calculation frequency     1000 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      500000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.5000 
+Info: Rotation move frequency            0.3000 
+Info: Intra-Swap move frequency          0.2000 
+Info: Simulation dimension of box        0: 215.7550 215.7550 215.7550 
+Info: Output name                        isobutane_300_00_K 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
 Warning: Unknown input HistogramFreq!
-Warning: Electrostatic energy would not be calculated!
-Reading from CHARMM-Style Parameter File file: ./../../common/Par_TraPPE_Alkanes_CHARMM.inp
-Finished reading CHARMM-Style Parameter File file: ./../../common/Par_TraPPE_Alkanes_CHARMM.inp
-Reading from system PDB coordinate file file: ./STEP3_START_ISB_sys_BOX_0.pdb
-Finished reading system PDB coordinate file file: ./STEP3_START_ISB_sys_BOX_0.pdb
+Default: Short Range Cutoff              1.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Finished Reading Input File:             in.conf
+
+Reading from CHARMM-Style Parameter File:     ../../common/Par_TraPPE_Alkanes_CHARMM.inp
+Finished reading CHARMM-Style Parameter File:     ../../common/Par_TraPPE_Alkanes_CHARMM.inp
+Reading from system PDB coordinate file:     STEP3_START_ISB_sys_BOX_0.pdb
+Finished reading system PDB coordinate file:     STEP3_START_ISB_sys_BOX_0.pdb
 Random number seed: 150
 
 Molecules in PSF:
@@ -36,25 +56,45 @@ Idx	name	type	charge	mass
 1	C2	CH3	0.0000	15.0350
 2	C3	CH3	0.0000	15.0350
 3	C4	CH3	0.0000	15.0350
+
 Bonds:
 [0 1] [0 2] [0 3] 
+
 Angles:
 [1 0 3] [1 0 2] [2 0 3] 
+
 Dihedrals:
 
-REMINDER! 1-3 and 1-4 Interaction is OFF
-Minimum coordinates in box 0: x =    1.015, y =    1.226, z =    1.032
-Maximum coordinates in box 0: x =  211.965, y =  211.747, z =  211.769
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+CH1  CH3                        FIX               1.5400 
 
-###############################################################################
-########################## INITIAL SIMULATION ENERGY ##########################
+
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+CH3  CH1  CH3          31250.002516             112.0000 
+
+
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+
+Minimum coordinates in box 1: x =    1.015, y =    1.226, z =    1.032
+Maximum coordinates in box 1: x =  211.965, y =  211.747, z =  211.769
+Wrapping molecules inside the simulation box 1:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
 
 ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
 
 ENER_0:        0     873194.9641     182733.4580          0.0000     693469.8279      -3008.3218          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-###############################################################################
-############################# STARTING SIMULATION #############################
+STITLE:     STEP        PRESSURE        TOTALMOL     TOT_DENSITY
+
+STAT_0:        0         62.7414            1000          9.6100
+
+################################################################################
+############################# STARTING SIMULATION ##############################
 
 MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%
 
@@ -71,7 +111,7 @@ STAT_0:   100000          3.7124            1000          9.6100
 
 PRES_0:   100000         -0.3037         -0.0907         -0.5928
 
-Steps/sec. : 43476.1797
+Steps/sec. : 46805.1026
 MOVE_0:   200000           99723           78713         78.9316        107.8775           60462           57990         95.9115          3.1416           39815           25034         62.8758
 
 ENER_0:   200000     406623.1285     454544.6299          0.0000     -44913.1795      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -80,7 +120,7 @@ STAT_0:   200000          4.0934            1000          9.6100
 
 PRES_0:   200000         -0.0299         -0.0338          0.2196
 
-Steps/sec. : 44660.1834
+Steps/sec. : 48736.5325
 MOVE_0:   300000          149924          118464         79.0160        107.8775           90227           86592         95.9713          3.1416           59849           37699         62.9902
 
 ENER_0:   300000     407355.8870     452054.1327          0.0000     -41689.9238      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -89,7 +129,7 @@ STAT_0:   300000          3.6093            1000          9.6100
 
 PRES_0:   300000         -0.3838         -0.5120         -0.4005
 
-Steps/sec. : 44796.8694
+Steps/sec. : 48971.9554
 MOVE_0:   400000          200100          158281         79.1009        107.8775          120015          115208         95.9947          3.1416           79885           50221         62.8666
 
 ENER_0:   400000     393367.6469     440652.0387          0.0000     -44276.0699      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -98,7 +138,7 @@ STAT_0:   400000          3.8445            1000          9.6100
 
 PRES_0:   400000         -0.3491         -0.0838         -0.1577
 
-Steps/sec. : 44762.0558
+Steps/sec. : 48986.5403
 MOVE_0:   500000          250330          197883         79.0489        107.8775          150075          144051         95.9860          3.1416           99595           62602         62.8566
 
 ENER_0:   500000     406649.0940     463737.0784          0.0000     -54079.6626      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -107,7 +147,7 @@ STAT_0:   500000          3.8885            1000          9.6100
 
 PRES_0:   500000         -0.1143         -0.3730          0.0286
 
-Steps/sec. : 44705.0856
+Steps/sec. : 49423.0157
 MOVE_0:   600000          300666          237680         79.0512        107.8775          179864          172614         95.9692          3.1416          119470           74958         62.7421
 
 ENER_0:   600000     406941.2036     456296.4893          0.0000     -46346.9639      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -116,7 +156,7 @@ STAT_0:   600000          3.7166            1000          9.6100
 
 PRES_0:   600000         -0.3265         -0.1432         -0.5048
 
-Steps/sec. : 44937.3745
+Steps/sec. : 49316.5671
 MOVE_0:   700000          350550          276903         78.9910        107.8775          210052          201542         95.9486          3.1416          139398           87461         62.7419
 
 ENER_0:   700000     399808.1179     448170.8793          0.0000     -45354.4395      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -125,7 +165,7 @@ STAT_0:   700000          3.8398            1000          9.6100
 
 PRES_0:   700000         -0.2630         -0.3675          0.0257
 
-Steps/sec. : 44912.2326
+Steps/sec. : 48915.8302
 MOVE_0:   800000          400492          316482         79.0233        107.8775          239825          230220         95.9950          3.1416          159683          100166         62.7280
 
 ENER_0:   800000     434258.8798     484489.3631          0.0000     -47222.1615      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -134,7 +174,7 @@ STAT_0:   800000          3.8973            1000          9.6100
 
 PRES_0:   800000          0.0240          0.0865         -0.5429
 
-Steps/sec. : 44564.7864
+Steps/sec. : 48657.8924
 MOVE_0:   900000          450176          355751         79.0249        107.8775          270140          259305         95.9891          3.1416          179684          112750         62.7490
 
 ENER_0:   900000     417815.7400     474954.5346          0.0000     -54130.4728      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -143,7 +183,7 @@ STAT_0:   900000          3.7650            1000          9.6100
 
 PRES_0:   900000         -0.4720         -0.1801         -0.1771
 
-Steps/sec. : 44933.7447
+Steps/sec. : 48875.6901
 MOVE_0:  1000000          499825          394907         79.0091        107.8775          300252          288195         95.9844          3.1416          199923          125446         62.7472
 
 ENER_0:  1000000     411096.1776     464056.5476          0.0000     -49952.0481      -3008.3218          0.0000          0.0000          0.0000          0.0000          0.0000
@@ -152,7 +192,7 @@ STAT_0:  1000000          3.7443            1000          9.6100
 
 PRES_0:  1000000         -0.4545         -0.2042         -0.2326
 
-Simulation Time (total): 22.5250sec.
-GOMC Serial Version 2.0
-Completed at: Sat Apr 22 18:04:42 2017
-On hostname: potoff39.eng.wayne.edu
+Simulation Time (total): 20.6717 sec.
+Info: GOMC Version 2.1
+Info: Completed at: Tue Sep  5 14:30:35 2017
+Info: On hostname: potoff39.eng.wayne.edu

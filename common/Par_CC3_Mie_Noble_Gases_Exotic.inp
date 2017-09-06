@@ -1,0 +1,97 @@
+* Parameter file for GOMC
+* Parameters include for Mie_UA noble gases by Potoff et al. 2015;
+* Parameters include for CC3 from DREIDING force fiekd and modified by Linjiang
+* et. al.
+*  
+*
+* SEE: 
+* Jason R. Mick, Mohammad Soroush Barhaghi, Potoff
+* "Optimized Mie potentials for phase equilibria: Application to noble gases
+*  and their mixtures with n-alkanes"
+* DOI: 10.1063/1.4930138 
+*
+* SL Mayo, BD Olafson, WA Goddard
+* "DREIDING: a generic force field for molecular simulations"
+* DOI:  10.1021/j100389a010
+*
+* Linjiang Chen 1 , Paul S. Reiss 1 , Samantha Y. Chong et. al
+* "Separation of rare gases and chiral molecules by selective binding in
+*  porous organic cages"
+* DOI: 10.1038/NMAT4035
+*
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2 
+!b0: A
+!
+! Kb (kcal/mol) = Kb (K) * Boltz. const.; (9999999999 if no stretching)
+!
+!atom type     Kb              b0        description
+
+! NO BONDS
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+! Ktheta (kcal/mol) = Ktheta (K) * Boltz. const.
+!
+!atom types         Ktheta       Theta0   Kub(?)  S0(?)
+
+!NO ANGLES
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
+!
+! NOTE: Dihedral series is refitted to standard CHARMM form which
+!   differs from form found in the source paper.
+!
+!atom types         Kchi        n    delta              description
+
+!NO DIHEDRALS
+
+NONBONDED_MIE
+!
+!V(mie) = 4*eps*((sig_ij/r_ij)N-(sig_ij/r_ij)6)
+!
+!atom 	eps 	sig 	n 	eps,1-4	 sig,1-4	n,1-4
+N       26.83   3.2626  12      0.0      0.0            0.0!
+C       32.97   3.4730  12      0.0      0.0            0.0!
+H        5.27   2.8464  12      0.0      0.0            0.0! 
+Ne      32.30   2.794	11	0.0      0.0            0.0!
+Ar     122.10   3.405	13	0.0      0.0            0.0!
+Kr     176.10   3.645	14	0.0      0.0            0.0!
+Xe     243.80   3.964	14	0.0      0.0            0.0!
+
+NBFIX_MIE
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!atom atom eps     sig	n	eps,1-4	sig,1-4	n,1-4
+N     N    0.000   0.00 12	0.00	0.00	0.00!
+N     C    0.000   0.00 12	0.00	0.00	0.00!
+N     H    0.000   0.00 12	0.00	0.00	0.00!
+C     C    0.000   0.00 12	0.00	0.00	0.00!
+C     H    0.000   0.00 12	0.00	0.00	0.00!
+H     H    0.000   0.00 12	0.00	0.00	0.00!
+End
+
+

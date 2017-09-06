@@ -1,4 +1,4 @@
-STEPS           TOT_EN          EN_INTER        EN_TC           EN_INTRA(B)     EN_INTRA(NB)    EN_ELECT        EN_REAL         EN_RECIP        TOTAL_VIR       PRESSURE        TOT_MOL         TOT_DENS        
+#STEPS          TOT_EN          EN_INTER        EN_TC           EN_INTRA(B)     EN_INTRA(NB)    EN_ELECT        EN_REAL         EN_RECIP        TOTAL_VIR       PRESSURE        TOT_MOL         TOT_DENS        
 100000          396692.7296     -41846.2107     -3008.3218      441547.2621     0.0000          0.0000          0.0000          0.0000          133154.2086     4.7342          1000.0000       9.6100          
 200000          401096.0064     -47977.3502     -3008.3218      452081.6785     0.0000          0.0000          0.0000          0.0000          -71585.7311     3.7960          1000.0000       9.6100          
 300000          411427.7491     -46720.4419     -3008.3218      461156.5129     0.0000          0.0000          0.0000          0.0000          -74467.7360     3.7828          1000.0000       9.6100          
