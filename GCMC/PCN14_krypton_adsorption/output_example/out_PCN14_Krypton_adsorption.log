@@ -1,0 +1,315 @@
+Info: GOMC Version 2.20
+Info: Start Time: Mon Nov 27 21:11:11 2017
+Info: Host Name: potoff39.eng.wayne.edu
+CPU information:
+Info: Total number of CPUs: 4
+Info: Total number of CPUs available: 4
+Info: Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
+Info: System name: Linux
+Info: Release: 3.10.0-514.26.1.el7.x86_64
+Info: Version: #1 SMP Wed Jun 28 15:10:01 CDT 2017
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 7806.1MB
+Info: Used Ram: 7187.8MB
+Info: Working in the current directory: /home4/soroush/Desktop/validation/GOMC_Examples/GCMC/PCN14_krypton_adsorption
+Info: GOMC COMPILED TO RUN GRAND CANONICAL ENSEMBLE.
+Info: Number of threads                  1 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file: CHARMM format!
+Info: Input Temperature                  308.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             12.5000 A
+Info: Exclude                            ONE-FOUR 
+Warning: Modified 1-4 VDW parameters will be ignored!
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      10000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.5000 
+Info: Rotation move frequency            0.0000 
+Info: Intra-Swap move frequency          0.2500 
+Info: Molecule swap move frequency       0.2500 
+Info: Box  0:  Periodic Cell Basis 1     36.906   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2     -18.453  31.962   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  76.976 
+Info: Box  1:  Periodic Cell Basis 1     60.000   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  60.000   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  60.000 
+Info: Fugacity                           C1     0.0000 bar
+Info: Fugacity                           C2     0.0000 bar
+Info: Fugacity                           C3     0.0000 bar
+Info: Fugacity                           O1     0.0000 bar
+Info: Fugacity                           H1     0.0000 bar
+Info: Fugacity                           CU1    0.0000 bar
+Info: Fugacity                           Kr     1.0000 bar
+Info: Output name                        Krypton_PCN-14_adsorption 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Info: Histogram output                   Inactive 
+Info: Histogram sample frequency         200 
+Default: Short Range Cutoff              1.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Warning: Long Range Correction is Inactive for Non-truncated potential.
+Finished Reading Input File:             in.conf
+
+Reading from CHARMM-Style parameter file:  	../../common/Par_PCN14_Noble_Gases_Charmm.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED parameters.
+Reading NBFIX parameters.
+Finished reading CHARMM-Style parameter file:  	../../common/Par_PCN14_Noble_Gases_Charmm.inp
+Reading from box 0 PDB coordinate file:  	./START_PCN14_BOX_0.pdb
+Finished reading box 0 PDB coordinate file:  	./START_PCN14_BOX_0.pdb
+Reading from box 1 PDB coordinate file:  	./Krypton_Resrv_BOX_1.pdb
+Finished reading box 1 PDB coordinate file:  	./Krypton_Resrv_BOX_1.pdb
+Random number seed: 1058328241
+
+Molecules in PSF:
+Molecule Kind: C1
+Idx	name	type	charge	mass
+0	C1	C	0.7900	12.0107
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: C2
+Idx	name	type	charge	mass
+0	C2	C	0.0410	12.0107
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: C3
+Idx	name	type	charge	mass
+0	C3	C	-0.1400	12.0107
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: CU1
+Idx	name	type	charge	mass
+0	CU1	CU	1.7060	63.5460
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: H1
+Idx	name	type	charge	mass
+0	H1	H	0.0990	1.0079
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: Kr
+Idx	name	type	charge	mass
+0	Kr	Kr	0.0000	83.7980
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: O1
+Idx	name	type	charge	mass
+0	O1	O	-0.6490	15.9990
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                    Kb(K)                b0(A) 
+Angles parameter:
+Atom Types                Ktheta(K)       theta0(degree) 
+Dihedrals parameter:
+Atom Types                  Kchi(K)    n   delta(degree) 
+
+Minimum coordinates in box 0: x =  -17.355, y =    0.044, z =    0.139
+Maximum coordinates in box 0: x =   35.808, y =   31.918, z =   76.837
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =   -0.002, y =   -0.004, z =   -0.027
+Maximum coordinates in box 1: x =   60.031, y =   60.089, z =   60.063
+Wrapping molecules inside the simulation box 1:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+ENER_1:        0          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+
+STITLE:     STEP        TOTALMOL      MOLFRAC_C1      MOLFRAC_C2      MOLFRAC_C3      MOLFRAC_H1      MOLFRAC_O1     MOLFRAC_CU1      MOLFRAC_Kr
+
+STAT_0:        0            4032        0.071429        0.214286        0.250000        0.250000        0.178571        0.035714        0.000000
+
+STAT_1:        0            5000        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        TOTALMOL      MOLFRAC_C1      MOLFRAC_C2      MOLFRAC_C3      MOLFRAC_H1      MOLFRAC_O1     MOLFRAC_CU1      MOLFRAC_Kr
+
+Printed combined psf to file Krypton_PCN-14_adsorption_merged.psf
+MOVE_0:   100000           50030            7155         14.3014          0.0000               0               0          0.0000         15.0000           25328             833          3.2889           12457             670          5.3785
+
+ENER_0:   100000    -229208.1410          0.0000          0.0000    -229208.1410          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   100000            4137        0.069616        0.208847        0.243655        0.243655        0.174039        0.034808        0.025381
+
+MOVE_1:   100000           12185             775          6.3603
+
+ENER_1:   100000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   100000            4895        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9745.040450
+MOVE_0:   200000           99893           14266         14.2813          0.0000               0               0          0.0000         15.0000           50332            1592          3.1630           24951            1386          5.5549
+
+ENER_0:   200000    -253330.2446          0.0000          0.0000    -253330.2446          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   200000            4145        0.069481        0.208444        0.243185        0.243185        0.173703        0.034741        0.027262
+
+MOVE_1:   200000           24824            1499          6.0385
+
+ENER_1:   200000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   200000            4887        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9592.429291
+MOVE_0:   300000          149879           21500         14.3449          0.0000               0               0          0.0000         15.0000           75333            2374          3.1513           37454            2090          5.5802
+
+ENER_0:   300000    -232116.6908          0.0000          0.0000    -232116.6908          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   300000            4132        0.069700        0.209100        0.243950        0.243950        0.174250        0.034850        0.024201
+
+MOVE_1:   300000           37334            2190          5.8660
+
+ENER_1:   300000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   300000            4900        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9648.781291
+MOVE_0:   400000          200065           28652         14.3213          0.0000               0               0          0.0000         15.0000          100442            3106          3.0923           49861            2762          5.5394
+
+ENER_0:   400000    -247789.1725          0.0000          0.0000    -247789.1725          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   400000            4139        0.069582        0.208746        0.243537        0.243537        0.173955        0.034791        0.025852
+
+MOVE_1:   400000           49632            2869          5.7805
+
+ENER_1:   400000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   400000            4893        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9814.830458
+MOVE_0:   500000          250138           35841         14.3285          0.0000               0               0          0.0000         15.0000          125599            3812          3.0351           62166            3467          5.5770
+
+ENER_0:   500000    -253103.2543          0.0000          0.0000    -253103.2543          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   500000            4140        0.069565        0.208696        0.243478        0.243478        0.173913        0.034783        0.026087
+
+MOVE_1:   500000           62097            3575          5.7571
+
+ENER_1:   500000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   500000            4892        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9704.364341
+MOVE_0:   600000          300195           42944         14.3054          0.0000               0               0          0.0000         15.0000          150562            4530          3.0087           74563            4162          5.5819
+
+ENER_0:   600000    -274088.7456          0.0000          0.0000    -274088.7456          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   600000            4146        0.069465        0.208394        0.243126        0.243126        0.173661        0.034732        0.027496
+
+MOVE_1:   600000           74680            4276          5.7258
+
+ENER_1:   600000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   600000            4886        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9775.028663
+MOVE_0:   700000          350122           49872         14.2442          0.0000               0               0          0.0000         15.0000          175683            5174          2.9451           86875            4877          5.6138
+
+ENER_0:   700000    -278184.5326          0.0000          0.0000    -278184.5326          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   700000            4153        0.069347        0.208042        0.242716        0.242716        0.173369        0.034674        0.029136
+
+MOVE_1:   700000           87320            4998          5.7238
+
+ENER_1:   700000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   700000            4879        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9803.599563
+MOVE_0:   800000          399876           56906         14.2309          0.0000               0               0          0.0000         15.0000          200707            5806          2.8928           99491            5544          5.5724
+
+ENER_0:   800000    -248394.1259          0.0000          0.0000    -248394.1259          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   800000            4137        0.069616        0.208847        0.243655        0.243655        0.174039        0.034808        0.025381
+
+MOVE_1:   800000           99926            5649          5.6532
+
+ENER_1:   800000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   800000            4895        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9774.599712
+MOVE_0:   900000          449711           64037         14.2396          0.0000               0               0          0.0000         15.0000          225826            6545          2.8982          112081            6216          5.5460
+
+ENER_0:   900000    -241125.5543          0.0000          0.0000    -241125.5543          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:   900000            4135        0.069649        0.208948        0.243773        0.243773        0.174123        0.034825        0.024909
+
+MOVE_1:   900000          112382            6319          5.6228
+
+ENER_1:   900000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:   900000            4897        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Steps/sec. : 9692.726109
+MOVE_0:  1000000          499532           71201         14.2535          0.0000               0               0          0.0000         15.0000          250936            7333          2.9223          124743            6909          5.5386
+
+ENER_0:  1000000    -233874.2299          0.0000          0.0000    -233874.2299          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_0:  1000000            4131        0.069717        0.209150        0.244009        0.244009        0.174292        0.034858        0.023965
+
+MOVE_1:  1000000          124789            7008          5.6159
+
+ENER_1:  1000000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000          0.0000
+
+STAT_1:  1000000            4901        0.000000        0.000000        0.000000        0.000000        0.000000        0.000000        1.000000
+
+Simulation Time (total): 102.966776 sec.
+Info: GOMC Version 2.20
+Info: Completed at: Mon Nov 27 21:12:55 2017
+Info: On hostname: potoff39.eng.wayne.edu

@@ -14,8 +14,7 @@ BONDS
 !b0: A
 !
 !atom type Kb          b0  All constants from Charmm
-OT   HT    450.000     1.0000 ! SPC bond length 
-HT   HT      0.000     1.6333 ! H-H pseudo bond in SPC water. 
+OT   HT    99999999999     1.0000 ! SPC bond length  
 
 
 ANGLES
@@ -27,7 +26,7 @@ ANGLES
 !
 !atom types     Ktheta    Theta0   Kub     S0
 !
-HT   OT   HT     55.0    109.5    0.0      0.0 ! water
+HT   OT   HT    99999999999    109.5    0.0      0.0 ! water
 
 
 DIHEDRALS

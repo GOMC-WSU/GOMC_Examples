@@ -1,0 +1,92 @@
+*
+* Parameters for PCN-14, Argon and Krypton for GOMC
+* SEE:
+* Marie V. Parkes, Chad L. Staiger, John J. Perry, Mark D. Allendorf and 
+* Jeffery A. Greathouse
+* "Screening metal–organic frameworks for selective noble gas adsorption in 
+*  air: effect of pore size and framework topology"
+*
+* DOI:  10.1039/C3CP50774B
+*
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2 
+!b0: A
+!
+! Kb (kcal/mol) = Kb (K) * Boltz. const.; (9999999999 if no stretching)
+!
+!atom type     Kb              b0        description
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+! Ktheta (kcal/mol) = Ktheta (K) * Boltz. const.
+!
+!atom types         Ktheta       Theta0   Kub(?)  S0(?)
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
+!
+! NOTE: Dihedral series is refitted to standard CHARMM form which
+!   differs from form found in the source paper.
+!
+!atom types         Kchi        n    delta              description
+
+
+NONBONDED 
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!epsilon: kcal/mole, Eps,i,j = sqrt(eps,i * eps,j)
+!Rmin/2: A, Rmin,i,j = Rmin/2,i + Rmin/2,j
+!
+! Rmin = sig * (2^(1/6)) / 2 ; eps (kcal/mol) = eps (K) * Boltz. const.
+!                               Boltzmann = 0.0019872041 kcal / (mol * K)
+!
+!atom  ignored   epsilon      Rmin/2       ignored  eps,1-4  Rmin/2,1-4
+
+O       0.00	 -0.06001       1.7510 !UFF
+C       0.00     -0.1049        1.9250 ! UFF
+H	0.00	 -0.04392	1.4424 ! UFF
+CU      0.00     -0.00501       1.7454 ! UFF
+Kr      0.00     -0.3378        2.0709 ! Pellenq et al. 2009 
+AR      0.00     -0.2385        1.9362 ! Pellenq et al. 2009
+
+NBFIX
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!atom atom epsilon Rmin eps,1-4 Rmin,1-4
+C    	C	0	0	!
+C	H	0	0	!
+C	CU	0	0	!
+C	O	0	0	!
+H	O	0	0	!
+H	CU	0	0	!
+H	H	0	0	!
+CU	CU	0	0	!
+CU	O	0	0	!
+O	O	0	0	!
+
+
+End
+
+

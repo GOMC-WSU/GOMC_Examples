@@ -1,22 +1,21 @@
-Info: GOMC Version 2.1
-Info: Start Time: Tue Sep  5 14:29:55 2017
+Info: GOMC Version 2.20
+Info: Start Time: Mon Nov 27 17:12:32 2017
 Info: Host Name: potoff39.eng.wayne.edu
 CPU information:
 Info: Total number of CPUs: 4
 Info: Total number of CPUs available: 4
 Info: Model name: Intel(R) Core(TM) i5-2500K CPU @ 3.30GHz
 Info: System name: Linux
-Info: Release: 3.10.0-514.16.1.el7.x86_64
-Info: Version: #1 SMP Wed Apr 12 07:10:20 CDT 2017
+Info: Release: 3.10.0-514.26.1.el7.x86_64
+Info: Version: #1 SMP Wed Jun 28 15:10:01 CDT 2017
 Info: Kernel Architecture: x86_64
 Info: Total Ram: 7806.1MB
-Info: Used Ram: 7185.0MB
+Info: Used Ram: 7120.5MB
 Info: Working in the current directory: /home4/soroush/Desktop/validation/GOMC_Examples/NVT/LJ_Particle_SurfTen
 Info: GOMC COMPILED TO RUN CANONICAL (NVT) ENSEMBLE.
 Info: Number of threads                  1 
 
 Reading Input File:                      LJ_SurfaceTension_1_K.conf
-Info: Restart simulation                 Active 
 Info: Random seed                        Active 
 Info: PARAMETER file: EXOTIC format!
 Info: Input Temperature                  1.0000 K
@@ -34,7 +33,9 @@ Info: Displacement move frequency        1.0000
 Info: Rotation move frequency            0.0000 
 Info: Intra-Swap move frequency          0.0000 
 Warning: Unknown input VolFreq!
-Info: Simulation dimension of box        0: 12.5000 12.5000 37.5000 
+Info: Box  0:  Periodic Cell Basis 1     12.500   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  12.500   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  37.500 
 Info: Output name                        LJ_SURFTENSION 
 Info: Coordinate frequency               1000000 
 Info: Restart frequency                  1000000 
@@ -45,11 +46,15 @@ Warning: 1-4 Electrostatic scaling set, but will be ignored.
 Warning: Long Range Correction is Inactive for Non-truncated potential.
 Finished Reading Input File:             LJ_SurfaceTension_1_K.conf
 
-Reading from EXOTIC Parameter File:     ./Par.inp
-Finished reading EXOTIC Parameter File:     ./Par.inp
-Reading from system PDB coordinate file:     ./STEP3_START_LJ_liq_BOX_0.pdb
-Finished reading system PDB coordinate file:     ./STEP3_START_LJ_liq_BOX_0.pdb
-Random number seed: 2838828320
+Reading from EXOTIC-Style parameter file:  	./Par.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	./Par.inp
+Reading from system PDB coordinate file:  	./STEP3_START_LJ_liq_BOX_0.pdb
+Finished reading system PDB coordinate file:  	./STEP3_START_LJ_liq_BOX_0.pdb
+Random number seed: 789293540
 
 Molecules in PSF:
 Molecule Kind: LJP
@@ -64,16 +69,14 @@ Dihedrals:
 
 Bonds parameter:
 Atom Types                    Kb(K)                b0(A) 
-
 Angles parameter:
 Atom Types                Ktheta(K)       theta0(degree) 
-
 Dihedrals parameter:
 Atom Types                  Kchi(K)    n   delta(degree) 
 
-Minimum coordinates in box 1: x =    0.018, y =    0.025, z =    0.071
-Maximum coordinates in box 1: x =   12.497, y =   12.496, z =   37.495
-Wrapping molecules inside the simulation box 1:
+Minimum coordinates in box 0: x =    0.018, y =    0.025, z =    0.071
+Maximum coordinates in box 0: x =   12.497, y =   12.496, z =   37.495
+Wrapping molecules inside the simulation box 0:
 
 ################################################################################
 ########################## INITIAL SIMULATION ENERGY ###########################
@@ -96,96 +99,96 @@ ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)
 STITLE:     STEP        PRESSURE    SURF_TENSION
 
 Printed combined psf to file LJ_SURFTENSION_merged.psf
-MOVE_0:   100000          100000           49254         49.2540          0.1855               0               0          0.0000          0.7854               0               0          0.0000
+MOVE_0:   100000          100000           49236         49.2360          0.1867               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   100000      -4492.0539          0.0000          0.0000      -4492.0539          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   100000      -4498.0666          0.0000          0.0000      -4498.0666          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   100000         10.5453          0.3352
+STAT_0:   100000          8.0699          3.0128
 
-PRES_0:   100000        -25.2197        -19.5385        -20.5914
+PRES_0:   100000        -36.9897        -22.2397        -13.5466
 
-Steps/sec. : 55257.4423
-MOVE_0:   200000          200000           99304         49.6520          0.1891               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 43392.2680
+MOVE_0:   200000          200000           99210         49.6050          0.1660               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   200000      -4482.3066          0.0000          0.0000      -4482.3066          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   200000      -4503.3783          0.0000          0.0000      -4503.3783          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   200000         13.8414          1.3082
+STAT_0:   200000         19.5656         -0.1044
 
-PRES_0:   200000        -19.2671        -22.3584        -13.8359
+PRES_0:   200000        -10.0886        -15.0662        -13.1342
 
-Steps/sec. : 54623.3476
-MOVE_0:   300000          300000          149322         49.7740          0.1804               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 43761.4554
+MOVE_0:   300000          300000          149285         49.7617          0.1814               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   300000      -4500.8826          0.0000          0.0000      -4500.8826          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   300000      -4493.3153          0.0000          0.0000      -4493.3153          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   300000         10.5056         -0.3819
+STAT_0:   300000         10.2185          1.0497
 
-PRES_0:   300000        -21.1149        -21.1732        -23.1807
+PRES_0:   300000        -28.3596        -19.5928        -18.3778
 
-Steps/sec. : 54453.8007
-MOVE_0:   400000          400000          199383         49.8458          0.1839               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 43685.6519
+MOVE_0:   400000          400000          199322         49.8305          0.1786               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   400000      -4413.0380          0.0000          0.0000      -4413.0380          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   400000      -4461.4367          0.0000          0.0000      -4461.4367          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   400000         15.7305         -1.1456
+STAT_0:   400000         14.2883         -0.1433
 
-PRES_0:   400000        -11.7578        -17.3651        -20.6713
+PRES_0:   400000        -13.7468        -21.8240        -18.5499
 
-Steps/sec. : 54754.5259
-MOVE_0:   500000          500000          249399         49.8798          0.1735               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 43827.9898
+MOVE_0:   500000          500000          249397         49.8794          0.1887               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   500000      -4532.2310          0.0000          0.0000      -4532.2310          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   500000      -4462.7577          0.0000          0.0000      -4462.7577          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   500000         13.2257          0.5692
+STAT_0:   500000          5.6277          1.6164
 
-PRES_0:   500000        -25.1675        -15.0619        -17.0790
+PRES_0:   500000        -28.3024        -30.8465        -20.9536
 
-Steps/sec. : 55666.9241
-MOVE_0:   600000          600000          299460         49.9100          0.1843               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 44123.9872
+MOVE_0:   600000          600000          299402         49.9003          0.1800               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   600000      -4551.8601          0.0000          0.0000      -4551.8601          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   600000      -4445.5423          0.0000          0.0000      -4445.5423          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   600000          8.0572         -1.1519
+STAT_0:   600000          6.5688          0.4222
 
-PRES_0:   600000        -32.6375        -11.8095        -28.3669
+PRES_0:   600000        -26.5788        -26.4421        -24.2585
 
-Steps/sec. : 55465.9123
-MOVE_0:   700000          700000          349463         49.9233          0.1706               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 45083.4494
+MOVE_0:   700000          700000          349476         49.9251          0.1957               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   700000      -4515.7983          0.0000          0.0000      -4515.7983          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   700000      -4357.4782          0.0000          0.0000      -4357.4782          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   700000         16.0886          1.3623
+STAT_0:   700000         12.3605         -0.0738
 
-PRES_0:   700000        -15.6074        -21.7163        -11.3962
+PRES_0:   700000        -16.1234        -23.5502        -20.2304
 
-Steps/sec. : 55452.1115
-MOVE_0:   800000          800000          399533         49.9416          0.1782               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 45085.6398
+MOVE_0:   800000          800000          399455         49.9319          0.1769               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   800000      -4502.1807          0.0000          0.0000      -4502.1807          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   800000      -4431.1964          0.0000          0.0000      -4431.1964          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   800000         13.4866         -1.1173
+STAT_0:   800000          9.6186         -1.6226
 
-PRES_0:   800000        -15.7328        -17.9785        -22.8144
+PRES_0:   800000        -16.9688        -22.6817        -28.4792
 
-Steps/sec. : 55213.2599
-MOVE_0:   900000          900000          449562         49.9513          0.1732               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 45261.4023
+MOVE_0:   900000          900000          449496         49.9440          0.1786               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:   900000      -4517.6485          0.0000          0.0000      -4517.6485          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:   900000      -4381.1990          0.0000          0.0000      -4381.1990          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:   900000         14.6483         -0.3034
+STAT_0:   900000         11.2928         -1.7479
 
-PRES_0:   900000        -21.2843        -12.9977        -18.7588
+PRES_0:   900000        -20.9987        -14.8581        -27.2503
 
-Steps/sec. : 55202.0474
-MOVE_0:  1000000         1000000          499660         49.9660          0.1932               0               0          0.0000          0.7854               0               0          0.0000
+Steps/sec. : 45329.6450
+MOVE_0:  1000000         1000000          499567         49.9567          0.1876               0               0          0.0000          0.7854               0               0          0.0000
 
-ENER_0:  1000000      -4509.5431          0.0000          0.0000      -4509.5431          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
+ENER_0:  1000000      -4363.0377          0.0000          0.0000      -4363.0377          0.0000          0.0000          0.0000          0.0000          0.0000         -0.0000
 
-STAT_0:  1000000         11.9136         -0.9978
+STAT_0:  1000000         12.0872          0.2817
 
-PRES_0:  1000000        -21.2902        -15.9921        -23.9625
+PRES_0:  1000000        -21.2269        -20.2573        -19.2399
 
-Simulation Time (total): 18.1619 sec.
-Info: GOMC Version 2.1
-Info: Completed at: Tue Sep  5 14:30:13 2017
+Simulation Time (total): 22.4843 sec.
+Info: GOMC Version 2.20
+Info: Completed at: Mon Nov 27 17:12:54 2017
 Info: On hostname: potoff39.eng.wayne.edu
