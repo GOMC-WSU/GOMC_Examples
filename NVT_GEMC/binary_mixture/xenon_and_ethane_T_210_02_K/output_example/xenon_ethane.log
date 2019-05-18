@@ -1,0 +1,353 @@
+Info: GOMC Version 2.40
+Info: Start Time: Fri May 17 16:44:56 2019
+Info: Host Name: wsu34
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: AMD Opteron(tm) Processor 4332 HE
+Info: System name: Linux
+Info: Release: 3.10.0-957.5.1.el7.x86_64
+Info: Version: #1 SMP Fri Feb 1 14:54:57 UTC 2019
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 96496.3MB
+Info: Used Ram: 6357.8MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/clone/GOMC_Examples/NVT_GEMC/binary_mixture/xenon_and_ethane_T_210_02_K
+Info: GOMC COMPILED TO RUN GIBBS ENSEMBLE.
+Info: Number of threads                  4 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     MIE format! 
+Info: Running NVT_GEMC
+Info: Input Temperature                  210.0200 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Pressure calculation frequency     1000 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      500000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.6900 
+Info: Rotation move frequency            0.1000 
+Info: Volume move frequency              0.0100 
+Info: Molecule swap move frequency       0.2000 
+Info: CBMC First atom trials             10   
+Info: CBMC Secondary atom trials         8    
+Info: CBMC Angle trials                  100  
+Info: CBMC Dihedral trials               30   
+Info: Output name                        xenon_ethane_NVT_210_02_K 
+Info: Coordinate frequency               100000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Default: Intra-Swap move frequency       0.0000 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Regrowth move frequency         0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: MEMC move frequency             0.0000 
+Default: Short Range Cutoff              0.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	../../../common/Par_Mie_Alkane_Vrabec01_Noble_Gases_Exotic.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	../../../common/Par_Mie_Alkane_Vrabec01_Noble_Gases_Exotic.inp
+Reading from box 0 PDB coordinate file:  	STEP3_START_XE_C2P_sys_BOX_0.pdb
+Finished reading box 0 PDB coordinate file:  	STEP3_START_XE_C2P_sys_BOX_0.pdb
+Reading from box 1 PDB coordinate file:  	STEP3_START_XE_C2P_sys_BOX_1.pdb
+Finished reading box 1 PDB coordinate file:  	STEP3_START_XE_C2P_sys_BOX_1.pdb
+Random number seed: 1786950067
+
+Molecules in PSF:
+Molecule Kind: C2P
+Idx	name	type	charge	mass
+0	C1	CH3	0.0000	15.0350
+1	C2	CH3	0.0000	15.0350
+
+Bonds:
+[0 1] 
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: XE
+Idx	name	type	charge	mass
+0	XE	XE	0.0000	131.2930
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+CH3	CH3	                         FIX           1.5400 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+XE     XE                  227.5500      3.9011   12.00 
+XE     CH3                 166.1037      3.8420   14.00 
+CH3    CH3                 121.2500      3.7830   16.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+XE     XE                  227.5500      3.9011   12.00 
+XE     CH3                 166.1037      3.8420   14.00 
+CH3    CH3                 121.2500      3.7830   16.00 
+
+Info: Box  0:  Periodic Cell Basis 1     56.000   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  56.000   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  56.000 
+
+Info: Box  1:  Periodic Cell Basis 1     79.000   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  79.000   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  79.000 
+
+Minimum coordinates in box 0: x =    1.000, y =    1.041, z =    1.001
+Maximum coordinates in box 0: x =   56.986, y =   57.000, z =   57.000
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =    1.000, y =    1.062, z =    1.000
+Maximum coordinates in box 1: x =   80.000, y =   80.000, z =   79.955
+Wrapping molecules inside the simulation box 1:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0      2.8973e+09      0.0000e+00      0.0000e+00      2.8974e+09     -4.2817e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+ENER_1:        0      8.5869e+09      0.0000e+00      0.0000e+00      8.5869e+09     -1.5251e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STITLE:     STEP          VOLUME        PRESSURE        TOTALMOL      MOLFRAC_XE     MOLFRAC_C2P      MOLDENS_XE     MOLDENS_C2P     TOT_DENSITY
+
+STAT_0:        0      1.7562e+05      1.1090e+07            1000  5.00000000e-01  5.00000000e-01  2.84712099e-03  2.84712099e-03      7.6288e+02
+
+STAT_1:        0      4.9304e+05      1.1186e+07            1000  5.00000000e-01  5.00000000e-01  1.01411856e-03  1.01411856e-03      2.7173e+02
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX        TRANSFER      TRANACCEPT     TRANACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP          VOLUME        PRESSURE        TOTALMOL      MOLFRAC_XE     MOLFRAC_C2P      MOLDENS_XE     MOLDENS_C2P     TOT_DENSITY
+
+Printed combined psf to file xenon_ethane_NVT_210_02_K_merged.psf
+MOVE_0:   100000           36932           18025      4.8806e+01      3.9990e-01            2444            1266      5.1800e+01      1.0558e+00           10111            1727      1.7080e+01            1019             554      5.4367e+01      1.8263e+03
+
+ENER_0:   100000     -2.1775e+06      0.0000e+00      0.0000e+00     -2.0368e+06     -1.4070e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   100000      1.7630e+05      4.3225e+01            1812  4.81236203e-01  5.18763797e-01  4.94620544e-03  5.33191871e-03      1.3446e+03
+
+PRES_0:   100000     -7.7343e+01      3.6066e+01     -6.2242e+01
+
+MOVE_1:   100000           36963           21133      5.7173e+01      3.9482e+01            2494            2249      9.0176e+01      1.9635e+00           10037             915      9.1163e+00            1019             554      5.4367e+01      1.8263e+03
+
+ENER_1:   100000     -1.0754e+04      0.0000e+00      0.0000e+00     -1.0238e+04     -5.1670e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   100000      4.9236e+05      9.3947e+00             188  6.80851064e-01  3.19148936e-01  2.59973308e-04  1.21862488e-04      6.2764e+01
+
+PRES_1:   100000     -6.5058e-01     -8.0891e-01     -2.7033e+00
+
+Steps/sec: 2530.341, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   200000           73977           36631      4.9517e+01      3.7974e-01            5040            2606      5.1706e+01      1.1704e+00           19958            2089      1.0467e+01            2073            1114      5.3739e+01      1.1886e+03
+
+ENER_0:   200000     -2.3742e+06      0.0000e+00      0.0000e+00     -2.2227e+06     -1.5148e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   200000      1.7578e+05     -1.8241e+01            1879  4.88025546e-01  5.11974454e-01  5.21673573e-03  5.47273694e-03      1.4106e+03
+
+PRES_0:   200000     -1.2073e+02     -1.2239e+02     -2.7834e+01
+
+MOVE_1:   200000           73881           46959      6.3560e+01      3.9496e+01            5036            4656      9.2454e+01      1.9635e+00           20035            1210      6.0394e+00            2073            1114      5.3739e+01      1.1886e+03
+
+ENER_1:   200000     -3.5980e+03      0.0000e+00      0.0000e+00     -3.3845e+03     -2.1356e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   200000      4.9287e+05      6.0979e+00             121  6.85950413e-01  3.14049587e-01  1.68399839e-04  7.70987216e-05      4.0564e+01
+
+PRES_1:   200000     -1.1009e+00     -1.2886e+00     -3.1371e-01
+
+Steps/sec: 2193.076, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   300000          110887           55164      4.9748e+01      3.9849e-01            7552            3918      5.1880e+01      1.1005e+00           30096            2347      7.7984e+00            3093            1669      5.3961e+01      1.5095e+03
+
+ENER_0:   300000     -2.4974e+06      0.0000e+00      0.0000e+00     -2.3385e+06     -1.5893e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   300000      1.7312e+05      9.3391e+01            1910  4.87958115e-01  5.12041885e-01  5.38353728e-03  5.64924835e-03      1.4558e+03
+
+PRES_0:   300000      1.5739e+01      5.8479e+01      6.4440e+00
+
+MOVE_1:   300000          110791           75630      6.8264e+01      3.9567e+01            7514            7044      9.3745e+01      1.9635e+00           30067            1437      4.7793e+00            3093            1669      5.3961e+01      1.5095e+03
+
+ENER_1:   300000     -2.1849e+03      0.0000e+00      0.0000e+00     -2.0692e+03     -1.1564e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   300000      4.9553e+05      5.5177e+00              90  7.55555556e-01  2.44444444e-01  1.37225527e-04  4.43964941e-05      3.2134e+01
+
+PRES_1:   300000      2.1996e+00     -6.4602e-01     -6.0639e-01
+
+Steps/sec: 2133.493, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   400000          148190           73871      4.9849e+01      3.8194e-01           10051            5203      5.1766e+01      1.3013e+00           40113            2558      6.3770e+00            4058            2201      5.4239e+01      1.3015e+03
+
+ENER_0:   400000     -2.5453e+06      0.0000e+00      0.0000e+00     -2.3848e+06     -1.6049e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   400000      1.7320e+05     -3.2231e+01            1921  4.92972410e-01  5.07027590e-01  5.46751425e-03  5.62339902e-03      1.4728e+03
+
+PRES_0:   400000     -6.4523e+01     -1.1294e+02     -1.1673e+02
+
+MOVE_1:   400000          147558          105891      7.1762e+01      3.9564e+01            9990            9451      9.4605e+01      1.9635e+00           40040            1637      4.0884e+00            4058            2201      5.4239e+01      1.3015e+03
+
+ENER_1:   400000     -2.4687e+03      0.0000e+00      0.0000e+00     -2.3778e+03     -9.0881e+01      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   400000      4.9545e+05      4.0807e+00              79  6.70886076e-01  3.29113924e-01  1.06973427e-04  5.24775301e-05      2.5942e+01
+
+PRES_1:   400000     -5.8541e-01     -4.6035e-01     -4.3076e-01
+
+Steps/sec: 2254.166, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   500000          184944           92307      4.9911e+01      3.7917e-01           12575            6508      5.1753e+01      1.2398e+00           50090            2760      5.5101e+00            5103            2758      5.4047e+01      1.9981e+03
+
+ENER_0:   500000     -2.5295e+06      0.0000e+00      0.0000e+00     -2.3696e+06     -1.5994e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   500000      1.7136e+05      5.2949e+01            1907  4.90823283e-01  5.09176717e-01  5.46218656e-03  5.66643499e-03      1.4738e+03
+
+PRES_0:   500000      7.4812e+01     -9.8985e+01     -1.2118e+01
+
+MOVE_1:   500000          184755          136300      7.3773e+01      3.9613e+01           12555           11930      9.5022e+01      1.9635e+00           49978            1853      3.7076e+00            5103            2758      5.4047e+01      1.9981e+03
+
+ENER_1:   500000     -1.2375e+03      0.0000e+00      0.0000e+00     -1.1125e+03     -1.2497e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   500000      4.9730e+05      5.0511e+00              93  6.88172043e-01  3.11827957e-01  1.28696233e-04  5.83154806e-05      3.0970e+01
+
+PRES_1:   500000     -3.7978e-01     -3.8387e-01     -1.4306e-01
+
+Info: Recalculating the total energies to insure the accuracy of the computed 
+      running energies.
+
+Steps/sec: 2117.058, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   600000          222128          110967      4.9956e+01      3.6146e-01           15085            7804      5.1734e+01      1.3048e+00           60074            2942      4.8973e+00            6129            3312      5.4038e+01      1.3626e+03
+
+ENER_0:   600000     -2.5508e+06      0.0000e+00      0.0000e+00     -2.3910e+06     -1.5976e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   600000      1.7034e+05     -5.0665e+01            1901  4.93950552e-01  5.06049448e-01  5.51246252e-03  5.64748557e-03      1.4838e+03
+
+PRES_0:   600000     -8.1496e+01     -1.2620e+02     -1.3841e+02
+
+MOVE_1:   600000          221590          165732      7.4792e+01      3.9640e+01           15092           14375      9.5249e+01      1.9635e+00           59902            2041      3.4072e+00            6129            3312      5.4038e+01      1.3626e+03
+
+ENER_1:   600000     -4.0655e+03      0.0000e+00      0.0000e+00     -3.9218e+03     -1.4376e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   600000      4.9831e+05      4.4872e+00              99  6.16161616e-01  3.83838384e-01  1.22412848e-04  7.62571841e-05      3.0496e+01
+
+PRES_1:   600000     -3.7204e-01     -1.5086e+00     -1.7012e+00
+
+Steps/sec: 2165.575, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   700000          259127          129527      4.9986e+01      3.3729e-01           17629            9107      5.1659e+01      1.1594e+00           70017            3158      4.5103e+00            7158            3870      5.4065e+01      8.7219e+02
+
+ENER_0:   700000     -2.5741e+06      0.0000e+00      0.0000e+00     -2.4129e+06     -1.6119e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   700000      1.7132e+05     -4.5582e+01            1914  4.90073145e-01  5.09926855e-01  5.47511760e-03  5.69692407e-03      1.4781e+03
+
+PRES_0:   700000     -4.8276e+01     -1.9049e+02     -9.0704e+01
+
+MOVE_1:   700000          258499          195566      7.5654e+01      3.9614e+01           17615           16814      9.5453e+01      1.9635e+00           69955            2244      3.2078e+00            7158            3870      5.4065e+01      8.7219e+02
+
+ENER_1:   700000     -2.6604e+03      0.0000e+00      0.0000e+00     -2.5543e+03     -1.0605e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   700000      4.9733e+05      3.9230e+00              86  7.20930233e-01  2.79069767e-01  1.24664592e-04  4.82572615e-05      2.9589e+01
+
+PRES_1:   700000     -1.2025e+00     -1.2983e+00     -5.9603e-01
+
+Steps/sec: 2121.930, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   800000          296192          148179      5.0028e+01      3.9988e-01           20131           10384      5.1582e+01      1.1750e+00           80042            3364      4.2028e+00            8119            4384      5.3997e+01      1.7398e+03
+
+ENER_0:   800000     -2.5616e+06      0.0000e+00      0.0000e+00     -2.4007e+06     -1.6096e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   800000      1.7133e+05      8.0140e+00            1913  4.91374804e-01  5.08625196e-01  5.48657269e-03  5.67918641e-03      1.4797e+03
+
+PRES_0:   800000     -1.0158e+02     -7.9053e+01      1.1363e+01
+
+MOVE_1:   800000          295404          226157      7.6559e+01      3.9614e+01           20022           19152      9.5655e+01      1.9635e+00           80090            2451      3.0603e+00            8119            4384      5.3997e+01      1.7398e+03
+
+ENER_1:   800000     -1.7496e+03      0.0000e+00      0.0000e+00     -1.6402e+03     -1.0932e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   800000      4.9733e+05      4.4423e+00              87  6.89655172e-01  3.10344828e-01  1.20644812e-04  5.42901655e-05      2.9013e+01
+
+PRES_1:   800000     -4.5980e-01     -4.4647e-01     -8.0237e-01
+
+Steps/sec: 2207.417, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   900000          333231          166745      5.0039e+01      3.4565e-01           22637           11673      5.1566e+01      1.1076e+00           89982            3556      3.9519e+00            9111            4929      5.4099e+01      1.0619e+03
+
+ENER_0:   900000     -2.5742e+06      0.0000e+00      0.0000e+00     -2.4121e+06     -1.6212e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:   900000      1.7072e+05      4.1998e+01            1917  4.93479395e-01  5.06520605e-01  5.54109211e-03  5.68752689e-03      1.4920e+03
+
+PRES_0:   900000     -1.1396e+02     -1.9761e+00      5.1526e+01
+
+MOVE_1:   900000          332443          256552      7.7172e+01      3.9630e+01           22524           21575      9.5787e+01      1.9635e+00           90072            2639      2.9299e+00            9111            4929      5.4099e+01      1.0619e+03
+
+ENER_1:   900000     -2.3969e+03      0.0000e+00      0.0000e+00     -2.2966e+03     -1.0030e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   900000      4.9793e+05      4.0719e+00              83  6.50602410e-01  3.49397590e-01  1.08448863e-04  5.82410559e-05      2.6552e+01
+
+PRES_1:   900000     -5.5217e-01     -1.2030e+00     -3.6258e-01
+
+Steps/sec: 2151.746, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:  1000000          370412          185419      5.0058e+01      3.5612e-01           25108           12933      5.1509e+01      1.0322e+00          100108            3730      3.7260e+00           10153            5506      5.4230e+01      1.0350e+03
+
+ENER_0:  1000000     -2.5583e+06      0.0000e+00      0.0000e+00     -2.3974e+06     -1.6097e+05      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_0:  1000000      1.7151e+05      1.7858e+01            1914  4.91118077e-01  5.08881923e-01  5.48087840e-03  5.67912294e-03      1.4785e+03
+
+PRES_0:  1000000     -9.5119e+01     -6.8631e+01      2.3765e+01
+
+MOVE_1:  1000000          369271          286425      7.7565e+01      3.9609e+01           24992           23984      9.5967e+01      1.9635e+00           99956            2816      2.8172e+00           10153            5506      5.4230e+01      1.0350e+03
+
+ENER_1:  1000000     -2.1302e+03      0.0000e+00      0.0000e+00     -2.0235e+03     -1.0666e+02      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:  1000000      4.9715e+05      4.5570e+00              86  6.97674419e-01  3.02325581e-01  1.20688008e-04  5.22981366e-05      2.8923e+01
+
+PRES_1:  1000000     -2.6347e-01     -1.3029e-01     -8.0566e-01
+
+Simulation Time (total): 4.5654e+02 sec.
+
+Move Type                Mol. Kind      BOX_0      BOX_1      
+% Accepted Displacement        XE      50.04851   79.39886 
+% Accepted Displacement        C2P     50.06782   75.46345 
+% Accepted Rotation            XE       0.00000    0.00000 
+% Accepted Rotation            C2P     51.50948   95.96671 
+% Accepted Volume-Transfer             54.23028   54.23028 
+% Accepted Mol-Transfer        XE       3.94282    3.05146 
+% Accepted Mol-Transfer        C2P      3.51187    2.58426 
+
+Displacement:                           26.3771    sec.
+Rotation:                                3.8888    sec.
+Intra-Swap:                              0.0000    sec.
+Regrowth:                                0.0000    sec.
+Intra-MEMC:                              0.0000    sec.
+Crank-Shaft:                             0.0000    sec.
+Mol-Transfer:                           62.3035    sec.
+MEMC:                                    0.0000    sec.
+Vol-Transfer:                          327.8040    sec.
+
+Info: GOMC Version 2.40
+Info: Completed at: Fri May 17 16:52:33 2019
+Info: On hostname: wsu34

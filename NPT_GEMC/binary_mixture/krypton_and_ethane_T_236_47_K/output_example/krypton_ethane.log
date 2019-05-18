@@ -1,0 +1,153 @@
+Info: GOMC Version 2.40
+Info: Start Time: Fri May 17 16:37:55 2019
+Info: Host Name: wsu7
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: AMD Opteron(tm) Processor 4332 HE
+Info: System name: Linux
+Info: Release: 3.10.0-957.5.1.el7.x86_64
+Info: Version: #1 SMP Fri Feb 1 14:54:57 UTC 2019
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 96496.3MB
+Info: Used Ram: 4252.7MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/clone/GOMC_Examples/NPT_GEMC/binary_mixture/krypton_and_ethane_T_236_47_K
+Info: GOMC COMPILED TO RUN GIBBS ENSEMBLE.
+Info: Number of threads                  4 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     MIE format! 
+Info: Running NPT_GEMC
+Info: Input Pressure                     37.2700 bar
+Info: Input Temperature                  236.4700 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      500000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.5900 
+Info: Rotation move frequency            0.1000 
+Info: Volume move frequency              0.0100 
+Info: Molecule swap move frequency       0.2000 
+Info: MEMC-3 move frequency              0.1000 
+Info: Exchange Sub-Volume Dimensions     1.000 1.000 1.000 A
+Info: ExchangeRatio                      1    
+Info: Exchange Large Kind                C2P  
+Info: Exchange Small Kind                KR   
+Info: Atom Names in Large Kind BackBone  C1 - C1
+Info: CBMC First atom trials             10   
+Info: CBMC Secondary atom trials         4    
+Info: CBMC Angle trials                  100  
+Info: CBMC Dihedral trials               30   
+Info: Output name                        krypton_ethane_NPT_236_47_K 
+Info: Coordinate frequency               100000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Default: Intra-Swap move frequency       0.0000 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Regrowth move frequency         0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: Short Range Cutoff              0.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	../../../common/Par_Mie_Alkane_Vrabec01_Noble_Gases_Exotic.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	../../../common/Par_Mie_Alkane_Vrabec01_Noble_Gases_Exotic.inp
+Reading from box 0 PDB coordinate file:  	STEP3_START_KR_C2P_sys_BOX_0.pdb
+Finished reading box 0 PDB coordinate file:  	STEP3_START_KR_C2P_sys_BOX_0.pdb
+Reading from box 1 PDB coordinate file:  	STEP3_START_KR_C2P_sys_BOX_1.pdb
+Finished reading box 1 PDB coordinate file:  	STEP3_START_KR_C2P_sys_BOX_1.pdb
+Random number seed: 1521847077
+
+Molecules in PSF:
+Molecule Kind: C2P
+Idx	name	type	charge	mass
+0	C1	CH3	0.0000	15.0350
+1	C2	CH3	0.0000	15.0350
+
+Bonds:
+[0 1] 
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: KR
+Idx	name	type	charge	mass
+0	KR	KR	0.0000	83.7980
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+CH3	CH3	                         FIX           1.5400 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+KR     KR                  162.5800      3.6274   12.00 
+KR     CH3                 140.4024      3.7052   14.00 
+CH3    CH3                 121.2500      3.7830   16.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+KR     KR                  162.5800      3.6274   12.00 
+KR     CH3                 140.4024      3.7052   14.00 
+CH3    CH3                 121.2500      3.7830   16.00 
+
+Info: Box  0:  Periodic Cell Basis 1     59.200   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  59.200   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  59.200 
+
+Info: Box  1:  Periodic Cell Basis 1     69.200   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  69.200   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  69.200 
+
+Minimum coordinates in box 0: x =    1.001, y =    1.039, z =    1.064
+Maximum coordinates in box 0: x =   56.998, y =   57.000, z =   56.983
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =    1.001, y =    1.000, z =    1.000
+Maximum coordinates in box 1: x =   67.000, y =   67.000, z =   67.000
+Wrapping molecules inside the simulation box 1:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0      5.6209e+07      0.0000e+00      0.0000e+00      5.6232e+07     -2.3727e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+ENER_1:        0     -1.4589e+05      0.0000e+00      0.0000e+00     -1.3104e+05     -1.4855e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STITLE:     STEP          VOLUME        TOTALMOL      MOLFRAC_KR     MOLFRAC_C2P      MOLDENS_KR     MOLDENS_C2P     TOT_DENSITY
+
+STAT_0:        0      2.0747e+05            1000  5.96000000e-01  4.04000000e-01  2.87263958e-03  1.94722549e-03      4.9696e+02
+
+STAT_1:        0      3.3137e+05            1000  5.96000000e-01  4.04000000e-01  1.79857261e-03  1.21916667e-03      3.1115e+02
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX        TRANSFER      TRANACCEPT     TRANACCEPT%     MOLEXCHANGE     MOLEXACCEPT    MOLEXACCEPT%          VOLUME       VOLACCEPT      VOLACCEPT%          VOLMAX
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP          VOLUME        TOTALMOL      MOLFRAC_KR     MOLFRAC_C2P      MOLDENS_KR     MOLDENS_C2P     TOT_DENSITY
+

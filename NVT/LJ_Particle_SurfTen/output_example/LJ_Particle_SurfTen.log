@@ -1,0 +1,230 @@
+Info: GOMC Version 2.40
+Info: Start Time: Fri May 17 16:41:20 2019
+Info: Host Name: wsu9
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: AMD Opteron(tm) Processor 4332 HE
+Info: System name: Linux
+Info: Release: 3.10.0-957.5.1.el7.x86_64
+Info: Version: #1 SMP Fri Feb 1 14:54:57 UTC 2019
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 96496.3MB
+Info: Used Ram: 5902.9MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/clone/GOMC_Examples/NVT/LJ_Particle_SurfTen
+Info: GOMC COMPILED TO RUN CANONICAL (NVT) ENSEMBLE.
+Info: Number of threads                  4 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     MIE format! 
+Info: Input Temperature                  1.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Inactive 
+Info: Cutoff                             2.5000 A
+Info: Exclude                            ONE-FOUR 
+Info: Cache Ewald Fourier                Inactive 
+Info: Pressure calculation frequency     1000 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      100000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        1.0000 
+Info: Rotation move frequency            0.0000 
+Info: Intra-Swap move frequency          0.0000 
+Warning: Unknown input VolFreq!
+Info: CBMC First atom trials             10   
+Info: CBMC Secondary atom trials         5    
+Info: CBMC Angle trials                  100  
+Info: CBMC Dihedral trials               30   
+Info: Output name                        LJ_SURFTENSION 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Regrowth move frequency         0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: MEMC move frequency             0.0000 
+Default: Short Range Cutoff              0.0000 
+Warning: 1-4 Electrostatic scaling set, but will be ignored.
+Warning: Long Range Correction is Inactive for Non-truncated potential.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	./Par.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	./Par.inp
+Reading from system PDB coordinate file:  	./STEP3_START_LJ_liq_BOX_0.pdb
+Finished reading system PDB coordinate file:  	./STEP3_START_LJ_liq_BOX_0.pdb
+Random number seed: 91523682
+
+Molecules in PSF:
+Molecule Kind: LJP
+Idx	name	type	charge	mass
+0	LJ	LJ	0.0000	1.0080
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+LJ     LJ                    1.0000      1.0000   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+LJ     LJ                    1.0000      1.0000   12.00 
+
+Info: Box  0:  Periodic Cell Basis 1     12.500   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  12.500   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  37.500 
+
+Minimum coordinates in box 0: x =    0.018, y =    0.025, z =    0.071
+Maximum coordinates in box 0: x =   12.497, y =   12.496, z =   37.495
+Wrapping molecules inside the simulation box 0:
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0     -4.4558e+03      0.0000e+00      0.0000e+00     -4.4558e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STITLE:     STEP        PRESSURE    SURF_TENSION
+
+STAT_0:        0      9.7616e+00      5.5169e-01
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        PRESSURE    SURF_TENSION
+
+Printed combined psf to file LJ_SURFTENSION_merged.psf
+MOVE_0:   100000          100000           49256      4.9256e+01      1.8486e-01
+
+ENER_0:   100000     -4.4645e+03      0.0000e+00      0.0000e+00     -4.4645e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   100000      6.0730e+00     -3.2539e-01
+
+PRES_0:   100000     -2.2295e+01     -2.9059e+01     -2.7413e+01
+
+Steps/sec: 32108.850, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   200000          200000           99289      4.9645e+01      1.8031e-01
+
+ENER_0:   200000     -4.4057e+03      0.0000e+00      0.0000e+00     -4.4057e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   200000      1.0773e+01      1.9843e+00
+
+PRES_0:   200000     -2.2237e+01     -2.7930e+01     -1.4500e+01
+
+Steps/sec: 32988.733, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   300000          300000          149327      4.9776e+01      1.7761e-01
+
+ENER_0:   300000     -4.3342e+03      0.0000e+00      0.0000e+00     -4.3342e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   300000      1.5855e+01     -4.1161e-01
+
+PRES_0:   300000     -1.2602e+01     -1.8882e+01     -1.7937e+01
+
+Steps/sec: 32775.290, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   400000          400000          199373      4.9843e+01      1.8025e-01
+
+ENER_0:   400000     -4.3642e+03      0.0000e+00      0.0000e+00     -4.3642e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   400000      1.7047e+01      1.0251e+00
+
+PRES_0:   400000     -1.7404e+01     -1.6804e+01     -1.1637e+01
+
+Steps/sec: 34606.689, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   500000          500000          249420      4.9884e+01      1.8318e-01
+
+ENER_0:   500000     -4.4077e+03      0.0000e+00      0.0000e+00     -4.4077e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   500000      7.1838e+00     -2.3607e-01
+
+PRES_0:   500000     -2.6075e+01     -2.3376e+01     -2.5984e+01
+
+Steps/sec: 34100.828, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   600000          600000          299498      4.9916e+01      1.9856e-01
+
+ENER_0:   600000     -4.3672e+03      0.0000e+00      0.0000e+00     -4.3672e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   600000      1.5144e+01      1.1140e+00
+
+PRES_0:   600000     -1.6451e+01     -2.1880e+01     -1.3224e+01
+
+Steps/sec: 34058.437, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   700000          700000          349505      4.9929e+01      1.8715e-01
+
+ENER_0:   700000     -4.3084e+03      0.0000e+00      0.0000e+00     -4.3084e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   700000      6.2026e+00      9.5897e-01
+
+PRES_0:   700000     -3.2899e+01     -2.2762e+01     -2.2716e+01
+
+Steps/sec: 35198.031, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   800000          800000          399512      4.9939e+01      1.7925e-01
+
+ENER_0:   800000     -4.3320e+03      0.0000e+00      0.0000e+00     -4.3320e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   800000      1.3590e+01      1.0591e+00
+
+PRES_0:   800000     -2.2648e+01     -1.8594e+01     -1.4973e+01
+
+Steps/sec: 35385.528, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   900000          900000          449573      4.9953e+01      1.9014e-01
+
+ENER_0:   900000     -4.3864e+03      0.0000e+00      0.0000e+00     -4.3864e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:   900000      1.0721e+01      9.0569e-01
+
+PRES_0:   900000     -2.0405e+01     -2.6031e+01     -1.8387e+01
+
+Steps/sec: 35195.219, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:  1000000         1000000          499599      4.9960e+01      1.8333e-01
+
+ENER_0:  1000000     -4.4254e+03      0.0000e+00      0.0000e+00     -4.4254e+03      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STAT_0:  1000000      1.0251e+01      2.3829e-01
+
+PRES_0:  1000000     -1.9795e+01     -2.5207e+01     -2.1230e+01
+
+Simulation Time (total): 2.9412e+01 sec.
+
+Move Type                Mol. Kind      BOX_0      
+% Accepted Displacement        LJP     49.95990 
+
+Displacement:                           23.3710    sec.
+Rotation:                                0.0000    sec.
+Intra-Swap:                              0.0000    sec.
+Regrowth:                                0.0000    sec.
+Intra-MEMC:                              0.0000    sec.
+Crank-Shaft:                             0.0000    sec.
+
+Info: GOMC Version 2.40
+Info: Completed at: Fri May 17 16:41:49 2019
+Info: On hostname: wsu9
