@@ -21,6 +21,9 @@ BONDS
 CH3 CH3        9999999999      1.540   ! Potoff '09
 CH3 CH2        9999999999      1.540   ! ""
 CH2 CH2        9999999999      1.540   ! ""
+CF3 CF3	       9999999999      1.540   ! ""
+CF3 CF2        9999999999      1.540   ! ""
+CF2 CF2        9999999999      1.540   ! ""
 
 
 ANGLES
@@ -40,6 +43,9 @@ ANGLES
 CH3 CH2 CH3         31250        114.00 ! Potoff '09
 CH3 CH2 CH2         31250        114.00 ! ""
 CH2 CH2 CH2         31250        114.00 ! ""
+CF3 CF2 CF3	    31250	 114.00	! perfluorocarbons
+CF2 CF2 CF3	    31250	 114.00	! 
+CF2 CF2 CF2	    31250	 114.00	! 
 
 
 
@@ -54,11 +60,20 @@ DIHEDRALS
 !
 ! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
 ! Boltzmann = 0.0019872041 kcal / (mol * K)
-!atom types           Kchi        n    delta              description
-X   CH2 CH2 X         0.000000    0      0.0              ! Potoff '09
-X   CH2 CH2 X       355.029964    1      0.0              ! ""
-X   CH2 CH2 X       -68.189775    2    180.0              ! ""
-X   CH2 CH2 X       791.317812    3      0.0              ! ""
+!atom types           Kchi        n    delta    description
+X   CH2 CH2 X         0.000000    0      0.0    ! Potoff '09
+X   CH2 CH2 X       355.029964    1      0.0    ! ""
+X   CH2 CH2 X       -68.189775    2    180.0    ! ""
+X   CH2 CH2 X       791.317812    3      0.0    ! ""
+! perfluorocarbons: use wacky seven term torsion
+X   CF2 CF2 X	   -1577.68	  0      0.0    ! 
+X   CF2 CF2 X	     791.61	  1      0.0    !	
+X   CF2 CF2 X	     333.65	  2      0.0    !	
+X   CF2 CF2 X	     854.01	  3      0.0    !	
+X   CF2 CF2 X	     349.25	  4      0.0    !	
+X   CF2 CF2 X	     211.51	  5      0.0    !	
+X   CF2 CF2 X	     117.66	  6      0.0    !	
+X   CF2 CF2 X	     -83.44	  7      0.0    !	
 
 
 NONBONDED_MIE
@@ -69,3 +84,6 @@ NONBONDED_MIE
 CH4     161.00       3.740      14   ! Potoff, et al. 2009
 CH3     121.25       3.783      16   ! Potoff, et al. 2009
 CH2      61.00       3.990      16   ! Potoff, et al. 2009
+CF4     269.00       4.355      36   ! Potoff, 2009
+CF3     155.75       4.475      36   ! Potoff, 2009
+CF2      72.20       4.75       44   ! Potoff, 2009

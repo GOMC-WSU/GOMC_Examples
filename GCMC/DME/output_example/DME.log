@@ -1,0 +1,2626 @@
+Info: GOMC Version 2.40
+Info: Start Time: Fri May 17 16:28:17 2019
+Info: Host Name: wsu40
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: AMD Opteron(tm) Processor 4332 HE
+Info: System name: Linux
+Info: Release: 3.10.0-957.5.1.el7.x86_64
+Info: Version: #1 SMP Fri Feb 1 14:54:57 UTC 2019
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 96496.3MB
+Info: Used Ram: 15648.5MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/clone/GOMC_Examples/GCMC/DME
+Info: GOMC COMPILED TO RUN GRAND CANONICAL ENSEMBLE.
+Info: Number of threads                  4 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     MIE format! 
+Info: Input Temperature                  290.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Active 
+Info: Cutoff                             10.0000 A
+Info: Short Range Cutoff                 1.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Box  0  CutoffCoulomb              10.0000 A
+Info: Ewald Summation                    Active 
+Info: Cache Ewald Fourier                Inactive 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      500000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.2000 
+Info: Rotation move frequency            0.2000 
+Info: Regrowth move frequency            0.0000 
+Info: Molecule swap move frequency       0.6000 
+Info: CBMC First atom trials             10   
+Info: CBMC Secondary atom trials         4    
+Info: CBMC Angle trials                  100  
+Info: CBMC Dihedral trials               30   
+Info: Chemical potential                 DME    -2605.0000 K
+Info: Output name                        DME_290_00_K_u_2605 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           10000 
+Info: Average output frequency           100000 
+Info: Histogram output frequency         100000 
+Info: Histogram sample frequency         200 
+Default: Intra-Swap move frequency       0.0000 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: MEMC move frequency             0.0000 
+Default: Box  1  CutoffCoulomb           10.0000 A
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	../../common/Par_DME_Exotic.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	../../common/Par_DME_Exotic.inp
+Reading from box 0 PDB coordinate file:  	STEP3_START_DME_BOX_0.pdb
+Finished reading box 0 PDB coordinate file:  	STEP3_START_DME_BOX_0.pdb
+Reading from box 1 PDB coordinate file:  	STEP3_START_DME_BOX_Res.pdb
+Finished reading box 1 PDB coordinate file:  	STEP3_START_DME_BOX_Res.pdb
+Random number seed: 3483109136
+
+Molecules in PSF:
+Molecule Kind: DME
+Idx	name	type	charge	mass
+0	C1	CT3	0.2650	15.0347
+1	O1	OT	-0.5300	15.9994
+2	C2	CT3	0.2650	15.0347
+
+Bonds:
+[0 1] [1 2] 
+
+Angles:
+[0 1 2] 
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+CT3	OT	                         FIX           1.4100 
+OT	CT3	                         FIX           1.4100 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+CT3	OT	CT3	          31250.0000         112.0000 
+
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+CT3    CT3                  98.0000      3.7500   12.00 
+CT3    OT                   67.3238      3.3500   12.00 
+OT     OT                   46.2500      2.9500   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+CT3    CT3                  98.0000      3.7500   12.00 
+CT3    OT                   67.3238      3.3500   12.00 
+OT     OT                   46.2500      2.9500   12.00 
+
+Info: Box  0:  Periodic Cell Basis 1     25.000   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  25.000   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  25.000 
+
+Info: Box  1:  Periodic Cell Basis 1     25.000   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  25.000   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  25.000 
+
+Minimum coordinates in box 0: x =    0.098, y =    0.088, z =    0.094
+Maximum coordinates in box 0: x =   24.044, y =   24.080, z =   24.086
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =    0.151, y =    0.101, z =    0.100
+Maximum coordinates in box 1: x =   23.986, y =   24.000, z =   24.000
+Wrapping molecules inside the simulation box 1:
+Box: 0, RecipVectors:   1595, kmax: 10
+Warning: Box0,      0  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     98  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     98  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     33  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     33  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,      0  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     66  DME,Warning: Box0,      1  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,      1  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     66  DME,Warning: Box0,     99  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     34  DME,Warning: Box0,     67  DME, C1-O1  bond: Par-file Warning: Box0,     99  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,     34  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    100  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,    100  DME, O1-C2  bond: Par-file Warning: Box0,     35  DME,Warning: Box0,     67  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,      2  DME, C1-O1  bond: Par-file Warning: Box0,     35  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,     68  DME, C1-O1  bond: Par-file Warning: Box0,      2  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,      3  DME,Warning: Box0,    101  DME, C1-O1  bond: Par-file Warning: Box0,     68  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,      3  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,    101  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,      4  DME,Warning: Box0,     36  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     36  DME,Warning: Box0,      4  DME, O1-C2  bond: Par-file Warning: Box0,    102  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file  C1-O1  bond: Par-file Warning: Box0,      5  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,    102  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     37  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,      5  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    103  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     37  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,      6  DME,Warning: Box0,     38  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     38  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     39  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     39  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     40  DME,Warning: Box0,     69  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,      6  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,      7  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,    103  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     40  DME,Warning: Box0,    104  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     41  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,    104  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    105  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    105  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,      7  DME, C1-O1  bond: Par-file Warning: Box0,     69  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,      8  DME, C1-O1  bond: Par-file Warning: Box0,     41  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,      8  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box0,    106  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box0,     42  DME,Warning: Box0,      9  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    106  DME,Warning: Box0,      9  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     42  DME,Warning: Box0,     10  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     43  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     43  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box0,     70  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,    107  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     44  DME,Warning: Box0,     10  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     11  DME,Warning: Box0,    107  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,    108  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     11  DME,Warning: Box0,     44  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box0,    108  DME,Warning: Box0,     70  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     12  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    109  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     12  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     45  DME,Warning: Box0,     71  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     13  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,     45  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,    109  DME,Warning: Box0,     46  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,    110  DME, C1-O1  bond: Par-file Warning: Box0,     13  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     46  DME,Warning: Box0,     71  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     14  DME,1.410 A, PDB file 1.539 A!
+Warning: Box0,     47  DME,Warning: Box0,    110  DME,Warning: Box0,     72  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     72  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     14  DME,Warning: Box0,     73  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     73  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     74  DME, C1-O1  bond: Par-file Warning: Box0,    111  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,    111  DME, O1-C2  bond: Par-file Warning: Box0,     47  DME,1.410 A, PDB file 1.539 A!
+Warning: Box0,     74  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,    112  DME,Warning: Box0,     48  DME, C1-O1  bond: Par-file Warning: Box0,     15  DME,Warning: Box0,     75  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     15  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box0,     75  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,    112  DME,1.410 A, PDB file 1.539 A!
+Warning: Box0,     48  DME,Warning: Box0,     16  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     49  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    113  DME, C1-O1  bond: Par-file Warning: Box0,     16  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     49  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,     17  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    113  DME,Warning: Box0,     17  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box0,     18  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box0,     50  DME,Warning: Box0,     76  DME, C1-O1  bond: Par-file Warning: Box0,    114  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     76  DME,Warning: Box0,     18  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box0,     50  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,    114  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     19  DME, C1-O1  bond: Par-file Warning: Box0,     77  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     19  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    115  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    115  DME,Warning: Box0,     77  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box0,     20  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,     78  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     78  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     20  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,     51  DME,Warning: Box0,     21  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    116  DME,Warning: Box0,     21  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     51  DME,1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     22  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     52  DME,Warning: Box0,     79  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box0,     79  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     80  DME,Warning: Box0,    116  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box0,    117  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    117  DME,Warning: Box0,     22  DME,Warning: Box0,     52  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     80  DME,1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    118  DME,Warning: Box0,     23  DME,Warning: Box0,     53  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     23  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     81  DME,Warning: Box0,     24  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box0,     24  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,     53  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,    118  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box0,     81  DME,Warning: Box0,    119  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     54  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     25  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     54  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,    119  DME,Warning: Box0,     55  DME, O1-C2  bond: Par-file Warning: Box0,     82  DME,Warning: Box0,     25  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     82  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box0,     55  DME, O1-C2  bond: Par-file Warning: Box0,    120  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,     83  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     26  DME,Warning: Box0,     83  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     56  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     84  DME,Warning: Box0,    120  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     56  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     26  DME, O1-C2  bond: Par-file Warning: Box0,     57  DME,Warning: Box0,     84  DME,Warning: Box0,    121  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     85  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     27  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     85  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     86  DME,Warning: Box0,    121  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box0,     27  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,     57  DME,Warning: Box0,    122  DME,Warning: Box0,     86  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,    122  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     58  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     58  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,    123  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,     87  DME,Warning: Box0,     28  DME,Warning: Box0,    123  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,    124  DME, C1-O1  bond: Par-file Warning: Box0,     59  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,    124  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box0,     87  DME,1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     59  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,    125  DME,Warning: Box0,     28  DME, C1-O1  bond: Par-file Warning: Box0,     60  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,    125  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     60  DME,Warning: Box0,    126  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     61  DME, C1-O1  bond: Par-file Warning: Box0,    126  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box0,     88  DME,Warning: Box0,     29  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     88  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     61  DME,Warning: Box0,     89  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     62  DME,Warning: Box0,     29  DME,1.410 A, PDB file 1.541 A!
+Warning: Box0,     89  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,    127  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     30  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,    127  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     90  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,     62  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     63  DME,Warning: Box0,     30  DME, C1-O1  bond: Par-file Warning: Box0,    128  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box0,     31  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box0,     31  DME, O1-C2  bond: Par-file Warning: Box0,     63  DME,Warning: Box0,     90  DME,1.410 A, PDB file 1.540 A!
+Warning: Box0,     32  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box0,     91  DME,Warning: Box0,     32  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     91  DME,1.410 A, PDB file 1.539 A!
+Warning: Box0,    128  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box0,     92  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     64  DME,Warning: Box0,     92  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file Warning: Box0,    129  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     93  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     64  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     93  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box0,     94  DME,Warning: Box0,    129  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file Warning: Box0,     65  DME,1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     65  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box0,     94  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     95  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     95  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     96  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     96  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box0,     97  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box0,     97  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    430  DME,Warning: Box1,    330  DME,Warning: Box1,    230  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    330  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    331  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    331  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    332  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    332  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    430  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    130  DME, C1-O1  bond: Par-file Warning: Box1,    431  DME,Warning: Box1,    230  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    130  DME,Warning: Box1,    333  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    333  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    431  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    131  DME,Warning: Box1,    231  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    231  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    334  DME, C1-O1  bond: Par-file Warning: Box1,    232  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    131  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    334  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    132  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    132  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    133  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    232  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    233  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    233  DME,Warning: Box1,    432  DME,Warning: Box1,    133  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    134  DME,Warning: Box1,    432  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    335  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    335  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    234  DME,Warning: Box1,    134  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    433  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    433  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    135  DME,Warning: Box1,    336  DME,Warning: Box1,    434  DME,Warning: Box1,    234  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    235  DME,Warning: Box1,    336  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    337  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    337  DME, O1-C2  bond: Par-file Warning: Box1,    135  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    338  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    136  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    136  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    137  DME,Warning: Box1,    338  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    434  DME,Warning: Box1,    137  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    235  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    138  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    435  DME, C1-O1  bond: Par-file Warning: Box1,    339  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    339  DME,Warning: Box1,    236  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    435  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    138  DME,1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    139  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    340  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    139  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    140  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    140  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    141  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    141  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    142  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    340  DME,Warning: Box1,    236  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    341  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    341  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    142  DME,Warning: Box1,    342  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    342  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    143  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    143  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    237  DME,Warning: Box1,    343  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    237  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    343  DME,Warning: Box1,    238  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    238  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    436  DME,Warning: Box1,    239  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    344  DME,Warning: Box1,    144  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    239  DME,Warning: Box1,    144  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    240  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    240  DME,Warning: Box1,    436  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    344  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    145  DME,Warning: Box1,    241  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    345  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    437  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    437  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    438  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    345  DME,Warning: Box1,    241  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    242  DME,Warning: Box1,    438  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    242  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    243  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    243  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    439  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    439  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    145  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    440  DME, C1-O1  bond: Par-file Warning: Box1,    346  DME,Warning: Box1,    146  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    440  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    441  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    346  DME, C1-O1  bond: Par-file Warning: Box1,    244  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    347  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    244  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    146  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    441  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    147  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    147  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    148  DME,Warning: Box1,    347  DME,Warning: Box1,    442  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    245  DME,Warning: Box1,    148  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    245  DME, O1-C2  bond: Par-file Warning: Box1,    442  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    348  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    246  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    149  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    149  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    246  DME,Warning: Box1,    150  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    150  DME,Warning: Box1,    443  DME,Warning: Box1,    348  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    349  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    349  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    350  DME, C1-O1  bond: Par-file Warning: Box1,    151  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    350  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    443  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    151  DME,Warning: Box1,    444  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    247  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    247  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    248  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    351  DME, C1-O1  bond: Par-file Warning: Box1,    152  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    444  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file  C1-O1  bond: Par-file Warning: Box1,    248  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    249  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    249  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    250  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    250  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    251  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    152  DME,Warning: Box1,    351  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    352  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    352  DME,Warning: Box1,    251  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    445  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    353  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    353  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    354  DME,Warning: Box1,    153  DME,Warning: Box1,    252  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    354  DME,Warning: Box1,    445  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    446  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    446  DME,Warning: Box1,    252  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    447  DME,1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    253  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    153  DME,Warning: Box1,    355  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    355  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    447  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    356  DME, O1-C2  bond: Par-file Warning: Box1,    253  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    448  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    356  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    448  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    154  DME, C1-O1  bond: Par-file Warning: Box1,    449  DME,Warning: Box1,    254  DME,Warning: Box1,    357  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    154  DME,Warning: Box1,    449  DME, O1-C2  bond: Par-file Warning: Box1,    254  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    357  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    255  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    255  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    256  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    256  DME, O1-C2  bond: Par-file Warning: Box1,    155  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    358  DME,Warning: Box1,    257  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    155  DME,Warning: Box1,    257  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    450  DME,Warning: Box1,    358  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    450  DME,Warning: Box1,    258  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    258  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    259  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    259  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    156  DME,Warning: Box1,    260  DME,Warning: Box1,    451  DME,Warning: Box1,    359  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    359  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    360  DME,Warning: Box1,    156  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    360  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    157  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    361  DME,1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    157  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    451  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    260  DME,Warning: Box1,    361  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    158  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    452  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    362  DME,Warning: Box1,    261  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    158  DME,Warning: Box1,    452  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    362  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    453  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    261  DME,Warning: Box1,    159  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    453  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    454  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    363  DME, C1-O1  bond: Par-file Warning: Box1,    454  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    159  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    455  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.542 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    363  DME,Warning: Box1,    160  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file Warning: Box1,    455  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    262  DME,Warning: Box1,    456  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    456  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    160  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    161  DME, O1-C2  bond: Par-file Warning: Box1,    364  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    457  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    364  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    262  DME,Warning: Box1,    365  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    263  DME,Warning: Box1,    161  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    457  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    162  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    365  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    162  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    458  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    163  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    163  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    164  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    164  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    165  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    165  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    166  DME,Warning: Box1,    458  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    459  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    166  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    167  DME, C1-O1  bond: Par-file Warning: Box1,    263  DME,Warning: Box1,    366  DME,Warning: Box1,    459  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    264  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    167  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    366  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    367  DME, O1-C2  bond: Par-file Warning: Box1,    264  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    168  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    265  DME, C1-O1  bond: Par-file Warning: Box1,    460  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    265  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    266  DME,Warning: Box1,    168  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    367  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    460  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    266  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    461  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    169  DME, O1-C2  bond: Par-file Warning: Box1,    461  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    462  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    368  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    462  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    169  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    368  DME,Warning: Box1,    170  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    463  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    463  DME,Warning: Box1,    267  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    267  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    369  DME, C1-O1  bond: Par-file Warning: Box1,    268  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    170  DME,Warning: Box1,    268  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    269  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    269  DME,Warning: Box1,    464  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    464  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    369  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    171  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    270  DME, O1-C2  bond: Par-file Warning: Box1,    171  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    172  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    270  DME,Warning: Box1,    370  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    172  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    465  DME,Warning: Box1,    370  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    271  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    371  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    465  DME,Warning: Box1,    271  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    371  DME,1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    372  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    173  DME,Warning: Box1,    272  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    272  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    273  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    273  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    274  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    274  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    173  DME,Warning: Box1,    372  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    373  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    373  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    466  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    374  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    466  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    467  DME, C1-O1  bond: Par-file Warning: Box1,    275  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    174  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    467  DME,Warning: Box1,    374  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    468  DME, O1-C2  bond: Par-file Warning: Box1,    174  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    275  DME,Warning: Box1,    175  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    468  DME, O1-C2  bond: Par-file Warning: Box1,    276  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    375  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    175  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    375  DME,Warning: Box1,    276  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    277  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    176  DME,Warning: Box1,    376  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    277  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    469  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    176  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    177  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    177  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    178  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    278  DME,Warning: Box1,    178  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    376  DME,Warning: Box1,    278  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    179  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    179  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    180  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    180  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    181  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    181  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    182  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    182  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    183  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    183  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    184  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    184  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    185  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    185  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    186  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    279  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    279  DME, O1-C2  bond: Par-file Warning: Box1,    469  DME,Warning: Box1,    377  DME,Warning: Box1,    186  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    280  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    187  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    187  DME,Warning: Box1,    470  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    470  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    377  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    471  DME,Warning: Box1,    280  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    188  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    188  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    471  DME,Warning: Box1,    189  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    189  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    378  DME,Warning: Box1,    281  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    190  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    472  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    281  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    378  DME,Warning: Box1,    190  DME, O1-C2  bond: Par-file Warning: Box1,    472  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    282  DME,Warning: Box1,    379  DME,Warning: Box1,    473  DME,Warning: Box1,    191  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    379  DME,1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    473  DME, C1-O1  bond: Par-file Warning: Box1,    282  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    283  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    191  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    283  DME,Warning: Box1,    192  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    192  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    474  DME,Warning: Box1,    380  DME,Warning: Box1,    193  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    474  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    284  DME,Warning: Box1,    475  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    193  DME,Warning: Box1,    475  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    476  DME,Warning: Box1,    284  DME,Warning: Box1,    194  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    476  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    477  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    285  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    380  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    285  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    286  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    477  DME,Warning: Box1,    286  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    478  DME,Warning: Box1,    287  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    381  DME,Warning: Box1,    478  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    381  DME, O1-C2  bond: Par-file Warning: Box1,    194  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    195  DME, O1-C2  bond: Par-file Warning: Box1,    479  DME, C1-O1  bond: Par-file Warning: Box1,    287  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    195  DME, O1-C2  bond: Par-file Warning: Box1,    382  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    288  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    196  DME,Warning: Box1,    479  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    288  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    196  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    289  DME,Warning: Box1,    382  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    383  DME, C1-O1  bond: Par-file Warning: Box1,    197  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    197  DME, O1-C2  bond: Par-file Warning: Box1,    383  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    198  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    480  DME,Warning: Box1,    289  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    290  DME, C1-O1  bond: Par-file Warning: Box1,    384  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    384  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    480  DME, O1-C2  bond: Par-file Warning: Box1,    385  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    385  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    386  DME,Warning: Box1,    198  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    290  DME,Warning: Box1,    386  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    387  DME, C1-O1  bond: Par-file Warning: Box1,    199  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    387  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    388  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file Warning: Box1,    481  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    481  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    199  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    388  DME,Warning: Box1,    482  DME, C1-O1  bond: Par-file Warning: Box1,    291  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    482  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    200  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    200  DME,1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    291  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    201  DME, C1-O1  bond: Par-file Warning: Box1,    483  DME,Warning: Box1,    389  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    483  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    484  DME,Warning: Box1,    389  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    484  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    292  DME,Warning: Box1,    390  DME,Warning: Box1,    485  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file Warning: Box1,    201  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    202  DME,Warning: Box1,    485  DME,Warning: Box1,    390  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    292  DME, O1-C2  bond: Par-file Warning: Box1,    486  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    202  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    391  DME, C1-O1  bond: Par-file Warning: Box1,    293  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    486  DME,Warning: Box1,    203  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    203  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    204  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    204  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    293  DME,Warning: Box1,    487  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    487  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    488  DME, O1-C2  bond: Par-file Warning: Box1,    391  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    205  DME,Warning: Box1,    488  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    489  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    205  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    294  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    489  DME,Warning: Box1,    294  DME, O1-C2  bond: Par-file Warning: Box1,    206  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    490  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    490  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    295  DME, C1-O1  bond: Par-file Warning: Box1,    491  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    392  DME,Warning: Box1,    295  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    392  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    296  DME, C1-O1  bond: Par-file Warning: Box1,    393  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    491  DME,1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    296  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    297  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    297  DME,Warning: Box1,    393  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    492  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    394  DME,Warning: Box1,    298  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    206  DME,Warning: Box1,    394  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    492  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    298  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    299  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    395  DME,Warning: Box1,    493  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    299  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    300  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    300  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    207  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    207  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    301  DME,Warning: Box1,    208  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    208  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    395  DME,Warning: Box1,    209  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    209  DME,Warning: Box1,    396  DME,Warning: Box1,    493  DME,1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    494  DME,Warning: Box1,    301  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    302  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file Warning: Box1,    396  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    494  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    302  DME,Warning: Box1,    495  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    303  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    303  DME, O1-C2  bond: Par-file Warning: Box1,    495  DME,1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    304  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    397  DME,Warning: Box1,    210  DME,Warning: Box1,    496  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    210  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    211  DME,Warning: Box1,    496  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    211  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    212  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    212  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    213  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    213  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    214  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    214  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    215  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    215  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    216  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    216  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    217  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    217  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    218  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    218  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    219  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    219  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    220  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    220  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    221  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    221  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    222  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    222  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    223  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    223  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    224  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    224  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    225  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    225  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    226  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    226  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    227  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    227  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    228  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    228  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    229  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    229  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    304  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    305  DME,Warning: Box1,    497  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    397  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    398  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    398  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    399  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    497  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    399  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    400  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    305  DME,Warning: Box1,    400  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    401  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    498  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    306  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    401  DME,Warning: Box1,    306  DME,Warning: Box1,    498  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file Warning: Box1,    499  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    307  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    307  DME,Warning: Box1,    402  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    402  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    403  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    499  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    403  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    500  DME,Warning: Box1,    308  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    308  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    500  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    309  DME, C1-O1  bond: Par-file Warning: Box1,    501  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    309  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    501  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    502  DME, C1-O1  bond: Par-file Warning: Box1,    310  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    502  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    404  DME,Warning: Box1,    310  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    404  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    503  DME,Warning: Box1,    405  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    405  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    406  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    406  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    407  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    407  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    311  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    503  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    504  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    504  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    505  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    505  DME, O1-C2  bond: Par-file Warning: Box1,    408  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    311  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    506  DME,Warning: Box1,    408  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    506  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    409  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    409  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    410  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    410  DME, O1-C2  bond: Par-file Warning: Box1,    507  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    312  DME,Warning: Box1,    411  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    411  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    507  DME, O1-C2  bond: Par-file Warning: Box1,    412  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    412  DME,Warning: Box1,    312  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    508  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    508  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    509  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    509  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    510  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    510  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    511  DME,Warning: Box1,    313  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    413  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    413  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    511  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    313  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    512  DME,Warning: Box1,    314  DME, C1-O1  bond: Par-file Warning: Box1,    414  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    414  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    314  DME,Warning: Box1,    415  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    512  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    315  DME,Warning: Box1,    513  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    415  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    315  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    513  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    514  DME,Warning: Box1,    416  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    416  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file Warning: Box1,    316  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    417  DME, C1-O1  bond: Par-file  C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    316  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    317  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    317  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    318  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    318  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    319  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    319  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    417  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    418  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    514  DME, O1-C2  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    320  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    515  DME,Warning: Box1,    320  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    418  DME,Warning: Box1,    515  DME,1.410 A, PDB file 1.539 A!
+Warning: Box1,    321  DME, O1-C2  bond: Par-file  C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    419  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    321  DME, O1-C2  bond: Par-file Warning: Box1,    419  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    420  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    322  DME, C1-O1  bond: Par-file Warning: Box1,    516  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    420  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    421  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    322  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file Warning: Box1,    323  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    516  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    517  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    421  DME,Warning: Box1,    323  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    517  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    518  DME,1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    518  DME,Warning: Box1,    324  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    324  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    422  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    422  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    325  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    325  DME, O1-C2  bond: Par-file Warning: Box1,    423  DME,1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    519  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    519  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ O1-C2  bond: Par-file Warning: Box1,    326  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    326  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+1.410 A, PDB file 1.540 A!
+Warning: Box1,    327  DME, C1-O1  bond: Par-file Warning: Box1,    520  DME,1.410 A, PDB file 1.541 A!
+Warning: Box1,    423  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    327  DME, C1-O1  bond: Par-file Warning: Box1,    424  DME,1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    424  DME, O1-C2  bond: Par-file Warning: Box1,    520  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    425  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    425  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    426  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    426  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    328  DME,Warning: Box1,    427  DME, C1-O1  bond: Par-file  O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    521  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+1.410 A, PDB file 1.541 A!
+Warning: Box1,    521  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    427  DME,Warning: Box1,    522  DME,Warning: Box1,    328  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    522  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    523  DME, O1-C2  bond: Par-file Warning: Box1,    428  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    428  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ C1-O1  bond: Par-file Warning: Box1,    429  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    429  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+1.410 A, PDB file 1.539 A!
+Warning: Box1,    329  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    329  DME,1.410 A, PDB file 1.540 A!
+Warning: Box1,    523  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+ O1-C2  bond: Par-file Warning: Box1,    524  DME,1.410 A, PDB file 1.540 A!
+ C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    524  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    525  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    525  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.539 A!
+Warning: Box1,    526  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    526  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    527  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    527  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    528  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.541 A!
+Warning: Box1,    528  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    529  DME, C1-O1  bond: Par-file 1.410 A, PDB file 1.540 A!
+Warning: Box1,    529  DME, O1-C2  bond: Par-file 1.410 A, PDB file 1.540 A!
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0      7.1471e+08      4.8476e+03      0.0000e+00      7.1474e+08     -1.3592e+04     -1.9319e+04     -1.8694e+04      7.5091e+04     -1.7511e+06      1.6754e+06
+
+ENER_1:        0      1.4953e+04      1.4953e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STITLE:     STEP        TOTALMOL
+
+STAT_0:        0             130
+
+STAT_1:        0             400
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX        TRANSFER      TRANACCEPT     TRANACCEPT%
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        TOTALMOL
+
+Printed combined psf to file DME_290_00_K_u_2605_merged.psf
+MOVE_0:    10000            1982             929      4.6872e+01      4.1574e-01            2043            1025      5.0171e+01      7.3498e-01            2986             272      9.1092e+00
+
+ENER_0:    10000     -2.2373e+05      1.4516e+04      0.0000e+00     -1.6347e+05     -1.2768e+04     -6.2011e+04     -3.0555e+04      3.3939e+04     -1.6973e+06      1.6319e+06
+
+STAT_0:    10000             126
+
+MOVE_1:    10000            2989             276      9.2339e+00
+
+ENER_1:    10000      3.9567e+04      3.9567e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    10000             404
+
+Steps/sec: 2764.854, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:    20000            3949            1891      4.7886e+01      3.2428e-01            4132            2078      5.0290e+01      7.8130e-01            5921             357      6.0294e+00
+
+ENER_0:    20000     -2.6459e+05      1.8312e+04      0.0000e+00     -1.9325e+05     -1.4876e+04     -7.4779e+04     -3.6240e+04      3.1118e+04     -1.8320e+06      1.7623e+06
+
+STAT_0:    20000             136
+
+MOVE_1:    20000            5998             351      5.8520e+00
+
+ENER_1:    20000      4.4439e+04      4.4439e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    20000             394
+
+Steps/sec: 2577.348, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    30000            5933            2899      4.8862e+01      3.7294e-01            6191            3109      5.0218e+01      7.8666e-01            8884             405      4.5588e+00
+
+ENER_0:    30000     -2.8157e+05      1.6872e+04      0.0000e+00     -2.0146e+05     -1.5764e+04     -8.1217e+04     -4.0769e+04      3.1238e+04     -1.8858e+06      1.8142e+06
+
+STAT_0:    30000             140
+
+MOVE_1:    30000            8992             395      4.3928e+00
+
+ENER_1:    30000      4.4319e+04      4.4319e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    30000             390
+
+Steps/sec: 2487.919, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    40000            8000            3923      4.9038e+01      3.3680e-01            8088            4046      5.0025e+01      6.8461e-01           11918             436      3.6583e+00
+
+ENER_0:    40000     -2.8099e+05      1.5576e+04      0.0000e+00     -2.0156e+05     -1.5316e+04     -7.9690e+04     -3.9924e+04      3.0720e+04     -1.8589e+06      1.7884e+06
+
+STAT_0:    40000             138
+
+MOVE_1:    40000           11994             428      3.5685e+00
+
+ENER_1:    40000      4.4534e+04      4.4534e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    40000             392
+
+Steps/sec: 2462.663, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    50000            9987            4915      4.9214e+01      3.2568e-01           10072            5047      5.0109e+01      7.3764e-01           15021             467      3.1090e+00
+
+ENER_0:    50000     -2.9930e+05      1.8328e+04      0.0000e+00     -2.1440e+05     -1.6217e+04     -8.7003e+04     -4.4946e+04      2.9926e+04     -1.9128e+06      1.8408e+06
+
+STAT_0:    50000             142
+
+MOVE_1:    50000           14920             455      3.0496e+00
+
+ENER_1:    50000      4.5566e+04      4.5566e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    50000             388
+
+Steps/sec: 2471.584, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    60000           12035            5952      4.9456e+01      3.5693e-01           12011            6021      5.0129e+01      7.3573e-01           17999             489      2.7168e+00
+
+ENER_0:    60000     -2.9101e+05      1.8231e+04      0.0000e+00     -2.0999e+05     -1.6446e+04     -8.2812e+04     -4.5319e+04      3.4775e+04     -1.9263e+06      1.8540e+06
+
+STAT_0:    60000             143
+
+MOVE_1:    60000           17955             476      2.6511e+00
+
+ENER_1:    60000      4.6432e+04      4.6432e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    60000             387
+
+Steps/sec: 2438.080, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    70000           14024            6933      4.9437e+01      3.0337e-01           14060            7054      5.0171e+01      7.6784e-01           21001             532      2.5332e+00
+
+ENER_0:    70000     -2.7746e+05      2.1487e+04      0.0000e+00     -2.0436e+05     -1.5539e+04     -7.9044e+04     -4.0781e+04      3.1860e+04     -1.8724e+06      1.8022e+06
+
+STAT_0:    70000             139
+
+MOVE_1:    70000           20915             523      2.5006e+00
+
+ENER_1:    70000      4.9968e+04      4.9968e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    70000             391
+
+Steps/sec: 2448.977, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    80000           16029            7943      4.9554e+01      3.1472e-01           16072            8067      5.0193e+01      7.7870e-01           24066             572      2.3768e+00
+
+ENER_0:    80000     -2.8587e+05      2.0891e+04      0.0000e+00     -2.0825e+05     -1.6217e+04     -8.2293e+04     -4.1573e+04      3.0992e+04     -1.9128e+06      1.8411e+06
+
+STAT_0:    80000             142
+
+MOVE_1:    80000           23833             560      2.3497e+00
+
+ENER_1:    80000      4.8881e+04      4.8881e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    80000             388
+
+Steps/sec: 2462.194, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:    90000           17974            8940      4.9739e+01      3.7953e-01           18062            9053      5.0122e+01      6.9879e-01           27124             602      2.2194e+00
+
+ENER_0:    90000     -2.8411e+05      1.9568e+04      0.0000e+00     -2.0775e+05     -1.5539e+04     -8.0385e+04     -3.9655e+04      2.9617e+04     -1.8724e+06      1.8020e+06
+
+STAT_0:    90000             139
+
+MOVE_1:    90000           26840             593      2.2094e+00
+
+ENER_1:    90000      5.0258e+04      5.0258e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:    90000             391
+
+Steps/sec: 2442.147, Simulation ends in:   0 d:   0 h:   7 m 
+
+MOVE_0:   100000           19947            9919      4.9727e+01      3.4598e-01           20013           10048      5.0207e+01      8.1711e-01           30173             626      2.0747e+00
+
+ENER_0:   100000     -2.9044e+05      2.0677e+04      0.0000e+00     -2.1700e+05     -1.5990e+04     -7.8130e+04     -3.7997e+04      3.0907e+04     -1.8993e+06      1.8283e+06
+
+STAT_0:   100000             141
+
+MOVE_1:   100000           29867             615      2.0591e+00
+
+ENER_1:   100000      4.9980e+04      4.9980e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   100000             389
+
+Steps/sec: 2430.324, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   110000           21916           10927      4.9859e+01      4.0225e-01           21991           11042      5.0211e+01      8.5615e-01           33176             660      1.9894e+00
+
+ENER_0:   110000     -2.5799e+05      1.8072e+04      0.0000e+00     -1.8909e+05     -1.4441e+04     -7.2538e+04     -3.5321e+04      3.0557e+04     -1.8050e+06      1.7372e+06
+
+STAT_0:   110000             134
+
+MOVE_1:   110000           32917             656      1.9929e+00
+
+ENER_1:   110000      5.0218e+04      5.0218e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   110000             396
+
+Steps/sec: 2455.499, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   120000           23865           11901      4.9868e+01      3.6611e-01           24081           12088      5.0197e+01      8.5225e-01           36204             711      1.9639e+00
+
+ENER_0:   120000     -2.6018e+05      2.1792e+04      0.0000e+00     -1.9387e+05     -1.4658e+04     -7.3451e+04     -3.7264e+04      3.1668e+04     -1.8185e+06      1.7506e+06
+
+STAT_0:   120000             135
+
+MOVE_1:   120000           35850             706      1.9693e+00
+
+ENER_1:   120000      5.0225e+04      5.0225e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   120000             395
+
+Steps/sec: 2517.245, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   130000           25850           12895      4.9884e+01      3.6239e-01           26137           13112      5.0166e+01      7.7550e-01           39136             754      1.9266e+00
+
+ENER_0:   130000     -2.6387e+05      2.1550e+04      0.0000e+00     -1.9358e+05     -1.4876e+04     -7.6962e+04     -3.8467e+04      2.9766e+04     -1.8320e+06      1.7637e+06
+
+STAT_0:   130000             136
+
+MOVE_1:   130000           38877             748      1.9240e+00
+
+ENER_1:   130000      4.9998e+04      4.9998e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   130000             394
+
+Steps/sec: 2508.700, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   140000           27839           13890      4.9894e+01      3.6066e-01           28150           14134      5.0210e+01      7.9962e-01           42130             784      1.8609e+00
+
+ENER_0:   140000     -2.7484e+05      2.0746e+04      0.0000e+00     -2.0352e+05     -1.5539e+04     -7.6526e+04     -3.8969e+04      3.2226e+04     -1.8724e+06      1.8026e+06
+
+STAT_0:   140000             139
+
+MOVE_1:   140000           41881             775      1.8505e+00
+
+ENER_1:   140000      4.9566e+04      4.9566e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   140000             391
+
+Steps/sec: 2466.130, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   150000           29930           14941      4.9920e+01      3.7315e-01           30168           15143      5.0196e+01      7.4290e-01           45080             833      1.8478e+00
+
+ENER_0:   150000     -2.7908e+05      2.0669e+04      0.0000e+00     -2.1018e+05     -1.6217e+04     -7.3353e+04     -3.6641e+04      3.4654e+04     -1.9128e+06      1.8414e+06
+
+STAT_0:   150000             142
+
+MOVE_1:   150000           44822             821      1.8317e+00
+
+ENER_1:   150000      4.7783e+04      4.7783e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   150000             388
+
+Steps/sec: 2464.721, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   160000           31944           15944      4.9912e+01      3.4797e-01           32201           16163      5.0194e+01      7.3615e-01           48043             869      1.8088e+00
+
+ENER_0:   160000     -2.5573e+05      2.1663e+04      0.0000e+00     -1.9054e+05     -1.4876e+04     -7.1982e+04     -3.6486e+04      3.2613e+04     -1.8320e+06      1.7639e+06
+
+STAT_0:   160000             136
+
+MOVE_1:   160000           47812             863      1.8050e+00
+
+ENER_1:   160000      4.9936e+04      4.9936e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   160000             394
+
+Steps/sec: 2488.673, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   170000           33898           16932      4.9950e+01      3.6174e-01           34156           17159      5.0237e+01      8.6233e-01           51055             908      1.7785e+00
+
+ENER_0:   170000     -2.5767e+05      2.3394e+04      0.0000e+00     -1.9100e+05     -1.4876e+04     -7.5186e+04     -3.7102e+04      2.9998e+04     -1.8320e+06      1.7639e+06
+
+STAT_0:   170000             136
+
+MOVE_1:   170000           50891             902      1.7724e+00
+
+ENER_1:   170000      4.9301e+04      4.9301e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   170000             394
+
+Steps/sec: 2499.783, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   180000           35839           17905      4.9960e+01      3.6857e-01           36151           18142      5.0184e+01      7.2562e-01           54110             953      1.7612e+00
+
+ENER_0:   180000     -2.7526e+05      2.2184e+04      0.0000e+00     -2.0554e+05     -1.5539e+04     -7.6370e+04     -3.8167e+04      3.1437e+04     -1.8724e+06      1.8027e+06
+
+STAT_0:   180000             139
+
+MOVE_1:   180000           53900             944      1.7514e+00
+
+ENER_1:   180000      5.1356e+04      5.1356e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   180000             391
+
+Steps/sec: 2458.536, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   190000           37813           18875      4.9917e+01      3.0406e-01           38115           19117      5.0156e+01      6.6349e-01           57115             987      1.7281e+00
+
+ENER_0:   190000     -2.8242e+05      2.6512e+04      0.0000e+00     -2.1337e+05     -1.6217e+04     -7.9344e+04     -4.0207e+04      3.1923e+04     -1.9128e+06      1.8417e+06
+
+STAT_0:   190000             142
+
+MOVE_1:   190000           56957             975      1.7118e+00
+
+ENER_1:   190000      5.2075e+04      5.2075e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   190000             388
+
+Steps/sec: 2430.106, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   200000           39768           19876      4.9980e+01      3.6585e-01           40129           20150      5.0213e+01      8.3136e-01           60073            1037      1.7262e+00
+
+ENER_0:   200000     -2.8803e+05      2.2940e+04      0.0000e+00     -2.1443e+05     -1.5990e+04     -8.0554e+04     -4.1293e+04      3.1122e+04     -1.8993e+06      1.8289e+06
+
+STAT_0:   200000             141
+
+MOVE_1:   200000           60030            1026      1.7091e+00
+
+ENER_1:   200000      5.2263e+04      5.2263e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   200000             389
+
+Steps/sec: 2474.883, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   210000           41785           20899      5.0016e+01      4.2174e-01           42073           21114      5.0184e+01      7.3990e-01           63153            1054      1.6690e+00
+
+ENER_0:   210000     -2.6984e+05      2.1463e+04      0.0000e+00     -1.9978e+05     -1.5095e+04     -7.6427e+04     -3.7789e+04      2.9681e+04     -1.8454e+06      1.7771e+06
+
+STAT_0:   210000             137
+
+MOVE_1:   210000           62989            1047      1.6622e+00
+
+ENER_1:   210000      5.2789e+04      5.2789e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   210000             393
+
+Steps/sec: 2455.767, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   220000           43799           21908      5.0019e+01      4.2387e-01           44074           22139      5.0231e+01      9.0189e-01           66096            1092      1.6521e+00
+
+ENER_0:   220000     -2.5383e+05      2.1261e+04      0.0000e+00     -1.9217e+05     -1.4441e+04     -6.8484e+04     -3.3604e+04      3.2333e+04     -1.8050e+06      1.7378e+06
+
+STAT_0:   220000             134
+
+MOVE_1:   220000           66031            1088      1.6477e+00
+
+ENER_1:   220000      5.4879e+04      5.4879e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   220000             396
+
+Steps/sec: 2504.963, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   230000           45847           22911      4.9973e+01      3.3464e-01           46056           23116      5.0191e+01      7.5215e-01           69040            1126      1.6309e+00
+
+ENER_0:   230000     -2.6304e+05      1.8810e+04      0.0000e+00     -1.9422e+05     -1.4441e+04     -7.3184e+04     -3.6741e+04      3.0757e+04     -1.8050e+06      1.7378e+06
+
+STAT_0:   230000             134
+
+MOVE_1:   230000           69057            1122      1.6247e+00
+
+ENER_1:   230000      5.3172e+04      5.3172e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   230000             396
+
+Steps/sec: 2483.551, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   240000           47837           23922      5.0007e+01      3.7530e-01           48040           24109      5.0185e+01      7.4221e-01           72065            1163      1.6138e+00
+
+ENER_0:   240000     -2.8242e+05      1.8598e+04      0.0000e+00     -2.0292e+05     -1.5764e+04     -8.2334e+04     -4.3449e+04      3.1065e+04     -1.8858e+06      1.8159e+06
+
+STAT_0:   240000             140
+
+MOVE_1:   240000           72058            1153      1.6001e+00
+
+ENER_1:   240000      5.3054e+04      5.3054e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   240000             390
+
+Steps/sec: 2464.930, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   250000           49838           24931      5.0024e+01      3.9004e-01           50017           25101      5.0185e+01      7.3598e-01           75108            1206      1.6057e+00
+
+ENER_0:   250000     -2.8556e+05      1.7055e+04      0.0000e+00     -2.0865e+05     -1.5764e+04     -7.8203e+04     -3.9921e+04      3.1752e+04     -1.8858e+06      1.8158e+06
+
+STAT_0:   250000             140
+
+MOVE_1:   250000           75037            1196      1.5939e+00
+
+ENER_1:   250000      5.4670e+04      5.4670e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   250000             390
+
+Steps/sec: 2483.687, Simulation ends in:   0 d:   0 h:   6 m 
+
+MOVE_0:   260000           51787           25905      5.0022e+01      3.5373e-01           51996           26108      5.0212e+01      8.4988e-01           78119            1235      1.5809e+00
+
+ENER_0:   260000     -2.8181e+05      1.6453e+04      0.0000e+00     -2.1041e+05     -1.5990e+04     -7.1865e+04     -3.7080e+04      3.5723e+04     -1.8993e+06      1.8288e+06
+
+STAT_0:   260000             141
+
+MOVE_1:   260000           78098            1224      1.5673e+00
+
+ENER_1:   260000      5.7480e+04      5.7480e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   260000             389
+
+Steps/sec: 2458.996, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   270000           53853           26953      5.0049e+01      3.7635e-01           53995           27088      5.0168e+01      7.0097e-01           81099            1267      1.5623e+00
+
+ENER_0:   270000     -2.8960e+05      1.7759e+04      0.0000e+00     -2.0766e+05     -1.5990e+04     -8.3708e+04     -4.4518e+04      3.1498e+04     -1.8993e+06      1.8286e+06
+
+STAT_0:   270000             141
+
+MOVE_1:   270000           81053            1256      1.5496e+00
+
+ENER_1:   270000      5.7114e+04      5.7114e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   270000             389
+
+Steps/sec: 2490.792, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   280000           55864           27955      5.0041e+01      3.5712e-01           55964           28083      5.0180e+01      7.5729e-01           84105            1303      1.5493e+00
+
+ENER_0:   280000     -2.9107e+05      1.8468e+04      0.0000e+00     -2.1187e+05     -1.6217e+04     -8.1448e+04     -4.1010e+04      3.0791e+04     -1.9128e+06      1.8416e+06
+
+STAT_0:   280000             142
+
+MOVE_1:   280000           84067            1291      1.5357e+00
+
+ENER_1:   280000      5.5500e+04      5.5500e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   280000             388
+
+Steps/sec: 2461.355, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   290000           57883           28957      5.0027e+01      3.2110e-01           58003           29114      5.0194e+01      8.3220e-01           87105            1338      1.5361e+00
+
+ENER_0:   290000     -2.9361e+05      1.9646e+04      0.0000e+00     -2.1220e+05     -1.5990e+04     -8.5069e+04     -4.1928e+04      2.7528e+04     -1.8993e+06      1.8286e+06
+
+STAT_0:   290000             141
+
+MOVE_1:   290000           87009            1327      1.5251e+00
+
+ENER_1:   290000      5.6008e+04      5.6008e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   290000             389
+
+Steps/sec: 2479.229, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   300000           59853           29953      5.0044e+01      3.5094e-01           59949           30089      5.0191e+01      7.9875e-01           90187            1362      1.5102e+00
+
+ENER_0:   300000     -3.0459e+05      1.9933e+04      0.0000e+00     -2.2264e+05     -1.6677e+04     -8.5205e+04     -4.2556e+04      2.9566e+04     -1.9397e+06      1.8675e+06
+
+STAT_0:   300000             144
+
+MOVE_1:   300000           90011            1348      1.4976e+00
+
+ENER_1:   300000      5.3978e+04      5.3978e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   300000             386
+
+Steps/sec: 2430.502, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   310000           61911           30991      5.0057e+01      3.6868e-01           61943           31097      5.0203e+01      8.6440e-01           93166            1390      1.4920e+00
+
+ENER_0:   310000     -2.9594e+05      1.8233e+04      0.0000e+00     -2.1607e+05     -1.6446e+04     -8.1652e+04     -4.0953e+04      3.0824e+04     -1.9263e+06      1.8547e+06
+
+STAT_0:   310000             143
+
+MOVE_1:   310000           92980            1377      1.4810e+00
+
+ENER_1:   310000      5.4548e+04      5.4548e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   310000             387
+
+Steps/sec: 2454.839, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   320000           63845           31962      5.0062e+01      3.6772e-01           64045           32135      5.0176e+01      7.5157e-01           96208            1408      1.4635e+00
+
+ENER_0:   320000     -2.9176e+05      1.7319e+04      0.0000e+00     -2.0910e+05     -1.5764e+04     -8.4217e+04     -4.2167e+04      2.7740e+04     -1.8858e+06      1.8161e+06
+
+STAT_0:   320000             140
+
+MOVE_1:   320000           95902            1398      1.4577e+00
+
+ENER_1:   320000      5.4105e+04      5.4105e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   320000             390
+
+Steps/sec: 2465.616, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   330000           65788           32931      5.0056e+01      3.4174e-01           66017           33132      5.0187e+01      8.0235e-01           99260            1442      1.4528e+00
+
+ENER_0:   330000     -2.8580e+05      1.7412e+04      0.0000e+00     -2.1117e+05     -1.5990e+04     -7.6044e+04     -3.7077e+04      3.1483e+04     -1.8993e+06      1.8289e+06
+
+STAT_0:   330000             141
+
+MOVE_1:   330000           98935            1431      1.4464e+00
+
+ENER_1:   330000      5.5741e+04      5.5741e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   330000             389
+
+Steps/sec: 2476.524, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   340000           67772           33939      5.0078e+01      3.7012e-01           67984           34098      5.0156e+01      6.3465e-01          102308            1472      1.4388e+00
+
+ENER_0:   340000     -2.7795e+05      1.6658e+04      0.0000e+00     -2.0380e+05     -1.5539e+04     -7.5270e+04     -3.8219e+04      3.2277e+04     -1.8724e+06      1.8030e+06
+
+STAT_0:   340000             139
+
+MOVE_1:   340000          101936            1463      1.4352e+00
+
+ENER_1:   340000      5.4269e+04      5.4269e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   340000             391
+
+Steps/sec: 2463.446, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   350000           69781           34953      5.0090e+01      4.0073e-01           69970           35118      5.0190e+01      7.7717e-01          105277            1511      1.4353e+00
+
+ENER_0:   350000     -2.7533e+05      1.5778e+04      0.0000e+00     -1.9761e+05     -1.5316e+04     -7.8182e+04     -4.0288e+04      3.0933e+04     -1.8589e+06      1.7901e+06
+
+STAT_0:   350000             138
+
+MOVE_1:   350000          104972            1503      1.4318e+00
+
+ENER_1:   350000      5.7374e+04      5.7374e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   350000             392
+
+Steps/sec: 2507.460, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   360000           71759           35933      5.0075e+01      3.6559e-01           72003           36126      5.0173e+01      6.9860e-01          108306            1543      1.4247e+00
+
+ENER_0:   360000     -2.7532e+05      1.8801e+04      0.0000e+00     -1.9708e+05     -1.5095e+04     -8.1946e+04     -4.2026e+04      2.8359e+04     -1.8454e+06      1.7772e+06
+
+STAT_0:   360000             137
+
+MOVE_1:   360000          107932            1536      1.4231e+00
+
+ENER_1:   360000      5.6647e+04      5.6647e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   360000             393
+
+Steps/sec: 2490.121, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   370000           73795           36950      5.0071e+01      3.5357e-01           74018           37159      5.0203e+01      8.4255e-01          111259            1595      1.4336e+00
+
+ENER_0:   370000     -2.6393e+05      1.7433e+04      0.0000e+00     -1.9209e+05     -1.4658e+04     -7.4623e+04     -3.7572e+04      3.0128e+04     -1.8185e+06      1.7513e+06
+
+STAT_0:   370000             135
+
+MOVE_1:   370000          110928            1590      1.4334e+00
+
+ENER_1:   370000      5.2283e+04      5.2283e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   370000             395
+
+Steps/sec: 2530.013, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   380000           75812           37964      5.0077e+01      3.6855e-01           75974           38126      5.0183e+01      7.1589e-01          114185            1645      1.4406e+00
+
+ENER_0:   380000     -2.6327e+05      1.9339e+04      0.0000e+00     -1.9227e+05     -1.4876e+04     -7.5464e+04     -3.7540e+04      2.9959e+04     -1.8320e+06      1.7641e+06
+
+STAT_0:   380000             136
+
+MOVE_1:   380000          114029            1639      1.4374e+00
+
+ENER_1:   380000      5.4474e+04      5.4474e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   380000             394
+
+Steps/sec: 2508.922, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   390000           77773           38946      5.0077e+01      3.6411e-01           77965           39118      5.0174e+01      6.5599e-01          117198            1693      1.4446e+00
+
+ENER_0:   390000     -2.7780e+05      1.8383e+04      0.0000e+00     -2.0681e+05     -1.5764e+04     -7.3609e+04     -3.7162e+04      3.3793e+04     -1.8858e+06      1.8156e+06
+
+STAT_0:   390000             140
+
+MOVE_1:   390000          117064            1683      1.4377e+00
+
+ENER_1:   390000      5.4751e+04      5.4751e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   390000             390
+
+Steps/sec: 2473.530, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   400000           79729           39916      5.0065e+01      3.2332e-01           80005           40167      5.0206e+01      8.2718e-01          120195            1716      1.4277e+00
+
+ENER_0:   400000     -2.9970e+05      1.8440e+04      0.0000e+00     -2.2202e+05     -1.6677e+04     -7.9445e+04     -4.1121e+04      3.3798e+04     -1.9397e+06      1.8676e+06
+
+STAT_0:   400000             144
+
+MOVE_1:   400000          120071            1702      1.4175e+00
+
+ENER_1:   400000      5.4510e+04      5.4510e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   400000             386
+
+Steps/sec: 2437.527, Simulation ends in:   0 d:   0 h:   5 m 
+
+MOVE_0:   410000           81691           40904      5.0072e+01      3.3845e-01           82065           41197      5.0200e+01      8.1060e-01          123186            1746      1.4174e+00
+
+ENER_0:   410000     -2.8415e+05      1.8142e+04      0.0000e+00     -2.0911e+05     -1.5990e+04     -7.7195e+04     -3.7950e+04      3.1482e+04     -1.8993e+06      1.8286e+06
+
+STAT_0:   410000             141
+
+MOVE_1:   410000          123058            1735      1.4099e+00
+
+ENER_1:   410000      5.5708e+04      5.5708e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   410000             389
+
+Steps/sec: 2456.202, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   420000           83641           41895      5.0089e+01      3.8345e-01           84052           42191      5.0196e+01      7.6577e-01          126222            1784      1.4134e+00
+
+ENER_0:   420000     -2.3955e+05      1.8194e+04      0.0000e+00     -1.7955e+05     -1.3592e+04     -6.4607e+04     -3.2499e+04      3.2710e+04     -1.7511e+06      1.6863e+06
+
+STAT_0:   420000             130
+
+MOVE_1:   420000          126085            1784      1.4149e+00
+
+ENER_1:   420000      5.7585e+04      5.7585e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   420000             400
+
+Steps/sec: 2506.783, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   430000           85693           42918      5.0083e+01      3.4011e-01           86083           43229      5.0218e+01      9.2240e-01          129238            1836      1.4206e+00
+
+ENER_0:   430000     -2.6469e+05      2.2162e+04      0.0000e+00     -1.9966e+05     -1.5095e+04     -7.2091e+04     -3.5355e+04      3.1495e+04     -1.8454e+06      1.7772e+06
+
+STAT_0:   430000             137
+
+MOVE_1:   430000          128986            1829      1.4180e+00
+
+ENER_1:   430000      5.6860e+04      5.6860e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   430000             393
+
+Steps/sec: 2544.946, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   440000           87730           43950      5.0097e+01      3.6268e-01           88038           44194      5.0199e+01      7.9060e-01          132225            1861      1.4074e+00
+
+ENER_0:   440000     -2.6230e+05      2.1296e+04      0.0000e+00     -1.9509e+05     -1.4876e+04     -7.3634e+04     -3.6480e+04      3.0506e+04     -1.8320e+06      1.7643e+06
+
+STAT_0:   440000             136
+
+MOVE_1:   440000          132007            1855      1.4052e+00
+
+ENER_1:   440000      5.5840e+04      5.5840e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   440000             394
+
+Steps/sec: 2484.813, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   450000           89767           44973      5.0100e+01      3.6880e-01           89983           45172      5.0201e+01      8.0189e-01          135234            1905      1.4087e+00
+
+ENER_0:   450000     -2.6583e+05      2.1669e+04      0.0000e+00     -2.0159e+05     -1.5316e+04     -7.0594e+04     -3.4170e+04      3.2217e+04     -1.8589e+06      1.7903e+06
+
+STAT_0:   450000             138
+
+MOVE_1:   450000          135016            1897      1.4050e+00
+
+ENER_1:   450000      5.4189e+04      5.4189e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   450000             392
+
+Steps/sec: 2492.004, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   460000           91752           45961      5.0093e+01      3.4161e-01           92068           46219      5.0201e+01      7.8321e-01          138241            1946      1.4077e+00
+
+ENER_0:   460000     -2.8146e+05      2.3293e+04      0.0000e+00     -2.1004e+05     -1.6217e+04     -7.8500e+04     -4.0536e+04      3.2690e+04     -1.9128e+06      1.8421e+06
+
+STAT_0:   460000             142
+
+MOVE_1:   460000          137939            1934      1.4021e+00
+
+ENER_1:   460000      5.5823e+04      5.5823e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   460000             388
+
+Steps/sec: 2465.905, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   470000           93718           46942      5.0089e+01      3.1998e-01           94077           47225      5.0198e+01      7.7929e-01          141309            1980      1.4012e+00
+
+ENER_0:   470000     -2.8394e+05      2.3477e+04      0.0000e+00     -2.0725e+05     -1.5764e+04     -8.4399e+04     -4.2998e+04      2.7959e+04     -1.8858e+06      1.8165e+06
+
+STAT_0:   470000             140
+
+MOVE_1:   470000          140896            1970      1.3982e+00
+
+ENER_1:   470000      5.7339e+04      5.7339e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   470000             390
+
+Steps/sec: 2418.020, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   480000           95744           47965      5.0097e+01      3.5069e-01           96082           48233      5.0200e+01      8.0921e-01          144216            2015      1.3972e+00
+
+ENER_0:   480000     -2.8646e+05      2.0634e+04      0.0000e+00     -2.1499e+05     -1.6217e+04     -7.5885e+04     -3.9069e+04      3.3977e+04     -1.9128e+06      1.8420e+06
+
+STAT_0:   480000             142
+
+MOVE_1:   480000          143958            2003      1.3914e+00
+
+ENER_1:   480000      5.5616e+04      5.5616e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   480000             388
+
+Steps/sec: 2450.605, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   490000           97711           48967      5.0114e+01      4.0652e-01           98101           49237      5.0190e+01      7.5434e-01          147222            2058      1.3979e+00
+
+ENER_0:   490000     -2.8688e+05      2.1829e+04      0.0000e+00     -2.1284e+05     -1.5764e+04     -8.0106e+04     -4.0716e+04      3.0373e+04     -1.8858e+06      1.8161e+06
+
+STAT_0:   490000             140
+
+MOVE_1:   490000          146966            2048      1.3935e+00
+
+ENER_1:   490000      5.9256e+04      5.9256e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   490000             390
+
+Steps/sec: 2462.972, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   500000           99721           49961      5.0101e+01      3.5414e-01          100111           50251      5.0195e+01      7.9637e-01          150201            2080      1.3848e+00
+
+ENER_0:   500000     -3.0563e+05      2.2922e+04      0.0000e+00     -2.2953e+05     -1.6910e+04     -8.2115e+04     -4.1034e+04      3.1088e+04     -1.9532e+06      1.8810e+06
+
+STAT_0:   500000             145
+
+MOVE_1:   500000          149967            2065      1.3770e+00
+
+ENER_1:   500000      6.0326e+04      6.0326e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   500000             385
+
+Steps/sec: 2424.208, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   510000          101730           50968      5.0101e+01      3.6138e-01          102110           51238      5.0179e+01      6.7031e-01          153131            2102      1.3727e+00
+
+ENER_0:   510000     -3.0053e+05      2.2899e+04      0.0000e+00     -2.2126e+05     -1.6677e+04     -8.5490e+04     -4.4852e+04      3.1032e+04     -1.9397e+06      1.8681e+06
+
+STAT_0:   510000             144
+
+MOVE_1:   510000          153029            2088      1.3644e+00
+
+ENER_1:   510000      5.9028e+04      5.9028e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   510000             386
+
+Steps/sec: 2423.207, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   520000          103726           51972      5.0105e+01      3.7095e-01          104166           52279      5.0188e+01      7.2165e-01          156136            2130      1.3642e+00
+
+ENER_0:   520000     -3.1835e+05      2.3552e+04      0.0000e+00     -2.3780e+05     -1.7855e+04     -8.6245e+04     -4.3845e+04      3.1765e+04     -2.0071e+06      1.9329e+06
+
+STAT_0:   520000             149
+
+MOVE_1:   520000          155972            2111      1.3534e+00
+
+ENER_1:   520000      5.8305e+04      5.8305e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   520000             381
+
+Steps/sec: 2419.114, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   530000          105747           52973      5.0094e+01      3.1869e-01          106153           53285      5.0196e+01      7.4501e-01          159123            2145      1.3480e+00
+
+ENER_0:   530000     -3.1912e+05      2.2591e+04      0.0000e+00     -2.3317e+05     -1.7855e+04     -9.0682e+04     -4.5887e+04      2.9353e+04     -2.0071e+06      1.9329e+06
+
+STAT_0:   530000             149
+
+MOVE_1:   530000          158977            2126      1.3373e+00
+
+ENER_1:   530000      5.7273e+04      5.7273e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   530000             381
+
+Steps/sec: 2392.543, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   540000          107740           53977      5.0099e+01      3.4102e-01          108147           54284      5.0195e+01      7.4247e-01          162089            2163      1.3345e+00
+
+ENER_0:   540000     -3.1395e+05      2.1942e+04      0.0000e+00     -2.2966e+05     -1.7144e+04     -8.9090e+04     -4.6307e+04      2.9778e+04     -1.9667e+06      1.8941e+06
+
+STAT_0:   540000             146
+
+MOVE_1:   540000          162024            2147      1.3251e+00
+
+ENER_1:   540000      5.7331e+04      5.7331e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   540000             384
+
+Steps/sec: 2403.648, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   550000          109721           54972      5.0102e+01      3.4137e-01          110143           55280      5.0189e+01      7.0956e-01          165088            2179      1.3199e+00
+
+ENER_0:   550000     -3.2399e+05      2.3351e+04      0.0000e+00     -2.3924e+05     -1.7855e+04     -9.0252e+04     -4.6727e+04      3.0468e+04     -2.0071e+06      1.9331e+06
+
+STAT_0:   550000             149
+
+MOVE_1:   550000          165048            2160      1.3087e+00
+
+ENER_1:   550000      5.5939e+04      5.5939e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   550000             381
+
+Steps/sec: 2392.748, Simulation ends in:   0 d:   0 h:   4 m 
+
+MOVE_0:   560000          111689           55964      5.0107e+01      3.6748e-01          112156           56293      5.0192e+01      7.5584e-01          168058            2200      1.3091e+00
+
+ENER_0:   560000     -3.0045e+05      2.1911e+04      0.0000e+00     -2.1973e+05     -1.6910e+04     -8.5715e+04     -4.3995e+04      3.0192e+04     -1.9532e+06      1.8813e+06
+
+STAT_0:   560000             145
+
+MOVE_1:   560000          168097            2185      1.2998e+00
+
+ENER_1:   560000      5.5928e+04      5.5928e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   560000             385
+
+Steps/sec: 2413.980, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   570000          113678           56957      5.0104e+01      3.4020e-01          114188           57311      5.0190e+01      7.5405e-01          171080            2230      1.3035e+00
+
+ENER_0:   570000     -2.7531e+05      2.1275e+04      0.0000e+00     -2.0368e+05     -1.5764e+04     -7.7132e+04     -4.1144e+04      3.3262e+04     -1.8858e+06      1.8166e+06
+
+STAT_0:   570000             140
+
+MOVE_1:   570000          171054            2220      1.2978e+00
+
+ENER_1:   570000      5.4875e+04      5.4875e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   570000             390
+
+Steps/sec: 2470.416, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   580000          115616           57937      5.0112e+01      3.7546e-01          116217           58322      5.0184e+01      6.5712e-01          174095            2265      1.3010e+00
+
+ENER_0:   580000     -2.8821e+05      1.8872e+04      0.0000e+00     -2.0761e+05     -1.5990e+04     -8.3487e+04     -4.2230e+04      2.8652e+04     -1.8993e+06      1.8294e+06
+
+STAT_0:   580000             141
+
+MOVE_1:   580000          174072            2254      1.2949e+00
+
+ENER_1:   580000      5.3249e+04      5.3249e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   580000             389
+
+Steps/sec: 2474.520, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   590000          117568           58907      5.0105e+01      3.3698e-01          118257           59364      5.0199e+01      7.8253e-01          177082            2303      1.3005e+00
+
+ENER_0:   590000     -2.9783e+05      2.1249e+04      0.0000e+00     -2.1941e+05     -1.6677e+04     -8.2993e+04     -4.4014e+04      3.2545e+04     -1.9397e+06      1.8682e+06
+
+STAT_0:   590000             144
+
+MOVE_1:   590000          177093            2289      1.2925e+00
+
+ENER_1:   590000      5.3299e+04      5.3299e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   590000             386
+
+Steps/sec: 2460.835, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   600000          119625           59948      5.0113e+01      3.5969e-01          120173           60327      5.0200e+01      7.8074e-01          180092            2321      1.2888e+00
+
+ENER_0:   600000     -3.0205e+05      2.1168e+04      0.0000e+00     -2.2040e+05     -1.6677e+04     -8.6143e+04     -4.4081e+04      2.9365e+04     -1.9397e+06      1.8683e+06
+
+STAT_0:   600000             144
+
+MOVE_1:   600000          180110            2307      1.2809e+00
+
+ENER_1:   600000      5.2727e+04      5.2727e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   600000             386
+
+Steps/sec: 2418.161, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   610000          121639           60950      5.0107e+01      3.3512e-01          122177           61325      5.0194e+01      7.1620e-01          183029            2343      1.2801e+00
+
+ENER_0:   610000     -3.0783e+05      2.1040e+04      0.0000e+00     -2.2687e+05     -1.6677e+04     -8.5316e+04     -4.4397e+04      3.0534e+04     -1.9397e+06      1.8683e+06
+
+STAT_0:   610000             144
+
+MOVE_1:   610000          183155            2329      1.2716e+00
+
+ENER_1:   610000      5.3343e+04      5.3343e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   610000             386
+
+Steps/sec: 2431.884, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   620000          123654           61956      5.0104e+01      3.1253e-01          124168           62324      5.0193e+01      7.0202e-01          186024            2368      1.2730e+00
+
+ENER_0:   620000     -2.9358e+05      2.2622e+04      0.0000e+00     -2.1872e+05     -1.6446e+04     -8.1036e+04     -4.1223e+04      3.1247e+04     -1.9263e+06      1.8552e+06
+
+STAT_0:   620000             143
+
+MOVE_1:   620000          186154            2355      1.2651e+00
+
+ENER_1:   620000      5.1488e+04      5.1488e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   620000             387
+
+Steps/sec: 2447.058, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   630000          125606           62945      5.0113e+01      3.4736e-01          126193           63342      5.0195e+01      7.3891e-01          189056            2399      1.2689e+00
+
+ENER_0:   630000     -2.7534e+05      2.2753e+04      0.0000e+00     -2.0803e+05     -1.5539e+04     -7.4518e+04     -3.7245e+04      3.1793e+04     -1.8724e+06      1.8033e+06
+
+STAT_0:   630000             139
+
+MOVE_1:   630000          189145            2390      1.2636e+00
+
+ENER_1:   630000      5.1889e+04      5.1889e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   630000             391
+
+Steps/sec: 2464.716, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   640000          127595           63948      5.0118e+01      3.6376e-01          128238           64382      5.0205e+01      8.2242e-01          192007            2447      1.2744e+00
+
+ENER_0:   640000     -2.6833e+05      2.1947e+04      0.0000e+00     -2.0094e+05     -1.5316e+04     -7.4015e+04     -3.5519e+04      3.0316e+04     -1.8589e+06      1.7901e+06
+
+STAT_0:   640000             138
+
+MOVE_1:   640000          192160            2439      1.2693e+00
+
+ENER_1:   640000      5.3832e+04      5.3832e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   640000             392
+
+Steps/sec: 2488.677, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   650000          129608           64955      5.0117e+01      3.6015e-01          130233           65362      5.0189e+01      7.0344e-01          194987            2480      1.2719e+00
+
+ENER_0:   650000     -2.8197e+05      2.1516e+04      0.0000e+00     -2.0406e+05     -1.5539e+04     -8.3894e+04     -4.1582e+04      2.7040e+04     -1.8724e+06      1.8030e+06
+
+STAT_0:   650000             139
+
+MOVE_1:   650000          195172            2471      1.2661e+00
+
+ENER_1:   650000      5.1650e+04      5.1650e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   650000             391
+
+Steps/sec: 2474.374, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   660000          131644           65981      5.0121e+01      3.7236e-01          132280           66406      5.0201e+01      8.2811e-01          197951            2509      1.2675e+00
+
+ENER_0:   660000     -2.9760e+05      2.1519e+04      0.0000e+00     -2.1846e+05     -1.6446e+04     -8.4211e+04     -4.3041e+04      2.9882e+04     -1.9263e+06      1.8552e+06
+
+STAT_0:   660000             143
+
+MOVE_1:   660000          198125            2496      1.2598e+00
+
+ENER_1:   660000      5.4331e+04      5.4331e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   660000             387
+
+Steps/sec: 2467.616, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   670000          133516           66908      5.0112e+01      3.2618e-01          134255           67391      5.0196e+01      7.6605e-01          201057            2533      1.2598e+00
+
+ENER_0:   670000     -2.8809e+05      2.2588e+04      0.0000e+00     -2.1037e+05     -1.6446e+04     -8.3856e+04     -4.1862e+04      2.9241e+04     -1.9263e+06      1.8550e+06
+
+STAT_0:   670000             143
+
+MOVE_1:   670000          201172            2520      1.2527e+00
+
+ENER_1:   670000      5.4324e+04      5.4324e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   670000             387
+
+Steps/sec: 2414.018, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   680000          135494           67912      5.0122e+01      3.4910e-01          136304           68423      5.0199e+01      7.8130e-01          204007            2552      1.2509e+00
+
+ENER_0:   680000     -2.8795e+05      2.3328e+04      0.0000e+00     -2.1542e+05     -1.6217e+04     -7.9641e+04     -3.9315e+04      3.0609e+04     -1.9128e+06      1.8418e+06
+
+STAT_0:   680000             142
+
+MOVE_1:   680000          204195            2540      1.2439e+00
+
+ENER_1:   680000      5.4222e+04      5.4222e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   680000             388
+
+Steps/sec: 2455.862, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   690000          137449           68887      5.0118e+01      3.2588e-01          138234           69386      5.0195e+01      7.5364e-01          206979            2584      1.2484e+00
+
+ENER_0:   690000     -2.7827e+05      2.1624e+04      0.0000e+00     -2.0473e+05     -1.5539e+04     -7.9626e+04     -3.9779e+04      2.9069e+04     -1.8724e+06      1.8035e+06
+
+STAT_0:   690000             139
+
+MOVE_1:   690000          207338            2575      1.2419e+00
+
+ENER_1:   690000      5.1120e+04      5.1120e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   690000             391
+
+Steps/sec: 2478.898, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   700000          139398           69864      5.0118e+01      3.2841e-01          140204           70380      5.0198e+01      8.0471e-01          210043            2623      1.2488e+00
+
+ENER_0:   700000     -2.8370e+05      2.2158e+04      0.0000e+00     -2.1605e+05     -1.6217e+04     -7.3592e+04     -3.6985e+04      3.3579e+04     -1.9128e+06      1.8426e+06
+
+STAT_0:   700000             142
+
+MOVE_1:   700000          210355            2611      1.2412e+00
+
+ENER_1:   700000      5.4273e+04      5.4273e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   700000             388
+
+Steps/sec: 2463.594, Simulation ends in:   0 d:   0 h:   3 m 
+
+MOVE_0:   710000          141364           70852      5.0120e+01      3.3884e-01          142203           71374      5.0192e+01      6.7841e-01          213077            2650      1.2437e+00
+
+ENER_0:   710000     -2.7407e+05      2.0772e+04      0.0000e+00     -2.0429e+05     -1.5764e+04     -7.4786e+04     -3.7742e+04      3.2100e+04     -1.8858e+06      1.8167e+06
+
+STAT_0:   710000             140
+
+MOVE_1:   710000          213356            2640      1.2374e+00
+
+ENER_1:   710000      5.5209e+04      5.5209e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   710000             390
+
+Steps/sec: 2446.187, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   720000          143312           71827      5.0119e+01      3.3242e-01          144173           72367      5.0195e+01      6.9488e-01          216088            2686      1.2430e+00
+
+ENER_0:   720000     -2.8911e+05      2.2255e+04      0.0000e+00     -2.1083e+05     -1.6446e+04     -8.4090e+04     -4.3738e+04      3.0634e+04     -1.9263e+06      1.8553e+06
+
+STAT_0:   720000             143
+
+MOVE_1:   720000          216427            2673      1.2351e+00
+
+ENER_1:   720000      5.4469e+04      5.4469e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   720000             387
+
+Steps/sec: 2460.865, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   730000          145297           72830      5.0125e+01      3.6569e-01          146168           73378      5.0201e+01      7.6018e-01          219128            2707      1.2354e+00
+
+ENER_0:   730000     -2.7403e+05      2.2962e+04      0.0000e+00     -2.0514e+05     -1.5316e+04     -7.6536e+04     -3.8083e+04      2.9978e+04     -1.8589e+06      1.7905e+06
+
+STAT_0:   730000             138
+
+MOVE_1:   730000          219407            2699      1.2301e+00
+
+ENER_1:   730000      5.3738e+04      5.3738e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   730000             392
+
+Steps/sec: 2443.952, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   740000          147281           73828      5.0127e+01      3.6936e-01          148166           74378      5.0199e+01      7.5646e-01          222186            2762      1.2431e+00
+
+ENER_0:   740000     -2.6373e+05      2.1898e+04      0.0000e+00     -1.9469e+05     -1.5095e+04     -7.5836e+04     -3.8987e+04      3.1349e+04     -1.8454e+06      1.7772e+06
+
+STAT_0:   740000             137
+
+MOVE_1:   740000          222367            2755      1.2389e+00
+
+ENER_1:   740000      5.1576e+04      5.1576e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   740000             393
+
+Steps/sec: 2517.454, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   750000          149268           74844      5.0141e+01      4.2711e-01          150161           75387      5.0204e+01      8.1529e-01          225130            2811      1.2486e+00
+
+ENER_0:   750000     -2.4616e+05      1.9043e+04      0.0000e+00     -1.8223e+05     -1.3592e+04     -6.9383e+04     -3.3801e+04      2.9380e+04     -1.7511e+06      1.6862e+06
+
+STAT_0:   750000             130
+
+MOVE_1:   750000          225441            2811      1.2469e+00
+
+ENER_1:   750000      5.2611e+04      5.2611e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   750000             400
+
+Steps/sec: 2527.628, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   760000          151280           75838      5.0131e+01      3.6542e-01          152168           76381      5.0195e+01      7.2873e-01          228092            2857      1.2526e+00
+
+ENER_0:   760000     -2.8945e+05      2.1768e+04      0.0000e+00     -2.1836e+05     -1.6446e+04     -7.6408e+04     -3.6827e+04      3.1375e+04     -1.9263e+06      1.8553e+06
+
+STAT_0:   760000             143
+
+MOVE_1:   760000          228460            2844      1.2449e+00
+
+ENER_1:   760000      5.2559e+04      5.2559e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   760000             387
+
+Steps/sec: 2507.152, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   770000          153279           76836      5.0128e+01      3.4482e-01          154148           77393      5.0207e+01      8.7010e-01          231165            2882      1.2467e+00
+
+ENER_0:   770000     -2.6955e+05      2.2826e+04      0.0000e+00     -2.0168e+05     -1.5316e+04     -7.5379e+04     -3.6355e+04      2.9606e+04     -1.8589e+06      1.7903e+06
+
+STAT_0:   770000             138
+
+MOVE_1:   770000          231408            2874      1.2420e+00
+
+ENER_1:   770000      5.3795e+04      5.3795e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   770000             392
+
+Steps/sec: 2432.368, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   780000          155282           77843      5.0130e+01      3.5520e-01          156073           78352      5.0202e+01      8.3006e-01          234190            2912      1.2434e+00
+
+ENER_0:   780000     -2.7712e+05      2.1659e+04      0.0000e+00     -2.0835e+05     -1.5764e+04     -7.4669e+04     -3.8101e+04      3.3359e+04     -1.8858e+06      1.8159e+06
+
+STAT_0:   780000             140
+
+MOVE_1:   780000          234455            2902      1.2378e+00
+
+ENER_1:   780000      5.2529e+04      5.2529e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   780000             390
+
+Steps/sec: 2428.740, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   790000          157233           78822      5.0131e+01      3.5678e-01          158049           79336      5.0197e+01      7.6749e-01          237177            2949      1.2434e+00
+
+ENER_0:   790000     -2.7206e+05      2.3781e+04      0.0000e+00     -2.0080e+05     -1.5095e+04     -7.9943e+04     -4.0212e+04      2.8929e+04     -1.8454e+06      1.7768e+06
+
+STAT_0:   790000             137
+
+MOVE_1:   790000          237541            2942      1.2385e+00
+
+ENER_1:   790000      5.4368e+04      5.4368e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   790000             393
+
+Steps/sec: 2460.948, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   800000          159170           79806      5.0139e+01      3.9081e-01          160054           80347      5.0200e+01      8.1744e-01          240212            2980      1.2406e+00
+
+ENER_0:   800000     -2.5913e+05      2.3266e+04      0.0000e+00     -1.8958e+05     -1.4876e+04     -7.7932e+04     -4.1501e+04      3.1864e+04     -1.8320e+06      1.7637e+06
+
+STAT_0:   800000             136
+
+MOVE_1:   800000          240564            2974      1.2363e+00
+
+ENER_1:   800000      5.4411e+04      5.4411e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   800000             394
+
+Steps/sec: 2466.316, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   810000          161220           80840      5.0143e+01      4.0347e-01          162015           81319      5.0192e+01      7.3513e-01          243228            3044      1.2515e+00
+
+ENER_0:   810000     -2.7653e+05      2.0384e+04      0.0000e+00     -2.0254e+05     -1.5539e+04     -7.8827e+04     -3.9716e+04      3.0267e+04     -1.8724e+06      1.8030e+06
+
+STAT_0:   810000             139
+
+MOVE_1:   810000          243537            3035      1.2462e+00
+
+ENER_1:   810000      5.4356e+04      5.4356e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   810000             391
+
+Steps/sec: 2512.600, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   820000          163205           81823      5.0135e+01      3.4518e-01          164050           82344      5.0194e+01      7.8166e-01          246210            3072      1.2477e+00
+
+ENER_0:   820000     -2.7415e+05      2.0299e+04      0.0000e+00     -2.0366e+05     -1.5539e+04     -7.5252e+04     -3.7195e+04      3.1347e+04     -1.8724e+06      1.8030e+06
+
+STAT_0:   820000             139
+
+MOVE_1:   820000          246535            3063      1.2424e+00
+
+ENER_1:   820000      5.3507e+04      5.3507e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   820000             391
+
+Steps/sec: 2488.271, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   830000          165172           82805      5.0133e+01      3.2361e-01          166082           83362      5.0193e+01      7.6668e-01          249223            3111      1.2483e+00
+
+ENER_0:   830000     -2.6238e+05      2.1498e+04      0.0000e+00     -1.9578e+05     -1.4876e+04     -7.3222e+04     -3.4432e+04      2.9291e+04     -1.8320e+06      1.7639e+06
+
+STAT_0:   830000             136
+
+MOVE_1:   830000          249523            3105      1.2444e+00
+
+ENER_1:   830000      5.6322e+04      5.6322e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   830000             394
+
+Steps/sec: 2508.963, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   840000          167218           83858      5.0149e+01      4.3146e-01          168086           84366      5.0192e+01      7.7183e-01          252211            3163      1.2541e+00
+
+ENER_0:   840000     -2.7521e+05      2.2928e+04      0.0000e+00     -2.0706e+05     -1.5539e+04     -7.5538e+04     -3.7420e+04      3.1290e+04     -1.8724e+06      1.8030e+06
+
+STAT_0:   840000             139
+
+MOVE_1:   840000          252485            3154      1.2492e+00
+
+ENER_1:   840000      5.6565e+04      5.6565e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   840000             391
+
+Steps/sec: 2502.920, Simulation ends in:   0 d:   0 h:   2 m 
+
+MOVE_0:   850000          169166           84822      5.0141e+01      3.6570e-01          170094           85373      5.0192e+01      7.4965e-01          255264            3219      1.2610e+00
+
+ENER_0:   850000     -2.5772e+05      2.0272e+04      0.0000e+00     -1.9189e+05     -1.4658e+04     -7.1447e+04     -3.5914e+04      3.1417e+04     -1.8185e+06      1.7515e+06
+
+STAT_0:   850000             135
+
+MOVE_1:   850000          255476            3214      1.2580e+00
+
+ENER_1:   850000      5.8656e+04      5.8656e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   850000             395
+
+Steps/sec: 2492.626, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   860000          171123           85822      5.0152e+01      4.4204e-01          172106           86368      5.0183e+01      6.4640e-01          258304            3271      1.2663e+00
+
+ENER_0:   860000     -2.7046e+05      2.0723e+04      0.0000e+00     -2.0243e+05     -1.5539e+04     -7.3216e+04     -3.6693e+04      3.2614e+04     -1.8724e+06      1.8032e+06
+
+STAT_0:   860000             139
+
+MOVE_1:   860000          258467            3262      1.2621e+00
+
+ENER_1:   860000      5.9956e+04      5.9956e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   860000             391
+
+Steps/sec: 2496.832, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   870000          173152           86821      5.0141e+01      3.7463e-01          174168           87433      5.0200e+01      8.6964e-01          261278            3318      1.2699e+00
+
+ENER_0:   870000     -2.6493e+05      2.1159e+04      0.0000e+00     -1.9099e+05     -1.5095e+04     -8.0008e+04     -4.1225e+04      2.9369e+04     -1.8454e+06      1.7773e+06
+
+STAT_0:   870000             137
+
+MOVE_1:   870000          261402            3311      1.2666e+00
+
+ENER_1:   870000      5.9286e+04      5.9286e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   870000             393
+
+Steps/sec: 2527.063, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   880000          175095           87785      5.0136e+01      3.3589e-01          176222           88453      5.0194e+01      7.7236e-01          264262            3401      1.2870e+00
+
+ENER_0:   880000     -2.8206e+05      2.4015e+04      0.0000e+00     -2.1051e+05     -1.6217e+04     -7.9341e+04     -4.1893e+04      3.3744e+04     -1.9128e+06      1.8416e+06
+
+STAT_0:   880000             142
+
+MOVE_1:   880000          264421            3389      1.2817e+00
+
+ENER_1:   880000      5.7546e+04      5.7546e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   880000             388
+
+Steps/sec: 2496.522, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   890000          177092           88791      5.0138e+01      3.6225e-01          178211           89448      5.0192e+01      7.6204e-01          267252            3436      1.2857e+00
+
+ENER_0:   890000     -2.8207e+05      2.4047e+04      0.0000e+00     -2.1153e+05     -1.5990e+04     -7.8593e+04     -4.1594e+04      3.3548e+04     -1.8993e+06      1.8288e+06
+
+STAT_0:   890000             141
+
+MOVE_1:   890000          267445            3425      1.2806e+00
+
+ENER_1:   890000      5.7884e+04      5.7884e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   890000             389
+
+Steps/sec: 2466.264, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   900000          179113           89801      5.0137e+01      3.3308e-01          180220           90464      5.0196e+01      8.3505e-01          270218            3467      1.2830e+00
+
+ENER_0:   900000     -2.7767e+05      2.4268e+04      0.0000e+00     -2.1059e+05     -1.6217e+04     -7.5135e+04     -3.9246e+04      3.5008e+04     -1.9128e+06      1.8419e+06
+
+STAT_0:   900000             142
+
+MOVE_1:   900000          270449            3455      1.2775e+00
+
+ENER_1:   900000      5.8147e+04      5.8147e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   900000             388
+
+Steps/sec: 2468.559, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   910000          181142           90816      5.0135e+01      3.2794e-01          182279           91474      5.0184e+01      6.7371e-01          273179            3499      1.2808e+00
+
+ENER_0:   910000     -2.8066e+05      2.4986e+04      0.0000e+00     -2.0740e+05     -1.6217e+04     -8.2025e+04     -4.1755e+04      3.0161e+04     -1.9128e+06      1.8424e+06
+
+STAT_0:   910000             142
+
+MOVE_1:   910000          273400            3487      1.2754e+00
+
+ENER_1:   910000      5.6707e+04      5.6707e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   910000             388
+
+Steps/sec: 2488.734, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   920000          183111           91808      5.0138e+01      3.4233e-01          184310           92504      5.0189e+01      7.6079e-01          276088            3527      1.2775e+00
+
+ENER_0:   920000     -2.6851e+05      2.1646e+04      0.0000e+00     -1.9508e+05     -1.5539e+04     -7.9530e+04     -4.0893e+04      3.0367e+04     -1.8724e+06      1.8034e+06
+
+STAT_0:   920000             139
+
+MOVE_1:   920000          276491            3518      1.2724e+00
+
+ENER_1:   920000      5.8322e+04      5.8322e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   920000             391
+
+Steps/sec: 2454.975, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   930000          185102           92808      5.0139e+01      3.3767e-01          186337           93532      5.0195e+01      8.3552e-01          279051            3592      1.2872e+00
+
+ENER_0:   930000     -2.8162e+05      2.2442e+04      0.0000e+00     -2.1061e+05     -1.5764e+04     -7.7687e+04     -3.8210e+04      3.0433e+04     -1.8858e+06      1.8159e+06
+
+STAT_0:   930000             140
+
+MOVE_1:   930000          279510            3582      1.2815e+00
+
+ENER_1:   930000      6.1129e+04      6.1129e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   930000             390
+
+Steps/sec: 2529.644, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   940000          187029           93784      5.0144e+01      3.6866e-01          188352           94543      5.0195e+01      8.5038e-01          282007            3618      1.2829e+00
+
+ENER_0:   940000     -2.7144e+05      2.1130e+04      0.0000e+00     -1.9790e+05     -1.5316e+04     -7.9360e+04     -4.0521e+04      3.0204e+04     -1.8589e+06      1.7899e+06
+
+STAT_0:   940000             138
+
+MOVE_1:   940000          282612            3610      1.2774e+00
+
+ENER_1:   940000      6.1762e+04      6.1762e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   940000             392
+
+Steps/sec: 2486.429, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   950000          189045           94800      5.0147e+01      3.8977e-01          190305           95518      5.0192e+01      8.2110e-01          284996            3646      1.2793e+00
+
+ENER_0:   950000     -2.8389e+05      2.0993e+04      0.0000e+00     -2.0978e+05     -1.6217e+04     -7.8885e+04     -3.9186e+04      3.1346e+04     -1.9128e+06      1.8417e+06
+
+STAT_0:   950000             142
+
+MOVE_1:   950000          285654            3634      1.2722e+00
+
+ENER_1:   950000      6.2306e+04      6.2306e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   950000             388
+
+Steps/sec: 2491.140, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   960000          191105           95807      5.0133e+01      2.9423e-01          192194           96439      5.0178e+01      6.3221e-01          288086            3677      1.2764e+00
+
+ENER_0:   960000     -2.9692e+05      2.2342e+04      0.0000e+00     -2.2067e+05     -1.6910e+04     -8.1689e+04     -4.1260e+04      3.2304e+04     -1.9532e+06      1.8805e+06
+
+STAT_0:   960000             145
+
+MOVE_1:   960000          288615            3662      1.2688e+00
+
+ENER_1:   960000      6.0791e+04      6.0791e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   960000             385
+
+Steps/sec: 2436.799, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   970000          193160           96865      5.0148e+01      3.8516e-01          194235           97483      5.0188e+01      7.4747e-01          291152            3698      1.2701e+00
+
+ENER_0:   970000     -3.0249e+05      2.0207e+04      0.0000e+00     -2.2298e+05     -1.6910e+04     -8.2799e+04     -4.1809e+04      3.1735e+04     -1.9532e+06      1.8805e+06
+
+STAT_0:   970000             145
+
+MOVE_1:   970000          291453            3683      1.2637e+00
+
+ENER_1:   970000      6.1119e+04      6.1119e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   970000             385
+
+Steps/sec: 2438.236, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   980000          195143           97841      5.0138e+01      3.2588e-01          196225           98490      5.0192e+01      8.1015e-01          294193            3730      1.2679e+00
+
+ENER_0:   980000     -2.8477e+05      2.0741e+04      0.0000e+00     -2.0993e+05     -1.5990e+04     -7.9591e+04     -3.9754e+04      3.1293e+04     -1.8993e+06      1.8282e+06
+
+STAT_0:   980000             141
+
+MOVE_1:   980000          294439            3719      1.2631e+00
+
+ENER_1:   980000      6.1237e+04      6.1237e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   980000             389
+
+Steps/sec: 2450.592, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:   990000          197218           98894      5.0145e+01      3.5212e-01          198172           99454      5.0186e+01      7.1744e-01          297180            3757      1.2642e+00
+
+ENER_0:   990000     -2.6716e+05      2.0015e+04      0.0000e+00     -1.9758e+05     -1.4658e+04     -7.4937e+04     -3.6627e+04      2.9756e+04     -1.8185e+06      1.7504e+06
+
+STAT_0:   990000             135
+
+MOVE_1:   990000          297430            3752      1.2615e+00
+
+ENER_1:   990000      6.0444e+04      6.0444e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   990000             395
+
+Steps/sec: 2467.786, Simulation ends in:   0 d:   0 h:   1 m 
+
+MOVE_0:  1000000          199182           99871      5.0141e+01      3.1399e-01          200155          100462      5.0192e+01      8.3660e-01          300232            3795      1.2640e+00
+
+ENER_0:  1000000     -2.7470e+05      2.1061e+04      0.0000e+00     -2.0577e+05     -1.5764e+04     -7.4232e+04     -3.5471e+04      3.1684e+04     -1.8858e+06      1.8154e+06
+
+STAT_0:  1000000             140
+
+MOVE_1:  1000000          300431            3785      1.2599e+00
+
+ENER_1:  1000000      6.1230e+04      6.1230e+04      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:  1000000             390
+
+Simulation Time (total): 4.0476e+02 sec.
+
+Move Type                Mol. Kind      BOX_0      BOX_1      
+% Accepted Displacement        DME     50.14057    0.00000 
+% Accepted Rotation            DME     50.19210    0.00000 
+% Accepted Mol-Transfer        DME      1.26402    1.25986 
+
+Displacement:                           46.7585    sec.
+Rotation:                               46.9479    sec.
+Intra-Swap:                              0.0000    sec.
+Regrowth:                                0.0000    sec.
+Intra-MEMC:                              0.0000    sec.
+Crank-Shaft:                             0.0000    sec.
+Mol-Transfer:                          309.8686    sec.
+MEMC:                                    0.0000    sec.
+
+Info: GOMC Version 2.40
+Info: Completed at: Fri May 17 16:35:02 2019
+Info: On hostname: wsu40

@@ -1,0 +1,1552 @@
+Info: GOMC Version 2.40
+Info: Start Time: Fri May 17 16:32:26 2019
+Info: Host Name: wsu10
+CPU information:
+Info: Total number of CPUs: 12
+Info: Total number of CPUs available: 12
+Info: Model name: AMD Opteron(tm) Processor 4332 HE
+Info: System name: Linux
+Info: Release: 3.10.0-957.5.1.el7.x86_64
+Info: Version: #1 SMP Fri Feb 1 14:54:57 UTC 2019
+Info: Kernel Architecture: x86_64
+Info: Total Ram: 96496.3MB
+Info: Used Ram: 16882.4MB
+Info: Working in the current directory: /wsu/home/fe/fe18/fe1855/clone/GOMC_Examples/GCMC/MFI_CO2_adsorption
+Info: GOMC COMPILED TO RUN GRAND CANONICAL ENSEMBLE.
+Info: Number of threads                  4 
+
+Reading Input File:                      in.conf
+Info: Random seed                        Active 
+Info: PARAMETER file                     MIE format! 
+Info: Input Temperature                  300.0000 K
+Info: Non-truncated potential            Active 
+Info: Long Range Correction              Inactive 
+Info: Cutoff                             19.0000 A
+Info: Short Range Cutoff                 0.0000 A
+Info: Exclude                            ONE-FOUR 
+Info: Ewald Summation                    Active 
+Info: Cache Ewald Fourier                Inactive 
+Info: Ewald Summation Tolerance          1.000E-05 
+Info: Pressure calculation               Inactive 
+Info: Total number of steps              1000000 
+Info: Number of equilibration steps      100000 
+Info: Move adjustment frequency          1000 
+Info: Displacement move frequency        0.2000 
+Info: Rotation move frequency            0.1000 
+Info: Molecule swap move frequency       0.5000 
+Info: Regrowth move frequency            0.0000 
+Info: Intra-Swap move frequency          0.2000 
+Info: CBMC First atom trials             10   
+Info: CBMC Secondary atom trials         4    
+Info: CBMC Angle trials                  100  
+Info: CBMC Dihedral trials               10   
+Info: Fugacity                           CO2    7.0000 bar
+Info: Fugacity                           Si     0.0000 bar
+Info: Fugacity                           O      0.0000 bar
+Info: Output name                        CO2_7_bar 
+Info: Coordinate frequency               1000000 
+Info: Restart frequency                  1000000 
+Info: Console output frequency           100000 
+Info: Average output frequency           100000 
+Info: Histogram output                   Inactive 
+Info: Histogram sample frequency         200 
+Default: Intra-MEMC move frequency       0.0000 
+Default: Crank-Shaft move frequency      0.0000 
+Default: MEMC move frequency             0.0000 
+Default: Box  0  CutoffCoulomb           19.0000 A
+Default: Box  1  CutoffCoulomb           19.0000 A
+Warning: Long Range Correction is Inactive for Non-truncated potential.
+Finished Reading Input File:             in.conf
+
+Reading from EXOTIC-Style parameter file:  	../../common/Par_MFI_CO2_CH4_Exotic.inp
+Reading BONDS parameters.
+Reading ANGLES parameters.
+Reading DIHEDRALS parameters.
+Reading NONBONDED_MIE parameters.
+Finished reading EXOTIC-Style parameter file:  	../../common/Par_MFI_CO2_CH4_Exotic.inp
+Reading from box 0 PDB coordinate file:  	./START_MFI.pdb
+Finished reading box 0 PDB coordinate file:  	./START_MFI.pdb
+Reading from box 1 PDB coordinate file:  	./START_Resv_BOX_1.pdb
+Finished reading box 1 PDB coordinate file:  	./START_Resv_BOX_1.pdb
+Random number seed: 938648877
+
+Molecules in PSF:
+Molecule Kind: CO2
+Idx	name	type	charge	mass
+0	O1	OC	-0.2880	15.9994
+1	C1	CO	0.5760	12.0110
+2	O2	OC	-0.2880	15.9994
+
+Bonds:
+[0 1] [1 2] 
+
+Angles:
+[0 1 2] 
+
+Dihedrals:
+
+Molecule Kind: O
+Idx	name	type	charge	mass
+0	O	O	-0.4000	15.9994
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Molecule Kind: Si
+Idx	name	type	charge	mass
+0	Si	Si	0.8000	28.0855
+
+Bonds:
+
+Angles:
+
+Dihedrals:
+
+Bonds parameter:
+Atom Types                             Kb(K)           b0(A) 
+OC	CO	                         FIX           1.1800 
+CO	OC	                         FIX           1.1800 
+
+Angles parameter:
+Atom Types                         Ktheta(K)         theta0(degree) 
+OC	CO	OC	                 FIX         180.0000 
+
+Dihedrals parameter:
+Atom Types                           Kchi(K)    n    delta(degree) 
+
+NonBonded 1-4 parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+O      O                   128.2100      2.7080   12.00 
+O      Si                   48.8335      1.6925   12.00 
+O      OC                  103.1324      2.8595   12.00 
+O      CO                   61.6661      2.7485   12.00 
+Si     Si                   18.6000      0.6770   12.00 
+Si     OC                   39.2818      1.8440   12.00 
+Si     CO                   23.4878      1.7330   12.00 
+OC     OC                   82.9600      3.0110   12.00 
+OC     CO                   49.6044      2.9000   12.00 
+CO     CO                   29.6600      2.7890   12.00 
+
+NonBonded parameters:
+Type1  Type2             Epsilon(K)    Sigma(A)       N 
+O      O                   128.2100      2.7080   12.00 
+O      Si                   48.8335      1.6925   12.00 
+O      OC                  103.1324      2.8595   12.00 
+O      CO                   61.6661      2.7485   12.00 
+Si     Si                   18.6000      0.6770   12.00 
+Si     OC                   39.2818      1.8440   12.00 
+Si     CO                   23.4878      1.7330   12.00 
+OC     OC                   82.9600      3.0110   12.00 
+OC     CO                   49.6044      2.9000   12.00 
+CO     CO                   29.6600      2.7890   12.00 
+
+Info: Box  0:  Periodic Cell Basis 1     40.120   0.000   0.000 
+Info: Box  0:  Periodic Cell Basis 2      0.000  39.600   0.000 
+Info: Box  0:  Periodic Cell Basis 3      0.000   0.000  40.080 
+
+Info: Box  1:  Periodic Cell Basis 1     60.000   0.000   0.000 
+Info: Box  1:  Periodic Cell Basis 2      0.000  60.000   0.000 
+Info: Box  1:  Periodic Cell Basis 3      0.000   0.000  60.000 
+
+Minimum coordinates in box 0: x =    0.024, y =    0.020, z =    0.004
+Maximum coordinates in box 0: x =   40.156, y =   39.456, z =   39.422
+Wrapping molecules inside the simulation box 0:
+Minimum coordinates in box 1: x =    1.080, y =    1.003, z =    1.010
+Maximum coordinates in box 1: x =   59.998, y =   59.997, z =   59.996
+Wrapping molecules inside the simulation box 1:
+Box: 0, RecipVectors:    959, kmax: 8
+Warning: Box1,   3456  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3456  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3606  CO2,Warning: Box1,   3457  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3457  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3906  CO2,Warning: Box1,   3606  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3756  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3756  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3757  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3757  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3758  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3906  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3607  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3607  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3608  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.260 A!
+Warning: Box1,   3608  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3609  CO2, O1-C1  bond: Par-file Warning: Box1,   3758  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3458  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3759  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3759  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3907  CO2,Warning: Box1,   3458  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3609  CO2,Warning: Box1,   3907  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3459  CO2, O1-C1  bond: Par-file Warning: Box1,   3760  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3908  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3908  CO2,Warning: Box1,   3459  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3610  CO2, O1-C1  bond: Par-file Warning: Box1,   3760  CO2,Warning: Box1,   3909  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3761  CO2, O1-C1  bond: Par-file Warning: Box1,   3460  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3460  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3761  CO2,Warning: Box1,   3610  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3611  CO2,Warning: Box1,   3461  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3909  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3762  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3461  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3762  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3763  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3910  CO2,Warning: Box1,   3763  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3764  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3764  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3765  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3611  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3765  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3910  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3766  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3766  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3911  CO2,Warning: Box1,   3767  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3767  CO2, C1-O2  bond: Par-file Warning: Box1,   3462  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3911  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3912  CO2, O1-C1  bond: Par-file Warning: Box1,   3612  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3912  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3462  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3913  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3612  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3613  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3913  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3768  CO2,Warning: Box1,   3613  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3463  CO2,Warning: Box1,   3614  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3914  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3614  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3615  CO2,1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3914  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3615  CO2,Warning: Box1,   3463  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3915  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3915  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3768  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3464  CO2,Warning: Box1,   3616  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3769  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3464  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3916  CO2,Warning: Box1,   3465  CO2,Warning: Box1,   3769  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3916  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3770  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3465  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3466  CO2,Warning: Box1,   3770  CO2,Warning: Box1,   3616  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3917  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3617  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3466  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3467  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3467  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3468  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3468  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3771  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3771  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3772  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3772  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3773  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3469  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3917  CO2,Warning: Box1,   3617  CO2,Warning: Box1,   3773  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3774  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3918  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3774  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3918  CO2,Warning: Box1,   3618  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3618  CO2,Warning: Box1,   3469  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3619  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3775  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3775  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3919  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3619  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3919  CO2,Warning: Box1,   3620  CO2,Warning: Box1,   3776  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3470  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3920  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3470  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3776  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3920  CO2,Warning: Box1,   3777  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3777  CO2,Warning: Box1,   3620  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3621  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3471  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3621  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3622  CO2,Warning: Box1,   3778  CO2,Warning: Box1,   3921  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3471  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3622  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3921  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3623  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3472  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3472  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3623  CO2,Warning: Box1,   3922  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3473  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3922  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3778  CO2,Warning: Box1,   3923  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3779  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3473  CO2,Warning: Box1,   3624  CO2, C1-O2  bond: Par-file Warning: Box1,   3923  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3624  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3924  CO2, O1-C1  bond: Par-file Warning: Box1,   3474  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3924  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3779  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3780  CO2,Warning: Box1,   3925  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3925  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3780  CO2,Warning: Box1,   3926  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3474  CO2,Warning: Box1,   3781  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3625  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3475  CO2,Warning: Box1,   3926  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3781  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3475  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3476  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3927  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3782  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3927  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3928  CO2,Warning: Box1,   3476  CO2,1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file Warning: Box1,   3782  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3625  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3928  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3477  CO2,Warning: Box1,   3783  CO2,Warning: Box1,   3929  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3783  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3477  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3929  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3784  CO2,Warning: Box1,   3478  CO2,Warning: Box1,   3626  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3478  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3784  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3930  CO2,Warning: Box1,   3785  CO2, O1-C1  bond: Par-file Warning: Box1,   3479  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3930  CO2,Warning: Box1,   3479  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3626  CO2, C1-O2  bond: Par-file Warning: Box1,   3480  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3480  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3931  CO2,Warning: Box1,   3481  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3627  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3931  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3627  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3628  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3628  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3932  CO2,Warning: Box1,   3785  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3481  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3629  CO2,Warning: Box1,   3482  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3629  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3630  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3786  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3786  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3932  CO2,Warning: Box1,   3482  CO2,Warning: Box1,   3787  CO2,Warning: Box1,   3630  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3631  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3631  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3632  CO2,Warning: Box1,   3933  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3933  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3632  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3633  CO2,Warning: Box1,   3787  CO2,1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3934  CO2,Warning: Box1,   3788  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3934  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3633  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3634  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3483  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3935  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3788  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3634  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3935  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3483  CO2,Warning: Box1,   3635  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3635  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3484  CO2,Warning: Box1,   3789  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3936  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3484  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3636  CO2,Warning: Box1,   3936  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3937  CO2,Warning: Box1,   3485  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3937  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3636  CO2,Warning: Box1,   3938  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3485  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3486  CO2,Warning: Box1,   3637  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3637  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3789  CO2, O1-C1  bond: Par-file Warning: Box1,   3638  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3638  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3486  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3639  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3790  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3938  CO2, C1-O2  bond: Par-file Warning: Box1,   3487  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3790  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3487  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3488  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3488  CO2, C1-O2  bond: Par-file Warning: Box1,   3939  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3791  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3489  CO2,Warning: Box1,   3791  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3639  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3489  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3792  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3939  CO2,Warning: Box1,   3640  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3792  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3490  CO2,Warning: Box1,   3793  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3940  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3640  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3641  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3940  CO2,1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3941  CO2,Warning: Box1,   3490  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3793  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3491  CO2,Warning: Box1,   3941  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3942  CO2,Warning: Box1,   3794  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3794  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3795  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3942  CO2,Warning: Box1,   3491  CO2,Warning: Box1,   3641  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3795  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3796  CO2,Warning: Box1,   3943  CO2,Warning: Box1,   3492  CO2,Warning: Box1,   3642  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3943  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3492  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3493  CO2, O1-C1  bond: Par-file Warning: Box1,   3944  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3493  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3494  CO2, O1-C1  bond: Par-file Warning: Box1,   3944  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3494  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3945  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3945  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3642  CO2, C1-O2  bond: Par-file Warning: Box1,   3796  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3643  CO2,Warning: Box1,   3495  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3643  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3644  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3946  CO2,Warning: Box1,   3797  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3946  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3947  CO2,Warning: Box1,   3495  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.257 A!
+ O1-C1  bond: Par-file Warning: Box1,   3797  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3798  CO2,Warning: Box1,   3644  CO2, O1-C1  bond: Par-file Warning: Box1,   3496  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3798  CO2,Warning: Box1,   3947  CO2,Warning: Box1,   3496  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3645  CO2,Warning: Box1,   3497  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3645  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3646  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3646  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3647  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3647  CO2,Warning: Box1,   3948  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3799  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3648  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3497  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3648  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file Warning: Box1,   3649  CO2,Warning: Box1,   3799  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3948  CO2,Warning: Box1,   3498  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.260 A!
+Warning: Box1,   3800  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3498  CO2, C1-O2  bond: Par-file Warning: Box1,   3949  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3949  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3800  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3801  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3801  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3802  CO2,Warning: Box1,   3950  CO2,Warning: Box1,   3649  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3650  CO2,Warning: Box1,   3802  CO2,Warning: Box1,   3499  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3650  CO2,Warning: Box1,   3499  CO2,Warning: Box1,   3950  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3803  CO2,Warning: Box1,   3500  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3651  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3951  CO2,Warning: Box1,   3803  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3951  CO2,Warning: Box1,   3804  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3952  CO2,Warning: Box1,   3651  CO2, O1-C1  bond: Par-file Warning: Box1,   3804  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3500  CO2,Warning: Box1,   3952  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3953  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3652  CO2,Warning: Box1,   3805  CO2,Warning: Box1,   3953  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3954  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3805  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3806  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3806  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3807  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3652  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3501  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3653  CO2,Warning: Box1,   3501  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3653  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3502  CO2,Warning: Box1,   3807  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3502  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3954  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3955  CO2, O1-C1  bond: Par-file Warning: Box1,   3654  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3654  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3955  CO2, C1-O2  bond: Par-file Warning: Box1,   3503  CO2,Warning: Box1,   3808  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3808  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3503  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3809  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3956  CO2, O1-C1  bond: Par-file Warning: Box1,   3504  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3809  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3956  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3504  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3655  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3810  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3810  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3957  CO2,Warning: Box1,   3505  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3505  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3957  CO2, C1-O2  bond: Par-file Warning: Box1,   3506  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3958  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3506  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3958  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3507  CO2,Warning: Box1,   3811  CO2,Warning: Box1,   3655  CO2, O1-C1  bond: Par-file Warning: Box1,   3959  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3656  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3656  CO2,Warning: Box1,   3959  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3960  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3811  CO2,Warning: Box1,   3507  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3960  CO2, C1-O2  bond: Par-file Warning: Box1,   3657  CO2,Warning: Box1,   3508  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3508  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3812  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3961  CO2,Warning: Box1,   3509  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3961  CO2,Warning: Box1,   3812  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3813  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3509  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3510  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3510  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3511  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3511  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3813  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3512  CO2,Warning: Box1,   3657  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3512  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3513  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3513  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3658  CO2, O1-C1  bond: Par-file Warning: Box1,   3814  CO2,Warning: Box1,   3514  CO2,Warning: Box1,   3962  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3814  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3514  CO2,Warning: Box1,   3815  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3962  CO2,Warning: Box1,   3658  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3659  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3659  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3963  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3815  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3660  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3963  CO2, C1-O2  bond: Par-file Warning: Box1,   3515  CO2,Warning: Box1,   3660  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3661  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3661  CO2, C1-O2  bond: Par-file Warning: Box1,   3964  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3662  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3816  CO2,Warning: Box1,   3515  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3964  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3965  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3662  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3516  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3663  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3965  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3663  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3816  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3966  CO2,Warning: Box1,   3664  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3966  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3516  CO2,Warning: Box1,   3967  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3664  CO2,Warning: Box1,   3967  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3665  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3817  CO2,Warning: Box1,   3968  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3817  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3968  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3665  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3666  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3818  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3969  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3666  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3667  CO2,Warning: Box1,   3969  CO2,Warning: Box1,   3517  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3970  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3517  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3970  CO2,Warning: Box1,   3518  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3518  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3519  CO2,Warning: Box1,   3971  CO2,Warning: Box1,   3667  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3519  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3971  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3972  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3668  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3520  CO2,Warning: Box1,   3972  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3520  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3668  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3818  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3819  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3669  CO2, O1-C1  bond: Par-file Warning: Box1,   3973  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3819  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3521  CO2,Warning: Box1,   3669  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3670  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3670  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3671  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3671  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3820  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3820  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3821  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3821  CO2, C1-O2  bond: Par-file Warning: Box1,   3521  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3822  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3822  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3973  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3672  CO2,Warning: Box1,   3974  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3974  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3975  CO2,Warning: Box1,   3522  CO2,Warning: Box1,   3823  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3522  CO2,Warning: Box1,   3823  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3824  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3672  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3975  CO2,Warning: Box1,   3824  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3825  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3523  CO2,Warning: Box1,   3825  CO2,Warning: Box1,   3976  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3976  CO2, C1-O2  bond: Par-file Warning: Box1,   3523  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3673  CO2,Warning: Box1,   3977  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3977  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3978  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3673  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3674  CO2,Warning: Box1,   3826  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3826  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3827  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3827  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3828  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3828  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3829  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3829  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3830  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3830  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3831  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3831  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3832  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3832  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3833  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3833  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3834  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3834  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3835  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3835  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3836  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3836  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3837  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3524  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3524  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3837  CO2,Warning: Box1,   3978  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3525  CO2,Warning: Box1,   3979  CO2,Warning: Box1,   3674  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3979  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3525  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3675  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3838  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3838  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3980  CO2,Warning: Box1,   3526  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3839  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3980  CO2, C1-O2  bond: Par-file Warning: Box1,   3526  CO2,Warning: Box1,   3839  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3981  CO2,Warning: Box1,   3527  CO2, O1-C1  bond: Par-file Warning: Box1,   3675  CO2,Warning: Box1,   3840  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3676  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3840  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3981  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3841  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3982  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3982  CO2,Warning: Box1,   3527  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3528  CO2,Warning: Box1,   3841  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3842  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3842  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3676  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3843  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3843  CO2, C1-O2  bond: Par-file Warning: Box1,   3677  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3844  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3983  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3983  CO2,Warning: Box1,   3528  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3984  CO2,Warning: Box1,   3677  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3678  CO2, O1-C1  bond: Par-file Warning: Box1,   3844  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3984  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3678  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3679  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3679  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3680  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3680  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3681  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3529  CO2,Warning: Box1,   3845  CO2,Warning: Box1,   3681  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3682  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3985  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3682  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3529  CO2,Warning: Box1,   3683  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3845  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3846  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3985  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3530  CO2,Warning: Box1,   3986  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3986  CO2,Warning: Box1,   3530  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3683  CO2,Warning: Box1,   3531  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3531  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.260 A!
+Warning: Box1,   3532  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3532  CO2,Warning: Box1,   3987  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3846  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3533  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3987  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file Warning: Box1,   3988  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3988  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3533  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3534  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3534  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3847  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3535  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3535  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3684  CO2, O1-C1  bond: Par-file Warning: Box1,   3847  CO2,Warning: Box1,   3536  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3848  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3684  CO2,Warning: Box1,   3989  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3685  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3848  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3849  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3685  CO2,Warning: Box1,   3849  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3686  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3686  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3687  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3536  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3850  CO2, O1-C1  bond: Par-file Warning: Box1,   3537  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3537  CO2,Warning: Box1,   3687  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3688  CO2,Warning: Box1,   3538  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3688  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3850  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3989  CO2,Warning: Box1,   3851  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3851  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3689  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3689  CO2, C1-O2  bond: Par-file Warning: Box1,   3990  CO2,Warning: Box1,   3852  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3538  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3990  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3690  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3690  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3852  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3539  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3539  CO2,Warning: Box1,   3991  CO2,Warning: Box1,   3853  CO2,Warning: Box1,   3691  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3853  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3854  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3691  CO2,Warning: Box1,   3854  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3692  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3692  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3991  CO2,Warning: Box1,   3855  CO2,Warning: Box1,   3540  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3540  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3855  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3541  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3693  CO2,Warning: Box1,   3992  CO2,Warning: Box1,   3856  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3693  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3694  CO2,1.180 A, PDB file 1.257 A!
+ O1-C1  bond: Par-file Warning: Box1,   3856  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3541  CO2,Warning: Box1,   3857  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3992  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3857  CO2,Warning: Box1,   3694  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3542  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3858  CO2,Warning: Box1,   3993  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3993  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3858  CO2,Warning: Box1,   3542  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3859  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3859  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3860  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3860  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3861  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3695  CO2,Warning: Box1,   3861  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3862  CO2,Warning: Box1,   3994  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3862  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3863  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3543  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3863  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file Warning: Box1,   3864  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3994  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3543  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3544  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3864  CO2,Warning: Box1,   3995  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3865  CO2, O1-C1  bond: Par-file Warning: Box1,   3544  CO2, O1-C1  bond: Par-file Warning: Box1,   3695  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3545  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3995  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3696  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3545  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3546  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3865  CO2,Warning: Box1,   3696  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3996  CO2,Warning: Box1,   3546  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3547  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3697  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3697  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3698  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3996  CO2,Warning: Box1,   3866  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3698  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3547  CO2,Warning: Box1,   3997  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3548  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3866  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3699  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3699  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3700  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3700  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3701  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3701  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3867  CO2, O1-C1  bond: Par-file Warning: Box1,   3548  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3867  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3868  CO2,Warning: Box1,   3702  CO2,Warning: Box1,   3997  CO2,1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3702  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3703  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3868  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3549  CO2,Warning: Box1,   3869  CO2, O1-C1  bond: Par-file Warning: Box1,   3998  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3549  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3550  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3869  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3998  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3870  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3870  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3703  CO2,Warning: Box1,   3871  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3871  CO2,1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3704  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3550  CO2,Warning: Box1,   3999  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3999  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3551  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3551  CO2, C1-O2  bond: Par-file Warning: Box1,   3704  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3552  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3705  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3705  CO2,1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3706  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   4000  CO2,Warning: Box1,   3552  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3872  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4000  CO2,Warning: Box1,   3553  CO2, C1-O2  bond: Par-file Warning: Box1,   3706  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3707  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3707  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3553  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4001  CO2,Warning: Box1,   3872  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3708  CO2,Warning: Box1,   4001  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3873  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3708  CO2,Warning: Box1,   3554  CO2,Warning: Box1,   3873  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3874  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3874  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3875  CO2,Warning: Box1,   4002  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4002  CO2, C1-O2  bond: Par-file Warning: Box1,   3554  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3709  CO2,Warning: Box1,   4003  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3875  CO2,Warning: Box1,   3555  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3876  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   4003  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4004  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4004  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3555  CO2,Warning: Box1,   4005  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3709  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3710  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3710  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3556  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4005  CO2,Warning: Box1,   3556  CO2,Warning: Box1,   3711  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3557  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3557  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3558  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3558  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.260 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3876  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4006  CO2,Warning: Box1,   3877  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3711  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3559  CO2, O1-C1  bond: Par-file Warning: Box1,   3877  CO2,1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   4006  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4007  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4007  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4008  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4008  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4009  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3559  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3560  CO2,Warning: Box1,   3712  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4009  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3878  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3560  CO2,1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4010  CO2,Warning: Box1,   3561  CO2, O1-C1  bond: Par-file Warning: Box1,   3712  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4010  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3561  CO2, C1-O2  bond: Par-file Warning: Box1,   4011  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4011  CO2,Warning: Box1,   3562  CO2,Warning: Box1,   3878  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3562  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3563  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3879  CO2, O1-C1  bond: Par-file Warning: Box1,   3713  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3713  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4012  CO2,Warning: Box1,   3563  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3714  CO2,Warning: Box1,   3564  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4012  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3879  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3880  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3880  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3881  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3881  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3882  CO2, O1-C1  bond: Par-file Warning: Box1,   3714  CO2,1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file Warning: Box1,   3882  CO2,Warning: Box1,   4013  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4013  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3564  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3715  CO2,Warning: Box1,   3883  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3883  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3884  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3565  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4014  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3565  CO2,Warning: Box1,   4014  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3715  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3884  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3566  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3566  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3885  CO2,Warning: Box1,   3716  CO2, O1-C1  bond: Par-file Warning: Box1,   4015  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3716  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3717  CO2,Warning: Box1,   3885  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3717  CO2,Warning: Box1,   3567  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3886  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3886  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4015  CO2, C1-O2  bond: Par-file Warning: Box1,   3567  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3887  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4016  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3568  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3887  CO2,Warning: Box1,   4016  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4017  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4017  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3718  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3888  CO2,Warning: Box1,   3568  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3888  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3718  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4018  CO2,Warning: Box1,   3889  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3889  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3890  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4018  CO2,Warning: Box1,   3890  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3891  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3891  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3892  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3892  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3893  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3569  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4019  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3719  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3893  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3569  CO2,Warning: Box1,   3894  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3894  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3895  CO2,Warning: Box1,   4019  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   3719  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file Warning: Box1,   3720  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3570  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3895  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3896  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4020  CO2,Warning: Box1,   3720  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3896  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3721  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3721  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3570  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3897  CO2,Warning: Box1,   3571  CO2, O1-C1  bond: Par-file Warning: Box1,   3722  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3571  CO2,Warning: Box1,   4020  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file Warning: Box1,   3897  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3898  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3722  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3572  CO2,Warning: Box1,   3723  CO2,Warning: Box1,   4021  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3572  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3898  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3899  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3723  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3724  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3724  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3725  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3899  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4021  CO2,1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3900  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3900  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4022  CO2,Warning: Box1,   3725  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3901  CO2,Warning: Box1,   3573  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4022  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3726  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4023  CO2,Warning: Box1,   3726  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3901  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4023  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3573  CO2,Warning: Box1,   4024  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   4024  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3727  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3574  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3727  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3728  CO2,Warning: Box1,   4025  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3574  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file Warning: Box1,   3902  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4025  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4026  CO2,Warning: Box1,   3902  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3728  CO2, C1-O2  bond: Par-file Warning: Box1,   3575  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4026  CO2, C1-O2  bond: Par-file Warning: Box1,   3903  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3903  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3729  CO2,Warning: Box1,   4027  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4027  CO2,Warning: Box1,   3575  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3904  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3576  CO2,1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3729  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3730  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3730  CO2, O1-C1  bond: Par-file Warning: Box1,   4028  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file Warning: Box1,   3731  CO2,1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3576  CO2,Warning: Box1,   3904  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3905  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3905  CO2, C1-O2  bond: Par-file Warning: Box1,   3577  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3577  CO2,1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file Warning: Box1,   4028  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3731  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3732  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4029  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4029  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3578  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3732  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3578  CO2,Warning: Box1,   4030  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3733  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   4030  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3579  CO2, O1-C1  bond: Par-file Warning: Box1,   4031  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3733  CO2,Warning: Box1,   3579  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4031  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   4032  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4032  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+ C1-O2  bond: Par-file Warning: Box1,   3734  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3734  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3735  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3735  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3736  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3580  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3736  CO2,Warning: Box1,   3580  CO2,Warning: Box1,   4033  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   4033  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3737  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3737  CO2, C1-O2  bond: Par-file Warning: Box1,   3581  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   4034  CO2,1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3581  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4034  CO2, C1-O2  bond: Par-file Warning: Box1,   3582  CO2,1.180 A, PDB file 1.260 A!
+Warning: Box1,   3738  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3738  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   4035  CO2,Warning: Box1,   3739  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3739  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3740  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3740  CO2,Warning: Box1,   3582  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4035  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4036  CO2,Warning: Box1,   3741  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3741  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3742  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3742  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3743  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4036  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file Warning: Box1,   3583  CO2,Warning: Box1,   3743  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3583  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3584  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3584  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3585  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3585  CO2,Warning: Box1,   3744  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3744  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3745  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4037  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3586  CO2,Warning: Box1,   4037  CO2,1.180 A, PDB file 1.257 A!
+ C1-O2  bond: Par-file Warning: Box1,   3745  CO2,1.180 A, PDB file 1.260 A!
+Warning: Box1,   4038  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4038  CO2,Warning: Box1,   3586  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3587  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+ C1-O2  bond: Par-file Warning: Box1,   3587  CO2,Warning: Box1,   4039  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4039  CO2,1.180 A, PDB file 1.259 A!
+ C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3588  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3588  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4040  CO2, O1-C1  bond: Par-file Warning: Box1,   3589  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3589  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3746  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4040  CO2, C1-O2  bond: Par-file Warning: Box1,   3590  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3590  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3591  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3591  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3592  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3592  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3746  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3747  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3593  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   4041  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3747  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3593  CO2,Warning: Box1,   3748  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   4041  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   4042  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4042  CO2,Warning: Box1,   3594  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3594  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3595  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3595  CO2, C1-O2  bond: Par-file Warning: Box1,   4043  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3748  CO2, C1-O2  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3596  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4043  CO2,Warning: Box1,   3749  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4044  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3596  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3749  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3750  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4044  CO2,Warning: Box1,   3597  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3597  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3750  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3751  CO2, O1-C1  bond: Par-file Warning: Box1,   3598  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3598  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.257 A!
+Warning: Box1,   3751  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3752  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4045  CO2,Warning: Box1,   3599  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3599  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4045  CO2,1.180 A, PDB file 1.258 A!
+Warning: Box1,   3752  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3753  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3753  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3754  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4046  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4046  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4047  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.257 A!
+Warning: Box1,   3754  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   3755  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.260 A!
+Warning: Box1,   3600  CO2,Warning: Box1,   4047  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3755  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   3600  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4048  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3601  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file Warning: Box1,   3601  CO2,1.180 A, PDB file 1.257 A!
+Warning: Box1,   4048  CO2, C1-O2  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.260 A!
+Warning: Box1,   4049  CO2,1.180 A, PDB file 1.259 A!
+Warning: Box1,   3602  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4049  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   4050  CO2,Warning: Box1,   3602  CO2, O1-C1  bond: Par-file  C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4050  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   4051  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4051  CO2, C1-O2  bond: Par-file Warning: Box1,   3603  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+1.180 A, PDB file 1.259 A!
+Warning: Box1,   3603  CO2, C1-O2  bond: Par-file Warning: Box1,   4052  CO2,1.180 A, PDB file 1.259 A!
+ O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4052  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3604  CO2,Warning: Box1,   4053  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   3604  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4053  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.260 A!
+Warning: Box1,   4054  CO2,Warning: Box1,   3605  CO2, O1-C1  bond: Par-file  O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4054  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+Warning: Box1,   4055  CO2, O1-C1  bond: Par-file 1.180 A, PDB file 1.258 A!
+Warning: Box1,   4055  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.259 A!
+1.180 A, PDB file 1.258 A!
+Warning: Box1,   3605  CO2, C1-O2  bond: Par-file 1.180 A, PDB file 1.258 A!
+
+################################################################################
+########################## INITIAL SIMULATION ENERGY ###########################
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+ENER_0:        0     -8.3851e+07      0.0000e+00      0.0000e+00      3.5689e+05      0.0000e+00     -8.4208e+07     -6.5618e+07      1.7940e+04     -1.8608e+07     -0.0000e+00
+
+ENER_1:        0      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00     -0.0000e+00
+
+STITLE:     STEP        TOTALMOL       MOLFRAC_O      MOLFRAC_Si     MOLFRAC_CO2       MOLDENS_O      MOLDENS_Si     MOLDENS_CO2
+
+STAT_0:        0            3456  6.66666667e-01  3.33333333e-01  0.00000000e+00  3.61825067e-02  1.80912534e-02  0.00000000e+00
+
+STAT_1:        0             600  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  2.77777778e-03
+
+################################################################################
+############################# STARTING SIMULATION ##############################
+
+MTITLE:     STEP          DISTRY       DISACCEPT      DISACCEPT%          DISMAX          ROTATE       ROTACCEPT      ROTACCEPT%          ROTMAX       INTRASWAP       INTACCEPT      INTACCEPT%        TRANSFER      TRANACCEPT     TRANACCEPT%
+
+ETITLE:     STEP           TOTAL        INTRA(B)       INTRA(NB)       INTER(LJ)             LRC     TOTAL_ELECT            REAL           RECIP            SELF            CORR
+
+STITLE:     STEP        TOTALMOL       MOLFRAC_O      MOLFRAC_Si     MOLFRAC_CO2       MOLDENS_O      MOLDENS_Si     MOLDENS_CO2
+
+Printed combined psf to file CO2_7_bar_merged.psf
+MOVE_0:   100000           20024            9904      4.9461e+01      6.7335e+00            9944            5007      5.0352e+01      8.2801e-01           20070             355      1.7688e+00           24953            1282      5.1377e+00
+
+ENER_0:   100000     -8.4376e+07      0.0000e+00      0.0000e+00     -1.2929e+05      0.0000e+00     -8.4247e+07     -6.5650e+07      1.2813e+04     -2.0208e+07      1.5982e+06
+
+STAT_0:   100000            3647  6.31752125e-01  3.15876063e-01  5.23718124e-02  3.61825067e-02  1.80912534e-02  2.99950468e-03
+
+MOVE_1:   100000           25009            1091      4.3624e+00
+
+ENER_1:   100000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   100000             409  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.89351852e-03
+
+Steps/sec: 189.784, Simulation ends in:   0 d:   1 h:  20 m 
+
+MOVE_0:   200000           39934           19904      4.9842e+01      6.7243e+00           20051           10095      5.0347e+01      8.4109e-01           39910             573      1.4357e+00           49995            2250      4.5005e+00
+
+ENER_0:   200000     -8.4401e+07      0.0000e+00      0.0000e+00     -1.4441e+05      0.0000e+00     -8.4256e+07     -6.5660e+07      1.2828e+04     -2.0258e+07      1.6484e+06
+
+STAT_0:   200000            3653  6.30714481e-01  3.15357241e-01  5.39282781e-02  3.61825067e-02  1.80912534e-02  3.09372996e-03
+
+MOVE_1:   200000           50110            2053      4.0970e+00
+
+ENER_1:   200000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   200000             403  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.86574074e-03
+
+Steps/sec: 187.548, Simulation ends in:   0 d:   1 h:  11 m 
+
+MOVE_0:   300000           59902           29939      4.9980e+01      6.7278e+00           30111           15173      5.0390e+01      8.4094e-01           59785             823      1.3766e+00           74993            3262      4.3497e+00
+
+ENER_0:   300000     -8.4370e+07      0.0000e+00      0.0000e+00     -1.1787e+05      0.0000e+00     -8.4252e+07     -6.5656e+07      1.3330e+04     -2.0174e+07      1.5647e+06
+
+STAT_0:   300000            3643  6.32445786e-01  3.16222893e-01  5.13313203e-02  3.61825067e-02  1.80912534e-02  2.93668783e-03
+
+MOVE_1:   300000           75209            3075      4.0886e+00
+
+ENER_1:   300000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   300000             413  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.91203704e-03
+
+Steps/sec: 189.889, Simulation ends in:   0 d:   1 h:   2 m 
+
+MOVE_0:   400000           79832           39950      5.0043e+01      6.7427e+00           40129           20228      5.0407e+01      9.1709e-01           79533            1095      1.3768e+00          100272            4339      4.3272e+00
+
+ENER_0:   400000     -8.4389e+07      0.0000e+00      0.0000e+00     -1.3431e+05      0.0000e+00     -8.4255e+07     -6.5659e+07      1.2908e+04     -2.0216e+07      1.6065e+06
+
+STAT_0:   400000            3648  6.31578947e-01  3.15789474e-01  5.26315789e-02  3.61825067e-02  1.80912534e-02  3.01520889e-03
+
+MOVE_1:   400000          100234            4147      4.1373e+00
+
+ENER_1:   400000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   400000             408  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.88888889e-03
+
+Steps/sec: 187.605, Simulation ends in:   0 d:   0 h:  53 m 
+
+MOVE_0:   500000           99802           49963      5.0062e+01      6.7336e+00           50099           25254      5.0408e+01      9.5110e-01           99445            1332      1.3394e+00          125178            5333      4.2603e+00
+
+ENER_0:   500000     -8.4361e+07      0.0000e+00      0.0000e+00     -1.1302e+05      0.0000e+00     -8.4248e+07     -6.5652e+07      1.3185e+04     -2.0149e+07      1.5396e+06
+
+STAT_0:   500000            3640  6.32967033e-01  3.16483516e-01  5.05494505e-02  3.61825067e-02  1.80912534e-02  2.88957519e-03
+
+MOVE_1:   500000          125476            5149      4.1036e+00
+
+ENER_1:   500000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   500000             416  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.92592593e-03
+
+Steps/sec: 187.361, Simulation ends in:   0 d:   0 h:  45 m 
+
+MOVE_0:   600000          119876           60030      5.0077e+01      6.7178e+00           60083           30280      5.0397e+01      8.5254e-01          119335            1606      1.3458e+00          150168            6444      4.2912e+00
+
+ENER_0:   600000     -8.4399e+07      0.0000e+00      0.0000e+00     -1.4450e+05      0.0000e+00     -8.4254e+07     -6.5658e+07      1.2967e+04     -2.0249e+07      1.6400e+06
+
+STAT_0:   600000            3652  6.30887185e-01  3.15443593e-01  5.36692223e-02  3.61825067e-02  1.80912534e-02  3.07802575e-03
+
+MOVE_1:   600000          150538            6248      4.1504e+00
+
+ENER_1:   600000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   600000             404  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.87037037e-03
+
+Steps/sec: 189.276, Simulation ends in:   0 d:   0 h:  36 m 
+
+MOVE_0:   700000          139911           70108      5.0109e+01      6.7303e+00           70263           35405      5.0389e+01      8.5978e-01          139258            1833      1.3163e+00          175192            7429      4.2405e+00
+
+ENER_0:   700000     -8.4372e+07      0.0000e+00      0.0000e+00     -1.2053e+05      0.0000e+00     -8.4252e+07     -6.5655e+07      1.2893e+04     -2.0208e+07      1.5982e+06
+
+STAT_0:   700000            3647  6.31752125e-01  3.15876063e-01  5.23718124e-02  3.61825067e-02  1.80912534e-02  2.99950468e-03
+
+MOVE_1:   700000          175376            7238      4.1271e+00
+
+ENER_1:   700000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   700000             409  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.89351852e-03
+
+Steps/sec: 188.303, Simulation ends in:   0 d:   0 h:  27 m 
+
+MOVE_0:   800000          159940           80175      5.0128e+01      6.7429e+00           80338           40464      5.0367e+01      8.6763e-01          159013            2075      1.3049e+00          200145            8462      4.2279e+00
+
+ENER_0:   800000     -8.4396e+07      0.0000e+00      0.0000e+00     -1.4246e+05      0.0000e+00     -8.4254e+07     -6.5658e+07      1.3295e+04     -2.0266e+07      1.6568e+06
+
+STAT_0:   800000            3654  6.30541872e-01  3.15270936e-01  5.41871921e-02  3.61825067e-02  1.80912534e-02  3.10943417e-03
+
+MOVE_1:   800000          200564            8264      4.1204e+00
+
+ENER_1:   800000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   800000             402  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.86111111e-03
+
+Steps/sec: 191.538, Simulation ends in:   0 d:   0 h:  18 m 
+
+MOVE_0:   900000          180028           90244      5.0128e+01      6.7064e+00           90395           45524      5.0361e+01      8.3999e-01          178960            2312      1.2919e+00          225187            9415      4.1810e+00
+
+ENER_0:   900000     -8.4431e+07      0.0000e+00      0.0000e+00     -1.7593e+05      0.0000e+00     -8.4256e+07     -6.5658e+07      1.2403e+04     -2.0333e+07      1.7237e+06
+
+STAT_0:   900000            3662  6.29164391e-01  3.14582196e-01  5.62534134e-02  3.61825067e-02  1.80912534e-02  3.23506788e-03
+
+MOVE_1:   900000          225430            9209      4.0851e+00
+
+ENER_1:   900000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:   900000             394  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.82407407e-03
+
+Steps/sec: 189.979, Simulation ends in:   0 d:   0 h:   9 m 
+
+MOVE_0:  1000000          200066          100307      5.0137e+01      6.7185e+00          100534           50645      5.0376e+01      8.7614e-01          198779            2508      1.2617e+00          250286           10350      4.1353e+00
+
+ENER_0:  1000000     -8.4386e+07      0.0000e+00      0.0000e+00     -1.3380e+05      0.0000e+00     -8.4252e+07     -6.5656e+07      1.3070e+04     -2.0216e+07      1.6065e+06
+
+STAT_0:  1000000            3648  6.31578947e-01  3.15789474e-01  5.26315789e-02  3.61825067e-02  1.80912534e-02  3.01520889e-03
+
+MOVE_1:  1000000          250335           10158      4.0578e+00
+
+ENER_1:  1000000      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00      0.0000e+00
+
+STAT_1:  1000000             408  0.00000000e+00  0.00000000e+00  1.00000000e+00  0.00000000e+00  0.00000000e+00  1.88888889e-03
+
+Simulation Time (total): 5.28877009e+03 sec.
+
+Move Type                Mol. Kind      BOX_0      BOX_1      
+% Accepted Displacement        O        0.00000    0.00000 
+% Accepted Displacement        Si       0.00000    0.00000 
+% Accepted Displacement        CO2     50.13695    0.00000 
+% Accepted Rotation            O        0.00000    0.00000 
+% Accepted Rotation            Si       0.00000    0.00000 
+% Accepted Rotation            CO2     50.37599    0.00000 
+% Accepted Intra-Swap          O        0.00000    0.00000 
+% Accepted Intra-Swap          Si       0.00000    0.00000 
+% Accepted Intra-Swap          CO2      1.26170    0.00000 
+% Accepted Mol-Transfer        O        0.00000    0.00000 
+% Accepted Mol-Transfer        Si       0.00000    0.00000 
+% Accepted Mol-Transfer        CO2      4.13527    4.05776 
+
+Displacement:                          355.0134    sec.
+Rotation:                              178.4308    sec.
+Intra-Swap:                           2098.6479    sec.
+Regrowth:                                0.0000    sec.
+Intra-MEMC:                              0.0000    sec.
+Crank-Shaft:                             0.0000    sec.
+Mol-Transfer:                         2655.0298    sec.
+MEMC:                                    0.0000    sec.
+
+Info: GOMC Version 2.40
+Info: Completed at: Fri May 17 18:00:36 2019
+Info: On hostname: wsu10

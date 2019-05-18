@@ -1,0 +1,77 @@
+* Parameter file for GOMC
+* Parameters include for Cyclohexane and benzene molecules
+*
+* SEE: Transferable Potentials for Phase Equilibria–United Atom Description of 
+*      Five- and Six-Membered Cyclic Alkanes and Ethers
+* 
+* DOI: 10.1021/jp302975c
+*
+* SEE: Transferable Potentials for Phase Equilibria. 4. United-Atom Description
+*      of Linear and Branched Alkenes and Alkylbenzenes
+*
+* DOI: 10.1021/jp001044x 
+*
+
+
+BONDS
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!
+! Kb (kcal/mol) = Kb (K) * Boltz. const.; (9999999999 if no stretching)
+!
+!atom type     Kb              b0        description
+CH3 CH2        9999999999      1.540   ! ""
+CH2 CH2        9999999999      1.540   ! ""
+CH1 CH1        9999999999      1.400   ! CH group in benzene
+
+
+ANGLES
+!
+!V(angle) = Ktheta(Theta - Theta0)**2
+!
+!V(Urey-Bradley) = Kub(S - S0)**2
+!
+!Ktheta: kcal/mole/rad**2
+!Theta0: degrees
+!Kub: kcal/mole/A**2 (Urey-Bradley)
+!S0: A
+!
+! Ktheta (kcal/mol) = Ktheta (K) * Boltz. const.
+!
+!atom types         Ktheta       Theta0   Kub(?)  S0(?)
+CH3 CH2 CH2         31250          114.00 ! ""
+CH2 CH2 CH2         31250          114.00 ! ""
+CH1 CH1 CH1         999999999999   120.00 ! Fixed angle in a plane
+
+
+
+
+DIHEDRALS
+!
+!V(dihedral) = Kchi(1 + cos(n(chi) - delta))
+!
+!Kchi: kcal/mole
+!n: multiplicity
+!delta: degrees
+!
+! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
+! Boltzmann = 0.0019872041 kcal / (mol * K)
+!atom types           Kchi        n    delta              description
+X   CH2 CH2 X         0.000000    0      0.0              ! ""
+X   CH2 CH2 X       355.030000    1      0.0              ! ""
+X   CH2 CH2 X       -68.190000    2    180.0              ! ""
+X   CH2 CH2 X       791.320000    3      0.0              ! ""
+X   CH1 CH1 X         0.0000      0      0.0              ! No torsion
+
+
+NONBONDED_MIE
+!
+!V(mie) = 4*eps*((sig_ij/r_ij)^n-(sig_ij/r_ij)^6)
+!
+!atom   eps          sig_ij     n    description
+CH2     52.500       3.9100     12   ! TraPPE Cyclohexane
+CH1     50.500       3.695      12   ! TraPPE benzene
+
