@@ -1,9 +1,9 @@
 * Parameter file for GO-MC
 * Parameters include TraPPE-UA with Fluoroalkane expansions;
-* plus '89 work by Panagiotopolous on noble gases.
+* plus '89 work by PanagiOEopolous on noble gases.
 *
-* Mie potentials, TraPPE 4 alkene dihedral, and Fluoroalkane
-* power series constants are in separate "exotic" config file.
+* Mie pOEentials, TraPPE 4 alkene dihedral, and Fluoroalkane
+* power series constants are in separate "exOEic" config file.
 *
 * Latest edit: 7/8/2013
 *
@@ -19,7 +19,7 @@ BONDS
 ! Kb (kcal/mol) = Kb (K) * Boltz. const.; (9999999999 if no stretching)
 !
 !atom type     Kb              b0        description
-CT3 OT         9999999999      1.410   ! TraPPE 
+CH3 OE         9999999999      1.410   ! TraPPE 
 
 
 
@@ -37,7 +37,7 @@ ANGLES
 ! Ktheta (kcal/mol) = Ktheta (K) * Boltz. const.
 !
 !atom types         Ktheta       Theta0   Kub(?)  S0(?)
-CT3 OT  CT3         31250        112.00 ! TraPPE
+CH3 OE  CH3         31250        112.00 ! TraPPE
 
 
 
@@ -60,7 +60,7 @@ NONBONDED_MIE
 !V(mie) = 4*eps*((sig_ij/r_ij)^n-(sig_ij/r_ij)^6)
 !
 !atom   eps          sig_ij     n    description
-CT3     98.00       3.750      12   ! TraPPE
-OT      46.25       2.950      12   ! TraPPE
+CH3     98.00       3.750      12   ! TraPPE
+OE      46.25       2.950      12   ! TraPPE
 
 

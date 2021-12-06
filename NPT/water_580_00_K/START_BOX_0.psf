@@ -1,0 +1,1084 @@
+PSF
+
+       3 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology ./top_SPCE_water.inp 
+ REMARKS segment SPCE { first NONE; last NONE; auto angles dihedrals }
+
+     750 !NATOM
+       1 SPCE 1    SPCE O1   OT    -0.847600       15.9990           0
+       2 SPCE 1    SPCE H1   HT     0.423800        1.0080           0
+       3 SPCE 1    SPCE H2   HT     0.423800        1.0080           0
+       4 SPCE 2    SPCE O1   OT    -0.847600       15.9990           0
+       5 SPCE 2    SPCE H1   HT     0.423800        1.0080           0
+       6 SPCE 2    SPCE H2   HT     0.423800        1.0080           0
+       7 SPCE 3    SPCE O1   OT    -0.847600       15.9990           0
+       8 SPCE 3    SPCE H1   HT     0.423800        1.0080           0
+       9 SPCE 3    SPCE H2   HT     0.423800        1.0080           0
+      10 SPCE 4    SPCE O1   OT    -0.847600       15.9990           0
+      11 SPCE 4    SPCE H1   HT     0.423800        1.0080           0
+      12 SPCE 4    SPCE H2   HT     0.423800        1.0080           0
+      13 SPCE 5    SPCE O1   OT    -0.847600       15.9990           0
+      14 SPCE 5    SPCE H1   HT     0.423800        1.0080           0
+      15 SPCE 5    SPCE H2   HT     0.423800        1.0080           0
+      16 SPCE 6    SPCE O1   OT    -0.847600       15.9990           0
+      17 SPCE 6    SPCE H1   HT     0.423800        1.0080           0
+      18 SPCE 6    SPCE H2   HT     0.423800        1.0080           0
+      19 SPCE 7    SPCE O1   OT    -0.847600       15.9990           0
+      20 SPCE 7    SPCE H1   HT     0.423800        1.0080           0
+      21 SPCE 7    SPCE H2   HT     0.423800        1.0080           0
+      22 SPCE 8    SPCE O1   OT    -0.847600       15.9990           0
+      23 SPCE 8    SPCE H1   HT     0.423800        1.0080           0
+      24 SPCE 8    SPCE H2   HT     0.423800        1.0080           0
+      25 SPCE 9    SPCE O1   OT    -0.847600       15.9990           0
+      26 SPCE 9    SPCE H1   HT     0.423800        1.0080           0
+      27 SPCE 9    SPCE H2   HT     0.423800        1.0080           0
+      28 SPCE 10   SPCE O1   OT    -0.847600       15.9990           0
+      29 SPCE 10   SPCE H1   HT     0.423800        1.0080           0
+      30 SPCE 10   SPCE H2   HT     0.423800        1.0080           0
+      31 SPCE 11   SPCE O1   OT    -0.847600       15.9990           0
+      32 SPCE 11   SPCE H1   HT     0.423800        1.0080           0
+      33 SPCE 11   SPCE H2   HT     0.423800        1.0080           0
+      34 SPCE 12   SPCE O1   OT    -0.847600       15.9990           0
+      35 SPCE 12   SPCE H1   HT     0.423800        1.0080           0
+      36 SPCE 12   SPCE H2   HT     0.423800        1.0080           0
+      37 SPCE 13   SPCE O1   OT    -0.847600       15.9990           0
+      38 SPCE 13   SPCE H1   HT     0.423800        1.0080           0
+      39 SPCE 13   SPCE H2   HT     0.423800        1.0080           0
+      40 SPCE 14   SPCE O1   OT    -0.847600       15.9990           0
+      41 SPCE 14   SPCE H1   HT     0.423800        1.0080           0
+      42 SPCE 14   SPCE H2   HT     0.423800        1.0080           0
+      43 SPCE 15   SPCE O1   OT    -0.847600       15.9990           0
+      44 SPCE 15   SPCE H1   HT     0.423800        1.0080           0
+      45 SPCE 15   SPCE H2   HT     0.423800        1.0080           0
+      46 SPCE 16   SPCE O1   OT    -0.847600       15.9990           0
+      47 SPCE 16   SPCE H1   HT     0.423800        1.0080           0
+      48 SPCE 16   SPCE H2   HT     0.423800        1.0080           0
+      49 SPCE 17   SPCE O1   OT    -0.847600       15.9990           0
+      50 SPCE 17   SPCE H1   HT     0.423800        1.0080           0
+      51 SPCE 17   SPCE H2   HT     0.423800        1.0080           0
+      52 SPCE 18   SPCE O1   OT    -0.847600       15.9990           0
+      53 SPCE 18   SPCE H1   HT     0.423800        1.0080           0
+      54 SPCE 18   SPCE H2   HT     0.423800        1.0080           0
+      55 SPCE 19   SPCE O1   OT    -0.847600       15.9990           0
+      56 SPCE 19   SPCE H1   HT     0.423800        1.0080           0
+      57 SPCE 19   SPCE H2   HT     0.423800        1.0080           0
+      58 SPCE 20   SPCE O1   OT    -0.847600       15.9990           0
+      59 SPCE 20   SPCE H1   HT     0.423800        1.0080           0
+      60 SPCE 20   SPCE H2   HT     0.423800        1.0080           0
+      61 SPCE 21   SPCE O1   OT    -0.847600       15.9990           0
+      62 SPCE 21   SPCE H1   HT     0.423800        1.0080           0
+      63 SPCE 21   SPCE H2   HT     0.423800        1.0080           0
+      64 SPCE 22   SPCE O1   OT    -0.847600       15.9990           0
+      65 SPCE 22   SPCE H1   HT     0.423800        1.0080           0
+      66 SPCE 22   SPCE H2   HT     0.423800        1.0080           0
+      67 SPCE 23   SPCE O1   OT    -0.847600       15.9990           0
+      68 SPCE 23   SPCE H1   HT     0.423800        1.0080           0
+      69 SPCE 23   SPCE H2   HT     0.423800        1.0080           0
+      70 SPCE 24   SPCE O1   OT    -0.847600       15.9990           0
+      71 SPCE 24   SPCE H1   HT     0.423800        1.0080           0
+      72 SPCE 24   SPCE H2   HT     0.423800        1.0080           0
+      73 SPCE 25   SPCE O1   OT    -0.847600       15.9990           0
+      74 SPCE 25   SPCE H1   HT     0.423800        1.0080           0
+      75 SPCE 25   SPCE H2   HT     0.423800        1.0080           0
+      76 SPCE 26   SPCE O1   OT    -0.847600       15.9990           0
+      77 SPCE 26   SPCE H1   HT     0.423800        1.0080           0
+      78 SPCE 26   SPCE H2   HT     0.423800        1.0080           0
+      79 SPCE 27   SPCE O1   OT    -0.847600       15.9990           0
+      80 SPCE 27   SPCE H1   HT     0.423800        1.0080           0
+      81 SPCE 27   SPCE H2   HT     0.423800        1.0080           0
+      82 SPCE 28   SPCE O1   OT    -0.847600       15.9990           0
+      83 SPCE 28   SPCE H1   HT     0.423800        1.0080           0
+      84 SPCE 28   SPCE H2   HT     0.423800        1.0080           0
+      85 SPCE 29   SPCE O1   OT    -0.847600       15.9990           0
+      86 SPCE 29   SPCE H1   HT     0.423800        1.0080           0
+      87 SPCE 29   SPCE H2   HT     0.423800        1.0080           0
+      88 SPCE 30   SPCE O1   OT    -0.847600       15.9990           0
+      89 SPCE 30   SPCE H1   HT     0.423800        1.0080           0
+      90 SPCE 30   SPCE H2   HT     0.423800        1.0080           0
+      91 SPCE 31   SPCE O1   OT    -0.847600       15.9990           0
+      92 SPCE 31   SPCE H1   HT     0.423800        1.0080           0
+      93 SPCE 31   SPCE H2   HT     0.423800        1.0080           0
+      94 SPCE 32   SPCE O1   OT    -0.847600       15.9990           0
+      95 SPCE 32   SPCE H1   HT     0.423800        1.0080           0
+      96 SPCE 32   SPCE H2   HT     0.423800        1.0080           0
+      97 SPCE 33   SPCE O1   OT    -0.847600       15.9990           0
+      98 SPCE 33   SPCE H1   HT     0.423800        1.0080           0
+      99 SPCE 33   SPCE H2   HT     0.423800        1.0080           0
+     100 SPCE 34   SPCE O1   OT    -0.847600       15.9990           0
+     101 SPCE 34   SPCE H1   HT     0.423800        1.0080           0
+     102 SPCE 34   SPCE H2   HT     0.423800        1.0080           0
+     103 SPCE 35   SPCE O1   OT    -0.847600       15.9990           0
+     104 SPCE 35   SPCE H1   HT     0.423800        1.0080           0
+     105 SPCE 35   SPCE H2   HT     0.423800        1.0080           0
+     106 SPCE 36   SPCE O1   OT    -0.847600       15.9990           0
+     107 SPCE 36   SPCE H1   HT     0.423800        1.0080           0
+     108 SPCE 36   SPCE H2   HT     0.423800        1.0080           0
+     109 SPCE 37   SPCE O1   OT    -0.847600       15.9990           0
+     110 SPCE 37   SPCE H1   HT     0.423800        1.0080           0
+     111 SPCE 37   SPCE H2   HT     0.423800        1.0080           0
+     112 SPCE 38   SPCE O1   OT    -0.847600       15.9990           0
+     113 SPCE 38   SPCE H1   HT     0.423800        1.0080           0
+     114 SPCE 38   SPCE H2   HT     0.423800        1.0080           0
+     115 SPCE 39   SPCE O1   OT    -0.847600       15.9990           0
+     116 SPCE 39   SPCE H1   HT     0.423800        1.0080           0
+     117 SPCE 39   SPCE H2   HT     0.423800        1.0080           0
+     118 SPCE 40   SPCE O1   OT    -0.847600       15.9990           0
+     119 SPCE 40   SPCE H1   HT     0.423800        1.0080           0
+     120 SPCE 40   SPCE H2   HT     0.423800        1.0080           0
+     121 SPCE 41   SPCE O1   OT    -0.847600       15.9990           0
+     122 SPCE 41   SPCE H1   HT     0.423800        1.0080           0
+     123 SPCE 41   SPCE H2   HT     0.423800        1.0080           0
+     124 SPCE 42   SPCE O1   OT    -0.847600       15.9990           0
+     125 SPCE 42   SPCE H1   HT     0.423800        1.0080           0
+     126 SPCE 42   SPCE H2   HT     0.423800        1.0080           0
+     127 SPCE 43   SPCE O1   OT    -0.847600       15.9990           0
+     128 SPCE 43   SPCE H1   HT     0.423800        1.0080           0
+     129 SPCE 43   SPCE H2   HT     0.423800        1.0080           0
+     130 SPCE 44   SPCE O1   OT    -0.847600       15.9990           0
+     131 SPCE 44   SPCE H1   HT     0.423800        1.0080           0
+     132 SPCE 44   SPCE H2   HT     0.423800        1.0080           0
+     133 SPCE 45   SPCE O1   OT    -0.847600       15.9990           0
+     134 SPCE 45   SPCE H1   HT     0.423800        1.0080           0
+     135 SPCE 45   SPCE H2   HT     0.423800        1.0080           0
+     136 SPCE 46   SPCE O1   OT    -0.847600       15.9990           0
+     137 SPCE 46   SPCE H1   HT     0.423800        1.0080           0
+     138 SPCE 46   SPCE H2   HT     0.423800        1.0080           0
+     139 SPCE 47   SPCE O1   OT    -0.847600       15.9990           0
+     140 SPCE 47   SPCE H1   HT     0.423800        1.0080           0
+     141 SPCE 47   SPCE H2   HT     0.423800        1.0080           0
+     142 SPCE 48   SPCE O1   OT    -0.847600       15.9990           0
+     143 SPCE 48   SPCE H1   HT     0.423800        1.0080           0
+     144 SPCE 48   SPCE H2   HT     0.423800        1.0080           0
+     145 SPCE 49   SPCE O1   OT    -0.847600       15.9990           0
+     146 SPCE 49   SPCE H1   HT     0.423800        1.0080           0
+     147 SPCE 49   SPCE H2   HT     0.423800        1.0080           0
+     148 SPCE 50   SPCE O1   OT    -0.847600       15.9990           0
+     149 SPCE 50   SPCE H1   HT     0.423800        1.0080           0
+     150 SPCE 50   SPCE H2   HT     0.423800        1.0080           0
+     151 SPCE 51   SPCE O1   OT    -0.847600       15.9990           0
+     152 SPCE 51   SPCE H1   HT     0.423800        1.0080           0
+     153 SPCE 51   SPCE H2   HT     0.423800        1.0080           0
+     154 SPCE 52   SPCE O1   OT    -0.847600       15.9990           0
+     155 SPCE 52   SPCE H1   HT     0.423800        1.0080           0
+     156 SPCE 52   SPCE H2   HT     0.423800        1.0080           0
+     157 SPCE 53   SPCE O1   OT    -0.847600       15.9990           0
+     158 SPCE 53   SPCE H1   HT     0.423800        1.0080           0
+     159 SPCE 53   SPCE H2   HT     0.423800        1.0080           0
+     160 SPCE 54   SPCE O1   OT    -0.847600       15.9990           0
+     161 SPCE 54   SPCE H1   HT     0.423800        1.0080           0
+     162 SPCE 54   SPCE H2   HT     0.423800        1.0080           0
+     163 SPCE 55   SPCE O1   OT    -0.847600       15.9990           0
+     164 SPCE 55   SPCE H1   HT     0.423800        1.0080           0
+     165 SPCE 55   SPCE H2   HT     0.423800        1.0080           0
+     166 SPCE 56   SPCE O1   OT    -0.847600       15.9990           0
+     167 SPCE 56   SPCE H1   HT     0.423800        1.0080           0
+     168 SPCE 56   SPCE H2   HT     0.423800        1.0080           0
+     169 SPCE 57   SPCE O1   OT    -0.847600       15.9990           0
+     170 SPCE 57   SPCE H1   HT     0.423800        1.0080           0
+     171 SPCE 57   SPCE H2   HT     0.423800        1.0080           0
+     172 SPCE 58   SPCE O1   OT    -0.847600       15.9990           0
+     173 SPCE 58   SPCE H1   HT     0.423800        1.0080           0
+     174 SPCE 58   SPCE H2   HT     0.423800        1.0080           0
+     175 SPCE 59   SPCE O1   OT    -0.847600       15.9990           0
+     176 SPCE 59   SPCE H1   HT     0.423800        1.0080           0
+     177 SPCE 59   SPCE H2   HT     0.423800        1.0080           0
+     178 SPCE 60   SPCE O1   OT    -0.847600       15.9990           0
+     179 SPCE 60   SPCE H1   HT     0.423800        1.0080           0
+     180 SPCE 60   SPCE H2   HT     0.423800        1.0080           0
+     181 SPCE 61   SPCE O1   OT    -0.847600       15.9990           0
+     182 SPCE 61   SPCE H1   HT     0.423800        1.0080           0
+     183 SPCE 61   SPCE H2   HT     0.423800        1.0080           0
+     184 SPCE 62   SPCE O1   OT    -0.847600       15.9990           0
+     185 SPCE 62   SPCE H1   HT     0.423800        1.0080           0
+     186 SPCE 62   SPCE H2   HT     0.423800        1.0080           0
+     187 SPCE 63   SPCE O1   OT    -0.847600       15.9990           0
+     188 SPCE 63   SPCE H1   HT     0.423800        1.0080           0
+     189 SPCE 63   SPCE H2   HT     0.423800        1.0080           0
+     190 SPCE 64   SPCE O1   OT    -0.847600       15.9990           0
+     191 SPCE 64   SPCE H1   HT     0.423800        1.0080           0
+     192 SPCE 64   SPCE H2   HT     0.423800        1.0080           0
+     193 SPCE 65   SPCE O1   OT    -0.847600       15.9990           0
+     194 SPCE 65   SPCE H1   HT     0.423800        1.0080           0
+     195 SPCE 65   SPCE H2   HT     0.423800        1.0080           0
+     196 SPCE 66   SPCE O1   OT    -0.847600       15.9990           0
+     197 SPCE 66   SPCE H1   HT     0.423800        1.0080           0
+     198 SPCE 66   SPCE H2   HT     0.423800        1.0080           0
+     199 SPCE 67   SPCE O1   OT    -0.847600       15.9990           0
+     200 SPCE 67   SPCE H1   HT     0.423800        1.0080           0
+     201 SPCE 67   SPCE H2   HT     0.423800        1.0080           0
+     202 SPCE 68   SPCE O1   OT    -0.847600       15.9990           0
+     203 SPCE 68   SPCE H1   HT     0.423800        1.0080           0
+     204 SPCE 68   SPCE H2   HT     0.423800        1.0080           0
+     205 SPCE 69   SPCE O1   OT    -0.847600       15.9990           0
+     206 SPCE 69   SPCE H1   HT     0.423800        1.0080           0
+     207 SPCE 69   SPCE H2   HT     0.423800        1.0080           0
+     208 SPCE 70   SPCE O1   OT    -0.847600       15.9990           0
+     209 SPCE 70   SPCE H1   HT     0.423800        1.0080           0
+     210 SPCE 70   SPCE H2   HT     0.423800        1.0080           0
+     211 SPCE 71   SPCE O1   OT    -0.847600       15.9990           0
+     212 SPCE 71   SPCE H1   HT     0.423800        1.0080           0
+     213 SPCE 71   SPCE H2   HT     0.423800        1.0080           0
+     214 SPCE 72   SPCE O1   OT    -0.847600       15.9990           0
+     215 SPCE 72   SPCE H1   HT     0.423800        1.0080           0
+     216 SPCE 72   SPCE H2   HT     0.423800        1.0080           0
+     217 SPCE 73   SPCE O1   OT    -0.847600       15.9990           0
+     218 SPCE 73   SPCE H1   HT     0.423800        1.0080           0
+     219 SPCE 73   SPCE H2   HT     0.423800        1.0080           0
+     220 SPCE 74   SPCE O1   OT    -0.847600       15.9990           0
+     221 SPCE 74   SPCE H1   HT     0.423800        1.0080           0
+     222 SPCE 74   SPCE H2   HT     0.423800        1.0080           0
+     223 SPCE 75   SPCE O1   OT    -0.847600       15.9990           0
+     224 SPCE 75   SPCE H1   HT     0.423800        1.0080           0
+     225 SPCE 75   SPCE H2   HT     0.423800        1.0080           0
+     226 SPCE 76   SPCE O1   OT    -0.847600       15.9990           0
+     227 SPCE 76   SPCE H1   HT     0.423800        1.0080           0
+     228 SPCE 76   SPCE H2   HT     0.423800        1.0080           0
+     229 SPCE 77   SPCE O1   OT    -0.847600       15.9990           0
+     230 SPCE 77   SPCE H1   HT     0.423800        1.0080           0
+     231 SPCE 77   SPCE H2   HT     0.423800        1.0080           0
+     232 SPCE 78   SPCE O1   OT    -0.847600       15.9990           0
+     233 SPCE 78   SPCE H1   HT     0.423800        1.0080           0
+     234 SPCE 78   SPCE H2   HT     0.423800        1.0080           0
+     235 SPCE 79   SPCE O1   OT    -0.847600       15.9990           0
+     236 SPCE 79   SPCE H1   HT     0.423800        1.0080           0
+     237 SPCE 79   SPCE H2   HT     0.423800        1.0080           0
+     238 SPCE 80   SPCE O1   OT    -0.847600       15.9990           0
+     239 SPCE 80   SPCE H1   HT     0.423800        1.0080           0
+     240 SPCE 80   SPCE H2   HT     0.423800        1.0080           0
+     241 SPCE 81   SPCE O1   OT    -0.847600       15.9990           0
+     242 SPCE 81   SPCE H1   HT     0.423800        1.0080           0
+     243 SPCE 81   SPCE H2   HT     0.423800        1.0080           0
+     244 SPCE 82   SPCE O1   OT    -0.847600       15.9990           0
+     245 SPCE 82   SPCE H1   HT     0.423800        1.0080           0
+     246 SPCE 82   SPCE H2   HT     0.423800        1.0080           0
+     247 SPCE 83   SPCE O1   OT    -0.847600       15.9990           0
+     248 SPCE 83   SPCE H1   HT     0.423800        1.0080           0
+     249 SPCE 83   SPCE H2   HT     0.423800        1.0080           0
+     250 SPCE 84   SPCE O1   OT    -0.847600       15.9990           0
+     251 SPCE 84   SPCE H1   HT     0.423800        1.0080           0
+     252 SPCE 84   SPCE H2   HT     0.423800        1.0080           0
+     253 SPCE 85   SPCE O1   OT    -0.847600       15.9990           0
+     254 SPCE 85   SPCE H1   HT     0.423800        1.0080           0
+     255 SPCE 85   SPCE H2   HT     0.423800        1.0080           0
+     256 SPCE 86   SPCE O1   OT    -0.847600       15.9990           0
+     257 SPCE 86   SPCE H1   HT     0.423800        1.0080           0
+     258 SPCE 86   SPCE H2   HT     0.423800        1.0080           0
+     259 SPCE 87   SPCE O1   OT    -0.847600       15.9990           0
+     260 SPCE 87   SPCE H1   HT     0.423800        1.0080           0
+     261 SPCE 87   SPCE H2   HT     0.423800        1.0080           0
+     262 SPCE 88   SPCE O1   OT    -0.847600       15.9990           0
+     263 SPCE 88   SPCE H1   HT     0.423800        1.0080           0
+     264 SPCE 88   SPCE H2   HT     0.423800        1.0080           0
+     265 SPCE 89   SPCE O1   OT    -0.847600       15.9990           0
+     266 SPCE 89   SPCE H1   HT     0.423800        1.0080           0
+     267 SPCE 89   SPCE H2   HT     0.423800        1.0080           0
+     268 SPCE 90   SPCE O1   OT    -0.847600       15.9990           0
+     269 SPCE 90   SPCE H1   HT     0.423800        1.0080           0
+     270 SPCE 90   SPCE H2   HT     0.423800        1.0080           0
+     271 SPCE 91   SPCE O1   OT    -0.847600       15.9990           0
+     272 SPCE 91   SPCE H1   HT     0.423800        1.0080           0
+     273 SPCE 91   SPCE H2   HT     0.423800        1.0080           0
+     274 SPCE 92   SPCE O1   OT    -0.847600       15.9990           0
+     275 SPCE 92   SPCE H1   HT     0.423800        1.0080           0
+     276 SPCE 92   SPCE H2   HT     0.423800        1.0080           0
+     277 SPCE 93   SPCE O1   OT    -0.847600       15.9990           0
+     278 SPCE 93   SPCE H1   HT     0.423800        1.0080           0
+     279 SPCE 93   SPCE H2   HT     0.423800        1.0080           0
+     280 SPCE 94   SPCE O1   OT    -0.847600       15.9990           0
+     281 SPCE 94   SPCE H1   HT     0.423800        1.0080           0
+     282 SPCE 94   SPCE H2   HT     0.423800        1.0080           0
+     283 SPCE 95   SPCE O1   OT    -0.847600       15.9990           0
+     284 SPCE 95   SPCE H1   HT     0.423800        1.0080           0
+     285 SPCE 95   SPCE H2   HT     0.423800        1.0080           0
+     286 SPCE 96   SPCE O1   OT    -0.847600       15.9990           0
+     287 SPCE 96   SPCE H1   HT     0.423800        1.0080           0
+     288 SPCE 96   SPCE H2   HT     0.423800        1.0080           0
+     289 SPCE 97   SPCE O1   OT    -0.847600       15.9990           0
+     290 SPCE 97   SPCE H1   HT     0.423800        1.0080           0
+     291 SPCE 97   SPCE H2   HT     0.423800        1.0080           0
+     292 SPCE 98   SPCE O1   OT    -0.847600       15.9990           0
+     293 SPCE 98   SPCE H1   HT     0.423800        1.0080           0
+     294 SPCE 98   SPCE H2   HT     0.423800        1.0080           0
+     295 SPCE 99   SPCE O1   OT    -0.847600       15.9990           0
+     296 SPCE 99   SPCE H1   HT     0.423800        1.0080           0
+     297 SPCE 99   SPCE H2   HT     0.423800        1.0080           0
+     298 SPCE 100  SPCE O1   OT    -0.847600       15.9990           0
+     299 SPCE 100  SPCE H1   HT     0.423800        1.0080           0
+     300 SPCE 100  SPCE H2   HT     0.423800        1.0080           0
+     301 SPCE 101  SPCE O1   OT    -0.847600       15.9990           0
+     302 SPCE 101  SPCE H1   HT     0.423800        1.0080           0
+     303 SPCE 101  SPCE H2   HT     0.423800        1.0080           0
+     304 SPCE 102  SPCE O1   OT    -0.847600       15.9990           0
+     305 SPCE 102  SPCE H1   HT     0.423800        1.0080           0
+     306 SPCE 102  SPCE H2   HT     0.423800        1.0080           0
+     307 SPCE 103  SPCE O1   OT    -0.847600       15.9990           0
+     308 SPCE 103  SPCE H1   HT     0.423800        1.0080           0
+     309 SPCE 103  SPCE H2   HT     0.423800        1.0080           0
+     310 SPCE 104  SPCE O1   OT    -0.847600       15.9990           0
+     311 SPCE 104  SPCE H1   HT     0.423800        1.0080           0
+     312 SPCE 104  SPCE H2   HT     0.423800        1.0080           0
+     313 SPCE 105  SPCE O1   OT    -0.847600       15.9990           0
+     314 SPCE 105  SPCE H1   HT     0.423800        1.0080           0
+     315 SPCE 105  SPCE H2   HT     0.423800        1.0080           0
+     316 SPCE 106  SPCE O1   OT    -0.847600       15.9990           0
+     317 SPCE 106  SPCE H1   HT     0.423800        1.0080           0
+     318 SPCE 106  SPCE H2   HT     0.423800        1.0080           0
+     319 SPCE 107  SPCE O1   OT    -0.847600       15.9990           0
+     320 SPCE 107  SPCE H1   HT     0.423800        1.0080           0
+     321 SPCE 107  SPCE H2   HT     0.423800        1.0080           0
+     322 SPCE 108  SPCE O1   OT    -0.847600       15.9990           0
+     323 SPCE 108  SPCE H1   HT     0.423800        1.0080           0
+     324 SPCE 108  SPCE H2   HT     0.423800        1.0080           0
+     325 SPCE 109  SPCE O1   OT    -0.847600       15.9990           0
+     326 SPCE 109  SPCE H1   HT     0.423800        1.0080           0
+     327 SPCE 109  SPCE H2   HT     0.423800        1.0080           0
+     328 SPCE 110  SPCE O1   OT    -0.847600       15.9990           0
+     329 SPCE 110  SPCE H1   HT     0.423800        1.0080           0
+     330 SPCE 110  SPCE H2   HT     0.423800        1.0080           0
+     331 SPCE 111  SPCE O1   OT    -0.847600       15.9990           0
+     332 SPCE 111  SPCE H1   HT     0.423800        1.0080           0
+     333 SPCE 111  SPCE H2   HT     0.423800        1.0080           0
+     334 SPCE 112  SPCE O1   OT    -0.847600       15.9990           0
+     335 SPCE 112  SPCE H1   HT     0.423800        1.0080           0
+     336 SPCE 112  SPCE H2   HT     0.423800        1.0080           0
+     337 SPCE 113  SPCE O1   OT    -0.847600       15.9990           0
+     338 SPCE 113  SPCE H1   HT     0.423800        1.0080           0
+     339 SPCE 113  SPCE H2   HT     0.423800        1.0080           0
+     340 SPCE 114  SPCE O1   OT    -0.847600       15.9990           0
+     341 SPCE 114  SPCE H1   HT     0.423800        1.0080           0
+     342 SPCE 114  SPCE H2   HT     0.423800        1.0080           0
+     343 SPCE 115  SPCE O1   OT    -0.847600       15.9990           0
+     344 SPCE 115  SPCE H1   HT     0.423800        1.0080           0
+     345 SPCE 115  SPCE H2   HT     0.423800        1.0080           0
+     346 SPCE 116  SPCE O1   OT    -0.847600       15.9990           0
+     347 SPCE 116  SPCE H1   HT     0.423800        1.0080           0
+     348 SPCE 116  SPCE H2   HT     0.423800        1.0080           0
+     349 SPCE 117  SPCE O1   OT    -0.847600       15.9990           0
+     350 SPCE 117  SPCE H1   HT     0.423800        1.0080           0
+     351 SPCE 117  SPCE H2   HT     0.423800        1.0080           0
+     352 SPCE 118  SPCE O1   OT    -0.847600       15.9990           0
+     353 SPCE 118  SPCE H1   HT     0.423800        1.0080           0
+     354 SPCE 118  SPCE H2   HT     0.423800        1.0080           0
+     355 SPCE 119  SPCE O1   OT    -0.847600       15.9990           0
+     356 SPCE 119  SPCE H1   HT     0.423800        1.0080           0
+     357 SPCE 119  SPCE H2   HT     0.423800        1.0080           0
+     358 SPCE 120  SPCE O1   OT    -0.847600       15.9990           0
+     359 SPCE 120  SPCE H1   HT     0.423800        1.0080           0
+     360 SPCE 120  SPCE H2   HT     0.423800        1.0080           0
+     361 SPCE 121  SPCE O1   OT    -0.847600       15.9990           0
+     362 SPCE 121  SPCE H1   HT     0.423800        1.0080           0
+     363 SPCE 121  SPCE H2   HT     0.423800        1.0080           0
+     364 SPCE 122  SPCE O1   OT    -0.847600       15.9990           0
+     365 SPCE 122  SPCE H1   HT     0.423800        1.0080           0
+     366 SPCE 122  SPCE H2   HT     0.423800        1.0080           0
+     367 SPCE 123  SPCE O1   OT    -0.847600       15.9990           0
+     368 SPCE 123  SPCE H1   HT     0.423800        1.0080           0
+     369 SPCE 123  SPCE H2   HT     0.423800        1.0080           0
+     370 SPCE 124  SPCE O1   OT    -0.847600       15.9990           0
+     371 SPCE 124  SPCE H1   HT     0.423800        1.0080           0
+     372 SPCE 124  SPCE H2   HT     0.423800        1.0080           0
+     373 SPCE 125  SPCE O1   OT    -0.847600       15.9990           0
+     374 SPCE 125  SPCE H1   HT     0.423800        1.0080           0
+     375 SPCE 125  SPCE H2   HT     0.423800        1.0080           0
+     376 SPCE 126  SPCE O1   OT    -0.847600       15.9990           0
+     377 SPCE 126  SPCE H1   HT     0.423800        1.0080           0
+     378 SPCE 126  SPCE H2   HT     0.423800        1.0080           0
+     379 SPCE 127  SPCE O1   OT    -0.847600       15.9990           0
+     380 SPCE 127  SPCE H1   HT     0.423800        1.0080           0
+     381 SPCE 127  SPCE H2   HT     0.423800        1.0080           0
+     382 SPCE 128  SPCE O1   OT    -0.847600       15.9990           0
+     383 SPCE 128  SPCE H1   HT     0.423800        1.0080           0
+     384 SPCE 128  SPCE H2   HT     0.423800        1.0080           0
+     385 SPCE 129  SPCE O1   OT    -0.847600       15.9990           0
+     386 SPCE 129  SPCE H1   HT     0.423800        1.0080           0
+     387 SPCE 129  SPCE H2   HT     0.423800        1.0080           0
+     388 SPCE 130  SPCE O1   OT    -0.847600       15.9990           0
+     389 SPCE 130  SPCE H1   HT     0.423800        1.0080           0
+     390 SPCE 130  SPCE H2   HT     0.423800        1.0080           0
+     391 SPCE 131  SPCE O1   OT    -0.847600       15.9990           0
+     392 SPCE 131  SPCE H1   HT     0.423800        1.0080           0
+     393 SPCE 131  SPCE H2   HT     0.423800        1.0080           0
+     394 SPCE 132  SPCE O1   OT    -0.847600       15.9990           0
+     395 SPCE 132  SPCE H1   HT     0.423800        1.0080           0
+     396 SPCE 132  SPCE H2   HT     0.423800        1.0080           0
+     397 SPCE 133  SPCE O1   OT    -0.847600       15.9990           0
+     398 SPCE 133  SPCE H1   HT     0.423800        1.0080           0
+     399 SPCE 133  SPCE H2   HT     0.423800        1.0080           0
+     400 SPCE 134  SPCE O1   OT    -0.847600       15.9990           0
+     401 SPCE 134  SPCE H1   HT     0.423800        1.0080           0
+     402 SPCE 134  SPCE H2   HT     0.423800        1.0080           0
+     403 SPCE 135  SPCE O1   OT    -0.847600       15.9990           0
+     404 SPCE 135  SPCE H1   HT     0.423800        1.0080           0
+     405 SPCE 135  SPCE H2   HT     0.423800        1.0080           0
+     406 SPCE 136  SPCE O1   OT    -0.847600       15.9990           0
+     407 SPCE 136  SPCE H1   HT     0.423800        1.0080           0
+     408 SPCE 136  SPCE H2   HT     0.423800        1.0080           0
+     409 SPCE 137  SPCE O1   OT    -0.847600       15.9990           0
+     410 SPCE 137  SPCE H1   HT     0.423800        1.0080           0
+     411 SPCE 137  SPCE H2   HT     0.423800        1.0080           0
+     412 SPCE 138  SPCE O1   OT    -0.847600       15.9990           0
+     413 SPCE 138  SPCE H1   HT     0.423800        1.0080           0
+     414 SPCE 138  SPCE H2   HT     0.423800        1.0080           0
+     415 SPCE 139  SPCE O1   OT    -0.847600       15.9990           0
+     416 SPCE 139  SPCE H1   HT     0.423800        1.0080           0
+     417 SPCE 139  SPCE H2   HT     0.423800        1.0080           0
+     418 SPCE 140  SPCE O1   OT    -0.847600       15.9990           0
+     419 SPCE 140  SPCE H1   HT     0.423800        1.0080           0
+     420 SPCE 140  SPCE H2   HT     0.423800        1.0080           0
+     421 SPCE 141  SPCE O1   OT    -0.847600       15.9990           0
+     422 SPCE 141  SPCE H1   HT     0.423800        1.0080           0
+     423 SPCE 141  SPCE H2   HT     0.423800        1.0080           0
+     424 SPCE 142  SPCE O1   OT    -0.847600       15.9990           0
+     425 SPCE 142  SPCE H1   HT     0.423800        1.0080           0
+     426 SPCE 142  SPCE H2   HT     0.423800        1.0080           0
+     427 SPCE 143  SPCE O1   OT    -0.847600       15.9990           0
+     428 SPCE 143  SPCE H1   HT     0.423800        1.0080           0
+     429 SPCE 143  SPCE H2   HT     0.423800        1.0080           0
+     430 SPCE 144  SPCE O1   OT    -0.847600       15.9990           0
+     431 SPCE 144  SPCE H1   HT     0.423800        1.0080           0
+     432 SPCE 144  SPCE H2   HT     0.423800        1.0080           0
+     433 SPCE 145  SPCE O1   OT    -0.847600       15.9990           0
+     434 SPCE 145  SPCE H1   HT     0.423800        1.0080           0
+     435 SPCE 145  SPCE H2   HT     0.423800        1.0080           0
+     436 SPCE 146  SPCE O1   OT    -0.847600       15.9990           0
+     437 SPCE 146  SPCE H1   HT     0.423800        1.0080           0
+     438 SPCE 146  SPCE H2   HT     0.423800        1.0080           0
+     439 SPCE 147  SPCE O1   OT    -0.847600       15.9990           0
+     440 SPCE 147  SPCE H1   HT     0.423800        1.0080           0
+     441 SPCE 147  SPCE H2   HT     0.423800        1.0080           0
+     442 SPCE 148  SPCE O1   OT    -0.847600       15.9990           0
+     443 SPCE 148  SPCE H1   HT     0.423800        1.0080           0
+     444 SPCE 148  SPCE H2   HT     0.423800        1.0080           0
+     445 SPCE 149  SPCE O1   OT    -0.847600       15.9990           0
+     446 SPCE 149  SPCE H1   HT     0.423800        1.0080           0
+     447 SPCE 149  SPCE H2   HT     0.423800        1.0080           0
+     448 SPCE 150  SPCE O1   OT    -0.847600       15.9990           0
+     449 SPCE 150  SPCE H1   HT     0.423800        1.0080           0
+     450 SPCE 150  SPCE H2   HT     0.423800        1.0080           0
+     451 SPCE 151  SPCE O1   OT    -0.847600       15.9990           0
+     452 SPCE 151  SPCE H1   HT     0.423800        1.0080           0
+     453 SPCE 151  SPCE H2   HT     0.423800        1.0080           0
+     454 SPCE 152  SPCE O1   OT    -0.847600       15.9990           0
+     455 SPCE 152  SPCE H1   HT     0.423800        1.0080           0
+     456 SPCE 152  SPCE H2   HT     0.423800        1.0080           0
+     457 SPCE 153  SPCE O1   OT    -0.847600       15.9990           0
+     458 SPCE 153  SPCE H1   HT     0.423800        1.0080           0
+     459 SPCE 153  SPCE H2   HT     0.423800        1.0080           0
+     460 SPCE 154  SPCE O1   OT    -0.847600       15.9990           0
+     461 SPCE 154  SPCE H1   HT     0.423800        1.0080           0
+     462 SPCE 154  SPCE H2   HT     0.423800        1.0080           0
+     463 SPCE 155  SPCE O1   OT    -0.847600       15.9990           0
+     464 SPCE 155  SPCE H1   HT     0.423800        1.0080           0
+     465 SPCE 155  SPCE H2   HT     0.423800        1.0080           0
+     466 SPCE 156  SPCE O1   OT    -0.847600       15.9990           0
+     467 SPCE 156  SPCE H1   HT     0.423800        1.0080           0
+     468 SPCE 156  SPCE H2   HT     0.423800        1.0080           0
+     469 SPCE 157  SPCE O1   OT    -0.847600       15.9990           0
+     470 SPCE 157  SPCE H1   HT     0.423800        1.0080           0
+     471 SPCE 157  SPCE H2   HT     0.423800        1.0080           0
+     472 SPCE 158  SPCE O1   OT    -0.847600       15.9990           0
+     473 SPCE 158  SPCE H1   HT     0.423800        1.0080           0
+     474 SPCE 158  SPCE H2   HT     0.423800        1.0080           0
+     475 SPCE 159  SPCE O1   OT    -0.847600       15.9990           0
+     476 SPCE 159  SPCE H1   HT     0.423800        1.0080           0
+     477 SPCE 159  SPCE H2   HT     0.423800        1.0080           0
+     478 SPCE 160  SPCE O1   OT    -0.847600       15.9990           0
+     479 SPCE 160  SPCE H1   HT     0.423800        1.0080           0
+     480 SPCE 160  SPCE H2   HT     0.423800        1.0080           0
+     481 SPCE 161  SPCE O1   OT    -0.847600       15.9990           0
+     482 SPCE 161  SPCE H1   HT     0.423800        1.0080           0
+     483 SPCE 161  SPCE H2   HT     0.423800        1.0080           0
+     484 SPCE 162  SPCE O1   OT    -0.847600       15.9990           0
+     485 SPCE 162  SPCE H1   HT     0.423800        1.0080           0
+     486 SPCE 162  SPCE H2   HT     0.423800        1.0080           0
+     487 SPCE 163  SPCE O1   OT    -0.847600       15.9990           0
+     488 SPCE 163  SPCE H1   HT     0.423800        1.0080           0
+     489 SPCE 163  SPCE H2   HT     0.423800        1.0080           0
+     490 SPCE 164  SPCE O1   OT    -0.847600       15.9990           0
+     491 SPCE 164  SPCE H1   HT     0.423800        1.0080           0
+     492 SPCE 164  SPCE H2   HT     0.423800        1.0080           0
+     493 SPCE 165  SPCE O1   OT    -0.847600       15.9990           0
+     494 SPCE 165  SPCE H1   HT     0.423800        1.0080           0
+     495 SPCE 165  SPCE H2   HT     0.423800        1.0080           0
+     496 SPCE 166  SPCE O1   OT    -0.847600       15.9990           0
+     497 SPCE 166  SPCE H1   HT     0.423800        1.0080           0
+     498 SPCE 166  SPCE H2   HT     0.423800        1.0080           0
+     499 SPCE 167  SPCE O1   OT    -0.847600       15.9990           0
+     500 SPCE 167  SPCE H1   HT     0.423800        1.0080           0
+     501 SPCE 167  SPCE H2   HT     0.423800        1.0080           0
+     502 SPCE 168  SPCE O1   OT    -0.847600       15.9990           0
+     503 SPCE 168  SPCE H1   HT     0.423800        1.0080           0
+     504 SPCE 168  SPCE H2   HT     0.423800        1.0080           0
+     505 SPCE 169  SPCE O1   OT    -0.847600       15.9990           0
+     506 SPCE 169  SPCE H1   HT     0.423800        1.0080           0
+     507 SPCE 169  SPCE H2   HT     0.423800        1.0080           0
+     508 SPCE 170  SPCE O1   OT    -0.847600       15.9990           0
+     509 SPCE 170  SPCE H1   HT     0.423800        1.0080           0
+     510 SPCE 170  SPCE H2   HT     0.423800        1.0080           0
+     511 SPCE 171  SPCE O1   OT    -0.847600       15.9990           0
+     512 SPCE 171  SPCE H1   HT     0.423800        1.0080           0
+     513 SPCE 171  SPCE H2   HT     0.423800        1.0080           0
+     514 SPCE 172  SPCE O1   OT    -0.847600       15.9990           0
+     515 SPCE 172  SPCE H1   HT     0.423800        1.0080           0
+     516 SPCE 172  SPCE H2   HT     0.423800        1.0080           0
+     517 SPCE 173  SPCE O1   OT    -0.847600       15.9990           0
+     518 SPCE 173  SPCE H1   HT     0.423800        1.0080           0
+     519 SPCE 173  SPCE H2   HT     0.423800        1.0080           0
+     520 SPCE 174  SPCE O1   OT    -0.847600       15.9990           0
+     521 SPCE 174  SPCE H1   HT     0.423800        1.0080           0
+     522 SPCE 174  SPCE H2   HT     0.423800        1.0080           0
+     523 SPCE 175  SPCE O1   OT    -0.847600       15.9990           0
+     524 SPCE 175  SPCE H1   HT     0.423800        1.0080           0
+     525 SPCE 175  SPCE H2   HT     0.423800        1.0080           0
+     526 SPCE 176  SPCE O1   OT    -0.847600       15.9990           0
+     527 SPCE 176  SPCE H1   HT     0.423800        1.0080           0
+     528 SPCE 176  SPCE H2   HT     0.423800        1.0080           0
+     529 SPCE 177  SPCE O1   OT    -0.847600       15.9990           0
+     530 SPCE 177  SPCE H1   HT     0.423800        1.0080           0
+     531 SPCE 177  SPCE H2   HT     0.423800        1.0080           0
+     532 SPCE 178  SPCE O1   OT    -0.847600       15.9990           0
+     533 SPCE 178  SPCE H1   HT     0.423800        1.0080           0
+     534 SPCE 178  SPCE H2   HT     0.423800        1.0080           0
+     535 SPCE 179  SPCE O1   OT    -0.847600       15.9990           0
+     536 SPCE 179  SPCE H1   HT     0.423800        1.0080           0
+     537 SPCE 179  SPCE H2   HT     0.423800        1.0080           0
+     538 SPCE 180  SPCE O1   OT    -0.847600       15.9990           0
+     539 SPCE 180  SPCE H1   HT     0.423800        1.0080           0
+     540 SPCE 180  SPCE H2   HT     0.423800        1.0080           0
+     541 SPCE 181  SPCE O1   OT    -0.847600       15.9990           0
+     542 SPCE 181  SPCE H1   HT     0.423800        1.0080           0
+     543 SPCE 181  SPCE H2   HT     0.423800        1.0080           0
+     544 SPCE 182  SPCE O1   OT    -0.847600       15.9990           0
+     545 SPCE 182  SPCE H1   HT     0.423800        1.0080           0
+     546 SPCE 182  SPCE H2   HT     0.423800        1.0080           0
+     547 SPCE 183  SPCE O1   OT    -0.847600       15.9990           0
+     548 SPCE 183  SPCE H1   HT     0.423800        1.0080           0
+     549 SPCE 183  SPCE H2   HT     0.423800        1.0080           0
+     550 SPCE 184  SPCE O1   OT    -0.847600       15.9990           0
+     551 SPCE 184  SPCE H1   HT     0.423800        1.0080           0
+     552 SPCE 184  SPCE H2   HT     0.423800        1.0080           0
+     553 SPCE 185  SPCE O1   OT    -0.847600       15.9990           0
+     554 SPCE 185  SPCE H1   HT     0.423800        1.0080           0
+     555 SPCE 185  SPCE H2   HT     0.423800        1.0080           0
+     556 SPCE 186  SPCE O1   OT    -0.847600       15.9990           0
+     557 SPCE 186  SPCE H1   HT     0.423800        1.0080           0
+     558 SPCE 186  SPCE H2   HT     0.423800        1.0080           0
+     559 SPCE 187  SPCE O1   OT    -0.847600       15.9990           0
+     560 SPCE 187  SPCE H1   HT     0.423800        1.0080           0
+     561 SPCE 187  SPCE H2   HT     0.423800        1.0080           0
+     562 SPCE 188  SPCE O1   OT    -0.847600       15.9990           0
+     563 SPCE 188  SPCE H1   HT     0.423800        1.0080           0
+     564 SPCE 188  SPCE H2   HT     0.423800        1.0080           0
+     565 SPCE 189  SPCE O1   OT    -0.847600       15.9990           0
+     566 SPCE 189  SPCE H1   HT     0.423800        1.0080           0
+     567 SPCE 189  SPCE H2   HT     0.423800        1.0080           0
+     568 SPCE 190  SPCE O1   OT    -0.847600       15.9990           0
+     569 SPCE 190  SPCE H1   HT     0.423800        1.0080           0
+     570 SPCE 190  SPCE H2   HT     0.423800        1.0080           0
+     571 SPCE 191  SPCE O1   OT    -0.847600       15.9990           0
+     572 SPCE 191  SPCE H1   HT     0.423800        1.0080           0
+     573 SPCE 191  SPCE H2   HT     0.423800        1.0080           0
+     574 SPCE 192  SPCE O1   OT    -0.847600       15.9990           0
+     575 SPCE 192  SPCE H1   HT     0.423800        1.0080           0
+     576 SPCE 192  SPCE H2   HT     0.423800        1.0080           0
+     577 SPCE 193  SPCE O1   OT    -0.847600       15.9990           0
+     578 SPCE 193  SPCE H1   HT     0.423800        1.0080           0
+     579 SPCE 193  SPCE H2   HT     0.423800        1.0080           0
+     580 SPCE 194  SPCE O1   OT    -0.847600       15.9990           0
+     581 SPCE 194  SPCE H1   HT     0.423800        1.0080           0
+     582 SPCE 194  SPCE H2   HT     0.423800        1.0080           0
+     583 SPCE 195  SPCE O1   OT    -0.847600       15.9990           0
+     584 SPCE 195  SPCE H1   HT     0.423800        1.0080           0
+     585 SPCE 195  SPCE H2   HT     0.423800        1.0080           0
+     586 SPCE 196  SPCE O1   OT    -0.847600       15.9990           0
+     587 SPCE 196  SPCE H1   HT     0.423800        1.0080           0
+     588 SPCE 196  SPCE H2   HT     0.423800        1.0080           0
+     589 SPCE 197  SPCE O1   OT    -0.847600       15.9990           0
+     590 SPCE 197  SPCE H1   HT     0.423800        1.0080           0
+     591 SPCE 197  SPCE H2   HT     0.423800        1.0080           0
+     592 SPCE 198  SPCE O1   OT    -0.847600       15.9990           0
+     593 SPCE 198  SPCE H1   HT     0.423800        1.0080           0
+     594 SPCE 198  SPCE H2   HT     0.423800        1.0080           0
+     595 SPCE 199  SPCE O1   OT    -0.847600       15.9990           0
+     596 SPCE 199  SPCE H1   HT     0.423800        1.0080           0
+     597 SPCE 199  SPCE H2   HT     0.423800        1.0080           0
+     598 SPCE 200  SPCE O1   OT    -0.847600       15.9990           0
+     599 SPCE 200  SPCE H1   HT     0.423800        1.0080           0
+     600 SPCE 200  SPCE H2   HT     0.423800        1.0080           0
+     601 SPCE 201  SPCE O1   OT    -0.847600       15.9990           0
+     602 SPCE 201  SPCE H1   HT     0.423800        1.0080           0
+     603 SPCE 201  SPCE H2   HT     0.423800        1.0080           0
+     604 SPCE 202  SPCE O1   OT    -0.847600       15.9990           0
+     605 SPCE 202  SPCE H1   HT     0.423800        1.0080           0
+     606 SPCE 202  SPCE H2   HT     0.423800        1.0080           0
+     607 SPCE 203  SPCE O1   OT    -0.847600       15.9990           0
+     608 SPCE 203  SPCE H1   HT     0.423800        1.0080           0
+     609 SPCE 203  SPCE H2   HT     0.423800        1.0080           0
+     610 SPCE 204  SPCE O1   OT    -0.847600       15.9990           0
+     611 SPCE 204  SPCE H1   HT     0.423800        1.0080           0
+     612 SPCE 204  SPCE H2   HT     0.423800        1.0080           0
+     613 SPCE 205  SPCE O1   OT    -0.847600       15.9990           0
+     614 SPCE 205  SPCE H1   HT     0.423800        1.0080           0
+     615 SPCE 205  SPCE H2   HT     0.423800        1.0080           0
+     616 SPCE 206  SPCE O1   OT    -0.847600       15.9990           0
+     617 SPCE 206  SPCE H1   HT     0.423800        1.0080           0
+     618 SPCE 206  SPCE H2   HT     0.423800        1.0080           0
+     619 SPCE 207  SPCE O1   OT    -0.847600       15.9990           0
+     620 SPCE 207  SPCE H1   HT     0.423800        1.0080           0
+     621 SPCE 207  SPCE H2   HT     0.423800        1.0080           0
+     622 SPCE 208  SPCE O1   OT    -0.847600       15.9990           0
+     623 SPCE 208  SPCE H1   HT     0.423800        1.0080           0
+     624 SPCE 208  SPCE H2   HT     0.423800        1.0080           0
+     625 SPCE 209  SPCE O1   OT    -0.847600       15.9990           0
+     626 SPCE 209  SPCE H1   HT     0.423800        1.0080           0
+     627 SPCE 209  SPCE H2   HT     0.423800        1.0080           0
+     628 SPCE 210  SPCE O1   OT    -0.847600       15.9990           0
+     629 SPCE 210  SPCE H1   HT     0.423800        1.0080           0
+     630 SPCE 210  SPCE H2   HT     0.423800        1.0080           0
+     631 SPCE 211  SPCE O1   OT    -0.847600       15.9990           0
+     632 SPCE 211  SPCE H1   HT     0.423800        1.0080           0
+     633 SPCE 211  SPCE H2   HT     0.423800        1.0080           0
+     634 SPCE 212  SPCE O1   OT    -0.847600       15.9990           0
+     635 SPCE 212  SPCE H1   HT     0.423800        1.0080           0
+     636 SPCE 212  SPCE H2   HT     0.423800        1.0080           0
+     637 SPCE 213  SPCE O1   OT    -0.847600       15.9990           0
+     638 SPCE 213  SPCE H1   HT     0.423800        1.0080           0
+     639 SPCE 213  SPCE H2   HT     0.423800        1.0080           0
+     640 SPCE 214  SPCE O1   OT    -0.847600       15.9990           0
+     641 SPCE 214  SPCE H1   HT     0.423800        1.0080           0
+     642 SPCE 214  SPCE H2   HT     0.423800        1.0080           0
+     643 SPCE 215  SPCE O1   OT    -0.847600       15.9990           0
+     644 SPCE 215  SPCE H1   HT     0.423800        1.0080           0
+     645 SPCE 215  SPCE H2   HT     0.423800        1.0080           0
+     646 SPCE 216  SPCE O1   OT    -0.847600       15.9990           0
+     647 SPCE 216  SPCE H1   HT     0.423800        1.0080           0
+     648 SPCE 216  SPCE H2   HT     0.423800        1.0080           0
+     649 SPCE 217  SPCE O1   OT    -0.847600       15.9990           0
+     650 SPCE 217  SPCE H1   HT     0.423800        1.0080           0
+     651 SPCE 217  SPCE H2   HT     0.423800        1.0080           0
+     652 SPCE 218  SPCE O1   OT    -0.847600       15.9990           0
+     653 SPCE 218  SPCE H1   HT     0.423800        1.0080           0
+     654 SPCE 218  SPCE H2   HT     0.423800        1.0080           0
+     655 SPCE 219  SPCE O1   OT    -0.847600       15.9990           0
+     656 SPCE 219  SPCE H1   HT     0.423800        1.0080           0
+     657 SPCE 219  SPCE H2   HT     0.423800        1.0080           0
+     658 SPCE 220  SPCE O1   OT    -0.847600       15.9990           0
+     659 SPCE 220  SPCE H1   HT     0.423800        1.0080           0
+     660 SPCE 220  SPCE H2   HT     0.423800        1.0080           0
+     661 SPCE 221  SPCE O1   OT    -0.847600       15.9990           0
+     662 SPCE 221  SPCE H1   HT     0.423800        1.0080           0
+     663 SPCE 221  SPCE H2   HT     0.423800        1.0080           0
+     664 SPCE 222  SPCE O1   OT    -0.847600       15.9990           0
+     665 SPCE 222  SPCE H1   HT     0.423800        1.0080           0
+     666 SPCE 222  SPCE H2   HT     0.423800        1.0080           0
+     667 SPCE 223  SPCE O1   OT    -0.847600       15.9990           0
+     668 SPCE 223  SPCE H1   HT     0.423800        1.0080           0
+     669 SPCE 223  SPCE H2   HT     0.423800        1.0080           0
+     670 SPCE 224  SPCE O1   OT    -0.847600       15.9990           0
+     671 SPCE 224  SPCE H1   HT     0.423800        1.0080           0
+     672 SPCE 224  SPCE H2   HT     0.423800        1.0080           0
+     673 SPCE 225  SPCE O1   OT    -0.847600       15.9990           0
+     674 SPCE 225  SPCE H1   HT     0.423800        1.0080           0
+     675 SPCE 225  SPCE H2   HT     0.423800        1.0080           0
+     676 SPCE 226  SPCE O1   OT    -0.847600       15.9990           0
+     677 SPCE 226  SPCE H1   HT     0.423800        1.0080           0
+     678 SPCE 226  SPCE H2   HT     0.423800        1.0080           0
+     679 SPCE 227  SPCE O1   OT    -0.847600       15.9990           0
+     680 SPCE 227  SPCE H1   HT     0.423800        1.0080           0
+     681 SPCE 227  SPCE H2   HT     0.423800        1.0080           0
+     682 SPCE 228  SPCE O1   OT    -0.847600       15.9990           0
+     683 SPCE 228  SPCE H1   HT     0.423800        1.0080           0
+     684 SPCE 228  SPCE H2   HT     0.423800        1.0080           0
+     685 SPCE 229  SPCE O1   OT    -0.847600       15.9990           0
+     686 SPCE 229  SPCE H1   HT     0.423800        1.0080           0
+     687 SPCE 229  SPCE H2   HT     0.423800        1.0080           0
+     688 SPCE 230  SPCE O1   OT    -0.847600       15.9990           0
+     689 SPCE 230  SPCE H1   HT     0.423800        1.0080           0
+     690 SPCE 230  SPCE H2   HT     0.423800        1.0080           0
+     691 SPCE 231  SPCE O1   OT    -0.847600       15.9990           0
+     692 SPCE 231  SPCE H1   HT     0.423800        1.0080           0
+     693 SPCE 231  SPCE H2   HT     0.423800        1.0080           0
+     694 SPCE 232  SPCE O1   OT    -0.847600       15.9990           0
+     695 SPCE 232  SPCE H1   HT     0.423800        1.0080           0
+     696 SPCE 232  SPCE H2   HT     0.423800        1.0080           0
+     697 SPCE 233  SPCE O1   OT    -0.847600       15.9990           0
+     698 SPCE 233  SPCE H1   HT     0.423800        1.0080           0
+     699 SPCE 233  SPCE H2   HT     0.423800        1.0080           0
+     700 SPCE 234  SPCE O1   OT    -0.847600       15.9990           0
+     701 SPCE 234  SPCE H1   HT     0.423800        1.0080           0
+     702 SPCE 234  SPCE H2   HT     0.423800        1.0080           0
+     703 SPCE 235  SPCE O1   OT    -0.847600       15.9990           0
+     704 SPCE 235  SPCE H1   HT     0.423800        1.0080           0
+     705 SPCE 235  SPCE H2   HT     0.423800        1.0080           0
+     706 SPCE 236  SPCE O1   OT    -0.847600       15.9990           0
+     707 SPCE 236  SPCE H1   HT     0.423800        1.0080           0
+     708 SPCE 236  SPCE H2   HT     0.423800        1.0080           0
+     709 SPCE 237  SPCE O1   OT    -0.847600       15.9990           0
+     710 SPCE 237  SPCE H1   HT     0.423800        1.0080           0
+     711 SPCE 237  SPCE H2   HT     0.423800        1.0080           0
+     712 SPCE 238  SPCE O1   OT    -0.847600       15.9990           0
+     713 SPCE 238  SPCE H1   HT     0.423800        1.0080           0
+     714 SPCE 238  SPCE H2   HT     0.423800        1.0080           0
+     715 SPCE 239  SPCE O1   OT    -0.847600       15.9990           0
+     716 SPCE 239  SPCE H1   HT     0.423800        1.0080           0
+     717 SPCE 239  SPCE H2   HT     0.423800        1.0080           0
+     718 SPCE 240  SPCE O1   OT    -0.847600       15.9990           0
+     719 SPCE 240  SPCE H1   HT     0.423800        1.0080           0
+     720 SPCE 240  SPCE H2   HT     0.423800        1.0080           0
+     721 SPCE 241  SPCE O1   OT    -0.847600       15.9990           0
+     722 SPCE 241  SPCE H1   HT     0.423800        1.0080           0
+     723 SPCE 241  SPCE H2   HT     0.423800        1.0080           0
+     724 SPCE 242  SPCE O1   OT    -0.847600       15.9990           0
+     725 SPCE 242  SPCE H1   HT     0.423800        1.0080           0
+     726 SPCE 242  SPCE H2   HT     0.423800        1.0080           0
+     727 SPCE 243  SPCE O1   OT    -0.847600       15.9990           0
+     728 SPCE 243  SPCE H1   HT     0.423800        1.0080           0
+     729 SPCE 243  SPCE H2   HT     0.423800        1.0080           0
+     730 SPCE 244  SPCE O1   OT    -0.847600       15.9990           0
+     731 SPCE 244  SPCE H1   HT     0.423800        1.0080           0
+     732 SPCE 244  SPCE H2   HT     0.423800        1.0080           0
+     733 SPCE 245  SPCE O1   OT    -0.847600       15.9990           0
+     734 SPCE 245  SPCE H1   HT     0.423800        1.0080           0
+     735 SPCE 245  SPCE H2   HT     0.423800        1.0080           0
+     736 SPCE 246  SPCE O1   OT    -0.847600       15.9990           0
+     737 SPCE 246  SPCE H1   HT     0.423800        1.0080           0
+     738 SPCE 246  SPCE H2   HT     0.423800        1.0080           0
+     739 SPCE 247  SPCE O1   OT    -0.847600       15.9990           0
+     740 SPCE 247  SPCE H1   HT     0.423800        1.0080           0
+     741 SPCE 247  SPCE H2   HT     0.423800        1.0080           0
+     742 SPCE 248  SPCE O1   OT    -0.847600       15.9990           0
+     743 SPCE 248  SPCE H1   HT     0.423800        1.0080           0
+     744 SPCE 248  SPCE H2   HT     0.423800        1.0080           0
+     745 SPCE 249  SPCE O1   OT    -0.847600       15.9990           0
+     746 SPCE 249  SPCE H1   HT     0.423800        1.0080           0
+     747 SPCE 249  SPCE H2   HT     0.423800        1.0080           0
+     748 SPCE 250  SPCE O1   OT    -0.847600       15.9990           0
+     749 SPCE 250  SPCE H1   HT     0.423800        1.0080           0
+     750 SPCE 250  SPCE H2   HT     0.423800        1.0080           0
+
+     500 !NBOND: bonds
+       1       2       1       3       4       5       4       6
+       7       8       7       9      10      11      10      12
+      13      14      13      15      16      17      16      18
+      19      20      19      21      22      23      22      24
+      25      26      25      27      28      29      28      30
+      31      32      31      33      34      35      34      36
+      37      38      37      39      40      41      40      42
+      43      44      43      45      46      47      46      48
+      49      50      49      51      52      53      52      54
+      55      56      55      57      58      59      58      60
+      61      62      61      63      64      65      64      66
+      67      68      67      69      70      71      70      72
+      73      74      73      75      76      77      76      78
+      79      80      79      81      82      83      82      84
+      85      86      85      87      88      89      88      90
+      91      92      91      93      94      95      94      96
+      97      98      97      99     100     101     100     102
+     103     104     103     105     106     107     106     108
+     109     110     109     111     112     113     112     114
+     115     116     115     117     118     119     118     120
+     121     122     121     123     124     125     124     126
+     127     128     127     129     130     131     130     132
+     133     134     133     135     136     137     136     138
+     139     140     139     141     142     143     142     144
+     145     146     145     147     148     149     148     150
+     151     152     151     153     154     155     154     156
+     157     158     157     159     160     161     160     162
+     163     164     163     165     166     167     166     168
+     169     170     169     171     172     173     172     174
+     175     176     175     177     178     179     178     180
+     181     182     181     183     184     185     184     186
+     187     188     187     189     190     191     190     192
+     193     194     193     195     196     197     196     198
+     199     200     199     201     202     203     202     204
+     205     206     205     207     208     209     208     210
+     211     212     211     213     214     215     214     216
+     217     218     217     219     220     221     220     222
+     223     224     223     225     226     227     226     228
+     229     230     229     231     232     233     232     234
+     235     236     235     237     238     239     238     240
+     241     242     241     243     244     245     244     246
+     247     248     247     249     250     251     250     252
+     253     254     253     255     256     257     256     258
+     259     260     259     261     262     263     262     264
+     265     266     265     267     268     269     268     270
+     271     272     271     273     274     275     274     276
+     277     278     277     279     280     281     280     282
+     283     284     283     285     286     287     286     288
+     289     290     289     291     292     293     292     294
+     295     296     295     297     298     299     298     300
+     301     302     301     303     304     305     304     306
+     307     308     307     309     310     311     310     312
+     313     314     313     315     316     317     316     318
+     319     320     319     321     322     323     322     324
+     325     326     325     327     328     329     328     330
+     331     332     331     333     334     335     334     336
+     337     338     337     339     340     341     340     342
+     343     344     343     345     346     347     346     348
+     349     350     349     351     352     353     352     354
+     355     356     355     357     358     359     358     360
+     361     362     361     363     364     365     364     366
+     367     368     367     369     370     371     370     372
+     373     374     373     375     376     377     376     378
+     379     380     379     381     382     383     382     384
+     385     386     385     387     388     389     388     390
+     391     392     391     393     394     395     394     396
+     397     398     397     399     400     401     400     402
+     403     404     403     405     406     407     406     408
+     409     410     409     411     412     413     412     414
+     415     416     415     417     418     419     418     420
+     421     422     421     423     424     425     424     426
+     427     428     427     429     430     431     430     432
+     433     434     433     435     436     437     436     438
+     439     440     439     441     442     443     442     444
+     445     446     445     447     448     449     448     450
+     451     452     451     453     454     455     454     456
+     457     458     457     459     460     461     460     462
+     463     464     463     465     466     467     466     468
+     469     470     469     471     472     473     472     474
+     475     476     475     477     478     479     478     480
+     481     482     481     483     484     485     484     486
+     487     488     487     489     490     491     490     492
+     493     494     493     495     496     497     496     498
+     499     500     499     501     502     503     502     504
+     505     506     505     507     508     509     508     510
+     511     512     511     513     514     515     514     516
+     517     518     517     519     520     521     520     522
+     523     524     523     525     526     527     526     528
+     529     530     529     531     532     533     532     534
+     535     536     535     537     538     539     538     540
+     541     542     541     543     544     545     544     546
+     547     548     547     549     550     551     550     552
+     553     554     553     555     556     557     556     558
+     559     560     559     561     562     563     562     564
+     565     566     565     567     568     569     568     570
+     571     572     571     573     574     575     574     576
+     577     578     577     579     580     581     580     582
+     583     584     583     585     586     587     586     588
+     589     590     589     591     592     593     592     594
+     595     596     595     597     598     599     598     600
+     601     602     601     603     604     605     604     606
+     607     608     607     609     610     611     610     612
+     613     614     613     615     616     617     616     618
+     619     620     619     621     622     623     622     624
+     625     626     625     627     628     629     628     630
+     631     632     631     633     634     635     634     636
+     637     638     637     639     640     641     640     642
+     643     644     643     645     646     647     646     648
+     649     650     649     651     652     653     652     654
+     655     656     655     657     658     659     658     660
+     661     662     661     663     664     665     664     666
+     667     668     667     669     670     671     670     672
+     673     674     673     675     676     677     676     678
+     679     680     679     681     682     683     682     684
+     685     686     685     687     688     689     688     690
+     691     692     691     693     694     695     694     696
+     697     698     697     699     700     701     700     702
+     703     704     703     705     706     707     706     708
+     709     710     709     711     712     713     712     714
+     715     716     715     717     718     719     718     720
+     721     722     721     723     724     725     724     726
+     727     728     727     729     730     731     730     732
+     733     734     733     735     736     737     736     738
+     739     740     739     741     742     743     742     744
+     745     746     745     747     748     749     748     750
+
+     250 !NTHETA: angles
+       2       1       3       5       4       6       8       7       9
+      11      10      12      14      13      15      17      16      18
+      20      19      21      23      22      24      26      25      27
+      29      28      30      32      31      33      35      34      36
+      38      37      39      41      40      42      44      43      45
+      47      46      48      50      49      51      53      52      54
+      56      55      57      59      58      60      62      61      63
+      65      64      66      68      67      69      71      70      72
+      74      73      75      77      76      78      80      79      81
+      83      82      84      86      85      87      89      88      90
+      92      91      93      95      94      96      98      97      99
+     101     100     102     104     103     105     107     106     108
+     110     109     111     113     112     114     116     115     117
+     119     118     120     122     121     123     125     124     126
+     128     127     129     131     130     132     134     133     135
+     137     136     138     140     139     141     143     142     144
+     146     145     147     149     148     150     152     151     153
+     155     154     156     158     157     159     161     160     162
+     164     163     165     167     166     168     170     169     171
+     173     172     174     176     175     177     179     178     180
+     182     181     183     185     184     186     188     187     189
+     191     190     192     194     193     195     197     196     198
+     200     199     201     203     202     204     206     205     207
+     209     208     210     212     211     213     215     214     216
+     218     217     219     221     220     222     224     223     225
+     227     226     228     230     229     231     233     232     234
+     236     235     237     239     238     240     242     241     243
+     245     244     246     248     247     249     251     250     252
+     254     253     255     257     256     258     260     259     261
+     263     262     264     266     265     267     269     268     270
+     272     271     273     275     274     276     278     277     279
+     281     280     282     284     283     285     287     286     288
+     290     289     291     293     292     294     296     295     297
+     299     298     300     302     301     303     305     304     306
+     308     307     309     311     310     312     314     313     315
+     317     316     318     320     319     321     323     322     324
+     326     325     327     329     328     330     332     331     333
+     335     334     336     338     337     339     341     340     342
+     344     343     345     347     346     348     350     349     351
+     353     352     354     356     355     357     359     358     360
+     362     361     363     365     364     366     368     367     369
+     371     370     372     374     373     375     377     376     378
+     380     379     381     383     382     384     386     385     387
+     389     388     390     392     391     393     395     394     396
+     398     397     399     401     400     402     404     403     405
+     407     406     408     410     409     411     413     412     414
+     416     415     417     419     418     420     422     421     423
+     425     424     426     428     427     429     431     430     432
+     434     433     435     437     436     438     440     439     441
+     443     442     444     446     445     447     449     448     450
+     452     451     453     455     454     456     458     457     459
+     461     460     462     464     463     465     467     466     468
+     470     469     471     473     472     474     476     475     477
+     479     478     480     482     481     483     485     484     486
+     488     487     489     491     490     492     494     493     495
+     497     496     498     500     499     501     503     502     504
+     506     505     507     509     508     510     512     511     513
+     515     514     516     518     517     519     521     520     522
+     524     523     525     527     526     528     530     529     531
+     533     532     534     536     535     537     539     538     540
+     542     541     543     545     544     546     548     547     549
+     551     550     552     554     553     555     557     556     558
+     560     559     561     563     562     564     566     565     567
+     569     568     570     572     571     573     575     574     576
+     578     577     579     581     580     582     584     583     585
+     587     586     588     590     589     591     593     592     594
+     596     595     597     599     598     600     602     601     603
+     605     604     606     608     607     609     611     610     612
+     614     613     615     617     616     618     620     619     621
+     623     622     624     626     625     627     629     628     630
+     632     631     633     635     634     636     638     637     639
+     641     640     642     644     643     645     647     646     648
+     650     649     651     653     652     654     656     655     657
+     659     658     660     662     661     663     665     664     666
+     668     667     669     671     670     672     674     673     675
+     677     676     678     680     679     681     683     682     684
+     686     685     687     689     688     690     692     691     693
+     695     694     696     698     697     699     701     700     702
+     704     703     705     707     706     708     710     709     711
+     713     712     714     716     715     717     719     718     720
+     722     721     723     725     724     726     728     727     729
+     731     730     732     734     733     735     737     736     738
+     740     739     741     743     742     744     746     745     747
+     749     748     750
+
+       0 !NPHI: dihedrals
+
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0
+
+       1       0 !NGRP
+       0       0       0
+
