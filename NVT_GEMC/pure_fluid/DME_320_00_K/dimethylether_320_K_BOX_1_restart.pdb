@@ -1,4 +1,5 @@
-REMARK original generated coordinate pdb file
+REMARK     GOMC     0.413   1.00980    2044.856           1000000    
+CRYST1   49.579   49.579   49.579  90.00  90.00  90.00 P 1        1  
 ATOM      1  C1  DME A   1      40.613  36.332  12.086  1.00  0.00      DME  C
 ATOM      2  O1  DME A   1      39.248  36.195  11.760  1.00  0.00      DME  O
 ATOM      3  C2  DME A   1      38.422  36.244  12.901  1.00  0.00      DME  C
