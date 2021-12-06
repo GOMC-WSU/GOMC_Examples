@@ -1,0 +1,95 @@
+PSF
+
+       3 !NTITLE
+ REMARKS original generated structure x-plor psf file
+ REMARKS topology ./top_trappe.inp 
+ REMARKS segment DME { first NONE; last NONE; auto angles dihedrals }
+
+      45 !NATOM
+       1 DME  1    DME  C1   CH3    0.250000       15.0350           0
+       2 DME  1    DME  O1   OE    -0.500000       15.9994           0
+       3 DME  1    DME  C2   CH3    0.250000       15.0350           0
+       4 DME  2    DME  C1   CH3    0.250000       15.0350           0
+       5 DME  2    DME  O1   OE    -0.500000       15.9994           0
+       6 DME  2    DME  C2   CH3    0.250000       15.0350           0
+       7 DME  3    DME  C1   CH3    0.250000       15.0350           0
+       8 DME  3    DME  O1   OE    -0.500000       15.9994           0
+       9 DME  3    DME  C2   CH3    0.250000       15.0350           0
+      10 DME  4    DME  C1   CH3    0.250000       15.0350           0
+      11 DME  4    DME  O1   OE    -0.500000       15.9994           0
+      12 DME  4    DME  C2   CH3    0.250000       15.0350           0
+      13 DME  5    DME  C1   CH3    0.250000       15.0350           0
+      14 DME  5    DME  O1   OE    -0.500000       15.9994           0
+      15 DME  5    DME  C2   CH3    0.250000       15.0350           0
+      16 DME  6    DME  C1   CH3    0.250000       15.0350           0
+      17 DME  6    DME  O1   OE    -0.500000       15.9994           0
+      18 DME  6    DME  C2   CH3    0.250000       15.0350           0
+      19 DME  7    DME  C1   CH3    0.250000       15.0350           0
+      20 DME  7    DME  O1   OE    -0.500000       15.9994           0
+      21 DME  7    DME  C2   CH3    0.250000       15.0350           0
+      22 DME  8    DME  C1   CH3    0.250000       15.0350           0
+      23 DME  8    DME  O1   OE    -0.500000       15.9994           0
+      24 DME  8    DME  C2   CH3    0.250000       15.0350           0
+      25 DME  9    DME  C1   CH3    0.250000       15.0350           0
+      26 DME  9    DME  O1   OE    -0.500000       15.9994           0
+      27 DME  9    DME  C2   CH3    0.250000       15.0350           0
+      28 DME  10   DME  C1   CH3    0.250000       15.0350           0
+      29 DME  10   DME  O1   OE    -0.500000       15.9994           0
+      30 DME  10   DME  C2   CH3    0.250000       15.0350           0
+      31 DME  11   DME  C1   CH3    0.250000       15.0350           0
+      32 DME  11   DME  O1   OE    -0.500000       15.9994           0
+      33 DME  11   DME  C2   CH3    0.250000       15.0350           0
+      34 DME  12   DME  C1   CH3    0.250000       15.0350           0
+      35 DME  12   DME  O1   OE    -0.500000       15.9994           0
+      36 DME  12   DME  C2   CH3    0.250000       15.0350           0
+      37 DME  13   DME  C1   CH3    0.250000       15.0350           0
+      38 DME  13   DME  O1   OE    -0.500000       15.9994           0
+      39 DME  13   DME  C2   CH3    0.250000       15.0350           0
+      40 DME  14   DME  C1   CH3    0.250000       15.0350           0
+      41 DME  14   DME  O1   OE    -0.500000       15.9994           0
+      42 DME  14   DME  C2   CH3    0.250000       15.0350           0
+      43 DME  15   DME  C1   CH3    0.250000       15.0350           0
+      44 DME  15   DME  O1   OE    -0.500000       15.9994           0
+      45 DME  15   DME  C2   CH3    0.250000       15.0350           0
+
+      30 !NBOND: bonds
+       1       2       2       3       4       5       5       6
+       7       8       8       9      10      11      11      12
+      13      14      14      15      16      17      17      18
+      19      20      20      21      22      23      23      24
+      25      26      26      27      28      29      29      30
+      31      32      32      33      34      35      35      36
+      37      38      38      39      40      41      41      42
+      43      44      44      45
+
+      15 !NTHETA: angles
+       1       2       3       4       5       6       7       8       9
+      10      11      12      13      14      15      16      17      18
+      19      20      21      22      23      24      25      26      27
+      28      29      30      31      32      33      34      35      36
+      37      38      39      40      41      42      43      44      45
+
+       0 !NPHI: dihedrals
+
+
+       0 !NIMPHI: impropers
+
+
+       0 !NDON: donors
+
+
+       0 !NACC: acceptors
+
+
+       0 !NNB
+
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0       0       0       0
+       0       0       0       0       0
+
+       1       0 !NGRP
+       0       0       0
+
