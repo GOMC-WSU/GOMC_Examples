@@ -1,4 +1,5 @@
-REMARK original generated coordinate pdb file
+REMARK     GOMC    10.446   0.78540     500.000              2000    
+CRYST1   41.882   41.882   41.882  90.00  90.00  90.00 P 1        1  
 ATOM      1  C1  C16PA   1      25.491  31.130  36.029  1.00  0.00      C16P C
 ATOM      2  C2  C16PA   1      24.186  30.485  35.526  1.00  0.00      C16P C
 ATOM      3  C3  C16PA   1      24.258  29.609  34.262  1.00  0.00      C16P C
