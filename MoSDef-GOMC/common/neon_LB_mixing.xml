@@ -1,0 +1,8 @@
+<ForceField version="0.0.1" name="Nobel gases" >
+ <AtomTypes>
+   <Type name="Ne" class="Ne" element="Ne" mass="20.1797" def="Ne" desc="Ne - Vrabec" doi="10.1021/acs.jced.9b00565"/>
+ </AtomTypes>
+ <NonbondedForce coulomb14scale="0.0" lj14scale="0.0">
+  <Atom type="Ne" charge="0.0" sigma="0.3048" epsilon="0.198441279307462"/>
+ </NonbondedForce>
+</ForceField>
