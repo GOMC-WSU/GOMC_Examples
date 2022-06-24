@@ -1,0 +1,17 @@
+<ForceField name="TraPPE-UA cyclohexane" version="0.0.1">
+ <AtomTypes>
+  <Type name="CH2-cyc6_sp3" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH2])[_CH2]" desc="Secondary sp3 cyclic 6 carbon ring CH2, united atom" doi="doi.org/10.1021/jp302975c"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+  <Bond class1="CH2" class2="CH2" length="0.1540" k="502416.0"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+  <Angle class1="CH2" class2="CH2" class3="CH2" angle="1.98967534727354" k="519.653913634575"/>
+ </HarmonicAngleForce>
+ <RBTorsionForce>
+  <Proper class1="CH2" class2="CH2" class3="CH2" class4="CH2" c0="13.00381953479161" c1="-55.299490873336936" c2="58.35089865419917" c3="-2.0952445797746067" c4="0.0" c5="0.0"/>
+ </RBTorsionForce>
+ <NonbondedForce coulomb14scale="0" lj14scale="0">
+  <Atom type="CH2-cyc6_sp3" charge="0.0" sigma="0.391" epsilon="0.436509287453043"/>
+ </NonbondedForce>
+</ForceField>

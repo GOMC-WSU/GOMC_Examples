@@ -1,0 +1,21 @@
+<ForceField version="0.0.1" name="TIP4P 2005 water" >
+ <AtomTypes>
+   <Type name="OW" class="OW" element="O" mass="15.99940" def="[O;X3](H)(H)(_LP)" desc="O in TIP4P 2005 " doi="10.1063/1.2121687"/>
+   <Type name="HW" class="HW" element="H" mass="1.00800" def="[H;X1][O;X3](H)(_LP)" desc="H in TIP4P 2005 " doi="10.1063/1.2121687"/>
+   <Type name="_LP" class="_LP" element="_LP" mass="0.0000" def="[_LP;X1][O;X3](H)(H)" desc="Lone Pair in TIP4P 2005 mass is 1 in mol2 file " doi="10.1063/1.2121687"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+   <Bond class1="OW" class2="HW" length="0.09572" k="502080.0"/>
+   <Bond class1="OW" class2="_LP" length="0.01546" k="753120.0"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+   <Angle class1="HW" class2="OW" class3="HW" angle="1.8242181341844" k="627.6"/>
+   <Angle class1="HW" class2="OW" class3="_LP" angle="0.9121090670922" k="418.4"/>
+ </HarmonicAngleForce>
+ <NonbondedForce coulomb14scale="0.5" lj14scale="0.5">
+   <!-- https://github.com/gromacs/gromacs/blob/master/share/top/oplsaa.ff/spce.itp -->
+  <Atom type="OW" charge="0" sigma="0.31589" epsilon="0.774907916011878"/>
+  <Atom type="HW" charge="0.5564" sigma="0" epsilon="0.0"/>
+  <Atom type="_LP" charge="-1.1128" sigma="0" epsilon="0.0"/>
+ </NonbondedForce>
+</ForceField>
