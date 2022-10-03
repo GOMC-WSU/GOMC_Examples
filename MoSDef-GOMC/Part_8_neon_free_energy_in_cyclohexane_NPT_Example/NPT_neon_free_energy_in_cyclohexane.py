@@ -192,6 +192,7 @@ gomc_control.write_gomc_control_file(charmm, 'in_NPT_lambda_number_5.conf', 'NPT
                                          "MoleculeType": MoleculeType,
                                          "LambdaVDW": lambda_states,
                                          "InitialState": 5,
-                                         "OutputName": "out_NPT_lambda_number_5"
+                                         "OutputName": "out_NPT_lambda_number_5",
+                                         "VDWGeometricSigma": True
                                      }
                                      )
