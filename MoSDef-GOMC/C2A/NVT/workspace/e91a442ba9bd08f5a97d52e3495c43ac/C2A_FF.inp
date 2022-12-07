@@ -1,0 +1,38 @@
+*  C2A_input - created by mBuild using the on 2022-12-06 17:02:55.262943
+*  parameters from the {'C2A': 'trappe-ua'} force field(s) via MoSDef
+*  1-4 coulombic scaling = {'C2A': 0.0}, and 1-4 LJ scaling = {'C2A': 0.0}
+
+*  1000 atoms
+*  500 bonds
+*  0 angles
+*  0 dihedrals
+*  0 impropers
+
+*  1 atom types
+*  1 bond types
+
+
+* masses
+
+!atom_types 	mass 		  atomTypeForceFieldName_ResidueName (i.e., atoms_type_per_utilized_FF)  
+*  A		15.035000	! CH3_sp3_C2A
+
+BONDS * harmonic
+!
+!V(bond) = Kb(b - b0)**2
+!
+!Kb: kcal/mole/A**2
+!b0: A
+!Kb (kcal/mol) = Kb_K (K) * Boltz. const.; (9999999999 if no stretching)
+!
+!atom_types 	 Kb		b0 		  atoms_types_per_utilized_FF
+A	A	600.40152964	1.54		! CH3_sp3_C2A	CH3_sp3_C2A
+
+NONBONDED
+!
+!V(Lennard-Jones) = Eps,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!
+!atype 	ignored	epsilon 	Rmin/2 		ignored	eps,1-4		Rmin/2,1-4		  atom_type_per_utilized_FF
+A	0.00	-0.194745937	2.10461634058	0.00	-0.000000000	2.10461634058		! CH3_sp3_C2A	CH3_sp3_C2A
+
+END
