@@ -1,5 +1,0 @@
-
-Inactive Modules:
-  1) openmpi3
-
-/var/spool/slurm/d/job8169135/slurm_script: line 52: warning: here-document at line 27 delimited by end-of-file (wanted `EOF')
