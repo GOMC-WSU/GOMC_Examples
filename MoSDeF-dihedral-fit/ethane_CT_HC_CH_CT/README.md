@@ -1,0 +1,5 @@
+# MoSDeF-dihedral-fit: Ethane OPLS-AA HC-CT-CT-HC dihedral fit example
+This HC-CT-CT-HC dihedral example shows how many of the same dihedral types are fit at the same time. 
+In this case, nine (9) dihedrals are fit simultaneously, only allowing the n=3 term in cos(n*phi) to fit because the other terms are invalid due to the molecule's symmetry.  
+
+MoSDeF-dihedral-fit - https://github.com/GOMC-WSU/MoSDeF-dihedral-fit
