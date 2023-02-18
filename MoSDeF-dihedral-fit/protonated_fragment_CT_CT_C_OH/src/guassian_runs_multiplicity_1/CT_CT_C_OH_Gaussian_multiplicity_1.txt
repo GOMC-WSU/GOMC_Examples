@@ -1,0 +1,54 @@
+#!/bin/bash
+
+#SBATCH --job-name 4c_m1_CT_CT_C_OH
+#SBATCH -q primary
+#SBATCH -N 1
+#SBATCH -n 4
+#SBATCH --mem=32G
+#SBATCH --constraint=intel
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user=XXX@YYY.edu
+#SBATCH -o output_%j.out
+#SBATCH -e errors_%j.err
+#SBATCH -t 168:0:0
+
+echo  "Running on host" hostname
+echo  "Time is" date
+
+source ~/.bashrc
+
+module swap gnu7 intel/2019
+
+
+JOB=CT_CT_C_OH_multiplicity_1
+DIR=examples/protonated_fragment__CT_CT_C_OH/src/guassian_runs_multiplicity_1/CT_CT_C_OH_Gaussian_multiplicity_1.txt
+
+ 
+g16<< EOF > $DIR/$JOB.log
+
+
+
+
+%chk=$JOB.chk
+%nproc=4
+%mem=32GB
+# opt=modredundant UHF/6-31G* SCF=(MaxCycle=1000) Geom=PrintInputOrient 
+
+Dihedral Scan at UHF/6-31G*
+
+0 1
+C         0.0000    0.0000    0.0000   
+C        -1.5000    0.0000    0.0000    
+C        -2.2000    1.2124    0.0000    
+O         0.7000   -1.2124   -0.0000    
+O         0.7710    1.1685    0.0000    
+H        -1.8198   -0.4847   -0.8141    
+H        -1.8198   -0.4847    0.8141    
+H        -1.5440    1.9671    0.0000    
+H        -2.7722    1.2580   -0.8188    
+H        -2.7722    1.2580    0.8188    
+H         1.7395    0.9195    0.0000    
+
+D 3 2 1 5 S 36 10.0
+
+EOF
