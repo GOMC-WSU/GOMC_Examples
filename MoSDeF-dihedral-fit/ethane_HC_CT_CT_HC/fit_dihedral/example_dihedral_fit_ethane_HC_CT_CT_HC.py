@@ -5,7 +5,7 @@ from mosdef_dihedral_fit.dihedral_fit.fit_dihedral_with_gomc import fit_dihedral
 
 # The MoSDeF force field (FF) XML file which will be used
 FF_XML_file = \
-    '../src/ff_xml/oplsaa_ethane_CT_HC_HC_CT.xml'
+    '../src/ff_xml/oplsaa_ethane_HC_CT_CT_HC.xml'
 
 # The mol2 file which is used.
 mol2_file = \
