@@ -8,5 +8,7 @@ The MoSDeF-dihedral-fit package is located [here](https://github.com/GOMC-WSU/Mo
 ## run the file below after installing the ``MoSDeF-dihedral-fit`` package, using the ``mosdef_dihedral_fit`` enviornment
 
 `conda activate mosdef_dihedral_fit`
+
 `cd fit_dihedral`
+
 `python example_dihedral_fit_CT_CT_C_OH_in_COOH.py`
