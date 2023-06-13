@@ -59,11 +59,20 @@ DIHEDRALS
 !
 ! Kchi (kcal/mol) = Kchi (K) * Boltz. const.
 ! Boltzmann = 0.0019872041 kcal / (mol * K)
+! https://doi.org/10.1021/jp302975c c6(dihedrals)
+! TraPPE V(dihedral) = c_0 + c_1 * cos(chi) + c_2 * cos(2 chi) + c_3 cos(3 chi)
+! c_0/k_B = 5073
+! c_1/k_B = 6840
+! c_2/k_B = 3509
+! c_3/k_B = 63
+! GOMC V(dihedral) = c_0 + c_1 + c_1 * cos(chi) + c_2 + c_2 * cos(2 chi) + c_3 + c_3 * cos(3 chi)
+! Kchi0 = c_0 - c_1 - c_2 - c_3 = -5339
+!
 !atom types           Kchi        n    delta              description
-X   CH2 CH2 X         0.000000    0      0.0              ! ""
-X   CH2 CH2 X       355.030000    1      0.0              ! ""
-X   CH2 CH2 X       -68.190000    2    180.0              ! ""
-X   CH2 CH2 X       791.320000    3      0.0              ! ""
+X   CH2 CH2 X       -5339.0000    0      0.0              ! ""
+X   CH2 CH2 X        6840.0000    1      0.0              ! ""
+X   CH2 CH2 X        3509.0000    2      0.0              ! ""
+X   CH2 CH2 X          63.0000    3      0.0              ! ""
 X   CH1 CH1 X         0.0000      0      0.0              ! No torsion
 
 
