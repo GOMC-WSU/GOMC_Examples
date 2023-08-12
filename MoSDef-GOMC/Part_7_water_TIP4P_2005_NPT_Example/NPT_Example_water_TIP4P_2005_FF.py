@@ -27,6 +27,8 @@ Liquid_box_Total_molecules = 1100
 # Therefore, if you need to minimize the sytem, we recommend minimizing it in an engine that takes that
 # into consideration [1, 2, 13-17].
 
+# Note: When importing mol2 files, the residue names (water.name), must be the same name as in the mol2 file.
+
 forcefield_files_water = '../common/tip4p_2005_oplsaa.xml'
 water = mb.load('../common/tip4p_2005.mol2')
 water.name = 'H2O'
