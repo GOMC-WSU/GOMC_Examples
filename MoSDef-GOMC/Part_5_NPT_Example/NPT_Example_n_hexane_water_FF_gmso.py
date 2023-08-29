@@ -24,6 +24,8 @@ water_mol_ratio = 0.5
 # with a different FF, by the FF name (via the foyer FF repository)
 # or a specified FF xml file [1, 2, 13-17].
 
+## Note: When importing mol2 files, the residue names (hexane.name) must be the same name as in the mol2 file.
+
 forcefield_files_hexane = 'trappe-ua'
 hexane =mb.load('../common/hexane.mol2')
 hexane.name = 'HEX'

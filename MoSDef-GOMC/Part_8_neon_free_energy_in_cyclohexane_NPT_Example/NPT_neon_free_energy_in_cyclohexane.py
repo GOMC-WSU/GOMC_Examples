@@ -24,6 +24,8 @@ liquid_box_cyclohexane_molecules = 300
 # with a different FF, by the FF name (via the foyer FF repository)
 # or a specified FF xml file [1, 2, 13-17].
 
+# Note: When importing mol2 files, the residue names (cyclohexane.name) must be the same name as in the mol2 file.
+
 forcefield_files_neon = '../common/neon_LB_mixing.xml'
 neon = mb.Compound(name="Ne")
 

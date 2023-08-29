@@ -25,6 +25,7 @@ hexane_mol_ratio = 0.5
 ## Note: For GOMC, the residue names are treated as molecules,
 # so the residue names must be unique for each different molecule [1, 2, 13-17].
 
+# Note: When importing mol2 files, the residue names (pentane.name and hexane.name), must be the same name as in the mol2 file.
 
 pentane = mb.load('../common/pentane.mol2')
 pentane.name = 'PEN'

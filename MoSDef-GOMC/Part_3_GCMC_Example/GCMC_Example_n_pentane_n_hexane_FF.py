@@ -29,6 +29,8 @@ FF =  Forcefield(name = forcefield_files )
 
 # Note: For GOMC, the residue names are treated as molecules, so the residue names must be unique for each different molecule [1, 2, 13-17].
 
+# Note: When importing mol2 files, the residue names (Molecule_A.name and Molecule_B.name) must be the same name as in the mol2 file.
+
 Molecule_A =mb.load('../common/pentane.mol2')
 FF.apply(Molecule_A)
 Molecule_A.name = 'PEN'
