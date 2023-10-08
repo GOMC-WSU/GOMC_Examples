@@ -52,7 +52,7 @@ fit_dihedral_with_gomc(
     log_files_and_removed_points,
     zeroed_dihedral_atom_types=zeroed_dihedrals,
     qm_engine="gaussian",
-    override_VDWGeometricSigma=override_VDWGeometricSigma_bool,
+    VDWGeometricSigma=override_VDWGeometricSigma_bool,
     atom_type_naming_style=atom_type_naming_style,
     gomc_cpu_cores=1,
     fit_min_validated_r_squared=0.99,
