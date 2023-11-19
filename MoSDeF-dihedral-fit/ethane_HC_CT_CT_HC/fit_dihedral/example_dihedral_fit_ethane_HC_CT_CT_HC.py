@@ -50,7 +50,7 @@ fit_dihedral_with_gomc(
     zero_dihedral_atom_types=zero_dihedral_atom_types,
     qm_engine="gaussian",
     combining_rule=combining_rule,
-    atom_type_naming_style='general',
+    atom_type_naming_style=atom_type_naming_style,
     gomc_cpu_cores=1,
     r_squared_min=0.99,
     r_squared_rtol=1e-03
