@@ -1,7 +1,7 @@
 
 import unyt as u
 from mosdef_dihedral_fit.dihedral_fit.fit_dihedral_with_gomc import fit_dihedral_with_gomc
-
+import os
 
 # The MoSDeF force field (FF) XML file which will be used.
 forcefield_file = '../src/ff_xml/oplsaa_CT_CT_C_OH_in_COOH.xml'
@@ -59,3 +59,19 @@ fit_dihedral_with_gomc(
     r_squared_min=0.99,
     r_squared_rtol=5e-03
 )
+
+# The OPLS dihedral fit constants
+print('The OPLS dihedral fit constants:\n')
+os.system("cat opls_dihedral_k_constants_fit_energy.txt")
+
+# The converted OPLS to periodic dihedral fit constants
+print('The converted OPLS to periodic dihedral fit constants:\n')
+os.system("cat periodic_dihedral_k_constants_fit_energy.txt")
+
+# The converted OPLS to RB-torsions dihedral fit constants
+print('The converted OPLS to RB-torsions dihedral fit constants:\n')
+os.system("cat RB_torsion_k_constants_fit_energy.txt")
+
+# This file contains the raw points used in the fits (QM - MM_less_dihedral(s)_energy being fit)
+print('This file contains the raw points used in the fits (QM - MM_less_dihedral(s)_energy being fit):\n')
+os.system("cat all_normalized_energies_in_kcal_per_mol.txt")
