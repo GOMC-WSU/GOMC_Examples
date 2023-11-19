@@ -23,8 +23,7 @@ combining_rule = 'geometric'
 atom_type_naming_style = 'general'
 
 # The GOMC binary path.
-#gomc_binary_directory = "path_to_GOMC_folder_GOMC_2_75/bin"
-gomc_binary_directory = "/Users/brad/Programs/GOMC/GOMC_2_75/bin"
+gomc_binary_directory = "path_to_GOMC_folder_GOMC_2_75/bin"
 
 # Load 1 or more Gaussian files (keys), and its value ([0]), which is a list of Gaussian points to remove
 # from the fitting process, where the first minimized Gaussian point is removed (i.e., ([0])).
