@@ -1,4 +1,4 @@
-<ForceField>
+<ForceField version="0.0.1" name="SPC/E water"  combining_rule="lorentz">
  <AtomTypes>
   <Type name="o_spce" class="OW" element="O" mass="15.999" def="[O;X2](H)(H)" desc="water oxygen" doi="10.1021/j100308a038"/>
   <Type name="h_spce" class="HW" element="H" mass="1.008"  def="H[O;X2](H)" desc="water hydrogen" doi="10.1021/j100308a038"/>

@@ -27,7 +27,8 @@ liquid_box_cyclohexane_molecules = 300
 # Note: When importing mol2 files, the residue names (cyclohexane.name) must be the same name as in the mol2 file.
 
 forcefield_files_neon = '../common/neon_LB_mixing.xml'
-neon = mb.Compound(name="Ne")
+neon = mb.load('[Ne]', smiles=True)
+neon.name = 'Ne'
 
 forcefield_files_cyclohexane = '../common/cyclohexane-ua.xml'
 cyclohexane = mb.load('../common/cyclohexane-ua.mol2')
