@@ -61,10 +61,8 @@ Vagrantfile
 
 #conda version
 __conda_version__.txt
-mbuild/version.py
+GOMC_Examples/version.py
 
 #virtual env
 .env/
 
-# protobuf generated py file
-compound_pb2.py
