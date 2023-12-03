@@ -1,4 +1,4 @@
-<ForceField version="0.0.1" name="Nobel gases" >
+<ForceField version="0.0.1" name="Nobel gases" combining_rule="lorentz">
  <AtomTypes>
    <Type name="Ne" class="Ne" element="Ne" mass="20.1797" def="Ne" desc="Ne - Vrabec" doi="10.1021/acs.jced.9b00565"/>
  </AtomTypes>

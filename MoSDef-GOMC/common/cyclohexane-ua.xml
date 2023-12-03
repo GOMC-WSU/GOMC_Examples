@@ -1,4 +1,4 @@
-<ForceField name="TraPPE-UA cyclohexane" version="0.0.1">
+<ForceField name="TraPPE-UA cyclohexane" version="0.0.1"  combining_rule="lorentz">
  <AtomTypes>
   <Type name="CH2-cyc6_sp3" class="CH2" element="_CH2" mass="14.02700" def="[_CH2;X2]([_CH2])[_CH2]" desc="Secondary sp3 cyclic 6 carbon ring CH2, united atom" doi="doi.org/10.1021/jp302975c"/>
  </AtomTypes>
