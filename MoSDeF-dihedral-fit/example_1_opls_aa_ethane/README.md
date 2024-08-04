@@ -11,4 +11,4 @@ The MoSDeF-dihedral-fit package is located [here](https://github.com/GOMC-WSU/Mo
 
 `cd fit_dihedral`
 
-`python example_dihedral_fit_ethane_HC_CT_CT_HC`
+`python example_dihedral_fit_ethane_HC_CT_CT_HC.py`
