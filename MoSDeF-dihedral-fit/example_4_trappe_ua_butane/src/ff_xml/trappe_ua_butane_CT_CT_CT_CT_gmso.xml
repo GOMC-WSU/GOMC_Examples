@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ForceField name="trappe-ua_gmso_butane-for_butane_only" version="0.0.1">
+  <FFMetaData combiningRule="lorentz" electrostatics14Scale="0" nonBonded14Scale="0">
+    <Units energy="kJ/mol" mass="amu" charge="elementary_charge" distance="nm"/>
+  </FFMetaData>
+  <AtomTypes expression="4 * epsilon * ((sigma/r)**12 - (sigma/r)**6)">
+    <ParametersUnitDef parameter="sigma" unit="nm"/>
+    <ParametersUnitDef parameter="epsilon" unit="kJ/mol"/>
+    <AtomType name="CH3_sp3" atomclass="CH3" element="C" charge="0.0" mass="15.03500" definition="[C;X4]([C])(H)(H)H" description="Alkane CH3, united atom - modified" doi="10.1021/jp972543+" overrides="">
+      <Parameters>
+        <Parameter name="epsilon" value="0.814817"/>
+        <Parameter name="sigma" value="0.375"/>
+      </Parameters>
+    </AtomType>
+    <AtomType name="CH2_sp3" atomclass="CH2" element="C" charge="0.0" mass="14.02700" definition="[C;X4](C)(C)(H)H" description="Alkane CH2, united atom - modified" doi="10.1021/jp972543+" overrides="">
+      <Parameters>
+        <Parameter name="epsilon" value="0.382465"/>
+        <Parameter name="sigma" value="0.395"/>
+      </Parameters>
+    </AtomType>
+    <AtomType name="H_CH3_sp3" atomclass="HC" element="H" charge="0.0" mass="0.0" definition="[H][C;%CH3_sp3]" description="Hydrogen on Alkane CH3, united atom - added" doi="" overrides="">
+      <Parameters>
+        <Parameter name="epsilon" value="0.0"/>
+        <Parameter name="sigma" value="10"/>
+      </Parameters>
+    </AtomType>
+    <AtomType name="H_CH2_sp3" atomclass="HC" element="H" charge="0.0" mass="0.0" definition="[H][C;%CH2_sp3]" description="Hydrogen on Alkane CH2, united atom - added" doi="" overrides="">
+      <Parameters>
+        <Parameter name="epsilon" value="0.0"/>
+        <Parameter name="sigma" value="10"/>
+      </Parameters>
+    </AtomType>
+  </AtomTypes>
+  <BondTypes expression="1/2 * k * (r-r_eq)**2">
+    <ParametersUnitDef parameter="r_eq" unit="nm"/>
+    <ParametersUnitDef parameter="k" unit="kJ/mol/nm**2"/>
+    <BondType name="BondType-Harmonic-2" class1="CH3" class2="CH2">
+      <Parameters>
+        <Parameter name="k" value="502416.0"/>
+        <Parameter name="r_eq" value="0.1540"/>
+      </Parameters>
+    </BondType>
+    <BondType name="BondType-Harmonic-5" class1="CH2" class2="CH2">
+      <Parameters>
+        <Parameter name="k" value="502416.0"/>
+        <Parameter name="r_eq" value="0.1540"/>
+      </Parameters>
+    </BondType>
+    <BondType name="BondType-Harmonic - added" class1="CH2" class2="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="r_eq" value="0"/>
+      </Parameters>
+    </BondType>
+    <BondType name="BondType-Harmonic - added" class1="CH3" class2="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="r_eq" value="0"/>
+      </Parameters>
+    </BondType>
+  </BondTypes>
+  <AngleTypes expression="1/2 * k * (theta - theta_eq)**2">
+    <ParametersUnitDef parameter="theta_eq" unit="radian"/>
+    <ParametersUnitDef parameter="k" unit="kJ/mol/radian**2"/>
+    <AngleType name="AngleType-Harmonic-2 - orig" class1="CH3" class2="CH2" class3="CH2">
+      <Parameters>
+        <Parameter name="k" value="519.65389"/>
+        <Parameter name="theta_eq" value="1.98967"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic - added" class1="HC" class2="CH2" class3="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="0"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic - added" class1="HC" class2="CH3" class3="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="0"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic - added" class1="HC" class2="CH2" class3="CH2">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="0"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic - added" class1="HC" class2="CH2" class3="CH3">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="0"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic - added" class1="HC" class2="CH3" class3="CH2">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="0"/>
+      </Parameters>
+    </AngleType>
+  </AngleTypes>
+  <DihedralTypes expression="c0 * cos(phi)**0 + c1 * cos(phi)**1 + c2 * cos(phi)**2 + c3 * cos(phi)**3 + c4 * cos(phi)**4 + c5 * cos(phi)**5">
+    <ParametersUnitDef parameter="c5" unit="kJ/mol"/>
+    <ParametersUnitDef parameter="c4" unit="kJ/mol"/>
+    <ParametersUnitDef parameter="c3" unit="kJ/mol"/>
+    <ParametersUnitDef parameter="c2" unit="kJ/mol"/>
+    <ParametersUnitDef parameter="c1" unit="kJ/mol"/>
+    <ParametersUnitDef parameter="c0" unit="kJ/mol"/>
+    <DihedralType name="DihedralType-RB-Proper-1" class1="CH3" class2="CH2" class3="CH2" class4="CH3">
+      <Parameters>
+        <Parameter name="c0" value="8.39736"/>
+        <Parameter name="c1" value="16.78632"/>
+        <Parameter name="c2" value="1.13393"/>
+        <Parameter name="c3" value="-26.31760"/>
+        <Parameter name="c4" value="0.0"/>
+        <Parameter name="c5" value="0.0"/>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-RB-Proper-added" class1="CH3" class2="CH2" class3="CH2" class4="HC">
+      <Parameters>
+        <Parameter name="c0" value="0.0"/>
+        <Parameter name="c1" value="0.0"/>
+        <Parameter name="c2" value="0.0"/>
+        <Parameter name="c3" value="0.0"/>
+        <Parameter name="c4" value="0.0"/>
+        <Parameter name="c5" value="0.0"/>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-RB-Proper-added" class1="HC" class2="CH2" class3="CH2" class4="HC">
+      <Parameters>
+        <Parameter name="c0" value="0.0"/>
+        <Parameter name="c1" value="0.0"/>
+        <Parameter name="c2" value="0.0"/>
+        <Parameter name="c3" value="0.0"/>
+        <Parameter name="c4" value="0.0"/>
+        <Parameter name="c5" value="0.0"/>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-RB-Proper-added" class1="HC" class2="CH3" class3="CH2" class4="HC">
+      <Parameters>
+        <Parameter name="c0" value="0.0"/>
+        <Parameter name="c1" value="0.0"/>
+        <Parameter name="c2" value="0.0"/>
+        <Parameter name="c3" value="0.0"/>
+        <Parameter name="c4" value="0.0"/>
+        <Parameter name="c5" value="0.0"/>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-RB-Proper-added" class1="CH2" class2="CH2" class3="CH3" class4="HC">
+      <Parameters>
+        <Parameter name="c0" value="0.0"/>
+        <Parameter name="c1" value="0.0"/>
+        <Parameter name="c2" value="0.0"/>
+        <Parameter name="c3" value="0.0"/>
+        <Parameter name="c4" value="0.0"/>
+        <Parameter name="c5" value="0.0"/>
+      </Parameters>
+    </DihedralType>
+  </DihedralTypes>
+</ForceField>
