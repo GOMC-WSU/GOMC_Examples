@@ -30,7 +30,7 @@ combining_rule = 'geometric'
 # of a group of atom/bead types together as an same atom class, where atom/bead class is 
 # determined in the FF XML file for each atom/bead type.
 # -----------------------------------------------------------------------------------------------
-# Using 'all_unique' basically sets each atom type as its ownseparate atom class.  Therefore, 
+# Using 'all_unique' basically sets each atom type as its own separate atom class.  Therefore, 
 # there is no distinction between atom type and atom class. This dihedral fit will on take into 
 # account the specific atom type, and not fit the general class (ignoring any FF XML file settings), 
 # which may make some dihedral fits more difficult. However, this could be the desired outcome in 
