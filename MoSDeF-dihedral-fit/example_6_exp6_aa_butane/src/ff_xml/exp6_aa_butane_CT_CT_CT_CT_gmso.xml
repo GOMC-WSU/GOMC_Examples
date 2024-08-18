@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ForceField name="exp6-ua_gmso_butane_only - Note: this is not the exact Williams FF as the mixing rules are used not NB Fix for C-H Non-bonded VDW interactions" version="0.0.0">
+  <FFMetaData combiningRule="geometric" electrostatics14Scale="0" nonBonded14Scale="0">
+    <Units energy="K" mass="amu" charge="elementary_charge" distance="angstrom"/>
+  </FFMetaData>
+  <AtomTypes expression="epsilon*alpha/(alpha-6) * (6/alpha*exp(alpha*(1-r/Rmin)) - (Rmin/r)**6)">
+    <ParametersUnitDef parameter="Rmin" unit="angstrom"/>
+    <ParametersUnitDef parameter="epsilon" unit="K"/>
+    <ParametersUnitDef parameter="alpha" unit="dimensionless"/>
+    <AtomType name="charmm_CTH3" atomclass="CT" element="C" charge="-0.18" mass="12.01100" definition="[C;X4](C)(H)(H)H" description="alkane CH3" doi="10.1021/jp9801065 - Note: this is not the exact Williams FF as the mixing rules are used not NB Fix for C-H Non-bonded VDW interactions" overrides="">
+      <Parameters>
+        <Parameter name="Rmin" value="3.5088999784648016"/>
+        <Parameter name="epsilon" value="73.8952492001974"/>
+        <Parameter name="alpha" value="13.123285919458358"/>
+      </Parameters>
+    </AtomType>
+    <AtomType name="charmm_CTH2" atomclass="CT" element="C" charge="-0.12" mass="12.01100" definition="[C;X4](C)(C)(H)H" description="alkane CH2" doi="10.1021/jp9801065 - Note: this is not the exact Williams FF as the mixing rules are used not NB Fix for C-H Non-bonded VDW interactions" overrides="">
+      <Parameters>
+        <Parameter name="Rmin" value="3.5088999784648016"/>
+        <Parameter name="epsilon" value="73.8952492001974"/>
+        <Parameter name="alpha" value="13.123285919458358"/>
+      </Parameters>
+    </AtomType>
+    <AtomType name="charmm_HC" atomclass="HC" element="H" charge="0.06" mass="1.00800" definition="H[C;X4]" description="alkane H" doi="10.1021/jp9801065 - Note: this is not the exact Williams FF as the mixing rules are used not NB Fix for C-H Non-bonded VDW interactions" overrides="">
+      <Parameters>
+        <Parameter name="Rmin" value="3.5360689004511046"/>
+        <Parameter name="epsilon" value="4.394516423906341"/>
+        <Parameter name="alpha" value="12.729848041623976"/>
+      </Parameters>
+    </AtomType>
+  </AtomTypes>
+  <BondTypes expression="1/2 * k * (r-r_eq)**2">
+    <ParametersUnitDef parameter="r_eq" unit="angstrom"/>
+    <ParametersUnitDef parameter="k" unit="kJ/mol/nm**2"/>
+    <BondType name="BondType-Harmonic-4" class1="CT" class2="CT">
+      <Parameters>
+        <Parameter name="k" value="502416.0"/>
+        <Parameter name="r_eq" value="1.530"/>
+      </Parameters>
+    </BondType>
+    <BondType name="BondType-Harmonic-5" class1="CT" class2="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="r_eq" value="1.040"/>
+      </Parameters>
+    </BondType>
+  </BondTypes>
+  <AngleTypes expression="1/2 * k * (theta - theta_eq)**2">
+    <ParametersUnitDef parameter="theta_eq" unit="degree"/>
+    <ParametersUnitDef parameter="k" unit="K/radian**2"/>
+     <AngleType name="AngleType-Harmonic-1" class1="CT" class2="CT" class3="CT">
+      <Parameters>
+        <Parameter name="k" value="62500"/>
+        <Parameter name="theta_eq" value="112.0"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic-1" class1="CT" class2="CT" class3="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="112.5"/>
+      </Parameters>
+    </AngleType>
+    <AngleType name="AngleType-Harmonic-2" class1="HC" class2="CT" class3="HC">
+      <Parameters>
+        <Parameter name="k" value="0"/>
+        <Parameter name="theta_eq" value="106.0"/>
+      </Parameters>
+    </AngleType>
+  </AngleTypes>
+  <DihedralTypes expression="k * (1 + cos(n * phi - phi_eq))">
+    <ParametersUnitDef parameter="k" unit="K"/>
+    <ParametersUnitDef parameter="n" unit="dimensionless"/>
+    <ParametersUnitDef parameter="phi_eq" unit="degree"/>
+    <DihedralType name="DihedralType-Periodic-Proper-1" class1="CT" class2="CT" class3="CT" class4="CT">
+      <Parameters>
+        <Parameter name="n">
+          <Value>0</Value>
+          <Value>1</Value>
+          <Value>2</Value>
+          <Value>3</Value>
+        </Parameter>
+        <Parameter name="k">
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+        </Parameter>
+        <Parameter name="phi_eq">
+          <Value>90</Value>
+          <Value>180</Value>
+          <Value>0.0</Value>
+          <Value>180</Value>
+        </Parameter>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-Periodic-Proper-2" class1="CT" class2="CT" class3="CT" class4="HC">
+      <Parameters>
+        <Parameter name="n">
+          <Value>0</Value>
+          <Value>1</Value>
+          <Value>2</Value>
+          <Value>3</Value>
+        </Parameter>
+        <Parameter name="k">
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+        </Parameter>
+        <Parameter name="phi_eq">
+          <Value>90</Value>
+          <Value>180</Value>
+          <Value>0.0</Value>
+          <Value>180</Value>
+        </Parameter>
+      </Parameters>
+    </DihedralType>
+    <DihedralType name="DihedralType-Periodic-Proper-3" class1="HC" class2="CT" class3="CT" class4="HC">
+      <Parameters>
+        <Parameter name="n">
+          <Value>0</Value>
+          <Value>1</Value>
+          <Value>2</Value>
+          <Value>3</Value>
+        </Parameter>
+        <Parameter name="k">
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+          <Value>0</Value>
+        </Parameter>
+        <Parameter name="phi_eq">
+          <Value>90</Value>
+          <Value>180</Value>
+          <Value>0.0</Value>
+          <Value>180</Value>
+        </Parameter>
+      </Parameters>
+    </DihedralType>
+  </DihedralTypes>
+</ForceField>
