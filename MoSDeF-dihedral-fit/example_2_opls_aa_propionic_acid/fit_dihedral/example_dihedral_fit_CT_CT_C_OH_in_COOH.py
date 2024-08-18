@@ -75,7 +75,7 @@ fit_dihedral_with_gomc(
     gomc_cpu_cores=1,
     r_squared_min=0.99,
     r_squared_rtol=5e-03,
-    opls_set_k0_zero=True
+    opls_force_k0_zero=True
 )
 
 # The OPLS dihedral fit constants
