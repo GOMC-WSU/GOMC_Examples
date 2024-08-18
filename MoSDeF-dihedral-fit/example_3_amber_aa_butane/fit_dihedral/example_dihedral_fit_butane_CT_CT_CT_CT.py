@@ -17,11 +17,27 @@ temperature_in_unyt_units = 298.15 * u.Kelvin
 # selecting None uses the one in the forcefield xml file. 
 combining_rule = None
 
-# Atom type naming convention ( str, optional, default=’all_unique’, (‘general’ or ‘all_unique’) )
-# Using 'general' is preferred as it makes it easier to create the force field (FF) and makes it 
-# and the other generated files more readable.  However, to the 'general' option, the user needs 
-# to make sure that all the FF atomclasses in the FF XML file (i.e., atomclass="CT") have the same 
-# sigma and epsilon values. Otherwise, it will cause errors.
+# Atom type naming convention [str, optional, default='all_unique', ('general' or 'all_unique')].
+# -----------------------------------------------------------------------------------------------
+# Using 'general' is preferred as it makes it easier to create the force field (FF) and is much 
+# more human readable.  For CHARMM-style FFs, like GOMC and NAMD, this means that all the general 
+# atom/bead types that are in an atom class must have the same non-bonded VDW parameters 
+# (i.e., for LJ -> sigma and epsilon), but are allowed to have different partial charges; 
+# otherwise, it will cause errors. This is because the partial charges are listed in the PSF file 
+# for each atom individually, and not in the NAMD or GOMC FF file (.inp).   
+# Typically, the bonded parameters are all handled as using general atom/bead classes 
+# (Example: the carbon atoms in butane (C in CH3 and C in CH2) would have the same VDW and bonded 
+# parameters, but will have different partial charges). The 'general' setting allows the fitting 
+# of a group of atom/bead types together as an same atom class, where atom/bead class is 
+# determined in the FF XML file for each atom/bead type.
+# -----------------------------------------------------------------------------------------------
+# Using 'all_unique' basically sets each atom type as its ownseparate atom class.  Therefore, 
+# there is no distinction between atom type and atom class. This dihedral fit will on take into 
+# account the specific atom type, and not fit the general class (ignoring any FF XML file settings), 
+# which may make some dihedral fits more difficult. However, this could be the desired outcome in 
+# some situations.  Note: The MoSDeF force field does allow specific atom type dihedrals and other 
+# bonded parameters, which override the atom class values, but all the atoms in the bonded FF 
+# parameters must be the atom types.  
 atom_type_naming_style = 'general'
 
 # The GOMC binary path.
