@@ -54,7 +54,7 @@ qm_log_file_dict = {
 }
 
 # The dihedral which is being fit.
-fit_dihedral_atom_types = ['HC', 'CT', 'CT', 'HC']
+fit_dihedral_atom_types = ['CT', 'CT', 'CT', 'CT']
 
 # All the other dihedrals which can be zeroed in the fitting process, in a nested list
 zero_dihedral_atom_types = None
