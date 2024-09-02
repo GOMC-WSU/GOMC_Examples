@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<ForceField name="amber_aa_gmso_butane_only - ﻿AMBER99" version="0.0.1">
+<ForceField name="amber_aa_gmso_butane_only - AMBER99" version="0.0.1">
   <FFMetaData combiningRule="lorentz" electrostatics14Scale="0.8333" nonBonded14Scale="0.5">
     <Units energy="kJ/mol" mass="amu" charge="elementary_charge" distance="nm"/>
   </FFMetaData>
@@ -80,18 +80,21 @@
           <Value>1</Value>
           <Value>2</Value>
           <Value>3</Value>
+          <Value>4</Value>
         </Parameter>
         <Parameter name="k">
-          <Value>0</Value>
-          <Value>0</Value>
-          <Value>0</Value>
-          <Value>0</Value>
+          <Value>2.1416812779931</Value>
+          <Value>0.281824481568936</Value>
+          <Value>-0.36352358023514</Value>
+          <Value>-1.05926046303832</Value>
+          <Value>0.574603506038432</Value>
         </Parameter>
         <Parameter name="phi_eq">
           <Value>90</Value>
           <Value>180</Value>
           <Value>0.0</Value>
           <Value>180</Value>
+          <Value>0.0</Value>
         </Parameter>
       </Parameters>
     </DihedralType>
