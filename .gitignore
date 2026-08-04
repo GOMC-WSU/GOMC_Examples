@@ -66,3 +66,5 @@ GOMC_Examples/version.py
 #virtual env
 .env/
 
+
+*Zone.Identifier*
