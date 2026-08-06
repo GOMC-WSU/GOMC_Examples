@@ -1,0 +1,30 @@
+{
+  "total_cycles_namd_gomc_sims": 10,
+  "starting_at_cycle_namd_gomc_sims": 0,
+  "gomc_use_CPU_or_GPU": "CPU",
+  "simulation_type": "GCMC",
+  "only_use_box_0_for_namd_for_gemc": true,
+  "no_core_box_0": 4,
+  "no_core_box_1": 0,
+  "simulation_temp_k": 298.15,
+  "simulation_pressure_bar": 5.0,
+  "GCMC_ChemPot_or_Fugacity": "ChemPot",
+  "GCMC_ChemPot_or_Fugacity_dict": {
+    "ETH": -3500.0
+  },
+  "namd_minimize_mult_scalar": 1,
+  "namd_run_steps": 1000,
+  "gomc_run_steps": 500,
+  "set_dims_box_0_list": [45.0, 45.0, 45.0],
+  "set_dims_box_1_list": [300.0, 300.0, 300.0],
+  "set_angle_box_0_list": [90, 90, 90],
+  "set_angle_box_1_list": [90, 90, 90],
+  "starting_ff_file_list_gomc": ["ETH_FF_GOMC.inp"],
+  "starting_ff_file_list_namd": ["ETH_FF_NAMD.inp"],
+  "starting_pdb_box_0_file": "ethane_GCMC_N1000_box0.pdb",
+  "starting_psf_box_0_file": "ethane_GCMC_N1000_box0.psf",
+  "starting_pdb_box_1_file": "ethane_GCMC_N1000_box1.pdb",
+  "starting_psf_box_1_file": "ethane_GCMC_N1000_box1.psf",
+  "namd2_bin_directory": "/home/ia5498/NAMD_3.0.2",
+  "gomc_bin_directory": "/home/ia5498/GOMC/bin"
+}

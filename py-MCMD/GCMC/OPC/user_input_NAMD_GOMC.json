@@ -1,0 +1,42 @@
+{
+  "total_cycles_namd_gomc_sims": 10,
+  "starting_at_cycle_namd_gomc_sims": 0,
+  "gomc_use_CPU_or_GPU": "CPU",
+  "simulation_type": "GCMC",
+  "only_use_box_0_for_namd_for_gemc": true,
+  "namd_simulation_order": "series",
+  "developer_mode": false,
+  "disk_cleanup_mode": "compact",
+  "process_on_the_fly": true,
+  "combined_data_dir": "combined_data",
+  "rel_path_to_combine_binary_catdcd": "required_data/bin/catdcd-4.0b/LINUXAMD64/bin/catdcd4.0/catdcd",
+  "combine_gomc_dcd_file": true,
+  "otf_keep_raw_cycles": 2,
+  "no_core_box_0": 4,
+  "no_core_box_1": 0,
+  "simulation_temp_k": 510,
+  "simulation_pressure_bar": null,
+  "GCMC_ChemPot_or_Fugacity": "ChemPot",
+  "GCMC_ChemPot_or_Fugacity_dict": {
+    "TIP4": -4630
+  },
+  "namd_minimize_mult_scalar": 1,
+  "namd_run_steps": 1000,
+  "gomc_run_steps": 500,
+  "set_dims_box_0_list": null,
+  "set_dims_box_1_list": null,
+  "set_angle_box_0_list": null,
+  "set_angle_box_1_list": null,
+  "starting_ff_file_list_gomc": [
+    "required_data/input/OPC_FF_GOMC.inp"
+  ],
+  "starting_ff_file_list_namd": [
+    "required_data/input/OPC_FF_NAMD.inp"
+  ],
+  "starting_pdb_box_0_file": "required_data/input/systems/OPC_water/N1000/GCMC/510K/GCMC_OPC_T510_N1000_BOX_0.pdb",
+  "starting_psf_box_0_file": "required_data/input/systems/OPC_water/N1000/GCMC/510K/GCMC_OPC_T510_N1000_BOX_0.psf",
+  "starting_pdb_box_1_file": "required_data/input/systems/OPC_water/N1000/GCMC/510K/GCMC_OPC_T510_N1000_BOX_1.pdb",
+  "starting_psf_box_1_file": "required_data/input/systems/OPC_water/N1000/GCMC/510K/GCMC_OPC_T510_N1000_BOX_1.psf",
+  "namd2_bin_directory": "../../../../NAMD_2.14_Linux-x86_64-multicore",
+  "gomc_bin_directory": "../../../../GOMC/bin"
+}
