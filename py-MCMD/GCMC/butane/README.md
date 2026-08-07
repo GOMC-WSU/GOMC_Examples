@@ -59,7 +59,7 @@ The `required_data/input/` directory provides pre-configured coordinate (`.pdb`)
 
 ### Ensemble Parameters
 - `GCMC_ChemPot_or_Fugacity`: Control mode for molecule transfers (`"ChemPot"` or `"Fugacity"`).
-- `GCMC_ChemPot_or_Fugacity_dict`: Chemical potential or fugacity value per residue type (default: `{"BUT": -4200.0}`).
+- `GCMC_ChemPot_or_Fugacity_dict`: Chemical potential or fugacity value per residue type (default: `{"BUT": -2900.0}`).
 
 ### Compute & Binary Paths
 - `no_core_box_0`: CPU cores allocated to NAMD for Box 0 (default: `4`).

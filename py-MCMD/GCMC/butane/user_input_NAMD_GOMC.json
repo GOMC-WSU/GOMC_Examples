@@ -18,7 +18,7 @@
   "simulation_pressure_bar": null,
   "GCMC_ChemPot_or_Fugacity": "ChemPot",
   "GCMC_ChemPot_or_Fugacity_dict": {
-    "BUT": -4200.0
+    "BUT": -2900.0
   },
   "namd_minimize_mult_scalar": 1,
   "namd_run_steps": 1000,
