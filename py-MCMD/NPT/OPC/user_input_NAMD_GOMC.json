@@ -39,8 +39,8 @@
   "starting_ff_file_list_namd": [
     "required_data/input/OPC_FF_NAMD.inp"
   ],
-  "starting_pdb_box_0_file": "required_data/input/systems/OPC_water/N1000/NPT/300K/NPT_OPC_T300_N1000.pdb",
-  "starting_psf_box_0_file": "required_data/input/systems/OPC_water/N1000/NPT/300K/NPT_OPC_T300_N1000.psf",
+  "starting_pdb_box_0_file": "required_data/input/NPT_OPC_T300_N1000.pdb",
+  "starting_psf_box_0_file": "required_data/input/NPT_OPC_T300_N1000.psf",
   "starting_pdb_box_1_file": null,
   "starting_psf_box_1_file": null,
   "namd2_bin_directory": "../../../../NAMD_2.14_Linux-x86_64-multicore",
