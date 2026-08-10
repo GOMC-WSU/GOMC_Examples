@@ -26,8 +26,8 @@ GCMC/ethane_trappe/
 - `gomc_run_steps`: Number of MC moves GOMC runs per cycle (default: `500`).
 
 ### Compute & Binary Paths
-- `starting_ff_file_list_gomc`: Force field parameter files for GOMC (`["required_data/input/ethane_FF_trappua_gomc.inp"]`).
-- `starting_ff_file_list_namd`: Force field parameter files for NAMD (`["required_data/input/ethane_FF_trappua_namd.inp"]`).
+- `starting_ff_file_list_gomc`: Force field parameter files for GOMC (`["required_data/input/ethane_FF_trappe_gomc.inp"]`).
+- `starting_ff_file_list_namd`: Force field parameter files for NAMD (`["required_data/input/ethane_FF_trappe_namd.inp"]`).
 - `starting_pdb_box_0_file`: Box 0 initial coordinates (`"required_data/input/ethane_liq.pdb"`).
 - `starting_psf_box_0_file`: Box 0 initial topology (`"required_data/input/ethane_liq.psf"`).
 

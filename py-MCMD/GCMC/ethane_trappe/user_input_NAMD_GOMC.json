@@ -36,10 +36,10 @@
     90
   ],
   "starting_ff_file_list_gomc": [
-    "required_data/input/ethane_FF_trappua_gomc.inp"
+    "required_data/input/ethane_FF_trappe_gomc.inp"
   ],
   "starting_ff_file_list_namd": [
-    "required_data/input/ethane_FF_trappua_namd.inp"
+    "required_data/input/ethane_FF_trappe_namd.inp"
   ],
   "starting_pdb_box_0_file": "required_data/input/ethane_liq.pdb",
   "starting_psf_box_0_file": "required_data/input/ethane_liq.psf",
