@@ -33,10 +33,10 @@
   "starting_ff_file_list_namd": [
     "required_data/input/OPC_FF_NAMD.inp"
   ],
-  "starting_pdb_box_0_file": "required_data/input/GCMC_OPC_T510_N1000_BOX_0.pdb",
-  "starting_psf_box_0_file": "required_data/input/GCMC_OPC_T510_N1000_BOX_0.psf",
-  "starting_pdb_box_1_file": "required_data/input/GCMC_OPC_T510_N1000_BOX_1.pdb",
-  "starting_psf_box_1_file": "required_data/input/GCMC_OPC_T510_N1000_BOX_1.psf",
+  "starting_pdb_box_0_file": "required_data/input/N_1000/GCMC_OPC_T510_N1000_BOX_0.pdb",
+  "starting_psf_box_0_file": "required_data/input/N_1000/GCMC_OPC_T510_N1000_BOX_0.psf",
+  "starting_pdb_box_1_file": "required_data/input/N_1000/GCMC_OPC_T510_N1000_BOX_1.pdb",
+  "starting_psf_box_1_file": "required_data/input/N_1000/GCMC_OPC_T510_N1000_BOX_1.psf",
   "namd2_bin_directory": "../../../../NAMD_2.14_Linux-x86_64-multicore",
   "gomc_bin_directory": "../../../../GOMC/bin"
 }
