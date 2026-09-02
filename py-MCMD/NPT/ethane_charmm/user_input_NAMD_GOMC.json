@@ -14,8 +14,8 @@
   "otf_keep_raw_cycles": 2,
   "no_core_box_0": 4,
   "no_core_box_1": 0,
-  "simulation_temp_k": 280.0,
-  "simulation_pressure_bar": 5.0,
+  "simulation_temp_k": 220.0,
+  "simulation_pressure_bar": 30.0,
   "GCMC_ChemPot_or_Fugacity": null,
   "GCMC_ChemPot_or_Fugacity_dict": null,
   "namd_minimize_mult_scalar": 1,
@@ -34,13 +34,13 @@
     90
   ],
   "starting_ff_file_list_gomc": [
-    "required_data/input/ETH_FF_GOMC.inp"
+    "required_data/input/ethane_FF_trappe_gomc.inp"
   ],
   "starting_ff_file_list_namd": [
-    "required_data/input/ETH_FF_NAMD.inp"
+    "required_data/input/ethane_FF_trappe_namd.inp"
   ],
-  "starting_pdb_box_0_file": "required_data/input/ethane_NPT_N1000_box0.pdb",
-  "starting_psf_box_0_file": "required_data/input/ethane_NPT_N1000_box0.psf",
+  "starting_pdb_box_0_file": "required_data/input/ethane_liq.pdb",
+  "starting_psf_box_0_file": "required_data/input/ethane_liq.psf",
   "starting_pdb_box_1_file": null,
   "starting_psf_box_1_file": null,
   "namd2_bin_directory": "../../../../NAMD_2.14_Linux-x86_64-multicore",

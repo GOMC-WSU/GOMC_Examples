@@ -1,11 +1,11 @@
-* temp_box0 - created by MoSDeF-GOMC using the on 2026-08-06 13:53:49.015974.
-* These parameters use the non-bonded LJ form --- with these force field(s) via MoSDef  {'ETH': 'ethane.xml'}.
-*  1-4 electrostatic scaling = {'ETH': 1.0} , and 1-4 non-bonded scaling = {'ETH': 1.0}, and non-bonded mixing rule = geometric
+* initial_box_0 and initial_box_1 - created by MoSDeF-GOMC using the on 2026-08-20 13:38:14.439460
+* These parameters use the non-bonded LJ form --- with these force field(s) via MoSDef  {'ETH': '../../ethane.xml'}.
+*  1-4 electrostatic scaling = {'ETH': 1.0} , and 1-4 non-bonded scaling = {'ETH': 1.0}, and non-bonded mixing rule = lorentz
 
-*               8 atoms
-*               7 bonds
-*              12 angles
-*               9 dihedrals
+*            8000 atoms
+*            7000 bonds
+*           12000 angles
+*            9000 dihedrals
 *               0 impropers
 
 
@@ -23,9 +23,9 @@ BONDS * harmonic
 ! b0: A
 ! Kb (kcal/mol) = Kb_K (K) * Boltz. const.; (9999999999 if no stretching)
 ! 
-! type_1   type_2     Kb              b0              ! extended_type_1      extended_type_2     
-CG3310     CG3310     222.5           1.53            ! ETH_CG331            ETH_CG331           
-CG3310     HGA30      309.0           1.09            ! ETH_CG331            ETH_HGA3            
+! type_1   type_2     Kb       b0              ! extended_type_1      extended_type_2     
+CG3310     CG3310     222.5    1.53            ! ETH_CG331            ETH_CG331           
+CG3310     HGA30      322.0    1.111           ! ETH_CG331            ETH_HGA3            
 
 ANGLES * harmonic
 ! 
@@ -38,9 +38,9 @@ ANGLES * harmonic
 ! 
 ! Ktheta (kcal/mol) = Ktheta_K (K) * Boltz. const.
 ! 
-! type_1   type_2     type_3     Ktheta          Theta0          ! extended_type_1      extended_type_2      extended_type_3     
-CG3310     CG3310     HGA30      37.5            110.100143      ! ETH_CG331            ETH_CG331            ETH_HGA3            
-HGA30      CG3310     HGA30      35.5            108.399604      ! ETH_HGA3             ETH_CG331            ETH_HGA3            
+! type_1   type_2     type_3     Ktheta      Theta0          ! extended_type_1      extended_type_2      extended_type_3     
+CG3310     CG3310     HGA30      37.5        110.100143      ! ETH_CG331            ETH_CG331            ETH_HGA3            
+HGA30      CG3310     HGA30      37.5        108.399604      ! ETH_HGA3             ETH_CG331            ETH_HGA3            
 
 DIHEDRALS * CHARMM
 ! 
@@ -55,7 +55,7 @@ DIHEDRALS * CHARMM
 ! Boltzmann = 0.0019872041 kcal / (mol * K)
 ! 
 ! type_1   type_2     type_3     type_4     Kchi            n          delta           ! extended_type_1      extended_type_2      extended_type_3      extended_type_4     
-HGA30      CG3310     CG3310     HGA30      0.16            3          0.0             ! ETH_HGA3             ETH_CG331            ETH_CG331            ETH_HGA3            
+HGA30      CG3310     CG3310     HGA30      0.155           3          0.0             ! ETH_HGA3             ETH_CG331            ETH_CG331            ETH_HGA3            
 ! The input dihedral to periodic dihedral conversion error is OK [error <= 10^(-10)]
 ! Maximum( |(input dihedral calc)-(periodic dihedral calc)| ) =  0.0
 

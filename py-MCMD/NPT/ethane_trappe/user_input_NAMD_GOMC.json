@@ -14,7 +14,7 @@
   "otf_keep_raw_cycles": 2,
   "no_core_box_0": 4,
   "no_core_box_1": 0,
-  "simulation_temp_k": 280.0,
+  "simulation_temp_k": 220.0,
   "simulation_pressure_bar": 5.0,
   "GCMC_ChemPot_or_Fugacity": null,
   "GCMC_ChemPot_or_Fugacity_dict": null,
