@@ -1,0 +1,37 @@
+* NVT_ethane_liq and NVT_ethane_vap - created by MoSDeF-GOMC using the on 2025-09-01 23:29:07.390544
+* These parameters use the non-bonded LJ form --- with these force field(s) via MoSDef  {'NDE': '/mnt/d/Tools/GOMC/new5/trappe-ua.xml'}.
+*  1-4 electrostatic scaling = {'NDE': 0.0} , and 1-4 non-bonded scaling = {'NDE': 0.0}, and non-bonded mixing rule = geometric
+
+*            1000 atoms
+*             500 bonds
+*               0 angles
+*               0 dihedrals
+*               0 impropers
+
+
+* masses
+
+! atom_types      mass            ! atomClass_ResidueName
+* CH30            15.035          ! NDE_CH3_sp3              
+
+BONDS * harmonic
+! 
+! V(bond) = Kb(b - b0)**2
+! 
+! Kb: kcal/mol/A**2 (LJ) and  K/A**2 (Mie and Exp6)
+! b0: A
+! Kb (kcal/mol) = Kb_K (K) * Boltz. const.; (9999999999 if no stretching)
+! 
+! type_1   type_2     Kb              b0              ! extended_type_1      extended_type_2     
+CH30       CH30       600.40153       1.54            ! NDE_CH3_sp3          NDE_CH3_sp3         
+
+NONBONDED * LJ
+! 
+! V(Lennard-Jones) = Epsilon,i,j[(Rmin,i,j/ri,j)**12 - 2(Rmin,i,j/ri,j)**6]
+!                                    or
+! V(Lennard-Jones) = 4 * Epsilon,i,j[(Sigma,i,j/ri,j)**12 - (Sigma,i,j/ri,j)**6]
+! 
+! type_1   ignored         epsilon         Rmin/2          ignored         epsilon,1-4     Rmin/2,1-4      ! extended_type_1      extended_type_2     
+CH30       0.0             -0.1947459369   2.1046163406    0.0             -0.0            2.1046163406    ! NDE_CH3_sp3          NDE_CH3_sp3         
+
+END
