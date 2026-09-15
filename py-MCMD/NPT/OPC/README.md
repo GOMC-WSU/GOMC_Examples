@@ -105,4 +105,4 @@ change the input file paths in `user_input_NAMD_GOMC.json`:
 
 ## Simulation Results
 
-- **Expected liquid density**: 996.28 kg/m³
+- **Expected liquid density**: 996.389 kg/m³

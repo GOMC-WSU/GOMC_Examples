@@ -1,6 +1,6 @@
 # Ethane GCMC Example
 
-Hybrid MD/MC simulation of liquid ethane using the TraPPE united-atom force field in the grand canonical ensemble with a chemical potential of -3500 K and a temperature of 280 K.
+Hybrid MD/MC simulation of liquid ethane using the CHARMM force field in the grand canonical ensemble with a chemical potential of -3500 K and a temperature of 220 K.
 
 Repository: https://github.com/GOMC-WSU/py-MCMD.git
 
@@ -59,7 +59,7 @@ topology (`.psf`) files for the system and the reservoir:
 
 ### Simulation Controls
 - `simulation_type`: Ensemble type (`"GCMC"`).
-- `simulation_temp_k`: Simulation temperature in Kelvin; this example runs at `280.0`.
+- `simulation_temp_k`: Simulation temperature in Kelvin; this example runs at `220.0`.
 - `total_cycles_namd_gomc_sims`: Number of MD/MC cycles to run (`10`).
 - `starting_at_cycle_namd_gomc_sims`: Starting cycle index (`0` for a new run, `>0` to resume).
 - `namd_run_steps`: Number of molecular dynamics timesteps performed in each cycle (default: `1000`).
@@ -78,5 +78,4 @@ topology (`.psf`) files for the system and the reservoir:
 
 ## Simulation Results
 
-- **Expected liquid density**: TBD
-- **Expected gas density**: TBD
+- **Expected liquid density**: 527.7774 kg/m³ (220 K)

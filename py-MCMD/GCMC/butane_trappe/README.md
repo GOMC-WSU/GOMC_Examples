@@ -80,5 +80,4 @@ topology (`.psf`) files for the system and the reservoir:
 
 ## Simulation Results
 
-- **Expected liquid density**: TBD
-- **Expected gas density**: TBD
+- **Expected liquid density**: 553.9499 kg/m³ (320 K)

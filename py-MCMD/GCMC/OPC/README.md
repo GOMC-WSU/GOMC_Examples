@@ -107,5 +107,4 @@ To run a different system size, change the input file paths in
 
 ## Simulation Results
 
-- **Expected liquid density**: TBD
-- **Expected gas density**: TBD
+- **Expected liquid density**: 848.7925 kg/m³ (510 K)
