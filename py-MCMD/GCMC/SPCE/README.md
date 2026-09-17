@@ -79,5 +79,4 @@ topology (`.psf`) files for the system and the reservoir:
 
 ## Simulation Results
 
-- **Expected liquid density**: TBD
-- **Expected gas density**: TBD
+- **Expected liquid density**: TBD (510 K)

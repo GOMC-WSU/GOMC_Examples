@@ -108,5 +108,7 @@ To run a different system size, change the input file paths in
 
 ## Simulation Results
 
-- **Expected liquid density**: 846.4832 kg/m³ (500 K)
-- **Expected gas density**: 3.223 kg/m³ (500 K)
+- **Expected liquid density**: 847.1673 kg/m³ (500 K)
+- **Expected gas density**: 3.167 kg/m³ (500 K)
+- **Expected liquid density**: 973.544 kg/m³ (350 K)
+- **Expected gas density**: 0.024 kg/m³ (350 K)
